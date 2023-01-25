@@ -2,7 +2,7 @@
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
-# Introduction
+# A. Introduction
 
 Recently, i want to implement the text to speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problem.
 
@@ -25,21 +25,22 @@ Not all voices have onboundary event, also the on boundary event doesn't fire fu
 Sometimes we need need abbreviation function, for example we need the text that displayed to user is different with the text that we use to give the to the [speech utterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/text)
 
 **Roman Number**
-the we need displayed text is `I. II. III.`
-if we input that same text the system will read as `i. ii. iii.`
-we need to change the roman numbers to arabic numbers so the system can read correctly.
+
+We need displayed text is `I. II. III.` if we input that same text the system will read as `i. ii. iii.`
+
+We need to change the roman numbers to arabic numbers so the system can read correctly.
 
 Then I do research to build this. I took two weeks to solve the problem.
 
-## Version 3.8
+## B. Version 3.8
 
 I will update this package. to solve any known problem. so let me know the problem.
 
-## Demo
+## C. Demo
 
 [https://albirrkarim.github.io/react-speech-highlight/](https://albirrkarim.github.io/react-speech-highlight/)
 
-## API
+## D. API
 
 ```jsx
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
@@ -88,11 +89,8 @@ Contain state and function to preparing the TTS.
 | spokenHL.sentence | Some react state, Get the sentence that read |
 | spokenHL.word     | Some react state, Get the word that read     |
 
-<br>
-<br>
-<br>
 
-### Code
+## E. Code
 
 ```jsx
 import { useEffect, useMemo, useRef, useState } from "react";
