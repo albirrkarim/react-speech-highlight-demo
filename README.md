@@ -58,12 +58,12 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 
 ### controlHL
 
-| Name             | Description |
-| ---------------- | ----------- |
-| controlHL.play   | Play TTS    |
-| controlHL.pause  | Pause TTS   |
-| controlHL.resume | Resume TTS  |
-| controlHL.stop   | Stop TTS    |
+| Name               | Description | Parameter                                         |
+| ------------------ | ----------- | ------------------------------------------------- |
+| controlHL.play()   | Play TTS    | controlHL.play(HTML_ELEMENT,VoiceURI,callbackEnd) |
+| controlHL.pause()  | Pause TTS   | Just call                                         |
+| controlHL.resume() | Resume TTS  | Resume TTS                                        |
+| controlHL.stop()   | Stop TTS    | Stop TTS                                          |
 
 ### statusHL
 
@@ -88,7 +88,6 @@ Contain state and function to preparing the TTS.
 | ----------------- | -------------------------------------------- |
 | spokenHL.sentence | Some react state, Get the sentence that read |
 | spokenHL.word     | Some react state, Get the word that read     |
-
 
 ## E. Code
 
