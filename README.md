@@ -1,8 +1,39 @@
 # React Speech Highlight
 
-React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken
+React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
+
+# Introduction
+
+Recently, i want to implement the text to speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problem.
+
+The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problem:
+
+### 1. Unlimited String Length Capability
+
+Some available voice doesn't support long text / string
+
+### 2. IOS or Ipad OS Problem
+
+I'm sure that you have the same experience, developing web for Iphone or Ipad always resulting problem. Speech synthesis in IOS or Ipad OS sometimes die unexpected.
+
+### 3. Mistake Onboundary
+
+Not all voices have onboundary event, also the on boundary event doesn't fire function accurately. for example the text is `2022` the onboundary will fire twice `20` and `22`.
+
+### 4. We want Text user see is different with what system speak
+
+Sometimes we need need abbreviation function, for example we need the text that displayed to user is different with the text that we use to give the to the [speech utterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/text)
+
+**Roman Number**
+the we need displayed text is `I. II. III.`
+if we input that same text the system will read as `i. ii. iii.`
+we need to change the roman numbers to arabic numbers so the system can read correctly.
+
+Then I do research to build this. I took two weeks to solve the problem.
 
 ## Version 3.8
+
+I will update this package. to solve any known problem. so let me know the problem.
 
 ## Demo
 
@@ -37,7 +68,7 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 
 Some state that give the status of the program
 
-The value it can be `idle|play|calibartion|resume|pause|getVoicesLoading` 
+The value it can be `idle|play|calibartion|resume|pause|getVoicesLoading`
 
 ### prepareHL
 
