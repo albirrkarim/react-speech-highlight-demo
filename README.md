@@ -10,11 +10,13 @@ The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSyn
 
 ### 1. Unlimited String Length Capability
 
-Some available voice doesn't support long text / string
+Some available voice doesn't support long text / string. 
 
 ### 2. IOS or Ipad OS Problem
 
-I'm sure that you have the same experience, developing web for Iphone or Ipad always resulting problem. Speech synthesis in IOS or Ipad OS sometimes die unexpected.
+I'm sure that you have the same experience, developing web for cross platform, android, Iphone or Ipad always resulting problem. 
+Speech synthesis in IOS or Ipad OS sometimes die unexpected.
+the sppechsynthesis doesn't fire the onpause event on android
 
 ### 3. Mistake Onboundary
 
@@ -30,17 +32,40 @@ We need displayed text is `I. II. III.` if we input that same text the system wi
 
 We need to change the roman numbers to arabic numbers so the system can read correctly.
 
+**Lang Abbreviation**
+
+in english abbreviation like `FOMO`, `ETA`, etc.
+
+in indonesian 
+
+`dgn` = `dengan`
+
+`yg` = `yang`
+
+This package also have built-in abbreviation function, or you can write your own rules.
+
+input:string -> abbreviation function -> output:string.
+
 Then I do research to build this. I took two weeks to solve the problem.
 
-## B. Version 3.8
+## B. TODO
+
+- Give API for custom abbreviation function
+- onboundary on ipad os sometime only works on just 30% of words in a sentence
+- Give API for turn on / off highlight sentence and word
+- Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
+- **Let me know what you want from this package**
+
+
+## C. Version 3.8
 
 I will update this package. to solve any known problem. so let me know the problem.
 
-## C. Demo
+## D. Demo
 
 [https://albirrkarim.github.io/react-speech-highlight/](https://albirrkarim.github.io/react-speech-highlight/)
 
-## D. API
+## E. API
 
 ```jsx
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
@@ -69,7 +94,7 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 
 Some state that give the status of the program
 
-The value it can be `idle|play|calibartion|resume|pause|getVoicesLoading`
+The value it can be `idle|play|calibration|resume|pause|getVoicesLoading`
 
 ### prepareHL
 
