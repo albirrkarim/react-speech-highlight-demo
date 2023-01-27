@@ -6,26 +6,28 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 
 Recently, i want to implement the text to speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problem.
 
-The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problem:
+The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problems:
 
 ### 1. Unlimited String Length Capability
 
-Some available voice doesn't support long text / string. 
+Some available voice doesn't support long text / string.
 
-### 2. IOS or Ipad OS Problem
+### 2. Cross Platform Problem
 
-I'm sure that you have the same experience, developing web for cross platform, android, Iphone or Ipad always resulting problem. 
-Speech synthesis in IOS or Ipad OS sometimes die unexpected.
-the sppechsynthesis doesn't fire the onpause event on android
+I'm sure that you have the same experience, developing web for cross platform, android, Iphone or Ipad always resulting problem.
 
-### 3. Mistake Onboundary
+- Speech synthesis in IOS or Ipad OS sometimes die unexpected.
+- Sometimes speechsynthesis doesn't fire the onpause,onresume event on android, ipad,
 
-Not all voices have onboundary event, also the on boundary event doesn't fire function accurately. for example the text is `2022` the onboundary will fire twice `20` and `22`.
+### 3. Unpredictable Onboundary
+
+- First, Not all voices have `onboundary` event
+- On ipad the `onboundary` event only work with about 30% of the full sentence.
+- Also the on boundary event doesn't fire function accurately. for example the text is `2022` the `onboundary` will fire twice `20` and `22`.
 
 ### 4. We want Text user see is different with what system speak
 
 Sometimes we need need abbreviation function, for example we need the text that displayed to user is different with the text that we use to give the to the [speech utterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/text)
-
 
 **Roman Number**
 
@@ -37,7 +39,7 @@ We need to change the roman numbers to arabic numbers so the system can read cor
 
 in english abbreviation like `FOMO`, `ETA`, etc.
 
-in indonesian 
+in indonesian
 
 `dgn` = `dengan`
 
@@ -53,7 +55,6 @@ in API `prepareHL.getVoices()` i implement this flow.
 
 ![React Speech Highlight](./img/prepareHL.jpeg)
 
-
 Then I do research to build this. I took two weeks to solve the problem.
 
 ## B. TODO
@@ -62,10 +63,9 @@ Then I do research to build this. I took two weeks to solve the problem.
 - onboundary on ipad os sometime only works on just 30% of words in a sentence
 - Give API for turn on / off highlight sentence and word
 - Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
-- **Let me know what you want from this package**
+- **Let me know what you want from this package, please write it on issues tab**
 
-
-## C. Version 3.8
+## C. Version 4.0
 
 I will update this package. to solve any known problem. so let me know the problem.
 
