@@ -1,6 +1,8 @@
 # React Speech Highlight
 
-![video](./img//preview.mov)
+<video width="320" height="240" controls>
+  <source src="./img//preview.mov" type="video/mp4">
+</video>
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
