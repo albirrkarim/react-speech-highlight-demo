@@ -51,7 +51,7 @@ input:string -> abbreviation function -> output:string.
 
 in API `prepareHL.getVoices()` i implement this flow.
 
-![React Speech Highlight](./img/prepareHL.png)
+![React Speech Highlight](./img/prepareHL.jpeg)
 
 
 Then I do research to build this. I took two weeks to solve the problem.
