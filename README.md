@@ -26,6 +26,7 @@ Not all voices have onboundary event, also the on boundary event doesn't fire fu
 
 Sometimes we need need abbreviation function, for example we need the text that displayed to user is different with the text that we use to give the to the [speech utterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/text)
 
+
 **Roman Number**
 
 We need displayed text is `I. II. III.` if we input that same text the system will read as `i. ii. iii.`
@@ -45,6 +46,13 @@ in indonesian
 This package also have built-in abbreviation function, or you can write your own rules.
 
 input:string -> abbreviation function -> output:string.
+
+### 5. Bad performance or voice too fast
+
+in API `prepareHL.getVoices()` i implement this flow.
+
+![React Speech Highlight](./img/prepareHL.png)
+
 
 Then I do research to build this. I took two weeks to solve the problem.
 
