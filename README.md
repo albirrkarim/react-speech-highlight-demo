@@ -1,6 +1,6 @@
 # React Speech Highlight
 
-https://user-images.githubusercontent.com/29292018/215036731-a1aa0956-ba51-438d-a9f6-1ab821f5dc61.mp4
+https://user-images.githubusercontent.com/29292018/215037509-1acf8cfd-2e23-4a96-b87c-a031438cc190.mp4
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
