@@ -61,9 +61,9 @@ Then I do research to build this. I took two weeks to solve the problem.
 
 ## B. TODO
 
-- Give API for custom abbreviation function
+- Give API for custom abbreviation function (done)
+- Give API for turn on / off highlight sentence and word (done)
 - onboundary on ipad os sometime only works on just 30% of words in a sentence
-- Give API for turn on / off highlight sentence and word
 - Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
 - **Let me know what you want from this package, please write it on issues tab**
 
@@ -79,6 +79,8 @@ I will update this package. to solve any known problem. so let me know the probl
 
 ```jsx
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+  disableSentenceHL: false,
+  disableWordHL: false,
   classSentences: "highlight-sentence",
   classWord: "highlight-spoken",
 
@@ -134,9 +136,12 @@ function Example() {
   const text = "Some Input String";
   const textEl = useRef();
   const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+    disableSentenceHL: false,
+    disableWordHL: false,
     autoScroll: false,
     lang: en - US,
   });
+
   const textHL = useMemo(() => markTheWords(text), [text]);
 
   return (
