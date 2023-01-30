@@ -89,7 +89,7 @@ function abbreviationFunction(str) {
   // example:
   // Input(string) : LMK
   // Ouput(string) : Let me know
-  
+
   return str;
 }
 
@@ -129,22 +129,22 @@ Some state that give the status of the program
 
 The value it can be `idle|play|calibration|pause|getVoicesLoading`
 
-| Name               | Description                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------ |
-| `idle`             | it's initial state                                                                         |
-| `calibration`      | system still process the text, so when TTS is playing it will performs accurate and better |
-| `play`             | The system still playing TTS                                                               |
-| `pause`            | Resume TTS                                                                                 |
-| `getVoicesLoading` | it mean the the system still processing to get best voices available                       |
+| Name               | Description                                                                                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `idle`             | it's initial state                                                                                                                                                                    |
+| `calibration`      | system still process the text, so when TTS is playing it will performs accurate and better                                                                                            |
+| `play`             | The system still playing TTS                                                                                                                                                          |
+| `pause`            | Resume TTS                                                                                                                                                                            |
+| `getVoicesLoading` | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](#5-bad-performance-or-voice-too-fast) |
 
 ### prepareHL
 
 Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before
 
-| Name                  | Description                                                    |
-| --------------------- | -------------------------------------------------------------- |
-| prepareHL.getVoices() | Some function to tell this program to get the best voice       |
-| prepareHL.voices      | Some react state store the result from `prepareHL.getVoices()` |
+| Name                  | Description                                                                                           |
+| --------------------- | ----------------------------------------------------------------------------------------------------- |
+| prepareHL.getVoices() | Some function to tell this program to get the best voice. [see](#5-bad-performance-or-voice-too-fast) |
+| prepareHL.voices      | Some react state store the result from `prepareHL.getVoices()`                                        |
 
 ### spokenHL
 
