@@ -6,7 +6,7 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 
 # A. Introduction
 
-Recently, i want to implement the text to speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problem.
+Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
 
 The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problems:
 
