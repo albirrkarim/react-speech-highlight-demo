@@ -59,7 +59,7 @@ in API `prepareHL.getVoices()` i implement this flow.
 
 Then I do research to build this. I took two weeks to solve the problem.
 
-## B. TODO
+# B. TODO
 
 - Give API for custom abbreviation function (done)
 - Give API for turn on / off highlight sentence and word (done)
@@ -67,15 +67,15 @@ Then I do research to build this. I took two weeks to solve the problem.
 - Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
 - **Let me know what you want from this package, please write it on issues tab**
 
-## C. Version 4.0
+# C. Version 4.0
 
 I will update this package. to solve any known problem. so let me know the problem.
 
-## D. Demo
+# D. Demo
 
 [https://albirrkarim.github.io/react-speech-highlight/](https://albirrkarim.github.io/react-speech-highlight/)
 
-## E. API
+# E. API
 
 ## 1. TTS Marker
 
@@ -155,7 +155,7 @@ Contain state and function to preparing the TTS.
 | spokenHL.sentence | Some react state, Get the sentence that read |
 | spokenHL.word     | Some react state, Get the word that read     |
 
-## E. Code
+# E. Code
 
 ```jsx
 import { useEffect, useMemo, useRef, useState } from "react";
