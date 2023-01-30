@@ -99,7 +99,7 @@ const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
 ## 2. TTS React Hook
 
 ```jsx
-const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+const config = {
   disableSentenceHL: false,
   disableWordHL: false,
   classSentences: "highlight-sentence",
@@ -111,8 +111,50 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
   volume: 1,
   autoScroll: false,
   clear: true,
-});
+};
+
+const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 ```
+
+### CONFIG
+
+- `disableSentenceHL`
+
+  Disable sentence highlight
+
+- `disableWordHL`
+
+  Disable word highlight
+
+- `classSentences`
+
+  You can styling the highlighted sentence with css to some class name
+
+- `classWord`
+
+  You can styling the highlighted word with css to some class name
+
+- `lang`
+
+  The one used for `SpeechSynthesisUtterance.lang`. [see](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/lang)
+
+- `pitch`
+
+  The one used for `SpeechSynthesisUtterance.pitch`
+
+- `volume`
+
+  The one used for `SpeechSynthesisUtterance.volume`
+
+- `autoScroll`
+
+  Beautifull auto scroll, so the user can always see the highlighted sentences
+
+- `clear`
+
+  if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
+
+### INTERFACE
 
 ### controlHL
 
@@ -155,7 +197,10 @@ Contain state and function to preparing the TTS.
 | spokenHL.sentence | Some react state, Get the sentence that read |
 | spokenHL.word     | Some react state, Get the word that read     |
 
-# E. Code
+<br>
+<br>
+
+# E. Example Code
 
 ```jsx
 import { useEffect, useMemo, useRef, useState } from "react";
