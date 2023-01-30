@@ -77,6 +77,27 @@ I will update this package. to solve any known problem. so let me know the probl
 
 ## E. API
 
+## 1. TTS Marker
+
+The `markTheWords()` function is to process the string text and give some marker to every word and sentences that system will read.
+
+Also this using react `useMemo()` to avoid unecessary react rerender. i mean it will only execute when the `text` is changing. it's similiar with `useEffect()`.
+
+```jsx
+function abbreviationFunction(str) {
+  // You can write your custom abbreviation function here
+  // example:
+  // Input(string) : LMK
+  // Ouput(string) : Let me know
+  
+  return str;
+}
+
+const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
+```
+
+## 2. TTS React Hook
+
 ```jsx
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
   disableSentenceHL: false,
@@ -106,7 +127,15 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 
 Some state that give the status of the program
 
-The value it can be `idle|play|calibration|resume|pause|getVoicesLoading`
+The value it can be `idle|play|calibration|pause|getVoicesLoading`
+
+| Name               | Description                                                                                |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| `idle`             | it's initial state                                                                         |
+| `calibration`      | system still process the text, so when TTS is playing it will performs accurate and better |
+| `play`             | The system still playing TTS                                                               |
+| `pause`            | Resume TTS                                                                                 |
+| `getVoicesLoading` | it mean the the system still processing to get best voices available                       |
 
 ### prepareHL
 
