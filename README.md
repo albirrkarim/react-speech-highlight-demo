@@ -8,9 +8,9 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 
 - [A. Introduction](#a-introduction)
 - [B. Todo](#b-todo)
-- [C. Demo & Version](#)
-- [D. API](#)
-- [E. Example Code](#)
+- [C. Demo](#c-demo)
+- [D. API](#d-api)
+- [E. Example Code](#e-example-code)
 
 # A. Introduction
 
@@ -75,13 +75,14 @@ Then I do research to build this. I took two weeks to solve the problem.
 - Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
 - **Let me know what you want from this package, please write it on issues tab**
 
-# C. Demo & Version
+# C. Demo
 
 **Current version is 4.0**
 
 I will update this package. to solve any known problem. so let me know the problem.
 
 **Demo**
+
 [https://albirrkarim.github.io/react-speech-highlight/](https://albirrkarim.github.io/react-speech-highlight/)
 
 # D. API
