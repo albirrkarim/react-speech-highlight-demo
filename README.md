@@ -4,6 +4,14 @@ https://user-images.githubusercontent.com/29292018/215037509-1acf8cfd-2e23-4a96-
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
+**Table Of Contents**
+
+- [A. Introduction](#a-introduction)
+- [B. Todo](#b-todo)
+- [C. Demo & Version](#)
+- [D. API](#)
+- [E. Example Code](#)
+
 # A. Introduction
 
 Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
@@ -67,15 +75,16 @@ Then I do research to build this. I took two weeks to solve the problem.
 - Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
 - **Let me know what you want from this package, please write it on issues tab**
 
-# C. Version 4.0
+# C. Demo & Version
+
+**Current version is 4.0**
 
 I will update this package. to solve any known problem. so let me know the problem.
 
-# D. Demo
-
+**Demo**
 [https://albirrkarim.github.io/react-speech-highlight/](https://albirrkarim.github.io/react-speech-highlight/)
 
-# E. API
+# D. API
 
 ## 1. TTS Marker
 
