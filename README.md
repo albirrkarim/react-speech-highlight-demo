@@ -212,7 +212,24 @@ Contain state and function to preparing the TTS.
 
 # E. Example Code
 
+File `App.css`
+```css
+.highlight-spoken {
+  color: black !important;
+  background-color: #ff6f00 !important;
+  border-radius: 5px;
+}
+
+.highlight-sentence {
+  color: #000000 !important;
+  background-color: #ffe082 !important;
+  border-radius: 5px;
+}
+```
+
+File `App.js`
 ```jsx
+import "./App.css";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { markTheWords, useTextToSpeech } from "./TextToSpeech/TextToSpeech";
 
