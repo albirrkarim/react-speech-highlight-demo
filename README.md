@@ -83,7 +83,7 @@ I will update this package. to solve any known problem. so let me know the probl
 
 **Demo**
 
-[https://albirrkarim.github.io/react-speech-highlight/](https://albirrkarim.github.io/react-speech-highlight/)
+[https://react-speech-highlight.vercel.app/](https://react-speech-highlight.vercel.app)
 
 # D. API
 
