@@ -12,6 +12,8 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 - [D. API](#d-api)
 - [E. Example Code](#e-example-code)
 
+# Docs for v4.1
+
 # A. Introduction
 
 Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
@@ -69,11 +71,9 @@ Then I do research to build this. I took two weeks to solve the problem.
 
 # B. TODO
 
-- Give API for custom abbreviation function (done)
-- Give API for turn on / off highlight sentence and word (done)
-- onboundary on ipad os sometime only works on just 30% of words in a sentence
-- Give API output: The html element for highlighted sentence and word. This can be benefiting when you play in web metaverse. imagine some Text-To-Speech in metaverse.
-- **Let me know what you want from this package, please write it on issues tab**
+- onboundary on ipad os sometime only works on just 30% accuration of words in a sentence
+- Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
+- Let me know what you want from this package, please write it on issues tab
 
 # C. Demo
 
@@ -307,3 +307,9 @@ export default function PanelControlTTS({ isPlay, play, pause, stop }) {
   );
 }
 ```
+
+# F. Warranty
+
+I am not responsible for any bugs or problems that occur when this program code is implemented. You can still write on the issue tab so when i have time i can try to solve that and deliver for the next update.
+
+There's no refund
