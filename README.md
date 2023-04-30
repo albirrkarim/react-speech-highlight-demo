@@ -11,6 +11,7 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 - [C. Demo](#c-demo)
 - [D. API](#d-api)
 - [E. Example Code](#e-example-code)
+- [F. Warranty](#f-warranty)
 
 # Docs for v4.1
 
