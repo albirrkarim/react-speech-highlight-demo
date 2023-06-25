@@ -13,7 +13,7 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 - [E. Example Code](#e-example-code)
 - [F. Warranty](#f-warranty)
 
-# Docs for v4.1
+# Docs for v4.3
 
 # A. Introduction
 
@@ -111,6 +111,7 @@ const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
 
 ```jsx
 const config = {
+  autoHL: true,
   disableSentenceHL: false,
   disableWordHL: false,
   classSentences: "highlight-sentence",
@@ -128,6 +129,10 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 ```
 
 ### CONFIG
+
+- `autoHL`
+
+  If the voice is not support the onboundary event, then this package prefer to disable word highlight. instead of trying to mimic onboundary event
 
 - `disableSentenceHL`
 
@@ -169,12 +174,63 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 
 ### controlHL
 
-| Name               | Description | Parameter                                         |
-| ------------------ | ----------- | ------------------------------------------------- |
-| controlHL.play()   | Play TTS    | controlHL.play(HTML_ELEMENT,VoiceURI,callbackEnd) |
-| controlHL.pause()  | Pause TTS   | Just call                                         |
-| controlHL.resume() | Resume TTS  | Resume TTS                                        |
-| controlHL.stop()   | Stop TTS    | Stop TTS                                          |
+**Basic**
+
+| Name                              | Description           | Parameter                                         |
+| --------------------------------- | --------------------- | ------------------------------------------------- |
+| controlHL.play()                  | Play TTS              | controlHL.play(HTML_ELEMENT,VoiceURI,callbackEnd) |
+| controlHL.pause()                 | Pause TTS             | Just call                                         |
+| controlHL.resume()                | Resume TTS            | Resume TTS                                        |
+| controlHL.stop()                  | Stop TTS              | Stop TTS                                          |
+| controlHL.seekSentenceBackward()  | seekSentenceBackward  | -                                                 |
+| controlHL.seekSentenceForward()   | seekSentenceForward   | -                                                 |
+| controlHL.seekParagraphBackward() | seekParagraphBackward | -                                                 |
+| controlHL.seekParagraphForward()  | seekParagraphForward  | -                                                 |
+
+**New**
+
+`controlHL.changeConfig()`
+
+Change config while playing / realtime.
+
+```jsx
+controlHL.changeConfig({
+  volume: 1, // 0-1
+});
+```
+
+```jsx
+controlHL.changeConfig({
+  rate: 0.9, // 0 - 2
+});
+```
+
+```jsx
+controlHL.changeConfig({
+  pitch: 1, // 0 - 2
+});
+```
+
+`controlHL.activateGesture()`
+
+Activate double click event
+
+Example:
+
+```jsx
+useEffect(() => {
+  if (textEl.current) {
+    controlHL.activateGesture(
+      textEl.current,
+      localStorage.getItem("voice_for_" + lang),
+      null,
+      {
+        lang: lang,
+      }
+    );
+  }
+}, []);
+```
 
 ### statusHL
 
@@ -214,6 +270,7 @@ Contain state and function to preparing the TTS.
 # E. Example Code
 
 File `App.css`
+
 ```css
 .highlight-spoken {
   color: black !important;
@@ -229,6 +286,7 @@ File `App.css`
 ```
 
 File `App.js`
+
 ```jsx
 import "./App.css";
 import { useEffect, useMemo, useRef, useState } from "react";
