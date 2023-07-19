@@ -4,6 +4,8 @@ https://user-images.githubusercontent.com/29292018/215037509-1acf8cfd-2e23-4a96-
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
+This is the Documentation for [React Speech Highlight](https://github.com/albirrkarim/react-speech-highlight)
+
 **Table Of Contents**
 
 - [A. Introduction](#a-introduction)
@@ -78,8 +80,6 @@ Then I do research to build this. I took two weeks to solve the problem.
 
 # C. Demo
 
-**Current version is 4.0**
-
 I will update this package. to solve any known problem. so let me know the problem.
 
 **Demo**
@@ -128,7 +128,10 @@ const config = {
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 ```
 
-### CONFIG
+### 2.A. CONFIG
+
+<details>
+  <summary>Show details config</summary>
 
 - `autoHL`
 
@@ -170,7 +173,11 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 
   if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
 
-### INTERFACE
+</details>
+
+
+
+### 2.B. INTERFACE
 
 ### controlHL
 
@@ -299,7 +306,7 @@ function Example() {
     disableSentenceHL: false,
     disableWordHL: false,
     autoScroll: false,
-    lang: en - US,
+    lang: "en - US",
   });
 
   const textHL = useMemo(() => markTheWords(text), [text]);
