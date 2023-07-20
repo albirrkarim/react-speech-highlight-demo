@@ -132,8 +132,7 @@ const initialConfig = {
   clear: true,
 };
 
-const { controlHL, statusHL, prepareHL, spokenHL } =
-  useTextToSpeech(initialConfig);
+const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(initialConfig);
 ```
 
 ```jsx
