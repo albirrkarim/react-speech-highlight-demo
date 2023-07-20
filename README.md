@@ -2,7 +2,7 @@
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/72f28407-a28d-4fb6-9f86-3f37701b4b2a
 
-[https://react-speech-highlight.vercel.app/](https://react-speech-highlight.vercel.app)
+[Try the demo](https://react-speech-highlight.vercel.app)
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
@@ -114,7 +114,7 @@ const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
 
 ### 2.A. CONFIG
 
-There are two config placement, initialConfig and actionConfig. the initial config 
+There are two config placement, initialConfig and actionConfig.
 
 ```jsx
 const initialConfig = {
@@ -231,13 +231,13 @@ controlHL.changeConfig({
 
 ```jsx
 controlHL.changeConfig({
-  rate: 0.9, // 0 - 2
+  rate: 0.9, // 0.1 - 2
 });
 ```
 
 ```jsx
 controlHL.changeConfig({
-  pitch: 1, // 0 - 2
+  pitch: 1, // 0.1 - 2
 });
 ```
 
@@ -287,12 +287,14 @@ Contain state and function to preparing the TTS. From all available voices that 
 
 ### spokenHL
 
-Contain state and function to preparing the TTS.
+Contain react state for reporting while TTS playing.
 
-| Name              | Description                                  |
-| ----------------- | -------------------------------------------- |
-| spokenHL.sentence | Some react state, Get the sentence that read |
-| spokenHL.word     | Some react state, Get the word that read     |
+| Name                        | Description                                      |
+| --------------------------- | ------------------------------------------------ |
+| spokenHL.sentence           | Some react state, Get the sentence that read     |
+| spokenHL.word               | Some react state, Get the word that read         |
+| spokenHL.precentageWord     | Read precentage between 0-100 based on words     |
+| spokenHL.precentageSentence | Read precentage between 0-100 based on sentences |
 
 <br>
 <br>
