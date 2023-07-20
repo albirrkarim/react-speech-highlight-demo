@@ -1,6 +1,8 @@
 # React Speech Highlight
 
-https://user-images.githubusercontent.com/29292018/215037509-1acf8cfd-2e23-4a96-b87c-a031438cc190.mp4
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/72f28407-a28d-4fb6-9f86-3f37701b4b2a
+
+[https://react-speech-highlight.vercel.app/](https://react-speech-highlight.vercel.app)
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
@@ -15,7 +17,7 @@ This is the Documentation for [React Speech Highlight](https://github.com/albirr
 - [E. Example Code](#e-example-code)
 - [F. Warranty](#f-warranty)
 
-# Docs for v4.3
+# Docs for v4.5
 
 # A. Introduction
 
@@ -77,6 +79,7 @@ Then I do research to build this. I took two weeks to solve the problem.
 - onboundary on ipad os sometime only works on just 30% accuration of words in a sentence
 - Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
 - Let me know what you want from this package, please write it on issues tab
+- Automate the testing
 
 # C. Demo
 
@@ -109,8 +112,12 @@ const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
 
 ## 2. TTS React Hook
 
+### 2.A. CONFIG
+
+There are two config placement, initialConfig and actionConfig. the initial config 
+
 ```jsx
-const config = {
+const initialConfig = {
   autoHL: true,
   disableSentenceHL: false,
   disableWordHL: false,
@@ -125,10 +132,28 @@ const config = {
   clear: true,
 };
 
-const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
+const { controlHL, statusHL, prepareHL, spokenHL } =
+  useTextToSpeech(initialConfig);
 ```
 
-### 2.A. CONFIG
+```jsx
+const actionConfig = {
+  autoHL: true,
+  disableSentenceHL: false,
+  disableWordHL: false,
+  classSentences: "highlight-sentence",
+  classWord: "highlight-spoken",
+
+  lang: "id-ID",
+  pitch: 1,
+  rate: 0.9,
+  volume: 1,
+  autoScroll: false,
+  clear: true,
+};
+
+controlHL.play(textEl.current, voiceURI, null, actionConfig);
+```
 
 <details>
   <summary>Show details config</summary>
@@ -174,8 +199,6 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
   if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
 
 </details>
-
-
 
 ### 2.B. INTERFACE
 
