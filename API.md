@@ -258,13 +258,11 @@ const textHL = useMemo(() => markTheWords(inputText), [inputText]);
 
 return (
   <div ref={textEl}>
-    <Typography
-      variant="body1"
-      align="justify"
+    <p
       dangerouslySetInnerHTML={{
         __html: textHL,
       }}
-    ></Typography>
+    ></p>
   </div>
 );
 ```
@@ -284,7 +282,7 @@ Hallo, das ist ein deutscher Beispieltext
 
 async function getLang() {
   var predictedLang = await getLangForThisText(textEl.current);
-  
+
   // will return `de`
   if (predictedLang) {
     setLang(predictedLang);
@@ -310,7 +308,52 @@ useEffect(() => {
 
 ## 4. getTheVoices()
 
-update soon
+The function `getTheVoices()` is to get all available voice with customizable filtering.
+
+For example lets say we have 5 voices
+
+```
+1. Grandma, en-US
+2. Samantha, en-US
+3. Damayanti, id-ID
+4. Robert, en-UK
+5. Angel, en-AU
+```
+
+The language we want is `en-US`
+
+`preferedLang = "en-US"`
+
+if the `withException=true` then we will filter the `grandma` voices.
+
+and if we `wide=true`
+Then all the `en` (english) voices will return as an output.
+
+if `wide=false` it mean only the exact match `en-US` language will be returned.
+
+Parameter
+
+```js
+function getTheVoices(preferedLang, withException = true, wide = false)
+```
+
+Implementation
+
+```jsx
+const [arr, setArr] = useState([]);
+
+useEffect(() => {
+  var a = speechSynthesis.getVoices();
+
+  if (a.length == 0) {
+    speechSynthesis.addEventListener("voiceschanged", () => {
+      setArr(getTheVoices(lang, true, true));
+    });
+  } else {
+    setArr(getTheVoices(lang, true, true));
+  }
+}, []);
+```
 
 ## 5. noAbbreviation()
 
@@ -323,19 +366,14 @@ Simple function to just speak with [SpeechSynthesis](https://developer.mozilla.o
 ```js
 speak(
   "Hello this is example text",
-  { 
-    // Event handler 
+  {
+    // Event handler
     // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/boundary_event
     start: () => {
       // onstart
-      
     },
-    end: () => {
-      
-    },
-    boundary: (ev) => {
-
-    },
+    end: () => {},
+    boundary: (ev) => {},
   },
   { volume: 0.5, rate: 1 },
   2000 // Timeout (optional)
