@@ -8,13 +8,12 @@ import {
   markTheWords,
   useTextToSpeech,
 
-
   // Utilities & add more capabilities
+  convertAllNumberIntoWord,
+  getLangForThisText,
   getTheVoices,
   noAbbreviation,
   speak,
-  convertAllNumberIntoWord,
-  getLangForThisText,
 } from "react-speech-highlight";
 ```
 
@@ -222,3 +221,120 @@ Contain react state for reporting while TTS playing.
 | spokenHL.word               | Some react state, Get the word that read         |
 | spokenHL.precentageWord     | Read precentage between 0-100 based on words     |
 | spokenHL.precentageSentence | Read precentage between 0-100 based on sentences |
+
+## 3. convertAllNumberIntoWord()
+
+The purpose of chat GPT is to convert the number into word form number, because the window.speechSynthesis will fail.
+
+With window.speechSynthesis the number 9000 will spoken as "nine zero zero zero"
+So we must convert into word form number.
+
+example `9000` -> `nine thousand`
+example `9001` -> `nine thousand one`
+
+```jsx
+const inputText = `
+<ul>
+  <li>1000</li>
+  <li>4090</li>
+  <li>1.000.000</li>
+  <li>1,2</li>
+  <li>9.001</li>
+  <li>30,1</li>
+</ul>
+`;
+
+const textEl = useRef();
+
+useEffect(() => {
+  if (textEl.current) {
+    convertAllNumberIntoWord(textEl.current, "en-US");
+  }
+}, [inputText]);
+
+const textHL = useMemo(() => markTheWords(inputText), [inputText]);
+
+return (
+  <div ref={textEl}>
+    <Typography
+      variant="body1"
+      align="justify"
+      dangerouslySetInnerHTML={{
+        __html: textHL,
+      }}
+    ></Typography>
+  </div>
+);
+```
+
+## 4. getLangForThisText()
+
+For example you want to implement this package into blog website with multi language, it's hard to know the exact language for each post / article.
+
+Then i use chat gpt api to detect what language from some text.
+
+```jsx
+var timeout = null;
+
+// German text
+const inputText = `
+Der Katze, auch als Hauskatze bekannt, ist ein domestiziertes Säugetier, das ursprünglich in Afrika und Europa heimisch ist. Sie gehört zur Familie der Raubtiere und hat einen schlanken, muskulösen Körperbau. Die meisten Katzen haben ein Fell, das in verschiedenen Farben und Mustern vorkommt.
+`;
+
+async function getLang() {
+  var predictedLang = await getLangForThisText(textEl.current);
+  if (predictedLang) {
+    setLang(predictedLang);
+  }
+}
+
+useEffect(() => {
+  if (textEl.current) {
+    if (inputText != "") {
+      // The timeout is for use case: text change frequently.
+      // if the text doesn't change just call getLang();
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+
+      timeout = setTimeout(() => {
+        getLang();
+      }, 2000);
+    }
+  }
+}, [inputText]);
+```
+
+## 4. getTheVoices()
+
+update soon
+
+## 5. noAbbreviation()
+
+Default function that this package use
+
+## 6. speak()
+
+Simple function to just speak with [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) without doing highlight or show the text.
+
+```js
+speak(
+  "Hello this is example text",
+  { 
+    // Event handler 
+    // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/boundary_event
+    start: () => {
+      // onstart
+      
+    },
+    end: () => {
+      
+    },
+    boundary: (ev) => {
+
+    },
+  },
+  { volume: 0.5, rate: 1 },
+  2000 // Timeout (optional)
+);
+```
