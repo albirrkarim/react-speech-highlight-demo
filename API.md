@@ -224,13 +224,15 @@ Contain react state for reporting while TTS playing.
 
 ## 3. convertAllNumberIntoWord()
 
-The purpose of chat GPT is to convert the number into word form number, because the window.speechSynthesis will fail.
+The purpose of [chat GPT completions api](https://platform.openai.com/docs/api-reference/completions/create) is to convert the number into word form number, because the `window.speechSynthesis` will fail.
 
-With window.speechSynthesis the number 9000 will spoken as "nine zero zero zero"
+With `window.speechSynthesis` the number `9000` will spoken as "nine zero zero zero"
 So we must convert into word form number.
 
 example `9000` -> `nine thousand`
 example `9001` -> `nine thousand one`
+
+Make sure you have access into my private repo then read [How to build this package with openai api keys](https://github.com/albirrkarim/react-speech-highlight/tree/main/react-speech-highlight#build-with-open-ai-token-api-keys)
 
 ```jsx
 const inputText = `

@@ -25,6 +25,7 @@ Recently, i want to implement the text-to-speech task to my website. Then i sear
 The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) comes with problems (See [PROBLEM.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEM.md))
 
 <br>
+<br>
 
 # B. TODO
 
@@ -33,15 +34,22 @@ The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSyn
 - Let me know what you want from this package, please write it on issues tab
 - Automate the testing
 
+<br>
+<br>
+
 # C. API
 
 See [API.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md)
+
 <br>
 <br>
 
 # D. Example Code
 
 See [EXAMPLE_CODE.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/EXAMPLE_CODE.md)
+
+<br>
+<br>
 
 # E. Warranty
 
