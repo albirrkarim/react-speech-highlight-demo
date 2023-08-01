@@ -18,7 +18,7 @@ This is the Documentation for [React Speech Highlight](https://github.com/albirr
 
 # Docs for v4.6
 
-# Introduction
+# A. Introduction
 
 Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
 
