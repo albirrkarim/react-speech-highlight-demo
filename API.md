@@ -276,13 +276,14 @@ Then i use chat gpt api to detect what language from some text.
 ```jsx
 var timeout = null;
 
-// German text
 const inputText = `
-Der Katze, auch als Hauskatze bekannt, ist ein domestiziertes Säugetier, das ursprünglich in Afrika und Europa heimisch ist. Sie gehört zur Familie der Raubtiere und hat einen schlanken, muskulösen Körperbau. Die meisten Katzen haben ein Fell, das in verschiedenen Farben und Mustern vorkommt.
+Hallo, das ist ein deutscher Beispieltext
 `;
 
 async function getLang() {
   var predictedLang = await getLangForThisText(textEl.current);
+  
+  // will return `de`
   if (predictedLang) {
     setLang(predictedLang);
   }
