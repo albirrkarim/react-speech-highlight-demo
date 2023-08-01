@@ -35,8 +35,7 @@ The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSyn
 
 # C. API
 
-
-See [API.md]()
+See [API.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md)
 <br>
 <br>
 

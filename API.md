@@ -1,6 +1,24 @@
 # API
 
-## 1. TTS Marker
+The api is a function that you can use to integrate this package into your apps.
+
+```jsx
+import {
+  // Main
+  markTheWords,
+  useTextToSpeech,
+
+
+  // Utilities & add more capabilities
+  getTheVoices,
+  noAbbreviation,
+  speak,
+  convertAllNumberIntoWord,
+  getLangForThisText,
+} from "react-speech-highlight";
+```
+
+## 1. TTS Marker `markTheWords()`
 
 The `markTheWords()` function is to process the string text and give some marker to every word and sentences that system will read.
 
@@ -19,7 +37,7 @@ function abbreviationFunction(str) {
 const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
 ```
 
-## 2. TTS React Hook
+## 2. TTS React Hook `useTextToSpeech()`
 
 ### 2.A. CONFIG
 
