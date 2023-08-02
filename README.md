@@ -29,24 +29,35 @@ The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSyn
 
 # B. TODO
 
-- onboundary on ipad os sometime only works on just 30% accuration of words in a sentence
-- Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
-- Let me know what you want from this package, please write it on issues tab
-- Automate the testing
+- [ ] Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
+- [ ] Automate the testing
+- [ ] Let me know what you want from this package, please write it on issues tab
+
+- [x] Convert number into word form number with chat gpt. [see](API.md#3-convertallnumberintoword)
+- [x] Add language detection using chat gpt. [see](API.md#4-getlangforthistext)
+- [x] Add seeking by sentence or paragraph. [see](API.md#2b-interface)
+- [x] Add reading progress by word or sentence. [see](API.md#spokenhl)
+- [x] Adjust config while TTS playing. [see](API.md#controlhl)
+- [x] You can use custom Abbreviation Function. [see](API.md#1-tts-marker-markthewords)
+- [x] Add Read Roman number.
+- [x] TTS that can't die.
+- [x] Test on any platform.
+- [x] Add demo website. [see](https://react-speech-highlight.vercel.app)
+
 
 <br>
 <br>
 
 # C. API
 
-See [API.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md)
+See [API.md](API.md)
 
 <br>
 <br>
 
 # D. Example Code
 
-See [EXAMPLE_CODE.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/EXAMPLE_CODE.md)
+See [EXAMPLE_CODE.md](EXAMPLE_CODE.md)
 
 <br>
 <br>
