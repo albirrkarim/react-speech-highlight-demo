@@ -22,7 +22,7 @@ This is the Documentation for [React Speech Highlight](https://github.com/albirr
 
 Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
 
-The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) comes with problems (See [PROBLEM.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEM.md))
+The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) comes with problems (See [PROBLEMS.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md))
 
 <br>
 <br>
