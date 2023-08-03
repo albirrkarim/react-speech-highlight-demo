@@ -21,7 +21,7 @@ File `App.js`
 ```jsx
 import "./App.css";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { markTheWords, useTextToSpeech } from "./TextToSpeech/TextToSpeech";
+import { markTheWords, useTextToSpeech } from "react-speech-highlight";
 
 function Example() {
   const text = "Some Input String";
