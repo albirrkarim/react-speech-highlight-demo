@@ -68,15 +68,10 @@ function Example() {
 Sample TTS Control with material UI
 
 ```jsx
-import { IconButton } from "@mui/material";
-import PauseIcon from "@mui/icons-material/Pause";
-import StopIcon from "@mui/icons-material/Stop";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-
 export default function PanelControlTTS({ isPlay, play, pause, stop }) {
   return (
     <>
-      <IconButton
+      <button
         onClick={() => {
           if (isPlay) {
             pause();
@@ -85,14 +80,10 @@ export default function PanelControlTTS({ isPlay, play, pause, stop }) {
           }
         }}
       >
-        {isPlay ? <PauseIcon /> : <PlayArrowIcon />}
-      </IconButton>
+        {isPlay ? "pause" : "play"}
+      </button>
 
-      {isPlay && (
-        <IconButton onClick={stop}>
-          <StopIcon />
-        </IconButton>
-      )}
+      {isPlay && <button onClick={stop}>stop</button>}
     </>
   );
 }
