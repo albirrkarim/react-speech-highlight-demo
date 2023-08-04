@@ -1,5 +1,7 @@
 # Example Code
 
+### Styling the highlighter
+
 File `App.css`
 
 ```css
@@ -16,6 +18,8 @@ File `App.css`
 }
 ```
 
+### The code example
+
 File `App.js`
 
 ```jsx
@@ -23,14 +27,16 @@ import "./App.css";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { markTheWords, useTextToSpeech } from "react-speech-highlight";
 
-function Example() {
+export default function App() {
   const text = "Some Input String";
   const textEl = useRef();
+  const lang = "en-US";
+
   const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
     disableSentenceHL: false,
     disableWordHL: false,
     autoScroll: false,
-    lang: "en - US",
+    lang: lang,
   });
 
   const textHL = useMemo(() => markTheWords(text), [text]);
@@ -65,7 +71,9 @@ function Example() {
 }
 ```
 
-Sample TTS Control with material UI
+### Sample TTS Control
+
+File `PanelControlTTS.js`
 
 ```jsx
 export default function PanelControlTTS({ isPlay, play, pause, stop }) {
