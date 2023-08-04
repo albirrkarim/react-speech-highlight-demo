@@ -26,6 +26,8 @@ Recently, i want to implement the text-to-speech task to my website. Then i sear
 
 The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) comes with problems (See [PROBLEMS.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md))
 
+Then I do research to build this. I took two weeks to solve the problem.
+
 <br>
 <br>
 

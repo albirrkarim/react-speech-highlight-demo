@@ -9,7 +9,7 @@ Some available voice doesn't support long text / string.
 I'm sure that you have the same experience, developing web for cross platform, android, Iphone or Ipad always resulting problem.
 
 - Speech synthesis in IOS or Ipad OS sometimes die unexpected.
-- Sometimes speechsynthesis doesn't fire the onpause,onresume event on android, ipad,
+- Sometimes `speechsynthesis` doesn't fire the `onpause`, `onresume` event on android, ipad,
 
 ### 3. Unpredictable Onboundary
 
@@ -47,4 +47,25 @@ in API `prepareHL.getVoices()` i implement this flow.
 
 ![React Speech Highlight](./img/prepareHL.jpeg)
 
-Then I do research to build this. I took two weeks to solve the problem.
+
+### 6. Wrong Read Number
+
+With `window.speechSynthesis` the number `9000` will spoken as "nine zero zero zero"
+So we must convert into word form number.
+
+example `9000` -> `nine thousand`
+
+example `9001` -> `nine thousand one`
+
+This package needs chat gpt api to do that.
+
+### 7. The voice is not good enough
+
+With `window.speechSynthesis` the voice is like a robot, doesn't have parameter like:
+
+- Emotions
+- Characteristic
+
+It can be achieved by using deep learning (with python) or other paid TTS API. 
+
+But in this package i just want to make cheap solution for TTS so i just  the `window.speechSynthesis`. maybe in the future i will try to integrate with other voice source.
