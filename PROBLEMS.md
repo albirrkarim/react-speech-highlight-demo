@@ -57,7 +57,7 @@ example `9000` -> `nine thousand`
 
 example `9001` -> `nine thousand one`
 
-This package needs chat gpt api to do that.
+This package needs chat gpt api to do that. [see how to use integrate this package with open ai api](MAKE_BACKEND.md)
 
 ### 7. The voice is not good enough
 
