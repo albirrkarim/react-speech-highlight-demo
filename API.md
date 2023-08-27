@@ -232,7 +232,7 @@ So we must convert into word form number.
 example `9000` -> `nine thousand`
 example `9001` -> `nine thousand one`
 
-Make sure you have access into my private repo then read [How to build this package with openai api keys](https://github.com/albirrkarim/react-speech-highlight/tree/main/react-speech-highlight#build-with-open-ai-token-api-keys)
+[How to build this package with open ai api integration](MAKE_BACKEND.md)
 
 ```jsx
 const inputText = `
@@ -271,7 +271,7 @@ return (
 
 For example you want to implement this package into blog website with multi language, it's hard to know the exact language for each post / article.
 
-Then i use chat gpt api to detect what language from some text.
+Then i use chat gpt api to detect what language from some text. see [How to build this package with open ai api integration](MAKE_BACKEND.md)
 
 ```jsx
 var timeout = null;

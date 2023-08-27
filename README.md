@@ -8,7 +8,6 @@ React components that use web speech synthesis API to text-to-speech tasks and a
 
 This is the Documentation for [private repo React Speech Highlight package](https://github.com/albirrkarim/react-speech-highlight)
 
-See youtube video [how to implement this package](https://youtu.be/ZnSbUnn9sq4)
 
 **Table Of Contents**
 
@@ -18,7 +17,7 @@ See youtube video [how to implement this package](https://youtu.be/ZnSbUnn9sq4)
 - [D. Example Code](#d-example-code)
 - [E. Warranty](#e-warranty)
 
-# Docs for v4.6
+# Docs for v4.6.5
 
 # A. Introduction
 
