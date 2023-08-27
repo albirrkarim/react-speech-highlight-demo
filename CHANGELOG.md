@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 4.6.5
+
+![backend](/img/chat_gpt_api.png)
+- Securing secret key with make backend server as a proxy
+
 # 4.6
 
 - Optional integration with openai (chatgpt api)

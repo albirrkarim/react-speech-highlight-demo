@@ -2,7 +2,7 @@
 
 This package is integrate with open ai API completions API (optional) to solve [issue](PROBLEMS.md#6-wrong-read-number).
 
-So we must have backend server that provide bridge api call to the open ai.
+So we must have backend server that provide proxy api call to the open ai.
 
 ![Open AI API](/img/chat_gpt_api.png)
 
@@ -66,6 +66,8 @@ and your backend will respose like this.
 ### Example Implementation
 
 If you are using different backend, please look by yourself how to implement it. the important is the same respond (like [this](#example-response-that-this-package-want)) so the `react-speech-highlight` package can understand.
+
+Actually you can customize the logic, like add authentication method.
 
 <details>
   <summary>Show example using Laravel as Backend</summary>
