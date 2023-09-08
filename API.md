@@ -1,6 +1,6 @@
 # API
 
-The api is a function that you can use to integrate this package into your apps.
+The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 ```jsx
 // v4.6.6 API
@@ -416,7 +416,7 @@ var a = romanTransform("I.");
 // 1
 ```
 
-## Package Data and Cache Integration
+# Package Data and Cache Integration
 
 The data or cache (sessionStorage / localStorage) that this package use can be accessed outside.
 
