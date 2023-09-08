@@ -90,7 +90,7 @@ const actionConfig = {
   clear: true,
 };
 
-controlHL.play(textEl.current, voiceURI, null, actionConfig);
+controlHL.play(textEl.current, callback, actionConfig);
 ```
 
 <details>
@@ -190,8 +190,10 @@ useEffect(() => {
   if (textEl.current) {
     controlHL.activateGesture(
       textEl.current,
-      localStorage.getItem("voice_for_" + lang),
-      null,
+      () => {
+        // callback (optional)
+        // Will be called after user doing double click
+      },
       {
         lang: lang,
       }
@@ -418,16 +420,18 @@ The data or cache (sessionStorage / localStorage) that this package use can be a
 import {
   // ...other API
 
-  // Your app can read the data / cache used by this package, like:
-  PKG_STATUS_OPT, // Package status option
-  PKG_DEFAULT_LANG, // Package default lang
-  LANG_CACHE_KEY, // Package lang sessionStorage key
-  getVoiceBasedOnVoiceURI,
-  getCachedVoiceInfo,
-  getCachedVoiceURI,
-  setCachedVoiceInfo,
-  getCachedVoiceName,
+// Your app can read the data / cache used by this package, like:
+PKG_STATUS_OPT, // Package status option
+PKG_DEFAULT_LANG, // Package default lang
+LANG_CACHE_KEY, // Package lang sessionStorage key
+getVoiceBasedOnVoiceURI,
+getCachedVoiceInfo,
+getCachedVoiceURI,
+setCachedVoiceInfo,
+getCachedVoiceName,
 } from "react-speech-highlight";
+
 ```
 
 </details>
+```
