@@ -143,7 +143,7 @@ controlHL.play(textEl.current, callback, actionConfig);
 
 ### 2.B. INTERFACE
 
-### controlHL
+#### controlHL
 
 **Basic**
 
@@ -205,7 +205,7 @@ useEffect(() => {
 }, []);
 ```
 
-### statusHL
+#### statusHL
 
 Some state that give the status of the program
 
@@ -221,7 +221,7 @@ you can fixed the value with accessing from `PKG_STATUS_OPT`
 | `pause`            | Resume TTS                                                                                                                                                                            |
 | `getVoicesLoading` | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](#5-bad-performance-or-voice-too-fast) |
 
-### prepareHL
+#### prepareHL
 
 Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before
 
@@ -230,7 +230,7 @@ Contain state and function to preparing the TTS. From all available voices that 
 | prepareHL.getVoices() | Some function to tell this program to get the best voice. [see](#5-bad-performance-or-voice-too-fast) |
 | prepareHL.voices      | Some react state store the result from `prepareHL.getVoices()`                                        |
 
-### spokenHL
+#### spokenHL
 
 Contain react state for reporting while TTS playing.
 
