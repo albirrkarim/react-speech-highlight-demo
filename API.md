@@ -9,7 +9,7 @@ import {
   markTheWords,
   useTextToSpeech,
 
-  // Utilities for TTS & add more capabilities,
+  // Utilities function for precision and add more capabilities
   convertAllNumberIntoWord,
   getLangForThisText,
   getTheVoices,
@@ -17,6 +17,7 @@ import {
   speak,
   romanTransform,
 
+  // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
@@ -28,6 +29,8 @@ import {
   getCachedVoiceName,
 } from "react-speech-highlight";
 ```
+
+# Main
 
 ## 1. TTS Marker `markTheWords()`
 
@@ -238,7 +241,11 @@ Contain react state for reporting while TTS playing.
 | spokenHL.precentageWord     | Read precentage between 0-100 based on words     |
 | spokenHL.precentageSentence | Read precentage between 0-100 based on sentences |
 
-## 3. convertAllNumberIntoWord()
+# Utilities
+
+Utilities function for precision and add more capabilities
+
+## 1. convertAllNumberIntoWord()
 
 The purpose of [chat GPT completions api](https://platform.openai.com/docs/api-reference/completions/create) is to convert the number into word form number, because the `window.speechSynthesis` will fail.
 
@@ -283,7 +290,7 @@ return (
 );
 ```
 
-## 4. getLangForThisText()
+## 2. getLangForThisText()
 
 For example you want to implement this package into blog website with multi language, it's hard to know the exact language for each post / article.
 
@@ -322,7 +329,7 @@ useEffect(() => {
 }, [inputText]);
 ```
 
-## 4. getTheVoices()
+## 3. getTheVoices()
 
 The function `getTheVoices()` is to get all available voice with customizable filtering.
 
@@ -371,11 +378,11 @@ useEffect(() => {
 }, []);
 ```
 
-## 5. noAbbreviation()
+## 4. noAbbreviation()
 
 Default function that this package use
 
-## 6. speak()
+## 5. speak()
 
 Simple function to just speak with [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) without doing highlight or show the text.
 
@@ -400,7 +407,7 @@ speak(
 );
 ```
 
-## 7. romanTransform()
+## 6. romanTransform()
 
 Convert roman number (I. II.) into arabic number (1, 2)
 
@@ -416,22 +423,20 @@ The data or cache (sessionStorage / localStorage) that this package use can be a
 <details>
   <summary>Show</summary>
   
-```js
-import {
-  // ...other API
+  ```js
+    import {
+      // ...other API
 
-// Your app can read the data / cache used by this package, like:
-PKG_STATUS_OPT, // Package status option
-PKG_DEFAULT_LANG, // Package default lang
-LANG_CACHE_KEY, // Package lang sessionStorage key
-getVoiceBasedOnVoiceURI,
-getCachedVoiceInfo,
-getCachedVoiceURI,
-setCachedVoiceInfo,
-getCachedVoiceName,
-} from "react-speech-highlight";
+      // Your app can read the data / cache used by this package, like:
+      PKG_STATUS_OPT, // Package status option
+      PKG_DEFAULT_LANG, // Package default lang
+      LANG_CACHE_KEY, // Package lang sessionStorage key
+      getVoiceBasedOnVoiceURI,
+      getCachedVoiceInfo,
+      getCachedVoiceURI,
+      setCachedVoiceInfo,
+      getCachedVoiceName,
 
-```
-
+    } from "react-speech-highlight";
+  ```
 </details>
-```
