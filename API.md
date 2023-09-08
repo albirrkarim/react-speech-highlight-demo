@@ -3,17 +3,29 @@
 The api is a function that you can use to integrate this package into your apps.
 
 ```jsx
+// v4.6.6 API
 import {
   // Main
   markTheWords,
   useTextToSpeech,
 
-  // Utilities & add more capabilities
+  // Utilities for TTS & add more capabilities,
   convertAllNumberIntoWord,
   getLangForThisText,
   getTheVoices,
   noAbbreviation,
   speak,
+  romanTransform,
+
+  // Your app can read the data used by this package, like:
+  PKG_STATUS_OPT, // Package status option
+  PKG_DEFAULT_LANG, // Package default lang
+  LANG_CACHE_KEY, // Package lang sessionStorage key
+  getVoiceBasedOnVoiceURI,
+  getCachedVoiceInfo,
+  getCachedVoiceURI,
+  setCachedVoiceInfo,
+  getCachedVoiceName,
 } from "react-speech-highlight";
 ```
 
@@ -194,6 +206,8 @@ Some state that give the status of the program
 
 The value it can be `idle|play|calibration|pause|getVoicesLoading`
 
+you can fixed the value with accessing from `PKG_STATUS_OPT`
+
 | Name               | Description                                                                                                                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `idle`             | it's initial state                                                                                                                                                                    |
@@ -372,10 +386,48 @@ speak(
     start: () => {
       // onstart
     },
-    end: () => {},
-    boundary: (ev) => {},
+    end: () => {
+      // onend
+    },
+    boundary: (ev) => {
+      // onboundary
+    },
   },
   { volume: 0.5, rate: 1 },
-  2000 // Timeout (optional)
+  2000 // Timeout (optional) to handle when the voice is die
 );
 ```
+
+## 7. romanTransform()
+
+Convert roman number (I. II.) into arabic number (1, 2)
+
+```js
+var a = romanTransform("I.");
+// 1
+```
+
+## Package Data and Cache Integration
+
+The data or cache (sessionStorage / localStorage) that this package use can be accessed outside.
+
+<details>
+  <summary>Show</summary>
+  
+```js
+import {
+  // ...other API
+
+  // Your app can read the data / cache used by this package, like:
+  PKG_STATUS_OPT, // Package status option
+  PKG_DEFAULT_LANG, // Package default lang
+  LANG_CACHE_KEY, // Package lang sessionStorage key
+  getVoiceBasedOnVoiceURI,
+  getCachedVoiceInfo,
+  getCachedVoiceURI,
+  setCachedVoiceInfo,
+  getCachedVoiceName,
+} from "react-speech-highlight";
+```
+
+</details>

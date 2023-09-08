@@ -17,7 +17,7 @@ This is the Documentation for [private repo React Speech Highlight package](http
 - [D. Example Code](#d-example-code)
 - [E. Warranty](#e-warranty)
 
-# Docs for v4.6.5
+# Docs for v4.6.6
 
 # A. Introduction
 
