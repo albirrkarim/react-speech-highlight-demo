@@ -1,5 +1,7 @@
 # Example Code
 
+This is the simple example code. Want more? see the [demo website private repo](https://github.com/albirrkarim/demo-website-react-speech-highlight)
+
 ### Styling the highlighter
 
 File `App.css`
@@ -58,8 +60,7 @@ export default function App() {
             controlHL.resume();
           } else {
             controlHL.play(
-              textEl.current,
-              localStorage.getItem("voice_for_" + lang)
+              textEl.current
             );
           }
         }}
