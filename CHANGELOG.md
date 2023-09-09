@@ -3,21 +3,42 @@
 # 4.6.6
 
 - Breaking change
+  
+  If you use this following function you need to update your code.
 
     <details>
     <summary>Show the different</summary>
 
-        Old 
+    New:
 
-        ```js
-        controlHL.play(textEl.current, voiceURI, callbackDone, actionConfig);
-        ```
+    ```js
+    controlHL.play(textEl.current, callbackDone, actionConfig);
+    ```
 
-        New:
+    Old 
 
-        ```js
-        controlHL.play(textEl.current, callbackDone, actionConfig);
-        ```
+    ```js
+    controlHL.play(textEl.current, voiceURI, callbackDone, actionConfig);
+    ```    
+
+    <br/>
+    <br/>
+
+    New:
+    ```js
+     controlHL.activateGesture(textEl.current, callback, {
+        // config
+        lang: lang,
+      });
+    ```
+
+    Old:
+    ```js
+     controlHL.activateGesture(textEl.current, voiceURI, callback, {
+        // config
+        lang: lang,
+      });
+    ```
 
     </details>
 
@@ -59,7 +80,7 @@ import {
 
 # 4.6.5
 
-![backend](/img/chat_gpt_api.png)
+<img src="img/chat_gpt_api.png" alt="Backend" style="max-width:400px" />
 
 - Securing secret key with make backend server as a proxy
 
