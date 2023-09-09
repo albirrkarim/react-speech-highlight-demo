@@ -101,19 +101,35 @@ I love feedback from my customers. You can write on the issue tab so when i have
 # H. FAQ
 
 Q: Why it's expensive?
+
 A: Try yourself to make this package. you will be grateful I am selling it cheap.
 
+<br/>
+
 Q: Why it's not opensource package?
+
 A: Well, i need money to funding the research, you know that making package is cost a lot of time and ofcourse money.
 
+<br/>
+
 Q: Why there's no voices available on the device?
+
 A: Try to setting the speech synthesis or language in your device, or if you use smartphone, try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
 
+<br/>
+
 Q: Why speech doesn't work for first played voice?
-A: Your device will download that voice first. then your device will have that voice locally
+
+A: Your device will download that voice first. then your device will have that voice locally.
+
+<br/>
 
 Q: Can i use this text-to-speech whithout showing the highlight?
+
 A: Yes, [see](API.md#5-speak)
 
+<br/>
+
 Q: Can i build without openai API?
+
 A: Yes
