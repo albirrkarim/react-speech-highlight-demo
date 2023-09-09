@@ -17,6 +17,7 @@ This is the Documentation for [private repo React Speech Highlight package](http
 - [E. Changelog](#e-changelog)
 - [F. Disclaimer](#f-disclaimer)
 - [G. Warranty](#g-warranty)
+- [H. FAQ](#h-faq)
 
 # Docs for v4.6.6
 
@@ -39,16 +40,16 @@ Then I do research to build this. I took two weeks to solve the problem.
 <br/>
 
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
-- [50%] Automate the testing (Prompt Test, Unit Test)
+- [x] Automate the testing (Prompt Test, Unit Test)(50%)
 - [x] Multi character support for non roman alphabet ( chinese (你好),
-      russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )[see](API.md#3-convertallnumberintoword)
-- [x] Convert number into word form number with chat gpt. [see](API.md#3-convertallnumberintoword)
-- [x] Add language detection using chat gpt. [see](API.md#4-getlangforthistext)
+      russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )
+- [x] Convert number into word form number with chat gpt. [see](API.md#API.md#1-convertallnumberintoword)
+- [x] Add language detection using chat gpt. [see](API.md#2-getlangforthistext)
 - [x] Add seeking by sentence or paragraph. [see](API.md#2b-interface)
 - [x] Add reading progress by word or sentence. [see](API.md#spokenhl)
 - [x] Adjust config while TTS playing. [see](API.md#controlhl)
 - [x] You can use custom Abbreviation Function. [see](API.md#1-tts-marker-markthewords)
-- [x] Add Read Roman number. [see](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#6-romantransform)
+- [x] Add Read Roman number, And API for that function. [see](API.md#6-romantransform)
 - [x] TTS that can't die.
 - [x] Test on any platform.
 - [x] Add demo website. [see](https://react-speech-highlight.vercel.app)
@@ -85,6 +86,34 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 There's no refund
 
+<br>
+<br>
+
+
 # G. Warranty
 
 I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
+
+
+<br>
+<br>
+
+# H. FAQ
+
+Q: Why it's expensive?
+A: Try yourself to make this package. you will be grateful I am selling it cheap.
+
+Q: Why it's not opensource package?
+A: Well, i need money to funding the research, you know that making package is cost a lot of time and ofcourse money.
+
+Q: Why there's no voices available on the device?
+A: Try to setting the speech synthesis or language in your device, or if you use smartphone, try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
+
+Q: Why speech doesn't work for first played voice?
+A: Your device will download that voice first. then your device will have that voice locally
+
+Q: Can i use this text-to-speech whithout showing the highlight?
+A: Yes, [see](API.md#5-speak)
+
+Q: Can i build without openai API?
+A: Yes
