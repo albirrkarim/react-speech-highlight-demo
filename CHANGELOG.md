@@ -9,6 +9,10 @@
     <details>
     <summary>Show the different</summary>
 
+    Different way to passing voice / selecting voice, see [the demo website repo](https://github.com/albirrkarim/demo-website-react-speech-highlight) for the implementation.
+
+    see the component `src/Demo/ButtonSelectVoice.js` the component will save voice Info into `sessionStorage` and the package will use that voice info as the voice for playing tts.
+
     New:
 
     ```js
@@ -51,32 +55,36 @@
 - Fix bug
 - Add more package api, so the data and cache can be read outside package, (this package can be integrate to other package)
 
-```jsx
-// v4.6.6 API
-import {
-  // Main
-  markTheWords,
-  useTextToSpeech,
+    <details>
+      <summary>Show APIs</summary>
 
-  // Utilities for TTS & add more capabilities,
-  convertAllNumberIntoWord,
-  getLangForThisText,
-  getTheVoices,
-  noAbbreviation,
-  speak,
-  romanTransform,
+    ```jsx
+    // v4.6.6 API
+    import {
+      // Main
+      markTheWords,
+      useTextToSpeech,
 
-  // Your app can read the data used by this package, like:
-  PKG_STATUS_OPT, // Package status option
-  PKG_DEFAULT_LANG, // Package default lang
-  LANG_CACHE_KEY, // Package lang sessionStorage key
-  getVoiceBasedOnVoiceURI,
-  getCachedVoiceInfo,
-  getCachedVoiceURI,
-  setCachedVoiceInfo,
-  getCachedVoiceName,
-} from "react-speech-highlight";
-```
+      // Utilities for TTS & add more capabilities,
+      convertAllNumberIntoWord,
+      getLangForThisText,
+      getTheVoices,
+      noAbbreviation,
+      speak,
+      romanTransform,
+
+      // Your app can read the data used by this package, like:
+      PKG_STATUS_OPT, // Package status option
+      PKG_DEFAULT_LANG, // Package default lang
+      LANG_CACHE_KEY, // Package lang sessionStorage key
+      getVoiceBasedOnVoiceURI,
+      getCachedVoiceInfo,
+      getCachedVoiceURI,
+      setCachedVoiceInfo,
+      getCachedVoiceName,
+    } from "react-speech-highlight";
+    ```
+    </details>
 
 # 4.6.5
 
