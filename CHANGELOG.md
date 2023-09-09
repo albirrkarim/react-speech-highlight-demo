@@ -82,7 +82,7 @@ import {
 
 <img src="img/chat_gpt_api.png" alt="Backend" style="width:400px" />
 
-- Securing secret key with make backend server as a proxy
+- Securing secret key with make backend server as a proxy. see [How to make backend api server for this package](MAKE_BACKEND.md)
 
 # 4.6
 
