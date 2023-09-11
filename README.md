@@ -19,7 +19,7 @@ This is the Documentation for [private repo React Speech Highlight package](http
 - [G. Warranty](#g-warranty)
 - [H. FAQ](#h-faq)
 
-# Docs for v4.6.6
+# Docs for v4.6.7
 
 # A. Introduction
 

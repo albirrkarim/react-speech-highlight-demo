@@ -75,7 +75,6 @@ Tests: 3 failed, 28 passed, 31 total
       <summary>Show APIs</summary>
 
     ```jsx
-    // v4.6.6 API
     import {
       // Main
       markTheWords,
