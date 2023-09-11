@@ -1,5 +1,21 @@
 # CHANGELOG
 
+# 4.6.7
+
+Unit test using jest in demo website source code folder `__test__`.
+
+- markTheWords()
+
+Tests: 26 passed, 26 total
+
+- romanTransform()
+
+Tests: 6 failed, 53 passed, 59 total
+
+- isNumber()
+
+Tests: 3 failed, 28 passed, 31 total
+
 # 4.6.6
 
 - Breaking change
