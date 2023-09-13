@@ -93,18 +93,16 @@ Controller
 `OpenAIController.php`
 
 ```php
-use OpenAI\Laravel\Facades\OpenAI;
-use OpenAI as OpenAIPHP;
-
 class OpenAIController extends Controller
 {
     public function chatPost(Request $request){
         $origin = $request->header('Origin');
 
         $allowed_domain = [
+            // Production url
             "https://example.com" =>  "sk-xxx_your_secret_key",
 
-            // GPT Web Guide
+            // Development url
             "http://localhost:3000" => "sk-xxx_your_secret_key",
         ];
 
@@ -134,13 +132,34 @@ class OpenAIController extends Controller
             ], 400);
         }
 
-        // https://github.com/openai-php/laravel
-        $result = OpenAIPHP::client($api_key)->chat()->create([
-            'model' => 'gpt-3.5-turbo',
-            'messages' => $bodyData["messages"]
-        ]);
+        // This package is have problem don't use it -> https://github.com/openai-php/laravel
+        // https://github.com/openai-php/laravel/issues/51#issuecomment-1651224516
 
-        return json_encode($result);
+        // Use approach like this instead
+        $result = Http::withToken($api_key)
+            ->baseUrl('https://api.openai.com/v1/')
+            ->retry(5, 500)
+            ->post(
+                'https://api.openai.com/v1/chat/completions',
+                [
+                    'model' => 'gpt-3.5-turbo',
+                    'messages' => $bodyData["messages"],
+                    // 'functions' => [
+                    //     [
+                    //         'name' => $function, 'parameters' => config('schema.'.$function),
+                    //     ],
+                    // ],
+                    // 'function_call' => [
+                    //     'name' => $function,
+                    // ],
+                    // 'temperature' => 0.6,
+                    // 'top_p' => 1,
+                ]
+            )
+            ->throw()
+            ->json();
+
+        return $result;
     }
 }
 ```
