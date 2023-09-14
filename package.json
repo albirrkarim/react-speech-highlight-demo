@@ -1,0 +1,33 @@
+{
+  "name": "react-speech-highlight",
+  "version": "4.6.6",
+  "description": "React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "text-to-speech",
+    "SpeechSynthesisUtterance"
+  ],
+  "author": "albirrkarim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albirrkarim/react-speech-highlight-demo"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.10.0",
+    "dotenv": "^16.3.1"
+  }
+}
