@@ -74,8 +74,6 @@ Actually you can customize the logic, like add authentication method.
 
 <br/>
 
-See open ai laravel package [github.com/openai-php/laravel](https://github.com/openai-php/laravel)
-
 ### Router
 
 `routes/api.php`
