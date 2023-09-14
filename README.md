@@ -152,7 +152,7 @@ A: See [TEST.md](TEST.md)
 
 Q: How it work?
 
-A: As the description above
+A: As in the introduction [above](#a-introduction)
 
 This package use [web speech synthesis](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API to doing text-to-speech task. But this free web speech synthesis is also comes with [problem](PROBLEM.md).
 

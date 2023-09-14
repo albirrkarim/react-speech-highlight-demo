@@ -14,10 +14,11 @@ Then I do mannually test this package with different OS and browser.
 
 Info:
 
-:white_check_mark: = Pass
-:x: = Failed
+- :white_check_mark: = Pass
 
-Other = Opera Mini, UC browser, Breave Browser (Because the Web Speech Synthesis API is also not supported [see](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis#browser_compatibility))
+- :x: = Failed
+
+Other = Opera Mini, UC browser, Brave Browser (Because the Web Speech Synthesis API is also not supported [see](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis#browser_compatibility))
 
 ### Device that i have test:
 
