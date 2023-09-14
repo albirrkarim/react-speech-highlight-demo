@@ -6,7 +6,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/72f28
 
 React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken.
 
-This is the Documentation for [private repo React Speech Highlight package](https://github.com/albirrkarim/react-speech-highlight)
+This is the Documentation for private repo [React Speech Highlight package](https://github.com/albirrkarim/react-speech-highlight) and [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight)
 
 **Table Of Contents**
 
