@@ -89,74 +89,116 @@ There's no refund
 <br>
 <br>
 
-
 # G. Warranty
 
 I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
-
 
 <br>
 <br>
 
 # H. FAQ
 
-Q: Why it's expensive?
+<details>
+  <summary>Why it's expensive?</summary>
+  
+<br/>
 
-A: Try yourself to make this package. you will be grateful I am selling it cheap.
+Try yourself to make this package. you will be grateful I am selling it cheap.
+
+</details>
 
 <br/>
 
-Q: Why it's not opensource package?
-
-A: Well, i need money to funding the research, you know that making package is cost a lot of time and ofcourse money.
-
-<br/>
-
-Q: Why there's no voices available on the device?
-
-A: Try to setting the speech synthesis or language in your device, or if you use smartphone, try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
+<details>
+  <summary>Why it's not opensource package?</summary>
 
 <br/>
 
-Q: Why speech doesn't work for first played voice?
+Well, i need money to funding the research, you know that making package is cost a lot of time and ofcourse money.
 
-A: Your device will download that voice first. then your device will have that voice locally.
-
-<br/>
-
-Q: Can i use this text-to-speech whitout showing the highlight?
-
-A: Yes, [see](API.md#5-speak)
+</details>
 
 <br/>
 
-Q: Can i build without openai API?
-
-A: Yes, you will got this [problem](PROBLEMS.md#6-wrong-read-number)
+<details>
+  <summary>Why there's no voices available on the device?</summary>
 
 <br/>
 
-Q: What dependency this package use?
+Try to setting the speech synthesis or language in your device, or if you use smartphone, try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
 
-A: see the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
+</details>
+
+<br/>
+
+<details>
+  <summary>Why speech doesn't work for first played voice?</summary>
+
+<br/>
+
+Your device will download that voice first. then your device will have that voice locally.
+
+</details>
+
+<br/>
+
+<details>
+  <summary>Can i use this text-to-speech whitout showing the highlight?</summary>
+
+<br/>
+
+Yes, [see](API.md#5-speak)
+
+</details>
+
+<br/>
+
+<details>
+  <summary>Can i build without openai API?</summary>
+
+<br/>
+  
+Yes, you will got this [problem](PROBLEMS.md#6-wrong-read-number)
+
+</details>
+<br/>
+
+<details>
+  <summary>What dependency this package use?</summary>
+
+<br/>
+    
+see the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
 
 This package required open ai API for better doing text-to-speech task (solve the [problem](PROBLEMS.md#6-wrong-read-number)).
 
-<br/>
-
-Q: Support for various browsers and devices?
-
-A: See [TEST.md](TEST.md)
+</details>
 
 <br/>
 
-Q: How it work?
+<details>
+  <summary>Support for various browsers and devices?</summary>
 
-A: As in the introduction [above](#a-introduction). Here the overview how package work.
+<br/>
+
+See [TEST.md](TEST.md)
+
+</details>
+
+<br/>
+
+<details>
+  <summary>How it work?</summary>
+
+<br/>
+
+As in the introduction [above](#a-introduction). Here the overview how package work.
 
 This package use [web speech synthesis](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API to doing text-to-speech task. But this free web speech synthesis is also comes with [problem](PROBLEM.md).
 
 Then this package provide interface, that add capability, features and importantly try to fix the all problem.
 
 When try to fix some problem this package require help from [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) that adding understanding capability. like adding function to detect language, solve [this problem](PROBLEMS.md#6-wrong-read-number).
+
+</details>
 <br/>
