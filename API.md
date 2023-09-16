@@ -3,7 +3,7 @@
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 ```jsx
-// v4.6.7 API
+// v4.6.8 API
 import {
   // Main
   markTheWords,
@@ -16,6 +16,7 @@ import {
   noAbbreviation,
   speak,
   romanTransform,
+  setUntilTranslationForLang,
 
   // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
@@ -416,6 +417,18 @@ var a = romanTransform("I.");
 // 1
 ```
 
+## 7. setUntilTranslationForLang()
+
+Function to cache the english word "until" into some language. so the package doesn't have to get translation using open ai api.
+
+for example the word "until" = "sampai" in language "id-ID" (indonesian)
+
+```jsx
+useEffect(() => {
+  setUntilTranslationForLang("sampai", "id-ID");
+}, []);
+```
+
 # Package Data and Cache Integration
 
 The data or cache (sessionStorage / localStorage) that this package use can be accessed outside.
@@ -438,5 +451,7 @@ The data or cache (sessionStorage / localStorage) that this package use can be a
       getCachedVoiceName,
 
     } from "react-speech-highlight";
-  ```
+
+```
 </details>
+```

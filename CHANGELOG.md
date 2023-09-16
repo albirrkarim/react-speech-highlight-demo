@@ -1,5 +1,35 @@
 # CHANGELOG
 
+# 4.6.8
+
+- see folder `test_case` in this repo.
+- 100% pass Function Unit test [markTheWords(),isNumber(),romanTransform()].
+- 90% pass prompt test.
+- Fix bugs: Date range misspelled
+- The `romanTransform()` is not convert all into arabic number. because it will cause ambiguity.
+  The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce.
+- add `setUntilTranslationForLang("sampai","id-ID")` function to cache the english word "until" into some language.
+- The `spokenHL.sentenceSpoken` and `spokenHL.wordSpoken` is now showing the text that user see, not that exactly spoken by system.
+- Better text marking and preparing text for the system to read.
+
+This will only applied on background so the user seen the original text. this just for the system read correctly.
+
+Foreach word will apply this function
+Rules: It's document code or an Idetifier.
+
+`B/1871/M.SM.01.00/2023. -> B / 1871 / M. S_M. 01 .00 / 2023.`
+
+Rules: if the word is two uppercase character
+
+`RI.` -> `R_I`
+`NI`  -> `N_I`
+
+Rules: Maybe contains date range
+
+`10 October - 19 November 2023` -> `10 October until 19 November 2023`
+
+<br/>
+
 # 4.6.7
 
 Unit test using jest in demo website source code folder `__test__`.
@@ -19,46 +49,48 @@ Tests: 3 failed, 28 passed, 31 total
 # 4.6.6
 
 - Breaking change
-  
+
   If you use this following function you need to update your code.
 
     <details>
     <summary>Show the different</summary>
 
-    Different way to passing voice / selecting voice, see [the demo website repo](https://github.com/albirrkarim/demo-website-react-speech-highlight) for the implementation.
+  Different way to passing voice / selecting voice, see [the demo website repo](https://github.com/albirrkarim/demo-website-react-speech-highlight) for the implementation.
 
-    see the component `src/Demo/ButtonSelectVoice.js` the component will save voice Info into `sessionStorage` and the package will use that voice info as the voice for playing tts.
+  see the component `src/Demo/ButtonSelectVoice.js` the component will save voice Info into `sessionStorage` and the package will use that voice info as the voice for playing tts.
 
-    New:
+  New:
 
-    ```js
-    controlHL.play(textEl.current, callbackDone, actionConfig);
-    ```
+  ```js
+  controlHL.play(textEl.current, callbackDone, actionConfig);
+  ```
 
-    Old 
+  Old
 
-    ```js
-    controlHL.play(textEl.current, voiceURI, callbackDone, actionConfig);
-    ```    
+  ```js
+  controlHL.play(textEl.current, voiceURI, callbackDone, actionConfig);
+  ```
 
     <br/>
     <br/>
 
-    New:
-    ```js
-     controlHL.activateGesture(textEl.current, callback, {
-        // config
-        lang: lang,
-      });
-    ```
+  New:
 
-    Old:
-    ```js
-     controlHL.activateGesture(textEl.current, voiceURI, callback, {
-        // config
-        lang: lang,
-      });
-    ```
+  ```js
+  controlHL.activateGesture(textEl.current, callback, {
+    // config
+    lang: lang,
+  });
+  ```
+
+  Old:
+
+  ```js
+  controlHL.activateGesture(textEl.current, voiceURI, callback, {
+    // config
+    lang: lang,
+  });
+  ```
 
     </details>
 
@@ -74,31 +106,32 @@ Tests: 3 failed, 28 passed, 31 total
     <details>
       <summary>Show APIs</summary>
 
-    ```jsx
-    import {
-      // Main
-      markTheWords,
-      useTextToSpeech,
+  ```jsx
+  import {
+    // Main
+    markTheWords,
+    useTextToSpeech,
 
-      // Utilities for TTS & add more capabilities,
-      convertAllNumberIntoWord,
-      getLangForThisText,
-      getTheVoices,
-      noAbbreviation,
-      speak,
-      romanTransform,
+    // Utilities for TTS & add more capabilities,
+    convertAllNumberIntoWord,
+    getLangForThisText,
+    getTheVoices,
+    noAbbreviation,
+    speak,
+    romanTransform,
 
-      // Your app can read the data used by this package, like:
-      PKG_STATUS_OPT, // Package status option
-      PKG_DEFAULT_LANG, // Package default lang
-      LANG_CACHE_KEY, // Package lang sessionStorage key
-      getVoiceBasedOnVoiceURI,
-      getCachedVoiceInfo,
-      getCachedVoiceURI,
-      setCachedVoiceInfo,
-      getCachedVoiceName,
-    } from "react-speech-highlight";
-    ```
+    // Your app can read the data used by this package, like:
+    PKG_STATUS_OPT, // Package status option
+    PKG_DEFAULT_LANG, // Package default lang
+    LANG_CACHE_KEY, // Package lang sessionStorage key
+    getVoiceBasedOnVoiceURI,
+    getCachedVoiceInfo,
+    getCachedVoiceURI,
+    setCachedVoiceInfo,
+    getCachedVoiceName,
+  } from "react-speech-highlight";
+  ```
+
     </details>
 
 # 4.6.5
