@@ -3,30 +3,34 @@
 # 4.6.8
 
 - see folder `test_case` in this repo.
-- 100% pass Function Unit test [markTheWords(),isNumber(),romanTransform()].
+- 100% pass Function Unit test `markTheWords()`, `isNumber()` , `romanTransform()`.
 - 90% pass prompt test.
 - Fix bugs: Date range misspelled
 - The `romanTransform()` is not convert all into arabic number. because it will cause ambiguity.
   The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce.
-- add `setUntilTranslationForLang("sampai","id-ID")` function to cache the english word "until" into some language.
+- add `setUntilTranslationForLang("sampai","id-ID")` function to cache the english word "until" into some language. [see](API.md#7-setuntiltranslationforlang)
 - The `spokenHL.sentenceSpoken` and `spokenHL.wordSpoken` is now showing the text that user see, not that exactly spoken by system.
-- Better text marking and preparing text for the system to read.
+- Better pronunciation preparing text for the system to read.
+  <details>
+      <summary>Show details</summary>
 
-This will only applied on background so the user seen the original text. this just for the system read correctly.
+  <br/>
+  This will only applied on background so the user seen the original text. this just for the system read correctly.
 
-Foreach word will apply this function
-Rules: It's document code or an Idetifier.
+  Foreach word will apply this function
+  Rules: It's document code or an Idetifier.
 
-`B/1871/M.SM.01.00/2023. -> B / 1871 / M. S_M. 01 .00 / 2023.`
+  `B/1871/M.SM.01.00/2023. -> B / 1871 / M. S_M. 01 .00 / 2023.`
 
-Rules: if the word is two uppercase character
+  Rules: if the word is two uppercase character
 
-`RI.` -> `R_I`
-`NI`  -> `N_I`
+  `RI.` -> `R_I`
+  `NI`  -> `N_I`
 
-Rules: Maybe contains date range
+  Rules: Maybe contains date range
 
-`10 October - 19 November 2023` -> `10 October until 19 November 2023`
+  `10 October - 19 November 2023` -> `10 October until 19 November 2023`
+    </details>
 
 <br/>
 
@@ -34,17 +38,13 @@ Rules: Maybe contains date range
 
 Unit test using jest in demo website source code folder `__test__`.
 
-- markTheWords()
+- `markTheWords()` Tests: 26 passed, 26 total
 
-Tests: 26 passed, 26 total
+- `romanTransform()` Tests: 6 failed, 53 passed, 59 total
 
-- romanTransform()
+- `isNumber()` Tests: 3 failed, 28 passed, 31 total
 
-Tests: 6 failed, 53 passed, 59 total
-
-- isNumber()
-
-Tests: 3 failed, 28 passed, 31 total
+<br/>
 
 # 4.6.6
 
@@ -134,11 +134,15 @@ Tests: 3 failed, 28 passed, 31 total
 
     </details>
 
+<br/>
+
 # 4.6.5
 
 <img src="img/chat_gpt_api.png" alt="Backend" style="width:400px" />
 
 - Securing secret key with make backend server as a proxy. see [How to make backend api server for this package](MAKE_BACKEND.md)
+
+<br/>
 
 # 4.6
 
@@ -150,6 +154,8 @@ getLangForThisText();
 ```
 
 - Fix bug
+
+<br/>
 
 # 4.5
 
@@ -163,6 +169,8 @@ spokenHL.precentageSentence
 - Change config while TTS playing `controlHL.changeConfig()`
 
 - Fix more bug
+
+<br/>
 
 # 4.4
 
@@ -186,6 +194,8 @@ controlHL.activateGesture();
 - Update demo website
 - Fix more bug
 - Refactor
+
+<br/>
 
 # 4.3
 

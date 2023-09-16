@@ -411,6 +411,7 @@ speak(
 ## 6. romanTransform()
 
 Convert roman number (I. II.) into arabic number (1, 2)
+Since version 4.6.8. The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce. see [test case](test_case/demo/roman_number.js) for this function.
 
 ```js
 var a = romanTransform("I.");
@@ -431,27 +432,27 @@ useEffect(() => {
 
 # Package Data and Cache Integration
 
-The data or cache (sessionStorage / localStorage) that this package use can be accessed outside.
+The data or cache (sessionStorage / localStorage) that this package use can be accessed outside. The one that used by [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs).
 
 <details>
   <summary>Show</summary>
-  
-  ```js
-    import {
-      // ...other API
 
-      // Your app can read the data / cache used by this package, like:
-      PKG_STATUS_OPT, // Package status option
-      PKG_DEFAULT_LANG, // Package default lang
-      LANG_CACHE_KEY, // Package lang sessionStorage key
-      getVoiceBasedOnVoiceURI,
-      getCachedVoiceInfo,
-      getCachedVoiceURI,
-      setCachedVoiceInfo,
-      getCachedVoiceName,
+```js
+  import {
+    // ...other API
 
-    } from "react-speech-highlight";
+    // Your app can read the data / cache used by this package, like:
+    PKG_STATUS_OPT, // Package status option
+    PKG_DEFAULT_LANG, // Package default lang
+    LANG_CACHE_KEY, // Package lang sessionStorage key
+    getVoiceBasedOnVoiceURI,
+    getCachedVoiceInfo,
+    getCachedVoiceURI,
+    setCachedVoiceInfo,
+    getCachedVoiceName,
 
+  } from "react-speech-highlight";
 ```
+
 </details>
-```
+
