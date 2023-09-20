@@ -125,7 +125,13 @@ Well, i need money to funding the research, you know that making package is cost
 
 <br/>
 
-Try to setting the speech synthesis or language in your device, or if you use smartphone, try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
+Try to setting the speech synthesis or language in your device.
+
+If you use smartphone (Android):
+
+1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google.android.tts)
+
+2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
 
 </details>
 
