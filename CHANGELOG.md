@@ -6,9 +6,18 @@
 
 ![prepareHL.loadingProgress](./img/prepareHL.loadingProgress.png)
 
-- Optimize finding best voice see the flow.
+- Optimize finding best voice, see the flow bellow:
 
-![prepareHL.loadingProgress](./img/prepareHL.png)
+![voice recomendation flow](./img/interaction.png)
+
+<details>
+<summary>Show detail voice recomendation flow</summary>
+
+![voice recomendation flow](./img/prepareHL.png)
+
+</details>
+
+<br/>
 
 You can set Add set Preffered Voice
 
