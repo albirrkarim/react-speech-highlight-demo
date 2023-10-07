@@ -1,5 +1,33 @@
 # CHANGELOG
 
+# 4.6.9
+
+- Introduction API `prepareHL.loadingProgress` for knowing the testing progress
+
+![prepareHL.loadingProgress](./img/prepareHL.loadingProgress.png)
+
+- Optimize finding best voice see the flow.
+
+![prepareHL.loadingProgress](./img/prepareHL.png)
+
+You can set Add set Preffered Voice
+
+```jsx
+import { PREFERRED_VOICE } from "react-speech-highlight";
+
+// set global preferred voice
+useEffect(() => {
+  const your_defined_preferred_voice = {
+    // important! Define language code (en-us) with lowercase letter
+    "de-de": ["Helena", "Anna"],
+  };
+  sessionStorage.setItem(
+    PREFERRED_VOICE,
+    JSON.stringify(your_defined_preferred_voice)
+  );
+}, []);
+```
+
 # 4.6.8
 
 - see folder `test_case` in this repo.
@@ -25,7 +53,7 @@
   Rules: if the word is two uppercase character
 
   `RI.` -> `R_I`
-  `NI`  -> `N_I`
+  `NI` -> `N_I`
 
   Rules: Maybe contains date range
 
