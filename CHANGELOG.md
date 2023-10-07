@@ -19,7 +19,7 @@
 
 <br/>
 
-You can set Add set Preffered Voice
+You can set preferred voice
 
 ```jsx
 import { PREFERRED_VOICE } from "react-speech-highlight";
@@ -36,6 +36,8 @@ useEffect(() => {
   );
 }, []);
 ```
+<br/>
+<br/>
 
 # 4.6.8
 

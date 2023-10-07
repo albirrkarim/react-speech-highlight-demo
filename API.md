@@ -20,6 +20,7 @@ import {
 
   // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
+  PREFERRED_VOICE, // Set global config for the preffered voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key
@@ -224,12 +225,13 @@ you can fixed the value with accessing from `PKG_STATUS_OPT`
 
 #### prepareHL
 
-Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before
+Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before.
 
-| Name                  | Description                                                                                           |
-| --------------------- | ----------------------------------------------------------------------------------------------------- |
-| prepareHL.getVoices() | Some function to tell this program to get the best voice. [see](#5-bad-performance-or-voice-too-fast) |
-| prepareHL.voices      | Some react state store the result from `prepareHL.getVoices()`                                        |
+| Name                      | Description                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| prepareHL.getVoices()     | Function to tell this package to get the best voice. [see](#5-bad-performance-or-voice-too-fast) |
+| prepareHL.voices          | React state store the result from `prepareHL.getVoices()`                                        |
+| prepareHL.loadingProgress | React state for knowing voice testing progress                                                        |
 
 #### spokenHL
 
@@ -438,21 +440,41 @@ The data or cache (sessionStorage / localStorage) that this package use can be a
   <summary>Show</summary>
 
 ```js
-  import {
-    // ...other API
+import {
+  // ...other API
 
-    // Your app can read the data / cache used by this package, like:
-    PKG_STATUS_OPT, // Package status option
-    PKG_DEFAULT_LANG, // Package default lang
-    LANG_CACHE_KEY, // Package lang sessionStorage key
-    getVoiceBasedOnVoiceURI,
-    getCachedVoiceInfo,
-    getCachedVoiceURI,
-    setCachedVoiceInfo,
-    getCachedVoiceName,
-
-  } from "react-speech-highlight";
+  // Your app can read the data / cache used by this package, like:
+  PREFERRED_VOICE, // Set global config for the preffered voice
+  PKG_STATUS_OPT, // Package status option
+  PKG_DEFAULT_LANG, // Package default lang
+  LANG_CACHE_KEY, // Package lang sessionStorage key
+  getVoiceBasedOnVoiceURI,
+  getCachedVoiceInfo,
+  getCachedVoiceURI,
+  setCachedVoiceInfo,
+  getCachedVoiceName,
+} from "react-speech-highlight";
 ```
-
 </details>
 
+Usage example:
+
+##  Set Preferred Voice
+
+You can set Preferred Voice
+
+```jsx
+import { PREFERRED_VOICE } from "react-speech-highlight";
+
+// set global preferred voice
+useEffect(() => {
+  const your_defined_preferred_voice = {
+    // important! Define language code (en-us) with lowercase letter
+    "de-de": ["Helena", "Anna"],
+  };
+  sessionStorage.setItem(
+    PREFERRED_VOICE,
+    JSON.stringify(your_defined_preferred_voice)
+  );
+}, []);
+```
