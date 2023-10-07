@@ -63,9 +63,15 @@ input:string -> abbreviation function -> output:string.
 
 ### 5. Bad performance or voice too fast
 
-in API `prepareHL.getVoices()` i implement this flow.
+in API `prepareHL.getVoices()` i implement this flow:
+
+<details>
+  <summary>Show flow</summary>
+  <br/>
 
 ![React Speech Highlight](./img/prepareHL.png)
+
+</details>
 
 <br/>
 
