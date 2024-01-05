@@ -36,6 +36,15 @@ Then I do research to build this. I took two weeks to solve the problem.
 
 - [ ] Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
 - [ ] Let me know what you want from this package, please write it on issues tab
+- [ ] Add fallback to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. 
+
+<!-- So the question is how you can generate free audio file automatically without pay subscription to text to speech API services? 
+
+The idea is using your own PC to generate bunch of audio file and auto sync into your server. so it can be **FREE**.
+
+In the AI era why you pay ai services subscription if you can make it your own.
+
+Don't worry i will make the tutorial for you. -->
 
 <br/>
 
