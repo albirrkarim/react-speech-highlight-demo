@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 4.7.0
+
+Efficiency memory
+
 # 4.6.9
 
 - Introduction API `prepareHL.loadingProgress` for knowing the testing progress
