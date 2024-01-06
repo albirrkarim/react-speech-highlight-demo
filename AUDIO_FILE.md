@@ -6,7 +6,7 @@ Here i provide you with the best options:
 
 ## Eleven Labs
 
-Eleven Labs is very cheap and perfect option for generating perfect voice for your text. They have API service also.
+[Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) is very cheap and perfect option for generating perfect voice for your text. They have API service also.
 
 ![Eleven Labs Pricing](img/elevenlabs.png)
 
