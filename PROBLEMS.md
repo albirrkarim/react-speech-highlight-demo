@@ -97,4 +97,12 @@ With `window.speechSynthesis` the voice is like a robot, doesn't have parameter 
 
 It can be achieved by using deep learning (with python) or other paid TTS API.
 
-But in this package i just want to make cheap solution for TTS so i just the `window.speechSynthesis`. maybe in the future i will try to integrate with other voice source.
+In this package i just want to make cheap solution for TTS so i just the `window.speechSynthesis`.
+
+Now this package has Prefer / Fallback to Audio file.
+
+Options to play: 
+
+preferAudio(if defined) > Web Speech Synthesis > fallbackAudio(if defined)
+
+see [AUDIO_FILE.md](AUDIO_FILE.md) and the config [API.md](API.md#2a-config)

@@ -8,7 +8,7 @@ This feature enable integration with any services that provide audio url or mayb
 
 Integration with other Text To Speech / Speech Synthesis API. Like Eleven Labs
 
-[see AUDIO_FILE.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/AUDIO_FILE.md)
+[see AUDIO_FILE.md](AUDIO_FILE.md)
 
 # 4.7.0
 

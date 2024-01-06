@@ -19,7 +19,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 - [G. Warranty](#g-warranty)
 - [H. FAQ](#h-faq)
 
-# Docs for v4.7.0
+# Docs for v4.7.1
 
 # A. Introduction
 
@@ -36,15 +36,9 @@ Then I do research to build this. I took two weeks to solve the problem.
 
 - [ ] Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
 - [ ] Let me know what you want from this package, please write it on issues tab
-- [ ] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound.
-
-<!-- So the question is how you can generate free audio file automatically without pay subscription to text to speech API services? 
-
-The idea is using your own PC to generate bunch of audio file and auto sync into your server. so it can be **FREE**.
-
-In the AI era why you pay ai services subscription if you can make it your own.
-
-Don't worry i will make the tutorial for you. -->
+- [ ] Add highlight capability when play using audio file.
+- [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
+- [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
 
 <br/>
 
@@ -134,6 +128,10 @@ Well, i need money to funding the research, you know that making package is cost
 
 <br/>
 
+Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+
+or
+
 Try to setting the speech synthesis or language in your device.
 
 If you use smartphone (Android):
@@ -152,6 +150,8 @@ If you use smartphone (Android):
 <br/>
 
 Your device will download that voice first. then your device will have that voice locally.
+
+Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -198,6 +198,8 @@ This package required open ai API for better doing text-to-speech task (solve th
 
 See [TEST.md](TEST.md)
 
+or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+
 </details>
 
 <br/>
@@ -214,6 +216,8 @@ This package use [web speech synthesis](https://developer.mozilla.org/en-US/docs
 Then this package provide interface, that add capability, features and importantly try to fix the all problem.
 
 When try to fix some problem this package require help from [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) that adding understanding capability. like adding function to detect language, solve [this problem](PROBLEMS.md#6-wrong-read-number).
+
+Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 <br/>
