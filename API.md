@@ -3,7 +3,7 @@
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 ```jsx
-// v4.6.9 API
+// v4.7.1 API
 import {
   // Main
   markTheWords,
@@ -73,6 +73,10 @@ const initialConfig = {
   volume: 1,
   autoScroll: false,
   clear: true,
+
+  // Prefer or fallback to audio file
+  preferAudio: null,
+  fallbackAudio: null 
 };
 
 const { controlHL, statusHL, prepareHL, spokenHL } =
@@ -93,6 +97,9 @@ const actionConfig = {
   volume: 1,
   autoScroll: false,
   clear: true,
+
+  preferAudio: "example.com/some_file.mp3", 
+  fallbackAudio:  "example.com/some_file.mp3" 
 };
 
 controlHL.play(textEl.current, callback, actionConfig);
@@ -140,6 +147,18 @@ controlHL.play(textEl.current, callback, actionConfig);
 - `clear`
 
   if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
+
+- `preferAudio`
+
+  Some API to pass audio url like this `example.com/some_file.mp3` as preferred audio.
+
+  So the package will use this audio instead of the built in web speech synthesis.
+
+- `fallbackAudio`
+
+  Some API to pass audio url like this`example.com/some_file.mp3` as fallback audio.
+  
+  When the built in web speech synthesis error or user doesn't have any voice. the fallback audio file will be used.
 
 </details>
 

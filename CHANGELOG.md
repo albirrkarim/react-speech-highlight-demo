@@ -1,5 +1,15 @@
 # CHANGELOG
 
+# 4.7.1
+
+- Add Prefer / Fallback To Audio File
+
+This feature enable integration with any services that provide audio url or maybe you have your own audio file url.
+
+Integration with other Text To Speech / Speech Synthesis API. Like Eleven Labs
+
+[see AUDIO_FILE.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/AUDIO_FILE.md)
+
 # 4.7.0
 
 Efficiency memory
@@ -40,6 +50,7 @@ useEffect(() => {
   );
 }, []);
 ```
+
 <br/>
 <br/>
 
