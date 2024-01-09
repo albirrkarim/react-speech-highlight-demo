@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 4.7.2
+
+- Add Highlight capability when using Prefer / Fallback To Audio File.
+
 # 4.7.1
 
 - Add Prefer / Fallback To Audio File

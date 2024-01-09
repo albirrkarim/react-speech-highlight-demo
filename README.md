@@ -1,12 +1,31 @@
 # React Speech Highlight
 
+![](./img/react_speech_highlight_banner.png)
+
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/72f28407-a28d-4fb6-9f86-3f37701b4b2a
+
+
+React text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
 
 [Try the demo](https://react-speech-highlight.vercel.app)
 
-React text-to-speech and highlighting the words and sentences that are being spoken using web speech synthesis API.
+## Features:
+- Precise Highlight
+- Human like sound (you can use your audio file)
+- Better pronunciation. Read roman number, document id, date range, custom abbreviation function, etc.
+- Highlight animation without react rerender so the performance is fast
+- Support unlimited string length
+- Auto find the best voices for specific language.
+- Work on all environment [see test.md](TEST.md)
+- Solve the Speech Synthesis problems [see problem.md](PROBLEMS.md)
+
 
 This is the Documentation for private repo [React Speech Highlight package](https://github.com/albirrkarim/react-speech-highlight) and [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight)
+
+<br/>
+
+
+# Docs for v4.7.2
 
 **Table Of Contents**
 
@@ -19,9 +38,8 @@ This is the Documentation for private repo [React Speech Highlight package](http
 - [G. Warranty](#g-warranty)
 - [H. FAQ](#h-faq)
 
-# Docs for v4.7.1
 
-# A. Introduction
+## A. Introduction
 
 Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
 
@@ -32,15 +50,16 @@ Then I do research to build this. I took two weeks to solve the problem.
 <br>
 <br>
 
-# B. TODO
+## B. TODO
 
 - [ ] Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
 - [ ] Let me know what you want from this package, please write it on issues tab
-- [ ] Add highlight capability when play using audio file.
-- [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
-- [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
 
 <br/>
+
+- [x] Add highlight capability when play using audio file.
+- [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
+- [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
 
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
 - [x] Automate the testing (Prompt Test, Unit Test)(50%)
@@ -60,14 +79,14 @@ Then I do research to build this. I took two weeks to solve the problem.
 <br>
 <br>
 
-# C. API
+## C. API
 
 See [API.md](API.md)
 
 <br>
 <br>
 
-# D. Example Code
+## D. Example Code
 
 Contain simple example code, the full example code and implementation example using source code from demo website. the source code of demo website is included when you buy this package.
 
@@ -76,7 +95,7 @@ See [EXAMPLE_CODE.md](EXAMPLE_CODE.md)
 <br>
 <br>
 
-# E. Changelog
+## E. Changelog
 
 Changelog contains information about new feature, fix bug, and what you should do when the version is update.
 
@@ -85,21 +104,21 @@ See [CHANGELOG.md](CHANGELOG.md)
 <br>
 <br>
 
-# F. Disclaimer
+## F. Disclaimer
 
 There's no refund
 
 <br>
 <br>
 
-# G. Warranty
+## G. Warranty
 
 I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
 
 <br>
 <br>
 
-# H. FAQ
+## H. FAQ
 
 <details>
   <summary>Why it's expensive?</summary>
