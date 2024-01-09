@@ -62,10 +62,9 @@ Then the speech synthesis API provider like [ElevenLabs](https://elevenlabs.io/?
 
 But they don't provide the npm package to do highlighting.
 
-Then i found [Speechify](https://speechify.com). but i dont find any docs about using some npm package that integrate with their service. (if some one know please tell me). Also this is also paid paid subscriptions services.
+Then i found [Speechify](https://speechify.com). but i dont find any docs about using some npm package that integrate with their service. (if some one know please tell me). Also this is a paid subscriptions services.
 
-Then i found [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) its free if the 10000 character / month and will reset on next month. Cool right? So i decide to use this as speech synthesis API in my package. But this platform also doesn't provide the react npm package to highlight their audio.
-
+Searching again, Then i found [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) its free if the 10000 character / month and will reset on next month. **Cool right?** So i decide to use this as speech synthesis API in my project. But this platform also doesn't provide the react npm package to highlight their audio.
 
 ### Solutions
 
@@ -73,9 +72,9 @@ So, I decide to making this npm package that combines various methods above to a
 
 My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
 
-When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). how you can automatically get the audio file of some text ? you can use [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md)
+When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). how you can automatically get the audio file of some text ? you can use [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3,mp4 etc) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
 
-So when this package just take input text and audio file how this package know the timing spoken word or sentence of played audio? That's the selling point of my package. this package can detect the spoken word and sentence.
+When this package just take input text and audio file, how this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence.
 
 Also this package is one time pay. No Subscription. Who likes subscription? I also don't.
 
