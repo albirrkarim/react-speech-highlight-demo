@@ -41,11 +41,43 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 ## A. Introduction
 
-Recently, i want to implement the text-to-speech task to my website. Then i search on the internet. but i can't find the library or npm package to solve all my problems. I just want some powerfull package that work on all platforms.
+### What i want?
 
-The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) comes with problems (See [PROBLEMS.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md))
+Recently, I want to implement the text-to-speech with highligh the word and sentence that are being spoken on my website. 
+Then i do search on the internet. but i can't find the npm package to solve all my problems, and also i don't want to use paid subscription to some TTS API.
 
-Then I do research to build this. I took two weeks to solve the problem.
+I just want some powerfull package that work on all platforms and good voice quality.
+
+### Here what i got when i search on internet:
+
+**Using [Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)**
+
+Comes with problems (See [PROBLEMS.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md)). Robot like sound, Supported Devices Available.
+
+**Using paid subscription text-to-speech synthesis API**
+
+When we talk about good sound / human like voices AI models inference should get involved. So it doesn't make sense if doing that on client side.
+
+Then the speech synthesis API provider like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) play their roles. 
+
+But they don't provide the npm package to do highlighting.
+
+Then i found [Speechify](https://speechify.com). but i dont find any docs about using some npm package that integrate with their service. (if some one know please tell me). Also this is also paid paid subscriptions services.
+
+Then i found [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) its free if the 10000 character / month and will reset on next month. Cool right? So i decide to use this as speech synthesis API in my package. But this platform also doesn't provide the react npm package to highlight their audio.
+
+
+### Solutions
+
+So, I decide to making this npm package that combines various methods above to achives all the good things and throw the bad things.
+
+My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
+
+When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). how you can automatically get the audio file of some text ? you can use [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md)
+
+So when this package just take input text and audio file how this package know the timing spoken word or sentence of played audio? That's the selling point of my package. this package can detect the spoken word and sentence.
+
+Also this package is one time pay. No Subscription. Who likes subscription? I also don't.
 
 <br>
 <br>
