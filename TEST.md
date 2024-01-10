@@ -2,23 +2,15 @@
 
 ## Compatibility
 
-This package is based on Native Web Speech Synthesis API if that api doesn't supported then this package is also not support. see the [Web Speech Synthesis API Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis#browser_compatibility)
+Now **this package support all devices and browser**, because this package can use both [Audio File](AUDIO_FILE.md) and Web Speech Synthesis API.
 
-Then I do mannually test this package with different OS and browser.
+### Audio file mode:
 
-| OS         | Chrome             | Safari (Apple Device) | Firefox            | Microsoft Edge     | Other |
-| ---------- | ------------------ | --------------------- | ------------------ | ------------------ | ----- |
-| Android 13 | :white_check_mark: |                       | :x:                | :white_check_mark: | :x:   |
-| Mac OS     | :white_check_mark: | :white_check_mark:    | :x:                | :white_check_mark: | :x:   |
-| IPad OS    | :white_check_mark: | :white_check_mark:    | :white_check_mark: | :white_check_mark: | :x:   |
+Using the prefer of fallback api. you can set this package to do TTS using purely audio file. see [AUDIO_FILE.md](AUDIO_FILE.md). so this mode will
 
-Info:
+###  Web Speech Synthesis API itself:
 
-- :white_check_mark: = Pass
-
-- :x: = Failed
-
-Other = Opera Mini, UC browser, Brave Browser (Because the Web Speech Synthesis API is also not supported [see](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis#browser_compatibility))
+see the [Web Speech Synthesis API Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis#browser_compatibility)
 
 ### Device that i have test:
 

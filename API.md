@@ -150,15 +150,31 @@ controlHL.play(textEl.current, callback, actionConfig);
 
 - `preferAudio`
 
-  Some API to pass audio url like this `example.com/some_file.mp3` as preferred audio.
+  Some API to pass `string` or `async function` that return audio url like this `example.com/some_file.mp3` as preferred audio.
 
   So the package will use this audio instead of the built in web speech synthesis.
 
 - `fallbackAudio`
 
-  Some API to pass audio url like this`example.com/some_file.mp3` as fallback audio.
+  Some API to pass `string` or `async function` that return audio url like this`example.com/some_file.mp3` as fallback audio.
   
   When the built in web speech synthesis error or user doesn't have any voice. the fallback audio file will be used.
+
+  ```jsx
+  async function getAudioForThisText(){
+   var res = await getAudioFromTTSAPI("elevenlabs/api....",text);
+   // convert to audio file, convert again to audio url
+
+   return res; 
+  }
+
+  const config = {
+    preferAudio: getAudioForThisText // will only call if needed (if user want to play) so you can save cost
+    fallbackAudio: getAudioForThisText // will only call if needed (if web speech synthesis fail)  so you can save cost
+  }
+
+  const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config)
+  ```
 
 </details>
 
