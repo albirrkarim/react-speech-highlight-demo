@@ -121,9 +121,9 @@ See [API.md](API.md)
 
 ## D. Example Code
 
-Contain simple example code, the full example code and implementation example using source code from demo website. the source code of demo website is included when you buy this package.
+see [EXAMPLE_CODE.md](EXAMPLE_CODE.md) it contain simple example code.
 
-See [EXAMPLE_CODE.md](EXAMPLE_CODE.md)
+The full example code and implementation example is using source code from [demo website](https://react-speech-highlight.vercel.app). the source code of demo website is included when you buy this package.
 
 <br>
 <br>
