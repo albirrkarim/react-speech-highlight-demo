@@ -48,7 +48,11 @@ const textToSpeechUsingElvenLabs = async (inputText) => {
   return url;
 };
 
-const audioURL = await textToSpeechUsingElvenLabs("This is example text you can set")
+import { convertTextIntoClearTranscriptText } from "react-speech-highlight";
+
+var clear_transcript = convertTextIntoClearTranscriptText("This is example text you can set");
+
+const audioURL = await textToSpeechUsingElvenLabs(clear_transcript)
 
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
   lang: "en",

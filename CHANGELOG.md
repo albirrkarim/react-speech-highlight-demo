@@ -1,5 +1,19 @@
 # CHANGELOG
 
+# 4.7.4
+
+Improve accuracy make transcript timestamp.
+
+Add new API:
+- convertTextIntoClearTranscriptText(text)
+
+Deprecation:
+- setUntilTranslationForLang
+
+# 4.7.3
+
+- Improve Transcript timestamp detection when TTS using audio file.
+
 # 4.7.2
 
 - Add Highlight capability when using Prefer / Fallback To Audio File.

@@ -3,7 +3,7 @@
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 ```jsx
-// v4.7.3 API
+// v4.7.4 API
 import {
   // Main
   markTheWords,
@@ -16,7 +16,7 @@ import {
   noAbbreviation,
   speak,
   romanTransform,
-  setUntilTranslationForLang,
+  convertTextIntoClearTranscriptText,
 
   // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
@@ -76,7 +76,7 @@ const initialConfig = {
 
   // Prefer or fallback to audio file
   preferAudio: null,
-  fallbackAudio: null 
+  fallbackAudio: null,
 };
 
 const { controlHL, statusHL, prepareHL, spokenHL } =
@@ -98,8 +98,8 @@ const actionConfig = {
   autoScroll: false,
   clear: true,
 
-  preferAudio: "example.com/some_file.mp3", 
-  fallbackAudio:  "example.com/some_file.mp3" 
+  preferAudio: "example.com/some_file.mp3",
+  fallbackAudio: "example.com/some_file.mp3",
 };
 
 controlHL.play(textEl.current, callback, actionConfig);
@@ -157,7 +157,7 @@ controlHL.play(textEl.current, callback, actionConfig);
 - `fallbackAudio`
 
   Some API to pass `string` or `async function` that return audio url like this`example.com/some_file.mp3` as fallback audio.
-  
+
   When the built in web speech synthesis error or user doesn't have any voice. the fallback audio file will be used.
 
   ```jsx
@@ -165,7 +165,7 @@ controlHL.play(textEl.current, callback, actionConfig);
    var res = await getAudioFromTTSAPI("elevenlabs/api....",text);
    // convert to audio file, convert again to audio url
 
-   return res; 
+   return res;
   }
 
   const config = {
@@ -262,11 +262,11 @@ you can fixed the value with accessing from `PKG_STATUS_OPT`
 
 Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before.
 
-| Name                      | Description                                                                                           |
-| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Name                      | Description                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------ |
 | prepareHL.getVoices()     | Function to tell this package to get the best voice. [see](#5-bad-performance-or-voice-too-fast) |
 | prepareHL.voices          | React state store the result from `prepareHL.getVoices()`                                        |
-| prepareHL.loadingProgress | React state for knowing voice testing progress                                                        |
+| prepareHL.loadingProgress | React state for knowing voice testing progress                                                   |
 
 #### spokenHL
 
@@ -455,16 +455,15 @@ var a = romanTransform("I.");
 // 1
 ```
 
-## 7. setUntilTranslationForLang()
+## 7. convertTextIntoClearTranscriptText()
 
-Function to cache the english word "until" into some language. so the package doesn't have to get translation using open ai api.
+Function to convert your input string (just text or html string) into [Speech Synthesis Markup Language (SSML)](https://cloud.google.com/text-to-speech/docs/ssml) clear format that this package **can understand** when making transcript timestamp.
 
-for example the word "until" = "sampai" in language "id-ID" (indonesian)
+**You must use this function when making the audio file**
 
 ```jsx
-useEffect(() => {
-  setUntilTranslationForLang("sampai", "id-ID");
-}, []);
+var clear_transcript = convertTextIntoClearTranscriptText("your string here");
+// with the clear_transcript you can make audio file with help of other speech synthesis platforms like elevenlabs etc.
 ```
 
 # Package Data and Cache Integration
@@ -490,11 +489,12 @@ import {
   getCachedVoiceName,
 } from "react-speech-highlight";
 ```
+
 </details>
 
 Usage example:
 
-##  Set Preferred Voice
+## Set Preferred Voice
 
 You can set Preferred Voice
 

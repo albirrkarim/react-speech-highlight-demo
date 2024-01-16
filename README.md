@@ -25,7 +25,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 <br/>
 
 
-# Docs for v4.7.3
+# Docs for v4.7.4
 
 **Table Of Contents**
 
