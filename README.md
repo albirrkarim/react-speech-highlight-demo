@@ -2,8 +2,7 @@
 
 ![](./img/react_speech_highlight_banner.png)
 
-https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/72f28407-a28d-4fb6-9f86-3f37701b4b2a
-
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
 
 React text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
 
@@ -43,7 +42,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 ### What i want?
 
-Recently, I want to implement the text-to-speech with highligh the word and sentence that are being spoken on my website. 
+Recently, I want to implement the text-to-speech with highlight the word and sentence that are being spoken on my website. 
 Then i do search on the internet. but i can't find the npm package to solve all my problems, and also i don't want to use paid subscription to some TTS API.
 
 I just want some powerfull package that work on all platforms and good voice quality.
