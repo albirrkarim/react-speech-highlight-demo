@@ -14,53 +14,86 @@ Here i provide you with the best options:
 
 Here the code how you can integrate elevenlabs or other speech synthesis services with this package.
 
-```jsx
-// Define a function called textToSpeech that takes in a string called inputText as its argument.
-const textToSpeechUsingElvenLabs = async (inputText) => {
-  // Set the API key for ElevenLabs API.
-  // Do not use directly. Use environment variables.
-  const API_KEY = process.env.NEXT_PUBLIC_ELEVEN_LABS_API_KEY; // d25044f64b7xxxxxxxxxxxxx
-  // Set the ID of the voice to be used.
-  const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+<details>
+  <summary>Backend with Laravel</summary>
 
-  // Set options for the API request.
-  const options = {
-    method: "POST",
-    url: `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
-    headers: {
-      accept: "audio/mpeg", // Set the expected response type to audio/mpeg.
-      "content-type": "application/json", // Set the content type to application/json.
-      "xi-api-key": `${API_KEY}`, // Set the API key in the headers.
-    },
-    data: {
-      text: inputText, // Pass in the inputText as the text to be converted to speech.
-    },
-    responseType: "arraybuffer", // Set the responseType to arraybuffer to receive binary data as response.
+  ```php
+    public function textToSpeech(Request $request)
+    {
+      $api_key = config('elevenlabs.api_key');
+
+      $voice_id = isset($request['voice_id']) ? $request['voice_id'] : '21m00Tcm4TlvDq8ikWAM'; // Set the ID of the voice to be used
+
+      $client = new \GuzzleHttp\Client([
+          'headers' => [
+              'Accept' => 'audio/mpeg',
+              'Content-Type' => 'application/json',
+              'xi-api-key' => $api_key
+          ]
+      ]);
+
+      $response = $client->request('POST', "https://api.elevenlabs.io/v1/text-to-speech/$voice_id", [
+          'json' => $request->all(),
+          'sink' => storage_path('app/public/audio.mp3') // Save the audio response to a file
+      ]);
+
+      // Return the audio file as a response
+      return response()->file(storage_path('app/public/audio.mp3'), [
+          'Content-Type' => 'audio/mpeg',
+          'Content-Disposition' => 'inline; filename="audio.mp3"'
+      ]);
+    }
+
+  ```
+
+  ```jsx
+  export const textToSpeechUsingElvenLabs = async (inputText) => {
+    // Set the ID of the voice to be used.
+    const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+
+    const response = await fetch(
+      process.env.NEXT_PUBLIC_ELEVEN_LABS_API_ENDPOINT, // Your backend enpoint
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          voice_id: VOICE_ID,
+          text: inputText,
+          model_id: "eleven_multilingual_v2",
+          stability: 0.5, // The stability for the converted speech
+          similarity_boost: 0.5, // The similarity boost for the converted speech
+          style: 1, // The style exaggeration for the converted speech
+          speaker_boost: true, // The speaker boost for the converted speech
+        }),
+      }
+    );
+
+    // Convert the response data to a Blob
+    const data = await response.blob();
+
+    // Create a Blob URL
+    const blobUrl = URL.createObjectURL(data);
+
+    return blobUrl;
   };
 
-  // Send the API request using Axios and wait for the response.
-  const speechDetails = await axios.request(options);
+  import { convertTextIntoClearTranscriptText } from "react-speech-highlight";
 
-  // Return the binary audio data received from the API response.
-  const blob = new Blob([speechDetails.data], { type: "audio/mpeg" });
-  // Create a URL for the blob object
-  const url = URL.createObjectURL(blob);
-  return url;
-};
+  var clear_transcript = convertTextIntoClearTranscriptText("This is example text you can set");
 
-import { convertTextIntoClearTranscriptText } from "react-speech-highlight";
+  const audioURL = await textToSpeechUsingElvenLabs(clear_transcript)
 
-var clear_transcript = convertTextIntoClearTranscriptText("This is example text you can set");
+  const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+    lang: "en",
+    preferAudio: audioURL,
+    //or
+  //   fallbackAudio: audioURL,
+  });
+  ```
+</details>
 
-const audioURL = await textToSpeechUsingElvenLabs(clear_transcript)
-
-const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
-  lang: "en",
-  preferAudio: audioURL,
-  //or
-//   fallbackAudio: audioURL,
-});
-```
 
 <br>
 
