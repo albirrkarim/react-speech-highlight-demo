@@ -13,7 +13,7 @@ React text-to-speech with highlighting the words and sentences that are being sp
 
 ![Vanilla Speech Highlight](./img/vanilla.png)
 
-[Try the demo Vanilla Speech Highlight](https://react-speech-highlight.vercel.app)
+[Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
 ## Features:
 
