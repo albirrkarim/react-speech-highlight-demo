@@ -3,7 +3,7 @@
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 ```jsx
-// v4.7.4 API
+// v4.7.6 API
 import {
   // Main
   markTheWords,

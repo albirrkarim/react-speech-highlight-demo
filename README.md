@@ -1,14 +1,22 @@
-# React Speech Highlight
+# React / Vanilla Speech Highlight
 
-![](./img/react_speech_highlight_banner.png)
+![React Speech Highlight](./img/react_speech_highlight_banner.png)
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
 
 React text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
 
-[Try the demo](https://react-speech-highlight.vercel.app)
+[Try the demo React Speech Highlight](https://react-speech-highlight.vercel.app)
+
+
+## Now, We also support Vanilla JS version, which is no dependencies
+
+![Vanilla Speech Highlight](./img/vanilla.png)
+
+[Try the demo Vanilla Speech Highlight](https://react-speech-highlight.vercel.app)
 
 ## Features:
+
 - Precise Highlight
 - Human like sound (you can use your audio file)
 - Better pronunciation. Read roman number, document id, date range, custom abbreviation function, etc.
@@ -18,13 +26,11 @@ React text-to-speech with highlighting the words and sentences that are being sp
 - Work on all environment [see test.md](TEST.md)
 - Solve the Speech Synthesis problems [see problem.md](PROBLEMS.md)
 
-
 This is the Documentation for private repo [React Speech Highlight package](https://github.com/albirrkarim/react-speech-highlight) and [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight)
 
 <br/>
 
-
-# Docs for v4.7.4
+# Docs for v4.7.6
 
 **Table Of Contents**
 
@@ -37,12 +43,11 @@ This is the Documentation for private repo [React Speech Highlight package](http
 - [G. Warranty](#g-warranty)
 - [H. FAQ](#h-faq)
 
-
 ## A. Introduction
 
 ### What i want?
 
-Recently, I want to implement the text-to-speech with highlight the word and sentence that are being spoken on my website. 
+Recently, I want to implement the text-to-speech with highlight the word and sentence that are being spoken on my website.
 Then i do search on the internet. but i can't find the npm package to solve all my problems, and also i don't want to use paid subscription to some TTS API.
 
 I just want some powerfull package that work on all platforms and good voice quality.
@@ -57,7 +62,7 @@ Comes with problems (See [PROBLEMS.md](https://github.com/albirrkarim/react-spee
 
 When we talk about good sound / human like voices AI models inference should get involved. So it doesn't make sense if doing that on client side.
 
-Then the speech synthesis API provider like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) play their roles. 
+Then the speech synthesis API provider like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) play their roles.
 
 But they don't provide the npm package to do highlighting.
 
@@ -89,6 +94,7 @@ Also this package is one time pay. No Subscription. Who likes subscription? I al
 
 <br/>
 
+- [x] Add vanilla js support, for those who dont use react, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add highlight capability when play using audio file.
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
 - [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
