@@ -3,7 +3,7 @@
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 ```jsx
-// v4.7.6 API
+// v4.7.7 API
 import {
   // Main
   markTheWords,
@@ -462,7 +462,11 @@ Function to convert your input string (just text or html string) into [Speech Sy
 **You must use this function when making the audio file**
 
 ```jsx
-var clear_transcript = convertTextIntoClearTranscriptText("your string here");
+var convertInto = "ssml"; // or "plain_text"
+var clear_transcript = convertTextIntoClearTranscriptText(
+  "your string here",
+  convertInto
+);
 // with the clear_transcript you can make audio file with help of other speech synthesis platforms like elevenlabs etc.
 ```
 

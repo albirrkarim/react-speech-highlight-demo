@@ -1,5 +1,91 @@
 # CHANGELOG
 
+# 4.7.7
+
+- Fix Previous and Next paragraph index
+- Transcript time detection engine
+
+  what is LOSS precentage?
+
+  let say we have 10 seconds of audio. and fail predict start & end time of a sentence total in 2 seconds, so, the Loss precentage is 20%
+
+  AVG LOSS 5.96 % (lower better)
+
+  <details>
+
+    <summary>See test log</summary>
+
+    ```
+    console.log
+      id  noodles Duration:  89.03 Error:  5.14 Precentage :  5.77 %
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+
+    console.log
+      Error Total  11.317938041659438
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+
+    console.log
+      id  preferto Duration:  4.87 Error:  0.10 Precentage :  2.05 %
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+
+    console.log
+      Error Total  0.10199999999999979
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+
+    console.log
+      id  cat Duration:  21.39 Error:  0.09 Precentage :  0.42 %
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+
+    console.log
+      Error Total  1.0269453125000876
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+
+    console.log
+      id  french text Duration:  159.37 Error:  4.67 Precentage :  2.93 %
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+
+    console.log
+      Error Total  9.339446999995845
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+
+    console.log
+      id  html blog table Duration:  96.68 Error:  18.01 Precentage :  18.62 %
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+
+    console.log
+      Error Total  34.976419200012415
+
+        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+
+    console.log
+      Error Total TEST 56.76274955416778
+
+        at Object.log (src/__test__/test_functions/AudioFIle.test.js:69:13)
+
+    console.log
+      AVG LOSS 5.96 %
+    ```
+  </details>
+
+<br>
+
+# 4.7.6
+
+- convertInto into convertTextIntoClearTranscriptText(text,convertInto)
+
+# 4.7.5
+ 
+- We support [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
+
 # 4.7.4
 
 Improve accuracy make transcript timestamp.
