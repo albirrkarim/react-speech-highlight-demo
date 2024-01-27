@@ -4,16 +4,23 @@
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
 
-React text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
+React / Vanilla js text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
 
 [Try the demo React Speech Highlight](https://react-speech-highlight.vercel.app)
 
 
-## Now, We also support Vanilla JS version, which is no dependencies
+# Other Version
 
 ![Vanilla Speech Highlight](./img/vanilla.png)
 
+We support implementation using vanilla js. this package has bundle size of 86 KB
+
 [Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
+
+Do you want other implementation? just ask me via discord:
+albirrkarim#8171
+
+[Message me with discord](https://discordapp.com/channels/@me/884043164908929034)
 
 ## Features:
 
@@ -174,7 +181,7 @@ Try yourself to make this package. you will be grateful I am selling it cheap.
 
 <br/>
 
-Well, i need money to funding the research, you know that making package is cost a lot of time and ofcourse money.
+Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
 
 </details>
 
