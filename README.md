@@ -146,7 +146,7 @@ The full example code and implementation example is using source code from [demo
 
 ## E. Changelog
 
-Changelog contains information about new feature, fix bug, and what you should do when the version is update.
+Changelog contains information about new feature, improve accuracy, fix bug, and what you should do when the version is update.
 
 See [CHANGELOG.md](CHANGELOG.md)
 
@@ -242,7 +242,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   <br/>
     
-  Yes, you will got this [problem](PROBLEMS.md#6-wrong-read-number)
+  Yes, but you will got this [problem](PROBLEMS.md#6-wrong-read-number)
 
 </details>
 <br/>
