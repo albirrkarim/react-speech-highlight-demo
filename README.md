@@ -183,6 +183,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 <details>
   <summary>How accurate the highlight capability?</summary>
   <br/>
+  
   See the detail on [TEST.md](TEST.md)
 
 </details>
