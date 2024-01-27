@@ -17,6 +17,8 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
 
 We support implementation using vanilla js. this package has bundle size of 86 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
 
+**I still developing the demo for vanilla version**
+
 [Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
 Do you want other implementation? just ask me via discord:
@@ -225,7 +227,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 <br/>
 
 <details>
-  <summary>Can i use this text-to-speech whitout showing the highlight?</summary>
+  <summary>Can i use this text-to-speech without showing the highlight?</summary>
 
   <br/>
 
