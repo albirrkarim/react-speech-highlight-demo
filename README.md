@@ -9,7 +9,7 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
 [Try the demo React Speech Highlight](https://react-speech-highlight.vercel.app)
 
 
-# Other Version
+## Other Version
 
 ![Vanilla Speech Highlight](./img/vanilla.png)
 
