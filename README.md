@@ -17,7 +17,7 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
 
 We support implementation using vanilla js. this package has bundle size of 86 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
 
-Read the [API_VANILLA.md] to see the different.
+Read the [API_VANILLA.md](API_VANILLA.md) to see the different.
 
 [Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
