@@ -2,6 +2,8 @@
 
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
+see [API_VANILLA.md](API_VANILLA.md) for vanilla js version
+
 ```jsx
 // v4.7.7 API
 import {
