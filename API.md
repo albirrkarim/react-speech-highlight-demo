@@ -5,7 +5,7 @@ The api is a function that you can use to integrate this package into your apps.
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version
 
 ```jsx
-// v4.7.7 API
+// v4.7.9 API
 import {
   // Main
   markTheWords,

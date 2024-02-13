@@ -1,5 +1,51 @@
 # CHANGELOG
 
+# 4.7.9 
+
+- Increase avg accuracy of the sentence HL to 97.19 %
+
+  <details>
+  <summary>See test log</summary>
+  ```bash
+  console.log
+    Text ID:  noodles  | Duration:  89.03 s  | Error Start:  7.19 s  | Error Total  15.07 s  | Error Precentage :  8.07 %
+
+  console.log
+    Text ID:  preferto  | Duration:  4.87 s  | Error Start:  0.10 s  | Error Total  0.10 s  | Error Precentage :  2.05 %
+
+  console.log
+    Text ID:  cat  | Duration:  21.39 s  | Error Start:  0.15 s  | Error Total  1.11 s  | Error Precentage :  0.72 %
+
+  console.log
+    Text ID:  french text  | Duration:  159.37 s  | Error Start:  4.67 s  | Error Total  9.34 s  | Error Precentage :  2.93 %
+
+  console.log
+    Text ID:  german text  | Duration:  117.11 s  | Error Start:  0.10 s  | Error Total  0.75 s  | Error Precentage :  0.08 %
+
+  console.log
+    Text ID:  italia text  | Duration:  117.63 s  | Error Start:  0.48 s  | Error Total  1.09 s  | Error Precentage :  0.41 %
+
+  console.log
+    Text ID:  html blog table  | Duration:  96.68 s  | Error Start:  7.94 s  | Error Total  17.09 s  | Error Precentage :  8.22 %
+
+  console.log
+    TEST END ___
+
+  console.log
+    Total duration error 44.56 Seconds
+
+  console.log
+    AVG LOSS 2.81 %
+
+  console.log
+    AVG ACCURACY 97.19 %
+  ```
+  </details>
+
+# 4.7.8
+
+Fix Highlight word bug
+
 # 4.7.7
 
 - Fix Previous and Next paragraph index
@@ -10,6 +56,7 @@
   let say we have 10 seconds of audio. and fail predict start & end time of a sentence total in 2 seconds, so, the Loss precentage is 20%
 
   AVG LOSS 5.96 % (lower better)
+  AVG ACCURACY 94 % (higher better)
 
   <details>
 
