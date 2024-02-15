@@ -106,7 +106,7 @@ Here the code how you can integrate elevenlabs or other speech synthesis service
 <details>
   <summary>Example Integration Node js Backend with ElevenLabs TTS API</summary>
 
-  Go to the backend folder in this repo, you can see the example
+  Go to the [backend folder in this repo](https://github.com/albirrkarim/react-speech-highlight-demo/tree/main/backend/nodejs), you can see the example
 </details>
 
 <details>
