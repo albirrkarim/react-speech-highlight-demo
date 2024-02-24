@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# 4.8.1
+
+Support text to speech with highlight sentence and word for chinese and japanese character. but the accuracy of highlighting word is less accurate.
+
+# 4.8.0
+
+Refactor code,
+
 # 4.7.9 
 
 - Increase avg accuracy of the sentence HL to 97.19 %
