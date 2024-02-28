@@ -2,6 +2,10 @@
 
 [English](README.md) | [简体中文](README_CN.md)
 
+![React / Vanilla Speech Highlight](./img/description.png)
+
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
+
 使用音频文件、文本到语音 API 和网络语音合成 API，通过 React / Vanilla js 文本到语音功能实现在语音播放时高亮显示正在说的单词和句子。
 
 [尝试 React 语音高亮演示](https://react-speech-highlight.vercel.app)
@@ -9,6 +13,8 @@
 ## 其他版本
 
 ### Vanilla JS (原生 JavaScript)
+
+<img src="./img/vanilla.png" alt="Vanilla Speech Highlight" style="max-width: 400px;">
 
 我们支持使用原生 js 实现。此包的大小为 86 KB。您可以轻松地将此库与您的网站结合使用，也许您的网站使用了 [jquery](https://jquery.com)
 
@@ -89,6 +95,8 @@ albirrkarim#8171
 当这个包仅接受文本和音频文件输入时，这个包如何知道播放的音频的说话单词或句子的时间？这个包可以检测到被说出的单词和句子。
 
 此外，这个包是一次性支付。没有订阅。谁喜欢订阅？我也不喜欢。
+
+![功能概览](./img/features.png)
 
 <br>
 <br>

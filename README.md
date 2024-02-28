@@ -14,7 +14,7 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
 
 ### Vanilla JS (Native Javascript)
 
-![Vanilla Speech Highlight](./img/vanilla.png)
+<img src="./img/vanilla.png" alt="Vanilla Speech Highlight" style="max-width: 400px;">
 
 We support implementation using vanilla js. this package has bundle size of 86 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
 
@@ -96,6 +96,8 @@ When this package just take input text and audio file, how this package know the
 
 Also this package is one time pay. No Subscription. Who likes subscription? I also don't.
 
+![Feature Overview](./img/features.png)
+
 <br>
 <br>
 
@@ -175,9 +177,9 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  Try yourself to make this package. you will be grateful I am selling it cheap.
+Try yourself to make this package. you will be grateful I am selling it cheap.
 
-  Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
+Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
 
 </details>
 
@@ -198,17 +200,17 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   <br/>
 
-  Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
-  or
+or
 
-  Try to setting the speech synthesis or language in your device.
+Try to setting the speech synthesis or language in your device.
 
-  If you use smartphone (Android):
+If you use smartphone (Android):
 
-  1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google.android.tts)
+1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google.android.tts)
 
-  2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
+2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
 
 </details>
 
@@ -219,9 +221,9 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   <br/>
 
-  Your device will download that voice first. then your device will have that voice locally.
+Your device will download that voice first. then your device will have that voice locally.
 
-  Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -232,7 +234,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   <br/>
 
-  Yes, [see](API.md#5-speak)
+Yes, [see](API.md#5-speak)
 
 </details>
 
@@ -255,7 +257,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
       
   see the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
 
-  This package required open ai API for better doing text-to-speech task (solve the [problem](PROBLEMS.md#6-wrong-read-number)).
+This package required open ai API for better doing text-to-speech task (solve the [problem](PROBLEMS.md#6-wrong-read-number)).
 
 </details>
 
@@ -266,29 +268,28 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   <br/>
 
-  Yes, See the detail on [TEST.md](TEST.md)
+Yes, See the detail on [TEST.md](TEST.md)
 
-  or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
 <br/>
-
 
 <details>
   <summary>How it work?</summary>
 
   <br/>
 
-  As in the introduction [above](#a-introduction). Here the overview how package work.
+As in the introduction [above](#a-introduction). Here the overview how package work.
 
-  This package use [web speech synthesis](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API to doing text-to-speech task. But this free web speech synthesis is also comes with [problem](PROBLEM.md).
+This package use [web speech synthesis](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API to doing text-to-speech task. But this free web speech synthesis is also comes with [problem](PROBLEM.md).
 
-  Then this package provide interface, that add capability, features and importantly try to fix the all problem.
+Then this package provide interface, that add capability, features and importantly try to fix the all problem.
 
-  When try to fix some problem this package require help from [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) that adding understanding capability. like adding function to detect language, solve [this problem](PROBLEMS.md#6-wrong-read-number).
+When try to fix some problem this package require help from [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) that adding understanding capability. like adding function to detect language, solve [this problem](PROBLEMS.md#6-wrong-read-number).
 
-  Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 <br/>
