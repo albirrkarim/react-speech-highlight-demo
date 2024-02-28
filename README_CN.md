@@ -14,7 +14,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35e
 
 ### Vanilla JS (原生 JavaScript)
 
-<img src="./img/vanilla.png" alt="Vanilla Speech Highlight" style="max-width: 400px;">
+<img src="./img/vanilla.png" width="400" alt="Vanilla Speech Highlight" >
 
 我们支持使用原生 js 实现。此包的大小为 86 KB。您可以轻松地将此库与您的网站结合使用，也许您的网站使用了 [jquery](https://jquery.com)
 

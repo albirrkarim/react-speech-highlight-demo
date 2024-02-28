@@ -14,7 +14,7 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
 
 ### Vanilla JS (Native Javascript)
 
-<img src="./img/vanilla.png" alt="Vanilla Speech Highlight" style="max-width: 400px;">
+<img src="./img/vanilla.png" width="400" alt="Vanilla Speech Highlight" >
 
 We support implementation using vanilla js. this package has bundle size of 86 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
 
