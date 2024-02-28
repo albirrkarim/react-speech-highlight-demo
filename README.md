@@ -1,5 +1,7 @@
 # React / Vanilla Speech Highlight
 
+[English](README.md) | [简体中文](README_CN.md)
+
 ![React / Vanilla Speech Highlight](./img/description.png)
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
@@ -7,7 +9,6 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35e
 React / Vanilla js text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
 
 [Try the demo React Speech Highlight](https://react-speech-highlight.vercel.app)
-
 
 ## Other Version
 
