@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# 4.8.3
+
+use linting code eslint for code quality
+
+# 4.8.2
+
+- Add viseme for current spoken.
+- For now only support language that use the Latin alphabet like Indonesian, English, German, Italian, and French, also the russian.
+
 # 4.8.1
 
 Support text to speech with highlight sentence and word for chinese and japanese character. but the accuracy of highlighting word is less accurate.

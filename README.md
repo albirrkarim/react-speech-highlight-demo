@@ -42,7 +42,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.8.1
+# Docs for v4.8.3
 
 **Table Of Contents**
 
@@ -54,6 +54,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 - [F. Disclaimer](#f-disclaimer)
 - [G. Warranty](#g-warranty)
 - [H. FAQ](#h-faq)
+- [I. Keywords](#i-keywords)
 
 ## A. Introduction
 
@@ -108,14 +109,18 @@ Also this package is one time pay. No Subscription. Who likes subscription? I al
 
 <br/>
 
+- [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
+- [x] Code Linting using eslint
+- [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
+
 - [x] Add vanilla js support, for those who dont use react, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add highlight capability when play using audio file.
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
 - [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
 
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
-- [x] Automate the testing (Prompt Test, Unit Test)(50%)
-- [x] Multi character support for non roman alphabet ( chinese (你好),
+- [x] Automate the testing (Prompt Test, Unit Test)
+- [x] Multi character support for non latin alphabet ( chinese (你好),
       russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )
 - [x] Convert number into word form number with chat gpt. [see](API.md#API.md#1-convertallnumberintoword)
 - [x] Add language detection using chat gpt. [see](API.md#2-getlangforthistext)
@@ -293,3 +298,43 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 
 </details>
 <br/>
+
+## Keywords
+
+So this package is the answer for you who looking for:
+
+- text to speech with viseme lipsync javascript
+- javascript text to speech highlight words
+- How to text to speech with highlight the sentence and
+- words like speechify.,
+- How to text to speech with highlight the sentence and
+- words using elevenlabs.
+- How to text to speech with highlight the sentence and
+- words using open ai.
+- React How to text to speech with highlight the sentence
+- and words using google speech synthesis.
+- Text to speech react js
+- Text to speech javascript
+- Highlighted Text to Speech
+- Speech Highlighting in TTS
+- TTS with Sentence Highlight
+- Word Highlight in Text-to-Speech
+- Elevenlabs TTS
+- Highlighted TTS Elevenlabs
+- OpenAI Text to Speech
+- Highlighted Text OpenAI TTS
+- React Text to Speech Highlight
+- React TTS with Highlight
+- React Speech Synthesis
+- Highlighted TTS in React
+- Google Speech Synthesis in React
+- Text to Speech React JS
+- React JS TTS
+- React Text-to-Speech
+- TTS in React JS
+- React JS Speech Synthesis
+- Text to Speech JavaScript
+- JavaScript TTS
+- Text-to-Speech in JS
+- JS Speech Synthesis
+- Highlighted TTS JavaScript
