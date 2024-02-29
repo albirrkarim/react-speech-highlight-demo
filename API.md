@@ -76,6 +76,9 @@ const initialConfig = {
   autoScroll: false,
   clear: true,
 
+  // For viseme mapping,
+  charToVisemeMap: {},
+
   // Prefer or fallback to audio file
   preferAudio: null,
   fallbackAudio: null,
@@ -100,6 +103,10 @@ const actionConfig = {
   autoScroll: false,
   clear: true,
 
+  // For viseme mapping,
+  charToVisemeMap: {},
+
+  // Prefer or fallback to audio file
   preferAudio: "example.com/some_file.mp3",
   fallbackAudio: "example.com/some_file.mp3",
 };
@@ -149,6 +156,10 @@ controlHL.play(textEl.current, callback, actionConfig);
 - `clear`
 
   if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
+
+- `charToVisemeMap`
+
+  The data for this parameter i provide in the [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight).
 
 - `preferAudio`
 
@@ -278,6 +289,7 @@ Contain react state for reporting while TTS playing.
 | --------------------------- | ------------------------------------------------ |
 | spokenHL.sentence           | Some react state, Get the sentence that read     |
 | spokenHL.word               | Some react state, Get the word that read         |
+| spokenHL.viseme             | Some react state, Get the current viseme         |
 | spokenHL.precentageWord     | Read precentage between 0-100 based on words     |
 | spokenHL.precentageSentence | Read precentage between 0-100 based on sentences |
 

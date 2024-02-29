@@ -31,6 +31,7 @@ albirrkarim#8171
 
 - Precise Highlight
 - Human like sound (you can use your audio file)
+- Generate viseme for current spoken TTS.
 - Better pronunciation. Read roman number, document id, date range, custom abbreviation function, etc.
 - Highlight animation without react rerender so the performance is fast
 - Support unlimited string length
@@ -54,7 +55,6 @@ This is the Documentation for private repo [React Speech Highlight package](http
 - [F. Disclaimer](#f-disclaimer)
 - [G. Warranty](#g-warranty)
 - [H. FAQ](#h-faq)
-- [I. Keywords](#i-keywords)
 
 ## A. Introduction
 
