@@ -5,7 +5,7 @@ The api is a function that you can use to integrate this package into your apps.
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version
 
 ```jsx
-// v4.8.3 API
+// v4.8.5 API
 import {
   // Main
   markTheWords,
@@ -77,7 +77,7 @@ const initialConfig = {
   clear: true,
 
   // For viseme mapping,
-  charToVisemeMap: {},
+  visemeMap: {},
 
   // Prefer or fallback to audio file
   preferAudio: null,
@@ -104,7 +104,7 @@ const actionConfig = {
   clear: true,
 
   // For viseme mapping,
-  charToVisemeMap: {},
+  visemeMap: {},
 
   // Prefer or fallback to audio file
   preferAudio: "example.com/some_file.mp3",
@@ -157,7 +157,7 @@ controlHL.play(textEl.current, callback, actionConfig);
 
   if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
 
-- `charToVisemeMap`
+- `visemeMap`
 
   The data for this parameter i provide in the [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight).
 

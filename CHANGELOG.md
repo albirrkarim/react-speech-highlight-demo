@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# 4.8.5
+
+- rename `charToVisemeMap` into `visemeMap`
+- Fix bug
+
+# 4.8.4
+
+- Fix bug
+
 # 4.8.3
 
 - Use code lintings eslint for code quality
@@ -18,7 +27,7 @@ Support text to speech with highlight sentence and word for chinese and japanese
 
 Refactor code,
 
-# 4.7.9 
+# 4.7.9
 
 - Increase avg accuracy of the sentence HL to 97.19 %
 
@@ -29,36 +38,38 @@ Refactor code,
     Text ID:  noodles  | Duration:  89.03 s  | Error Start:  7.19 s  | Error Total  15.07 s  | Error Precentage :  8.07 %
 
   console.log
-    Text ID:  preferto  | Duration:  4.87 s  | Error Start:  0.10 s  | Error Total  0.10 s  | Error Precentage :  2.05 %
+  Text ID: preferto | Duration: 4.87 s | Error Start: 0.10 s | Error Total 0.10 s | Error Precentage : 2.05 %
 
   console.log
-    Text ID:  cat  | Duration:  21.39 s  | Error Start:  0.15 s  | Error Total  1.11 s  | Error Precentage :  0.72 %
+  Text ID: cat | Duration: 21.39 s | Error Start: 0.15 s | Error Total 1.11 s | Error Precentage : 0.72 %
 
   console.log
-    Text ID:  french text  | Duration:  159.37 s  | Error Start:  4.67 s  | Error Total  9.34 s  | Error Precentage :  2.93 %
+  Text ID: french text | Duration: 159.37 s | Error Start: 4.67 s | Error Total 9.34 s | Error Precentage : 2.93 %
 
   console.log
-    Text ID:  german text  | Duration:  117.11 s  | Error Start:  0.10 s  | Error Total  0.75 s  | Error Precentage :  0.08 %
+  Text ID: german text | Duration: 117.11 s | Error Start: 0.10 s | Error Total 0.75 s | Error Precentage : 0.08 %
 
   console.log
-    Text ID:  italia text  | Duration:  117.63 s  | Error Start:  0.48 s  | Error Total  1.09 s  | Error Precentage :  0.41 %
+  Text ID: italia text | Duration: 117.63 s | Error Start: 0.48 s | Error Total 1.09 s | Error Precentage : 0.41 %
 
   console.log
-    Text ID:  html blog table  | Duration:  96.68 s  | Error Start:  7.94 s  | Error Total  17.09 s  | Error Precentage :  8.22 %
+  Text ID: html blog table | Duration: 96.68 s | Error Start: 7.94 s | Error Total 17.09 s | Error Precentage : 8.22 %
 
   console.log
-    TEST END ___
+  TEST END \_\_\_
 
   console.log
-    Total duration error 44.56 Seconds
+  Total duration error 44.56 Seconds
 
   console.log
-    AVG LOSS 2.81 %
+  AVG LOSS 2.81 %
 
   console.log
-    AVG ACCURACY 97.19 %
+  AVG ACCURACY 97.19 %
+
   ```
   </details>
+  ```
 
 # 4.7.8
 
@@ -80,65 +91,66 @@ Fix Highlight word bug
 
     <summary>See test log</summary>
 
-    ```
-    console.log
-      id  noodles Duration:  89.03 Error:  5.14 Precentage :  5.77 %
+  ```
+  console.log
+    id  noodles Duration:  89.03 Error:  5.14 Precentage :  5.77 %
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
 
-    console.log
-      Error Total  11.317938041659438
+  console.log
+    Error Total  11.317938041659438
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
 
-    console.log
-      id  preferto Duration:  4.87 Error:  0.10 Precentage :  2.05 %
+  console.log
+    id  preferto Duration:  4.87 Error:  0.10 Precentage :  2.05 %
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
 
-    console.log
-      Error Total  0.10199999999999979
+  console.log
+    Error Total  0.10199999999999979
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
 
-    console.log
-      id  cat Duration:  21.39 Error:  0.09 Precentage :  0.42 %
+  console.log
+    id  cat Duration:  21.39 Error:  0.09 Precentage :  0.42 %
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
 
-    console.log
-      Error Total  1.0269453125000876
+  console.log
+    Error Total  1.0269453125000876
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
 
-    console.log
-      id  french text Duration:  159.37 Error:  4.67 Precentage :  2.93 %
+  console.log
+    id  french text Duration:  159.37 Error:  4.67 Precentage :  2.93 %
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
 
-    console.log
-      Error Total  9.339446999995845
+  console.log
+    Error Total  9.339446999995845
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
 
-    console.log
-      id  html blog table Duration:  96.68 Error:  18.01 Precentage :  18.62 %
+  console.log
+    id  html blog table Duration:  96.68 Error:  18.01 Precentage :  18.62 %
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:44:15)
 
-    console.log
-      Error Total  34.976419200012415
+  console.log
+    Error Total  34.976419200012415
 
-        at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
+      at log (src/__test__/test_functions/AudioFIle.test.js:58:15)
 
-    console.log
-      Error Total TEST 56.76274955416778
+  console.log
+    Error Total TEST 56.76274955416778
 
-        at Object.log (src/__test__/test_functions/AudioFIle.test.js:69:13)
+      at Object.log (src/__test__/test_functions/AudioFIle.test.js:69:13)
 
-    console.log
-      AVG LOSS 5.96 %
-    ```
+  console.log
+    AVG LOSS 5.96 %
+  ```
+
   </details>
 
 <br>
@@ -148,7 +160,7 @@ Fix Highlight word bug
 - convertInto into convertTextIntoClearTranscriptText(text,convertInto)
 
 # 4.7.5
- 
+
 - We support [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
 # 4.7.4
@@ -156,9 +168,11 @@ Fix Highlight word bug
 Improve accuracy make transcript timestamp.
 
 Add new API:
+
 - convertTextIntoClearTranscriptText(text)
 
 Deprecation:
+
 - setUntilTranslationForLang
 
 # 4.7.3
