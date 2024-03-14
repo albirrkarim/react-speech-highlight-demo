@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# 4.8.7
+
+- High precision for viseme, increase refresh rate for the viseme change with 10ms
+
+# 4.8.6
+
+- Increase the accuracy of word highlighting
+
 # 4.8.5
 
 - rename `charToVisemeMap` into `visemeMap`

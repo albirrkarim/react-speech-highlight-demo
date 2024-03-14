@@ -43,7 +43,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.8.5
+# Docs for v4.8.7
 
 **Table Of Contents**
 
@@ -191,10 +191,20 @@ Well, i need money to funding the research, you know that making package is cost
 <br/>
 
 <details>
+  <summary>How accurate the viseme?</summary>
+  <br/>
+  
+  Goto the [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
+
+  I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
+
+</details>
+
+<details>
   <summary>How accurate the highlight capability?</summary>
   <br/>
   
-  See the detail on [TEST.md](TEST.md)
+  Just see the demo
 
 </details>
 
