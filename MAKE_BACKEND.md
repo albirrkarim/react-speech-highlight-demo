@@ -15,7 +15,7 @@ So we must have backend server that provide proxy api call to the open ai.
 Inside `.env` set the `OPENAI_CHAT_COMPLETION_API_ENDPOINT` with your api
 
 ```bash
-OPENAI_CHAT_COMPLETION_API_ENDPOINT="https://example.com/api/public/chat"
+OPENAI_CHAT_COMPLETION_API_ENDPOINT="https://example.com/api/v1/public/chat"
 ```
 
 ## 2. Make Backend for open ai chat completion API
@@ -23,7 +23,7 @@ OPENAI_CHAT_COMPLETION_API_ENDPOINT="https://example.com/api/public/chat"
 ### API URL Endpoint
 
 ```js
-OPENAI_CHAT_COMPLETION_API_ENDPOINT = "https://example.com/api/public/chat";
+OPENAI_CHAT_COMPLETION_API_ENDPOINT = "https://example.com/api/v1/public/chat";
 ```
 
 with that url then the package will send request like this
@@ -82,7 +82,7 @@ Actually you can customize the logic, like add authentication method.
 /* OpenAI */
 Route::name("openai.")->controller(OpenAIController::class)->group(function () {
     // chat gpt
-    Route::post('chat',  'chatPost')->name('chat_gpt_new');
+    Route::post('chat',  'chatPost')->name('chat_completions');
 });
 ```
 
@@ -135,7 +135,6 @@ class OpenAIController extends Controller
 
         // Use approach like this instead
         $result = Http::withToken($api_key)
-            ->baseUrl('https://api.openai.com/v1/')
             ->retry(5, 500)
             ->post(
                 'https://api.openai.com/v1/chat/completions',
