@@ -99,13 +99,27 @@ Also this package is one time pay. No Subscription. Who likes subscription? I al
 
 ![Feature Overview](./img/features.png)
 
+### Use Cases
+
+- **Interactive Blog**
+
+Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read.
+
+- **Web AI Avatar / NPC**
+
+![viseme](/img/viseme.png)
+
+In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
+
+
 <br>
 <br>
 
 ## B. TODO
 
-- [ ] Give API output: The html element for highlighted sentence and word. This can be benefiting when you play with web metaverse. imagine some Text-To-Speech in metaverse. (mozilla hubs, aframe, etc)
-- [ ] Let me know what you want from this package, please write it on issues tab
+- [ ] Batch making audio file for long article content. Maximum length of text is [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation on elvenlabs. what if your article is more than 5000? this package will do `onplay` batch making the audio file. it will improve efficiency.
+
+- [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
@@ -191,14 +205,16 @@ Well, i need money to funding the research, you know that making package is cost
 <br/>
 
 <details>
-  <summary>How accurate the viseme?</summary>
+  <summary>How accurate the viseme generation?</summary>
   <br/>
   
   Goto the [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
-  I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
+I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
 
 </details>
+
+<br/>
 
 <details>
   <summary>How accurate the highlight capability?</summary>
@@ -313,16 +329,13 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 
 So this package is the answer for you who looking for:
 
+- Best Text to Speech Software
 - text to speech with viseme lipsync javascript
 - javascript text to speech highlight words
-- How to text to speech with highlight the sentence and
-- words like speechify.,
-- How to text to speech with highlight the sentence and
-- words using elevenlabs.
-- How to text to speech with highlight the sentence and
-- words using open ai.
-- React How to text to speech with highlight the sentence
-- and words using google speech synthesis.
+- How to text to speech with highlight the sentence and words like speechify.,
+- How to text to speech with highlight the sentence and words using elevenlabs.
+- How to text to speech with highlight the sentence and words using open ai.
+- React How to text to speech with highlight the sentence and words using google speech synthesis.
 - Text to speech react js
 - Text to speech javascript
 - Highlighted Text to Speech
