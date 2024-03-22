@@ -43,7 +43,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.8.7
+# Docs for v4.8.9
 
 **Table Of Contents**
 
@@ -117,11 +117,11 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 ## B. TODO
 
-- [ ] Batch making audio file for long article content. Maximum length of text is [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation on elvenlabs. what if your article is more than 5000? this package will do `onplay` batch making the audio file. it will improve efficiency.
-
 - [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
+
+- [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience.
 
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Code Linting using eslint

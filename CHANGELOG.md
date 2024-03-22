@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# 4.8.9
+
+- fix problem. The delay of audio played and user gesture to trigger play must be close. in ipad or iphone they have rule maximal delay must not more than 4 seconds or it will error.
+
+# 4.8.8
+
+- Batch API request for making audio file
+
 # 4.8.7
 
 - High precision for viseme, increase refresh rate for the viseme change with 10ms

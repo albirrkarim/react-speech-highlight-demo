@@ -1,10 +1,57 @@
 # Problems
 
+## When Using Audio File
+
+### 1. The delay of audio played and user gesture to trigger play must be close.
+
+When user click play button the system will preparing the audio file with send request to TTS API like eleven labs, what if the api request is so long (because the text you send is long)?
+
+It will causing bad experience to the user. even in device like ipad and iphon they have rules that the delay between user interaction and the audio played must not exceed 4seconds or it will be fail.
+
+They will give error like this
+
+```
+Unhandled Promise Rejection: NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+```
+
+So what the solution for this?
+
+I set this package to make batch request for API call.
+
+**How it work?**
+
+Let says you have 10000 character long of text, and let says your tts api service will be done making the audio file in 60 seconds. (so your user will waiting to play 60 second after they want ? it so bad)
+
+So, My package will chunk it into close to the 200 character each.
+
+10000/200 = 50 request.
+
+60/10000\*200 = 1.2 seconds
+
+my package will send the first chunk, and the tts api will give the audio file in just 1,2 then the audio is played.
+
+So the delay between user click button play and the tts start to play will be just 1,2 seconds. what about other chunks. i manage to send other chunk in the background while tts is played. and enchance efficiency of character used in tts api. you pay the tts api service based on the character right?.
+
+lets say we have 
+```
+chunk0 <- user still playing this
+chunk1  
+chunk2 <- my package will try to prepare until this
+chunk3
+...
+chunk49
+```
+
+This method will, solve other problem like maximal character that your tts api can handle. for example on elvenlabs they only can do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation.
+
+
+## When Using Web Speech Synthesis
+
 The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problems:
 
 ### 1. Unlimited String Length Capability
 
-Some available voice doesn't support long text / string. 
+Some available voice doesn't support long text / string.
 
 How about this package? it can read unlimited string (can't die when playing).
 
@@ -101,7 +148,7 @@ In this package i just want to make cheap solution for TTS so i just the `window
 
 Now this package has Prefer / Fallback to Audio file.
 
-Options to play: 
+Options to play:
 
 preferAudio(if defined) > Web Speech Synthesis > fallbackAudio(if defined)
 
