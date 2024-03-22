@@ -121,12 +121,10 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 <br/>
 
-- [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience.
-
+- [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Code Linting using eslint
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
-
 - [x] Add vanilla js support, for those who dont use react, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add highlight capability when play using audio file.
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
