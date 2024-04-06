@@ -43,7 +43,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.8.9
+# Docs for v4.9.1
 
 **Table Of Contents**
 
@@ -103,7 +103,7 @@ Also this package is one time pay. No Subscription. Who likes subscription? I al
 
 - **Interactive Blog**
 
-Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read.
+Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read. you article will be SEO ready because. this package has Server Side Rendering (SSR) capability.
 
 - **Web AI Avatar / NPC**
 
@@ -111,16 +111,18 @@ Imagine that you have long article and have TTS button then played the text to s
 
 In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
 
-
 <br>
 <br>
 
 ## B. TODO
 
+- [ ] Rewrite using [Typescript](https://www.typescriptlang.org/)
+- [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
+- [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Code Linting using eslint
@@ -197,6 +199,17 @@ I love feedback from my customers. You can write on the issue tab so when i have
 Try yourself to make this package. you will be grateful I am selling it cheap.
 
 Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
+
+</details>
+
+<br/>
+
+<details>
+  <summary>Can you give me some discount?</summary>
+  
+  <br/>
+
+Yes, if you are student.
 
 </details>
 
@@ -327,19 +340,19 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 
 So this package is the answer for you who looking for:
 
-- Best Text to Speech Software
-- text to speech with viseme lipsync javascript
-- javascript text to speech highlight words
-- How to text to speech with highlight the sentence and words like speechify.,
-- How to text to speech with highlight the sentence and words using elevenlabs.
-- How to text to speech with highlight the sentence and words using open ai.
-- React How to text to speech with highlight the sentence and words using google speech synthesis.
+- **Best Text to Speech Software**. For now this is the best library you can find.
+- **text to speech with viseme lipsync javascript**. Our package is the easy way you can do that.
+- javascript text to speech highlight words.
+- How to text to speech with highlight the sentence and words like speechify
+- How to text to speech with highlight the sentence and words using elevenlabs
+- How to text to speech with highlight the sentence and words using open ai
+- How to text to speech with highlight the sentence and words using google speech synthesis
 - Text to speech react js
 - Text to speech javascript
 - Highlighted Text to Speech
 - Speech Highlighting in TTS
 - TTS with Sentence Highlight
-- Word Highlight in Text-to-Speech
+- Word Highlight in Text-to-Speech.
 - Elevenlabs TTS
 - Highlighted TTS Elevenlabs
 - OpenAI Text to Speech

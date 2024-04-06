@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# v4.9.1
+
+- fix bug, double click gesture
+
+# 4.9.0
+
+- Add Server Side Rendering Capability, and some example on demo website because we use next js
+
 # 4.8.9
 
 - fix problem. The delay of audio played and user gesture to trigger play must be close. in ipad or iphone they have rule maximal delay must not more than 4 seconds or it will error.
