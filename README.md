@@ -216,6 +216,38 @@ Yes, if you are student.
 
 <br/>
 
+
+<details>
+  <summary>Is it well documented and well crafted?</summary>
+  
+  <br/>
+
+You can see the docs in this repo, and this package is written with typescript, and tested using jest to make sure the quality.
+
+You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function vs code will show some popup (simple tutorial) what is the function about, examples, params, etc...
+
+Just use the source code from demo website, you can literally just understand the package.
+
+</details>
+
+<br/>
+
+<details>
+  <summary>This package written in Typescript? Is it can be mixed together with jsx or native js project?</summary>
+  
+  <br/>
+
+Yes it can, just ask [chat gpt](https://chat.openai.com), and explain your problems. 
+
+Example :
+
+"My project is using webpack, code is using jsx, i want to use tsx code along side the jsx, how can i?"
+
+</details>
+
+<br/>
+
+
 <details>
   <summary>How accurate the viseme generation?</summary>
   <br/>
@@ -341,15 +373,16 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 
 So this package is the answer for you who looking for:
 
-- **Best Text to Speech Software**. For now this is the best library you can find.
-- **text to speech with viseme lipsync javascript**. Our package is the easy way you can do that.
-- javascript text to speech highlight words.
+- Best Text to Speech Software
+- text to speech with viseme lipsync javascript
+- javascript text to speech highlight words
 - How to text to speech with highlight the sentence and words like speechify
 - How to text to speech with highlight the sentence and words using elevenlabs
 - How to text to speech with highlight the sentence and words using open ai
 - How to text to speech with highlight the sentence and words using google speech synthesis
 - Text to speech react js
 - Text to speech javascript
+- Typescript text to speech
 - Highlighted Text to Speech
 - Speech Highlighting in TTS
 - TTS with Sentence Highlight
