@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README_CN.md)
 
-![React / Vanilla Speech Highlight](./img/description.png)
+![React / Vanilla Speech Highlight](./img/banner.png)
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
 
