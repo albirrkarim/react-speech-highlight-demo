@@ -52,9 +52,9 @@ This is the Documentation for private repo [React Speech Highlight package](http
 - [C. API](#c-api)
 - [D. Example Code](#d-example-code)
 - [E. Changelog](#e-changelog)
-- [F. Disclaimer](#f-disclaimer)
-- [G. Warranty](#g-warranty)
-- [H. FAQ](#h-faq)
+- [F. Disclaimer & Warranty](#f-disclaimer--warranty)
+- [G. FAQ](#h-faq)
+- [H. Payment](#i-payment)
 
 ## A. Introduction
 
@@ -176,21 +176,16 @@ See [CHANGELOG.md](CHANGELOG.md)
 <br>
 <br>
 
-## F. Disclaimer
+## F. Disclaimer & Warranty
 
-There's no refund
-
-<br>
-<br>
-
-## G. Warranty
+There's no refund.
 
 I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
 
 <br>
 <br>
 
-## H. FAQ
+## G. FAQ
 
 <details>
   <summary>Why it's expensive? Why it's not opensource package?</summary>
@@ -369,6 +364,36 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 </details>
 
 <br/>
+
+## H. Payment
+
+<br/>
+
+The price is $70 USD. 
+
+I accept various payment method:
+
+<a href="https://github.com/sponsors/albirrkarim" title="Github Sponsors">
+    <img src="https://github.com/albirrkarim/laravel-react-starter-kit-pro/assets/29292018/00e008ed-8d31-4b4c-a54d-a53ac62d9f91" width="350em">
+</a>
+
+<br/>
+
+When you country doesn't have acccess to github sponsors, you can use [wise.com](https://wise.com/invite/dic/albirrkarims). You can adjust the price (USD $70) into your currency then directly send with your currency using [wise](https://wise.com/invite/dic/albirrkarims).
+
+<br/>
+
+<a href="https://wise.com/pay/me/albirrkarims" title="Wise Payment">
+    <img src="https://github.com/albirrkarim/albirrkarim/assets/29292018/7a5fba67-9ec0-4401-b65b-780306128e87" title="@albirrkarims-wisetag" width="200em">
+</a>
+
+<br/>
+
+When you are in indonesia (my country) you can easily transfer through bank and e wallet (gopay, shopee pay, jenius)
+
+![Indonesian Payment](./img/payment.png)
+
+
 <br/>
 
 <div align="center">
