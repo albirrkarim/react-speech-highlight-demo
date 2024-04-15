@@ -367,7 +367,18 @@ When try to fix some problem this package require help from [open ai chat comple
 Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
+
 <br/>
+<br/>
+
+<div align="center">
+
+<a href="https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-react&#0045;vanilla&#0045;speech&#0045;highlight" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=574592&theme=light" alt="React&#0032;&#0047;&#0032;Vanilla&#0032;Speech&#0032;Highlight - Highlight&#0032;Anything | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+</div>
+
+<br/>
+
 
 ## Keywords
 
