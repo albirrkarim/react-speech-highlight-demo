@@ -4,7 +4,7 @@
 
 ![React / Vanilla Speech Highlight](./img/banner.png)
 
-https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/7d262965-a330-4333-b2b0-64cd6c49a4e6
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/06e7b0a2-8c19-4ffc-826e-1470a275dfcb
 
 React / Vanilla js text-to-speech with highlighting the words and sentences that are being spoken using audio files, text-to-speech API, and web speech synthesis API.
 
