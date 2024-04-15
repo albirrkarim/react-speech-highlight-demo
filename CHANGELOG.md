@@ -1,6 +1,6 @@
 # CHANGELOG
 
-# v4.9.2
+# v4.9.3
 
 - Rewrite using Typescript, and make comments for all feature so the vscode will show some tutorial when you hover your mouse over some function. ([VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense))
 

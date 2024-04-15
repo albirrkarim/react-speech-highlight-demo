@@ -22,10 +22,11 @@ Read the [API_VANILLA.md](API_VANILLA.md) to see the different.
 
 [Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
-Do you want other implementation? just ask me via discord:
-albirrkarim#8171
+Do you want other implementation? just ask me via discord: albirrkarim
 
-[Message me with discord](https://discordapp.com/channels/@me/884043164908929034)
+<a href="https://discordapp.com/channels/@me/884043164908929034" title="Message me with discord">
+    <img src="./img/discord.png" width="200em">
+</a>
 
 ## Features:
 
@@ -43,7 +44,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.9.2
+# Docs for v4.9.3
 
 **Table Of Contents**
 
