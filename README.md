@@ -153,13 +153,11 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 ## C. API & Example Code
 
-See [API.md](API.md)
-
-see [EXAMPLE_CODE.md](EXAMPLE_CODE.md) it contain simple example code.
+See [API.md](API.md) and [EXAMPLE_CODE.md](EXAMPLE_CODE.md) that contain simple example code.
 
 The full example code and implementation example is using source code from [demo website](https://react-speech-highlight.vercel.app). the source code of demo website is included when you buy this package.
 
-This package is written with typescript, You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function vs code will show some popup (simple tutorial) what is the function about, examples, params, etc...
+This package is written with typescript, You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [vscode](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
 Just use the source code from demo website, you can literally just understand the package.
 
@@ -218,7 +216,7 @@ Yes, if you are student.
 
 You can see the docs in this repo, and this package is written with typescript, and tested using jest to make sure the quality.
 
-You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function vs code will show some popup (simple tutorial) what is the function about, examples, params, etc...
+You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [vscode](https://code.visualstudio.com/) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
 Just use the source code from demo website, you can literally just understand the package.
 
