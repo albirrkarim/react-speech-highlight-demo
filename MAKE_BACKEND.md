@@ -8,15 +8,7 @@ So we must have backend server that provide proxy api call to the open ai.
 
 ## 1. Set open ai chat completion api endpoint
 
-```bash
- cp .env.example .env
-```
-
-Inside `.env` set the `OPENAI_CHAT_COMPLETION_API_ENDPOINT` with your api
-
-```bash
-OPENAI_CHAT_COMPLETION_API_ENDPOINT="https://example.com/api/v1/public/chat"
-```
+Goto [API Docs about this](API.md#package-data-and-cache-integration) 
 
 ## 2. Make Backend for open ai chat completion API
 

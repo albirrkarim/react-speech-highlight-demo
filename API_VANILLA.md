@@ -7,6 +7,7 @@ In the vanilla version we try to mimic the react state with using function callb
 ```js
 // This is just to pointer for the current played tts
 var statusHL = document.getElementById("statusHL");
+var spokenHL_viseme = document.getElementById("spokenHL_viseme");
 var spokenHL_word = document.getElementById("spokenHL_word");
 var spokenHL_sentence = document.getElementById("spokenHL_sentence");
 var spokenHL_precentageWord = document.getElementById(
@@ -21,6 +22,14 @@ const setStatusHLState = (status) => {
 
   if (statusHL) {
     statusHL.innerHTML = status;
+  }
+};
+
+const setVisemeSpoken = (viseme) => {
+  console.log("Default setVisemeSpoken function. the viseme ", viseme);
+
+  if (spokenHL_viseme) {
+    spokenHL_viseme.innerHTML = viseme;
   }
 };
 
@@ -73,6 +82,7 @@ var defaultParams = {
     );
   },
   setStatusHLState,
+  setVisemeSpoken,
   setWordSpoken,
   setSentenceSpoken,
   setPrecentageSentence,
@@ -83,30 +93,43 @@ var defaultParams = {
 const { controlHL } = useTextToSpeech(defaultParams);
 
 // play the tts
-
 controlHL.play();
 ```
 
 This is the API of `useTextToSpeech()` is like this. minus the react state (i comment it)
 
-```js
-function useTextToSpeech() {
-  return {
-    controlHL: controlHL,
-    // statusHL: statusHL,
-    // spokenHL: {
-    //   sentence: sentenceSpoken,
-    //   word: wordSpoken,
-    //   precentageSentence: precentageSentence,
-    //   precentageWord: precentageWord,
-    // },
-    prepareHL: {
-      // loadingProgress,
-      // voices,
-      getVoices,
-      retestVoices,
-      quicklyGetSomeBestVoice,
-    },
-  };
+```jsx
+/**
+ * Type for control highlight
+ */
+export interface ControlHLType {
+  play: PlayFunction;
+  resume: () => void;
+  pause: () => void;
+  stop: () => void;
+  seekSentenceBackward: (config: Partial<ConfigTTS>) => void;
+  seekSentenceForward: (config: Partial<ConfigTTS>) => void;
+  seekParagraphBackward: (config: Partial<ConfigTTS>) => void;
+  seekParagraphForward: (config: Partial<ConfigTTS>) => void;
+  activateGesture: ActivateGestureFunction;
+  changeConfig: (actionConfig: Partial<ConfigTTS>) => void;
+}
+
+export interface PrepareHLType {
+  // loadingProgress: number
+  // voices: VoiceInfo[]
+  getVoices: GetVoicesFunction;
+  retestVoices: RetestVoicesFunction;
+  quicklyGetSomeBestVoice: QuicklyGetSomeBestVoiceFunction;
+}
+
+/**
+ * Type for useTextToSpeech
+ */
+export interface UseTextToSpeechReturnType {
+  controlHL: ControlHLType;
+  // statusHL: StatusHLType
+  // spokenHL: SpokenHLType
+  prepareHL: PrepareHLType;
 }
 ```

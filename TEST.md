@@ -18,7 +18,15 @@ The prompt function is different method to test. the chat gpt not always giving 
 
 see [changelog](CHANGELOG.md)
 
-## B. Compatibility
+<br/>
+
+## B. Data Type Safe & Code Quality
+
+Now we rewrite the package using [Typescript](https://www.typescriptlang.org/), linting using [eslint](https://eslint.org), and support [vscode intellisense](https://code.visualstudio.com/docs/editor/intellisense).
+
+<br/>
+
+## C. Compatibility
 
 Now **this package support all devices and browser**, because this package can use both [Audio File](AUDIO_FILE.md) and Web Speech Synthesis API.
 

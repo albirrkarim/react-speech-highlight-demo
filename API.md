@@ -1,8 +1,10 @@
 # API
 
-The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
+The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily. 
 
-see [API_VANILLA.md](API_VANILLA.md) for vanilla js version
+This package is written with typescript, You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [vscode](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
+
+see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 ```jsx
 // v4.9.4 API
@@ -22,15 +24,36 @@ import {
 
   // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
+  PKG, 
   PREFERRED_VOICE, // Set global config for the preffered voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key
+  OPENAI_CHAT_COMPLETION_API_ENDPOINT,
+
   getVoiceBasedOnVoiceURI,
   getCachedVoiceInfo,
   getCachedVoiceURI,
   setCachedVoiceInfo,
-  getCachedVoiceName,
+  getCachedVoiceName,  
+} from "react-speech-highlight";
+
+// Type data for typescript
+import type { 
+  ControlHLType, 
+  StatusHLType, 
+  PrepareHLType, 
+  SpokenHLType, 
+  UseTextToSpeechReturnType, 
+  ActivateGestureProps, 
+  GetVoicesProps,
+
+  VoiceInfo, 
+  markTheWordsFuncType, 
+  ConfigTTS, 
+  getAudioType,
+  VisemeMap,
+  SentenceInfo
 } from "react-speech-highlight";
 ```
 
@@ -500,6 +523,7 @@ import {
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key
+  OPENAI_CHAT_COMPLETION_API_ENDPOINT, // Key to set open ai chat completion api
   getVoiceBasedOnVoiceURI,
   getCachedVoiceInfo,
   getCachedVoiceURI,
@@ -517,7 +541,7 @@ Usage example:
 You can set Preferred Voice
 
 ```jsx
-import { PREFERRED_VOICE } from "react-speech-highlight";
+import { PREFERRED_VOICE, OPENAI_CHAT_COMPLETION_API_ENDPOINT } from "react-speech-highlight";
 
 // set global preferred voice
 useEffect(() => {
@@ -529,5 +553,15 @@ useEffect(() => {
     PREFERRED_VOICE,
     JSON.stringify(your_defined_preferred_voice)
   );
+
+  // Set open ai chat completion api
+  // example in demo website (next js using environment variable) src/Components/ClientProvider.tsx
+  if (process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT) {
+    // Setting up the OpenAI chat completion API endpoint before the app starts
+    sessionStorage.setItem(OPENAI_CHAT_COMPLETION_API_ENDPOINT, process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT)
+  }
+
+  // or 
+  sessionStorage.setItem(OPENAI_CHAT_COMPLETION_API_ENDPOINT, "http://localhost:8000/api/v1/public/text-to-speech-elevenlabs")
 }, []);
 ```

@@ -1,10 +1,10 @@
 # React / Vanilla 语音高亮
 
-[English](README.md) | [简体中文](README_CN.md)
+[English](README.md) | [简体中文](README_CN.md) | [Bahasa Indonesia](README_ID.md)
 
-![React / Vanilla Speech Highlight](./img/description.png)
+![React / Vanilla Speech Highlight](./img/banner.png)
 
-https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35ec8b-b84b-45af-8446-9c226314b77e
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/06e7b0a2-8c19-4ffc-826e-1470a275dfcb
 
 使用音频文件、文本到语音 API 和网络语音合成 API，通过 React / Vanilla js 文本到语音功能实现在语音播放时高亮显示正在说的单词和句子。
 
@@ -25,7 +25,9 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/db35e
 如果您想要其他实现方式，只需通过 discord 向我询问：
 albirrkarim#8171
 
-[通过 discord 给我发消息](https://discordapp.com/channels/@me/884043164908929034)
+<a href="https://discordapp.com/channels/@me/884043164908929034" title="Message me with discord">
+    <img src="./img/discord.png" width="200em">
+</a>
 
 ## 特性：
 
@@ -46,14 +48,13 @@ albirrkarim#8171
 
 **目录**
 
-- [A. 引言](#a-introduction)
+- [A. 简介](#a-introduction)
 - [B. 待办事项](#b-todo)
-- [C. API](#c-api)
-- [D. 示例代码](#d-example-code)
-- [E. 更新日志](#e-changelog)
-- [F. 免责声明](#f-disclaimer)
-- [G. 保修](#g-warranty)
-- [H. 常见问题解答](#h-faq)
+- [C. API与示例代码](#c-api---example-code)
+- [D. 更新日志](#d-changelog)
+- [E. 免责声明与保证](#e-disclaimer--warranty)
+- [F. 常见问题解答](#f-faq)
+- [G. 支付](#g-payment)
 
 ## A. 引言
 
@@ -98,16 +99,34 @@ albirrkarim#8171
 
 ![功能概览](./img/features.png)
 
+
+### 应用场景
+
+- **互动博客**
+
+想象一下，你有一篇长文章并设置了文字转语音（TTS）按钮，用户点击后可以播放文章的语音，并能看到文章阅读的进度。由于这个包具备服务器端渲染（SSR）功能，你的文章将具备搜索引擎优化（SEO）的优势。
+
+- **网络 AI 头像 / NPC**
+
+![viseme](/img/viseme.png)
+
+在我提供的[演示](https://react-speech-highlight.vercel.app/)中，你可以看到来自 [readyplayer.me](https://readyplayer.me/) 的3D头像播放`闲置`动画，并且其嘴部可以与高亮的文字转语音同步。这是因为这个包有反映[当前说话唇形](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl)的 React 状态。我在演示中使用的唇形列表是 [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync)。
+
 <br>
 <br>
 
 ## B. 待办事项
 
-- [ ] 提供 API 输出：高亮显示正在发言的句子和单词的 HTML 元素。当您在 Web 元宇宙中玩耍时，这将非常有益。想象一下在元宇宙中使用文本到语音技术。（例如 mozilla hubs, aframe 等）
-- [ ] 请让我知道您希望从这个包中得到什么，请在 issues 标签页上写下您的想法。
+- [ ] 为中文字符添加唇形支持
+- [ ] 请告诉我您希望从这个包中得到什么，请在问题标签页上写下来，或者通过 Discord 向我发送消息 @albirrkarim
 
 <br/>
 
+- [x] 使用 [TypeScript](https://www.typescriptlang.org/) 重写
+- [x] 服务器端渲染功能，查看我们的演示使用的是 [Next.js](https://nextjs.org/)
+- [x] 批量 API 请求用于制作长文章内容的音频文件。这将提高效率和用户体验。[解决音频播放延迟以及用户触发播放的手势必须接近的问题](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
+- [x] 添加示例文字到语音与3D头像唇形同步，3D头像由 [readyplayer.me](https://readyplayer.me) 生成。[查看](https://vanilla-speech-highlight.vercel.app)
+- [x] 使用 eslint 进行代码校验
 - [x] 为那些不使用 react 的人添加 vanilla js 支持，[查看](https://vanilla-speech-highlight.vercel.app)
 - [x] 当使用音频文件播放时添加高亮显示能力。
 - [x] 当用户的设备中没有内置的语音合成功能，或者可能因为音质比机器声音更好而偏好使用音频文件（.mp3/等）时，添加回退/偏好使用音频文件的功能。[查看](AUDIO_FILE.md)
@@ -130,23 +149,20 @@ albirrkarim#8171
 <br>
 <br>
 
-## C. API
+## C. API 和示例代码
 
-查看 [API.md](API.md)
+请参阅 [API.md](API.md) 和 [EXAMPLE_CODE.md](EXAMPLE_CODE.md)，其中包含简单的示例代码。
 
-<br>
-<br>
+完整的示例代码和实现示例使用的是 [演示网站](https://react-speech-highlight.vercel.app) 的源代码。购买此套件时将包括演示网站的源代码。
 
-## D. 示例代码
+这个包是用 TypeScript 编写的，您不必阅读这里的所有文档，因为这个包现在支持 [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)。这是什么？简单来说，当你将鼠标悬停在某些变量或函数上时，[vscode](https://code.visualstudio.com) 会显示一些弹出窗口（简单教程），说明该函数的内容、示例、参数等...
 
-查看 [EXAMPLE_CODE.md](EXAMPLE_CODE.md) 它包含简单的示例代码。
-
-完整的示例代码和实现示例使用了[演示网站](https://react-speech-highlight.vercel.app)的源代码。当您购买此包时，演示网站的源代码将包含在内。
+只需使用演示网站的源代码，您可以直接理解这个包。
 
 <br>
 <br>
 
-## E. 更新日志
+## D. 更新日志
 
 更新日志包含有关新功能、提高准确性、修复错误以及当版本更新时您应该做什么的信息。
 
@@ -155,40 +171,87 @@ albirrkarim#8171
 <br>
 <br>
 
-## F. 免责声明
+## E. 免责声明与保证
 
-不予退款
+不提供退款。
 
+我喜欢收到客户的反馈。您可以在问题标签页上写下您的反馈，当我有时间时，我可以尝试解决这些问题，并在下次更新时提供解决方案。
 <br>
 <br>
 
-## G. 保证
-
-我喜欢收到我的客户的反馈。您可以在问题标签页上写下您的问题，这样当我有时间时，我可以尝试解决问题并在下次更新时提供解决方案。
-
-<br>
-<br>
-
-## H. 常见问题解答
+## F. 常见问题解答
 
 <details>
-  <summary>为什么它很贵？为什么不是开源包？</summary>
+  <summary>为什么这么贵？为什么不是开源包？</summary>
   
   <br/>
 
-尝试自己制作这个包。你会感激我把它卖得这么便宜。
+尝试自己制作这个包。你会感激我卖得这么便宜。
 
-嗯，我需要资金来支持研究，你知道制作包花费了大量的时间和当然还有金钱。
+嗯，我需要资金来资助研究，你知道制作包需要花费很多时间和当然还有钱。
 
 </details>
 
 <br/>
 
 <details>
-  <summary>高亮显示功能有多准确？</summary>
+  <summary>你能给我一些折扣吗？</summary>
+  
+  <br/>
+
+可以，如果你是学生。
+
+</details>
+
+<br/>
+
+<details>
+  <summary>它有良好的文档和精心制作吗？</summary>
+  
+  <br/>
+
+你可以在这个仓库中查看文档，这个包是用 TypeScript 编写的，并使用 jest 进行测试以确保质量。
+
+你不必在这里阅读所有文档，因为这个包现在支持 [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)，那是什么？简单来说就是当你将鼠标悬停在某些变量或函数上时，[vscode](https://code.visualstudio.com/) 会显示一些弹出窗口（简单教程），说明该函数的内容、示例、参数等...
+
+只需使用演示网站的源代码，你可以直接理解这个包。
+
+</details>
+
+<br/>
+
+<details>
+  <summary>这个包是用 TypeScript 编写的吗？它可以与 jsx 或原生 js 项目混合使用吗？</summary>
+  
+  <br/>
+
+可以，只需询问 [chat gpt](https://chat.openai.com)，并解释你的问题。
+
+例如：
+
+“我的项目使用 webpack，代码使用 jsx，我想在 jsx 旁边使用 tsx 代码，我该怎么做？”
+
+</details>
+
+<br/>
+
+<details>
+  <summary>唇形生成的准确性如何？</summary>
   <br/>
   
-  查看 [TEST.md](TEST.md) 上的详细信息
+  前往 [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
+
+我制作了一个演示，将唇形输出到控制台日志中。只需打开浏览器控制台并播放首选的音频示例（英语），你就会看到播放的 TTS 中当前时间的单词和唇形。
+
+</details>
+
+<br/>
+
+<details>
+  <summary>高亮显示功能的准确性如何？</summary>
+  <br/>
+  
+  只需查看演示
 
 </details>
 
@@ -199,64 +262,66 @@ albirrkarim#8171
 
   <br/>
 
-尝试使用首选或回退到音频文件，查看 [AUDIO_FILE.md](AUDIO_FILE.md)
+尝试使用首选或回退到音频文件，见 [AUDIO_FILE.md](AUDIO_FILE.md)
 
 或
 
-尝试在您的设备中设置语音合成或语言。
+尝试设置你的设备的语音合成或语言。
 
-如果您使用的是智能手机（安卓）：
+如果你使用智能手机（Android）：
 
-1. 确保您安装了[语音识别与合成](https://play.google.com/store/apps/details?id=com.google.android.tts)
+1. 确保你安装了 [语音识别与合成](https://play.google.com/store/apps/details?id=com.google.android.tts)
 
-2. 如果第一步不起作用。尝试下载谷歌键盘，然后设置口述语言。等待几分钟（您的设备将自动下载语音），然后重启您的智能手机。
+2. 如果第一步不起作用。尝试下载 Google 键盘。然后设置口述语言。等待几分钟（你的设备将自动下载语音），然后重启你的智能手机。
 
 </details>
 
 <br/>
 
 <details>
-  <summary>为什么第一次播放的语音不工作？</summary>
+  <summary>为什么第一次播放声音时语音功能不起作用？</summary>
 
   <br/>
 
-您的设备将首先下载那个声音。然后您的设备将本地拥有那个声音。
+你的设备将首先下载那个声音。然后你的设备将本地拥有那个声音。
 
-尝试使用首选或回退到音频文件，查看 [AUDIO_FILE.md](AUDIO_FILE.md)
+尝试使用首选或回退到音频文件，见 [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
 <br/>
 
 <details>
-  <summary>我可以在不显示高亮的情况下使用这个文本到语音吗？</summary>
+  <summary>我可以在不显示高亮的情况下使用这种文字转语音吗？</summary>
 
   <br/>
 
-是的，[查看](API.md#5-speak)
+是的，[参见](API.md#5-speak)
 
 </details>
 
 <br/>
 
 <details>
-  <summary>我可以不使用 openai API 来构建吗？</summary>
+  <summary>我可以不使用 openai API 吗？</summary>
 
   <br/>
     
-  可以，但您将遇到这个[问题](PROBLEMS.md#6-wrong-read-number)
+  可以，但你
+
+会遇到这个 [问题](PROBLEMS.md#6-wrong-read-number)
 
 </details>
 <br/>
 
 <details>
-  <summary>这个包使用哪些依赖？</summary>
+  <summary>这个包使用了哪些依赖？</summary>
 
   <br/>
       
-  查看此仓库中的 [package.json](package.json)。构建此包后，您只需要 `peerDependencies` 中的 npm 包。只需要 react。
+  查看这个仓库中的 [package.json](package.json)，看看 `peerDependencies`，一旦你构建了这个包，你将只需要在那个 `peerDependencies` 中的 npm 包。只需 React。
 
-这个包需要 open ai API 来更好地完成文本到语音任务（解决[这个问题](PROBLEMS.md#6-wrong-read-number)）。
+这个包需要 open ai API 来更好地执行文字转语音任务（解决 [问题](PROBLEMS.md#6-wrong-read-number)）。
 
 </details>
 
@@ -267,9 +332,9 @@ albirrkarim#8171
 
   <br/>
 
-是的，查看 [TEST.md](TEST.md) 上的详细信息
+是的，详见 [TEST.md](TEST.md)
 
-或者您可以尝试使用首选或回退到音频文件，查看 [AUDIO_FILE.md](AUDIO_FILE.md)
+或者你可以尝试使用首选或回退到音频文件，见 [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -280,17 +345,94 @@ albirrkarim#8171
 
   <br/>
 
-如[引言](#a-introduction)中所述。这里是包工作的概述。
+如 [上文](#a-introduction) 所介绍。这里是包工作的概览。
 
-这个包使用 [web 语音合成](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API 来进行文本到语音任务。但这种免费的网络语音合成也带来了[问题](PROBLEM.md)。
+这个包使用 [web 语音合成](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API 来执行文字转语音任务。但这种免费的网络语音合成也带来了 [问题](PROBLEM.md)。
 
-然后，这个包提供了一个接口，增加了功能，重要的是尝试解决所有问题。
+然后，这个包提供了一个接口，增加了功能，尤其是试图解决所有问题。
 
-在尝试解决某些问题时，这个包需要来自 [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) 的帮助，增加了理解能力。比如添加检测语言的功能，解决[这个问题](PROBLEMS.md#6-wrong-read-number)。
+在尝试解决某些问题时，这个包需要来自 [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) 的帮助，它增加了理解能力。比如增加检测语言的功能，解决 [这个问题](PROBLEMS.md#6-wrong-read-number)。
 
-更简单的方法
-
-是使用首选或回退到音频文件，查看 [AUDIO_FILE.md](AUDIO_FILE.md)
+更简单的方法是使用首选或回退到音频文件，见 [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
+
 <br/>
+
+## G. 支付
+
+<br/>
+
+价格为70美元。
+
+我接受各种支付方式：
+
+<a href="https://github.com/sponsors/albirrkarim" title="Github Sponsors">
+    <img src="https://github.com/albirrkarim/laravel-react-starter-kit-pro/assets/29292018/00e008ed-8d31-4b4c-a54d-a53ac62d9f91" width="350em">
+</a>
+
+<br/>
+<br/>
+
+如果您所在的国家无法使用 GitHub 赞助商，您可以使用 [wise.com](https://wise.com/invite/dic/albirrkarims)。您可以将价格（70美元）换算成您的货币，然后直接使用您的货币通过 [Wise](https://wise.com/invite/dic/albirrkarims) 发送。
+
+
+<a href="https://wise.com/pay/me/albirrkarims" title="Wise Payment">
+    <img src="https://github.com/albirrkarim/albirrkarim/assets/29292018/7a5fba67-9ec0-4401-b65b-780306128e87" title="@albirrkarims-wisetag" width="200em">
+</a>
+
+<br/>
+<br/>
+
+如果您在印度尼西亚（我的国家），您可以通过银行和电子钱包（GoPay、Shopee Pay、Jenius）轻松转账。
+
+<img src="./img/payment.png" width="350em">
+
+<br/>
+<br/>
+
+<div align="center">
+
+<a href="https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-react&#0045;vanilla&#0045;speech&#0045;highlight" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=574592&theme=light" alt="React&#0032;&#0047;&#0032;Vanilla&#0032;Speech&#0032;Highlight - Highlight&#0032;Anything | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+</div>
+
+<br/>
+
+## 关键词
+
+如果您在寻找以下产品，那么这个软件包就是您的答案：
+
+- 最佳文字转语音软件
+- 具有唇形同步的文字转语音 JavaScript
+- JavaScript 文字转语音高亮显示单词
+- 如 Speechify 一样，如何通过高亮显示句子和单词进行文字转语音
+- 如何使用 Elevenlabs 通过高亮显示句子和单词进行文字转语音
+- 如何使用 OpenAI 通过高亮显示句子和单词进行文字转语音
+- 如何使用 Google 语音合成通过高亮显示句子和单词进行文字转语音
+- React JS 文字转语音
+- JavaScript 文字转语音
+- TypeScript 文字转语音
+- 高亮显示的文字转语音
+- TTS 中的语音高亮
+- 带句子高亮的 TTS
+- 文字转语音中的单词高亮
+- Elevenlabs TTS
+- 高亮显示的 Elevenlabs TTS
+- OpenAI 文字转语音
+- 高亮显示的 OpenAI TTS
+- React 文字转语音高亮显示
+- 带高亮的 React TTS
+- React 语音合成
+- React 中的高亮显示 TTS
+- React 中的 Google 语音合成
+- React JS 文字转语音
+- React JS TTS
+- React 文字转语音
+- React JS 中的 TTS
+- React JS 语音合成
+- JavaScript 文字转语音
+- JavaScript TTS
+- JS 中的文字转语音
+- JS 语音合成
+- JavaScript 中的高亮显示 TTS

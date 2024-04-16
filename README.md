@@ -116,7 +116,6 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 ## B. TODO
 
-
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
 
