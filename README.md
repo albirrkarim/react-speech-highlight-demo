@@ -44,18 +44,17 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.9.3
+# Docs for v4.9.4
 
 **Table Of Contents**
 
 - [A. Introduction](#a-introduction)
 - [B. Todo](#b-todo)
-- [C. API](#c-api)
-- [D. Example Code](#d-example-code)
-- [E. Changelog](#e-changelog)
-- [F. Disclaimer & Warranty](#f-disclaimer--warranty)
-- [G. FAQ](#h-faq)
-- [H. Payment](#i-payment)
+- [C. API & Example Code](#c-api---example-code)
+- [D. Changelog](#d-changelog)
+- [E. Disclaimer & Warranty](#e-disclaimer--warranty)
+- [F. FAQ](#f-faq)
+- [G. Payment](#g-payment)
 
 ## A. Introduction
 
@@ -152,23 +151,22 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 <br>
 <br>
 
-## C. API
+## C. API & Example Code
 
 See [API.md](API.md)
-
-<br>
-<br>
-
-## D. Example Code
 
 see [EXAMPLE_CODE.md](EXAMPLE_CODE.md) it contain simple example code.
 
 The full example code and implementation example is using source code from [demo website](https://react-speech-highlight.vercel.app). the source code of demo website is included when you buy this package.
 
+This package is written with typescript, You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function vs code will show some popup (simple tutorial) what is the function about, examples, params, etc...
+
+Just use the source code from demo website, you can literally just understand the package.
+
 <br>
 <br>
 
-## E. Changelog
+## D. Changelog
 
 Changelog contains information about new feature, improve accuracy, fix bug, and what you should do when the version is update.
 
@@ -177,7 +175,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 <br>
 <br>
 
-## F. Disclaimer & Warranty
+## E. Disclaimer & Warranty
 
 There's no refund.
 
@@ -186,7 +184,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 <br>
 <br>
 
-## G. FAQ
+## F. FAQ
 
 <details>
   <summary>Why it's expensive? Why it's not opensource package?</summary>
@@ -312,7 +310,7 @@ Yes, [see](API.md#5-speak)
 <br/>
 
 <details>
-  <summary>Can i build without openai API?</summary>
+  <summary>Can i use without openai API?</summary>
 
   <br/>
     
@@ -366,7 +364,7 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 
 <br/>
 
-## H. Payment
+## G. Payment
 
 <br/>
 
