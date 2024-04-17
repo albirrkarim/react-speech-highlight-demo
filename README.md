@@ -22,6 +22,8 @@ Read the [API_VANILLA.md](API_VANILLA.md) to see the different.
 
 [Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
+Watch [Youtube Video](https://youtu.be/vDc7L5W7HhU) about implementation vanilla speech highlight for javascript text to speech task.
+
 Do you want other implementation? just ask me via discord: albirrkarim
 
 <a href="https://discordapp.com/channels/@me/884043164908929034" title="Message me with discord">
