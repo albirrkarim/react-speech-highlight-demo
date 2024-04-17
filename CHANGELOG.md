@@ -10,7 +10,7 @@ Fix bug
 
 # 4.9.2
 
-- Rewrite using Typescript, and make comments for all feature so the vscode will show some tutorial when you hover your mouse over some function. ([VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense))
+- Rewrite using Typescript, and make comments for all feature so the VS Code will show some tutorial when you hover your mouse over some function. ([VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense))
 
 # 4.9.1
 

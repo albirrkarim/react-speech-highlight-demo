@@ -44,7 +44,7 @@ albirrkarim#8171
 
 <br/>
 
-# 文档 v4.9.4
+# 文档 v4.9.5
 
 **目录**
 
@@ -155,7 +155,7 @@ albirrkarim#8171
 
 完整的示例代码和实现示例使用的是 [演示网站](https://react-speech-highlight.vercel.app) 的源代码。购买此套件时将包括演示网站的源代码。
 
-这个包是用 TypeScript 编写的，您不必阅读这里的所有文档，因为这个包现在支持 [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)。这是什么？简单来说，当你将鼠标悬停在某些变量或函数上时，[vscode](https://code.visualstudio.com) 会显示一些弹出窗口（简单教程），说明该函数的内容、示例、参数等...
+这个包是用 TypeScript 编写的，您不必阅读这里的所有文档，因为这个包现在支持 [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)。这是什么？简单来说，当你将鼠标悬停在某些变量或函数上时，[VS Code](https://code.visualstudio.com) 会显示一些弹出窗口（简单教程），说明该函数的内容、示例、参数等...
 
 只需使用演示网站的源代码，您可以直接理解这个包。
 
@@ -212,7 +212,7 @@ albirrkarim#8171
 
 你可以在这个仓库中查看文档，这个包是用 TypeScript 编写的，并使用 jest 进行测试以确保质量。
 
-你不必在这里阅读所有文档，因为这个包现在支持 [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)，那是什么？简单来说就是当你将鼠标悬停在某些变量或函数上时，[vscode](https://code.visualstudio.com/) 会显示一些弹出窗口（简单教程），说明该函数的内容、示例、参数等...
+你不必在这里阅读所有文档，因为这个包现在支持 [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)，那是什么？简单来说就是当你将鼠标悬停在某些变量或函数上时，[VS Code](https://code.visualstudio.com/) 会显示一些弹出窗口（简单教程），说明该函数的内容、示例、参数等...
 
 只需使用演示网站的源代码，你可以直接理解这个包。
 

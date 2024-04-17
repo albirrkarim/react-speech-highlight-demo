@@ -22,7 +22,7 @@ see [changelog](CHANGELOG.md)
 
 ## B. Data Type Safe & Code Quality
 
-Now we rewrite the package using [Typescript](https://www.typescriptlang.org/), linting using [eslint](https://eslint.org), and support [vscode intellisense](https://code.visualstudio.com/docs/editor/intellisense).
+Now we rewrite the package using [Typescript](https://www.typescriptlang.org/), linting using [eslint](https://eslint.org), and support [VS Code intellisense](https://code.visualstudio.com/docs/editor/intellisense).
 
 <br/>
 

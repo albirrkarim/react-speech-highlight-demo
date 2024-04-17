@@ -1,6 +1,6 @@
 # Example Code
 
-This is the simple example code. Want more? see the [demo website private repo](https://github.com/albirrkarim/demo-website-react-speech-highlight)
+This is the simple example code. Want more? see the [HOW_TO_USE.md](HOW_TO_USE.md)
 
 ### Styling the highlighter
 
@@ -34,12 +34,14 @@ export default function App() {
   const textEl = useRef();
   const lang = "en-US";
 
-  const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+  const config = {
     disableSentenceHL: false,
     disableWordHL: false,
     autoScroll: false,
     lang: lang,
-  });
+  }
+
+  const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 
   const textHL = useMemo(() => markTheWords(text), [text]);
 
@@ -57,7 +59,7 @@ export default function App() {
         isPlay={statusHL == "play" || statusHL == "calibration"}
         play={() => {
           if (statusHL == "pause") {
-            controlHL.resume();
+            controlHL.resume(config);
           } else {
             controlHL.play(
               textEl.current

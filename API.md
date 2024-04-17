@@ -2,12 +2,12 @@
 
 The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily. 
 
-This package is written with typescript, You don't have to read all the docs in here, because this package now support [vscode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [vscode](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
+This package is written with typescript, You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 ```jsx
-// v4.9.4 API
+// v4.9.5 API
 import {
   // Main
   markTheWords,
@@ -132,6 +132,8 @@ const actionConfig = {
   // Prefer or fallback to audio file
   preferAudio: "example.com/some_file.mp3",
   fallbackAudio: "example.com/some_file.mp3",
+
+  batchSize: null // or 200
 };
 
 controlHL.play(textEl.current, callback, actionConfig);
@@ -211,6 +213,14 @@ controlHL.play(textEl.current, callback, actionConfig);
 
   const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config)
   ```
+
+- `batchSize`
+
+  The batch size for the audio file.
+  example: 200 
+  so package will batched send 200 characters per request to TTS API
+
+  [Readmore about batch system in this package](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 
 </details>
 
