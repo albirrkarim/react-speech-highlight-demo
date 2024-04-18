@@ -162,7 +162,7 @@ This package is written with typescript, You don't have to read all the docs in 
 
 Just use the source code from demo website, you can literally just understand the package.
 
-![JS doc and VS Code IntelliSense](./img/intellisense.gif)
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
 
 <br>
 <br>
@@ -223,7 +223,7 @@ You don't have to read all the docs in here, because this package now support [V
 
 Just use the source code from demo website, you can literally just understand the package.
 
-![JS doc and VS Code IntelliSense](./img/intellisense.gif)
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
 
 </details>
 
