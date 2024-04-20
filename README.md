@@ -395,7 +395,9 @@ When you country doesn't have acccess to github sponsors, you can use [wise.com]
 
 <br/>
 
-**After you pay you will be invited inside my private repo and stay inside for 1 year**
+**What you got**
+
+After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
 
 - [The demo website (this web) (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
 
