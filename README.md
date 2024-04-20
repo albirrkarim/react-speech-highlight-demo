@@ -118,7 +118,7 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 ## B. TODO
 
-- [ ] Accurate Pronounciation Correction Using LLM Open AI Chat Completions for any Term or Equations Paper, Math, Physics, etc...
+- [ ] (Still working on) Accurate pronounciation correction Using LLM Open AI Chat Completions for any terms or equations academic paper, math, physics, etc...
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
 
