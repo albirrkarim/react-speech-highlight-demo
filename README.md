@@ -376,6 +376,10 @@ The price is $70 USD.
 
 I accept various payment method:
 
+**Github Sponsors**
+
+Choose One Time Tab, Select the option, and follow the next instruction from github.
+
 <a href="https://github.com/sponsors/albirrkarim" title="Github Sponsors">
     <img src="https://github.com/albirrkarim/laravel-react-starter-kit-pro/assets/29292018/00e008ed-8d31-4b4c-a54d-a53ac62d9f91" width="350em">
 </a>
@@ -388,6 +392,16 @@ When you country doesn't have acccess to github sponsors, you can use [wise.com]
 <a href="https://wise.com/pay/me/albirrkarims" title="Wise Payment">
     <img src="https://github.com/albirrkarim/albirrkarim/assets/29292018/7a5fba67-9ec0-4401-b65b-780306128e87" title="@albirrkarims-wisetag" width="200em">
 </a>
+
+<br/>
+
+**After you pay you will be invited inside my private repo**
+
+- [The demo website (this web) (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
+
+- [The package repo (React Speech Highlight)](https://github.com/Web-XR-AI-lab/react-speech-highlight)
+
+- [The package repo (Vanilla Speech Highlight)](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)
 
 <br/>
 <br/>
