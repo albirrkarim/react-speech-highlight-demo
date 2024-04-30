@@ -1,10 +1,10 @@
 # CHANGELOG
 
-# 4.9.4
+# 4.9.7
 
-Fix bug
+Accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 
-# 4.9.3
+# 4.9.3 - 4.9.6
 
 Fix bug
 

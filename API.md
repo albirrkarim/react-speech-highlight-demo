@@ -7,7 +7,7 @@ This package is written with typescript, You don't have to read all the docs in 
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 ```jsx
-// v4.9.5 API
+// v4.9.7 API
 import {
   // Main
   markTheWords,

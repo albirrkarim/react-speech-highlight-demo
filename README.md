@@ -46,7 +46,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 <br/>
 
-# Docs for v4.9.5
+# Docs for v4.9.7
 
 **Table Of Contents**
 
@@ -118,12 +118,13 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 ## B. TODO
 
-- [ ] (Still working on) Accurate pronounciation correction Using LLM Open AI Chat Completions for any terms or equations academic paper, math, physics, etc...
+- [ ] (Still working on) Trying to add support for react native
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
+- [x] Accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Rewrite using [Typescript](https://www.typescriptlang.org/)
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
