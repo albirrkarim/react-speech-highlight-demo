@@ -63,7 +63,8 @@ This is the Documentation for private repo [React Speech Highlight package](http
 ### What i want?
 
 Recently, I want to implement the text-to-speech with highlight the word and sentence that are being spoken on my website.
-Then i do search on the internet. but i can't find the npm package to solve all my problems, and also i don't want to use paid subscription to some TTS API.
+
+Then i do search on the internet. but i can't find the npm package to solve all TTS [problems](PROBLEMS.md), and also i don't want to use paid subscription to some TTS API.
 
 I just want some powerfull package that work on all platforms and good voice quality.
 
@@ -71,7 +72,7 @@ I just want some powerfull package that work on all platforms and good voice qua
 
 **Using [Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)**
 
-Comes with problems (See [PROBLEMS.md](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md)). Robot like sound, Supported Devices Available.
+Comes with problems (See [PROBLEMS.md](PROBLEMS.md)). Robot like sound, Supported Devices Available, etc..
 
 **Using paid subscription text-to-speech synthesis API**
 
@@ -194,9 +195,13 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-Try yourself to make this package. you will be grateful I am selling it cheap.
+  Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
 
-Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
+  Making the pronounciation engine that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
+
+  Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
+
+  Just try by yourself to make this package. you will be grateful I am selling it cheap.
 
 </details>
 

@@ -68,11 +68,13 @@ Actually you can customize the logic, like add authentication method.
 
 ### Router
 
-`routes/api.php`
+Open `routes/api.php`
+
+Remember you must set the throttle 180 request / 1 minute. our engine need to send a lot request. no worry it small request. that cost effective.
 
 ```php
 /* OpenAI */
-Route::name("openai.")->controller(OpenAIController::class)->group(function () {
+Route::name("openai.")->middleware('throttle:180,1')->controller(OpenAIController::class)->group(function () {
     // chat gpt
     Route::post('chat',  'chatPost')->name('chat_completions');
 });
@@ -80,7 +82,7 @@ Route::name("openai.")->controller(OpenAIController::class)->group(function () {
 
 Controller
 
-`OpenAIController.php`
+Open `OpenAIController.php`
 
 ```php
 class OpenAIController extends Controller

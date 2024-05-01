@@ -1,10 +1,54 @@
 # Problems
 
+## Common problem in Text to Speech (Both audio file and Web Speech Synthesis)
+
+### 1. Pronounciation Problem
+
+We want text user see is different with what system should speak. 
+
+What we do ? we make some engine that can do accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
+
+See the pronounciation correction test case. [test_case/demo/pronouns.ts](test_case/demo/pronouns.ts)
+
+<details>
+  <summary>Show details</summary>
+  <br/>
+
+  **Auto Pronounciation Correction**
+
+  This package needs chat gpt api to do that. [see how to use integrate this package with open ai api](MAKE_BACKEND.md)
+
+  <br/>
+
+  **Manual Pronounciation Correction**
+
+  in english abbreviation like `FOMO`, `ETA`, etc.
+
+  in indonesian
+
+  `dgn` = `dengan`
+
+  `yg` = `yang`
+
+  This package also have built-in abbreviation function, or you can write your own rules.
+
+  ```
+  input:string -> abbreviation function -> output:string.
+  ```
+</details>
+
+<br/>
+
 ## When Using Audio File
 
 ### 1. The delay of audio played and user gesture to trigger play must be close.
 
-When user click play button the system will preparing the audio file with send request to TTS API like eleven labs, what if the api request is so long (because the text you send is long)?
+When user click play button the system will preparing the audio file with send request to TTS API like eleven labs, what if the api request is so long (because the text you send is long)? what if your TTS API has limitation
+
+It will causing bad experience to the user.
+
+<details>
+  <summary>Read more</summary>
 
 It will causing bad experience to the user. even in device like ipad and iphon they have rules that the delay between user interaction and the audio played must not exceed 4seconds or it will be fail.
 
@@ -32,10 +76,11 @@ my package will send the first chunk, and the tts api will give the audio file i
 
 So the delay between user click button play and the tts start to play will be just 1,2 seconds. what about other chunks. i manage to send other chunk in the background while tts is played. and enchance efficiency of character used in tts api. you pay the tts api service based on the character right?.
 
-lets say we have 
+lets say we have
+
 ```
 chunk0 <- user still playing this
-chunk1  
+chunk1
 chunk2 <- my package will try to prepare until this
 chunk3
 ...
@@ -43,6 +88,8 @@ chunk49
 ```
 
 This method will, solve other problem like maximal character that your tts api can handle. for example on elvenlabs they only can do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation.
+
+</details>
 
 <br/>
 <br/>
@@ -78,39 +125,7 @@ I'm sure that you have the same experience, developing web for cross platform, a
 
 <br/>
 
-### 4. We want Text user see is different with what system speak
-
-Sometimes we need need abbreviation function, for example we need the text that displayed to user is different with the text that we use to give the to the [speech utterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/text)
-
-<details>
-  <summary>Show details</summary>
-  <br/>
-
-**Roman Number**
-
-We need displayed text is `I. II. III.` if we input that same text the system will read as `i. ii. iii.`
-
-We need to change the roman numbers to arabic numbers so the system can read correctly.
-
-**Lang Abbreviation**
-
-in english abbreviation like `FOMO`, `ETA`, etc.
-
-in indonesian
-
-`dgn` = `dengan`
-
-`yg` = `yang`
-
-This package also have built-in abbreviation function, or you can write your own rules.
-
-input:string -> abbreviation function -> output:string.
-
-</details>
-
-<br/>
-
-### 5. Bad performance or voice too fast
+### 4. Bad performance or voice too fast
 
 in API `prepareHL.getVoices()` i implement this flow:
 
@@ -124,20 +139,7 @@ in API `prepareHL.getVoices()` i implement this flow:
 
 <br/>
 
-### 6. Wrong Read Number
-
-With `window.speechSynthesis` the number `9000` will spoken as "nine zero zero zero"
-So we must convert into word form number.
-
-example `9000` -> `nine thousand`
-
-example `9001` -> `nine thousand one`
-
-This package needs chat gpt api to do that. [see how to use integrate this package with open ai api](MAKE_BACKEND.md)
-
-<br/>
-
-### 7. The voice is not good enough
+### 5. The voice is not good enough
 
 With `window.speechSynthesis` the voice is like a robot, doesn't have parameter like:
 

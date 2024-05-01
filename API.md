@@ -1,6 +1,6 @@
 # API
 
-The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily. 
+The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
 
 This package is written with typescript, You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
@@ -14,7 +14,7 @@ import {
   useTextToSpeech,
 
   // Utilities function for precision and add more capabilities
-  convertAllNumberIntoWord,
+  pronunciationCorrection,
   getLangForThisText,
   getTheVoices,
   noAbbreviation,
@@ -24,36 +24,34 @@ import {
 
   // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
-  PKG, 
+  PKG,
   PREFERRED_VOICE, // Set global config for the preffered voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key
   OPENAI_CHAT_COMPLETION_API_ENDPOINT,
-
   getVoiceBasedOnVoiceURI,
   getCachedVoiceInfo,
   getCachedVoiceURI,
   setCachedVoiceInfo,
-  getCachedVoiceName,  
+  getCachedVoiceName,
 } from "react-speech-highlight";
 
 // Type data for typescript
-import type { 
-  ControlHLType, 
-  StatusHLType, 
-  PrepareHLType, 
-  SpokenHLType, 
-  UseTextToSpeechReturnType, 
-  ActivateGestureProps, 
+import type {
+  ControlHLType,
+  StatusHLType,
+  PrepareHLType,
+  SpokenHLType,
+  UseTextToSpeechReturnType,
+  ActivateGestureProps,
   GetVoicesProps,
-
-  VoiceInfo, 
-  markTheWordsFuncType, 
-  ConfigTTS, 
+  VoiceInfo,
+  markTheWordsFuncType,
+  ConfigTTS,
   getAudioType,
   VisemeMap,
-  SentenceInfo
+  SentenceInfo,
 } from "react-speech-highlight";
 ```
 
@@ -133,7 +131,7 @@ const actionConfig = {
   preferAudio: "example.com/some_file.mp3",
   fallbackAudio: "example.com/some_file.mp3",
 
-  batchSize: null // or 200
+  batchSize: null, // or 200
 };
 
 controlHL.play(textEl.current, callback, actionConfig);
@@ -217,7 +215,7 @@ controlHL.play(textEl.current, callback, actionConfig);
 - `batchSize`
 
   The batch size for the audio file.
-  example: 200 
+  example: 200
   so package will batched send 200 characters per request to TTS API
 
   [Readmore about batch system in this package](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
@@ -330,15 +328,9 @@ Contain react state for reporting while TTS playing.
 
 Utilities function for precision and add more capabilities
 
-## 1. convertAllNumberIntoWord()
+## 1. pronunciationCorrection()
 
-The purpose of [chat GPT completions api](https://platform.openai.com/docs/api-reference/completions/create) is to convert the number into word form number, because the `window.speechSynthesis` will fail.
-
-With `window.speechSynthesis` the number `9000` will spoken as "nine zero zero zero"
-So we must convert into word form number.
-
-example `9000` -> `nine thousand`
-example `9001` -> `nine thousand one`
+The common problem is the text display to user is different with their spoken form. like math symbol, equations, terms, etc.. [readmore about pronounciation problem](PROBLEMS.md)
 
 [How to build this package with open ai api integration](MAKE_BACKEND.md)
 
@@ -356,11 +348,19 @@ const inputText = `
 
 const textEl = useRef();
 
+const pronounciation = async (): Promise<void> => {
+  if (textEl.current) {
+    void pronunciationCorrection(textEl.current);
+  }
+};
+
 useEffect(() => {
   if (textEl.current) {
-    convertAllNumberIntoWord(textEl.current, "en-US");
+    console.log("pronounciation");
+    void pronounciation();
   }
-}, [inputText]);
+  // eslint-disable-next-line
+}, []);
 
 const textHL = useMemo(() => markTheWords(inputText), [inputText]);
 
@@ -551,7 +551,10 @@ Usage example:
 You can set Preferred Voice
 
 ```jsx
-import { PREFERRED_VOICE, OPENAI_CHAT_COMPLETION_API_ENDPOINT } from "react-speech-highlight";
+import {
+  PREFERRED_VOICE,
+  OPENAI_CHAT_COMPLETION_API_ENDPOINT,
+} from "react-speech-highlight";
 
 // set global preferred voice
 useEffect(() => {
@@ -568,10 +571,16 @@ useEffect(() => {
   // example in demo website (next js using environment variable) src/Components/ClientProvider.tsx
   if (process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT) {
     // Setting up the OpenAI chat completion API endpoint before the app starts
-    sessionStorage.setItem(OPENAI_CHAT_COMPLETION_API_ENDPOINT, process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT)
+    sessionStorage.setItem(
+      OPENAI_CHAT_COMPLETION_API_ENDPOINT,
+      process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT
+    );
   }
 
-  // or 
-  sessionStorage.setItem(OPENAI_CHAT_COMPLETION_API_ENDPOINT, "http://localhost:8000/api/v1/public/text-to-speech-elevenlabs")
+  // or
+  sessionStorage.setItem(
+    OPENAI_CHAT_COMPLETION_API_ENDPOINT,
+    "http://localhost:8000/api/v1/public/text-to-speech-elevenlabs"
+  );
 }, []);
 ```
