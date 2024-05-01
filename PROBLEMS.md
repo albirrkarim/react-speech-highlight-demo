@@ -1,6 +1,6 @@
 # Problems
 
-## Common problem in Text to Speech (Both audio file and Web Speech Synthesis)
+## A. Common problem in Text to Speech (Both audio file and Web Speech Synthesis)
 
 ### 1. Pronounciation Problem
 
@@ -39,7 +39,7 @@ See the pronounciation correction test case. [test_case/demo/pronouns.ts](test_c
 
 <br/>
 
-## When Using Audio File
+## B. When Using Audio File
 
 ### 1. The delay of audio played and user gesture to trigger play must be close.
 
@@ -94,7 +94,7 @@ This method will, solve other problem like maximal character that your tts api c
 <br/>
 <br/>
 
-## When Using Web Speech Synthesis
+## C. When Using Web Speech Synthesis
 
 The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problems:
 

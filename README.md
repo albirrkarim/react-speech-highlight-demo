@@ -378,7 +378,7 @@ Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUD
 
 <br/>
 
-The price is $70 USD. 
+The current price is $70 USD an will be $94 on 9 May 2024
 
 I accept various payment method:
 
