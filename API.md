@@ -495,7 +495,7 @@ speak(
 ## 6. romanTransform()
 
 Convert roman number (I. II.) into arabic number (1, 2)
-Since version 4.6.8. The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce. see [test case](test_case/demo/roman_number.js) for this function.
+Since version 4.6.8. The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce.
 
 ```js
 var a = romanTransform("I.");

@@ -304,7 +304,6 @@ useEffect(() => {
 
 # 4.6.8
 
-- see folder `test_case` in this repo.
 - 100% pass Function Unit test `markTheWords()`, `isNumber()` , `romanTransform()`.
 - 90% pass prompt test.
 - Fix bugs: Date range misspelled

@@ -8,8 +8,6 @@ We want text user see is different with what system should speak.
 
 What we do ? we make some engine that can do accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 
-See the pronounciation correction test case. [test_case/demo/pronouns.ts](test_case/demo/pronouns.ts)
-
 <details>
   <summary>Show details</summary>
   <br/>

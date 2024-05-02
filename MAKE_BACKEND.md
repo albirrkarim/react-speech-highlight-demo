@@ -70,7 +70,7 @@ Actually you can customize the logic, like add authentication method.
 
 Open `routes/api.php`
 
-Remember you must set the throttle 180 request / 1 minute. our engine need to send a lot request. no worry it small request. that cost effective.
+Remember you must set the throttle 180 request / 1 minute. our engine need to send a lot request. no worry it small request so its cost effective.
 
 ```php
 /* OpenAI */

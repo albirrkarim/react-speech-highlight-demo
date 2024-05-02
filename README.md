@@ -52,7 +52,7 @@ This is the Documentation for private repo [React Speech Highlight package](http
 
 - [A. Introduction](#a-introduction)
 - [B. Todo](#b-todo)
-- [C. API & Example Code](#c-api---example-code)
+- [C. API & Example Code](#c-api--example-code)
 - [D. Changelog](#d-changelog)
 - [E. Disclaimer & Warranty](#e-disclaimer--warranty)
 - [F. FAQ](#f-faq)

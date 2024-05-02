@@ -4,17 +4,19 @@
 
 Unit Test is making test case for each function. make sure individual function is working as expected.
 
-Unit test using jest in demo website source code folder `__test__`.
-
-But for now only this function and some prompt that i have test.
-
-### Function
+### Function Test
 
 see [changelog](CHANGELOG.md)
 
-### Prompt Function
+### Prompt Test
 
-The prompt function is different method to test. the chat gpt not always giving exact value.
+Testing each prompt so it can be cost effective
+
+see [changelog](CHANGELOG.md)
+
+### Engine Test
+
+The [pronounciation correction engine](API.md#1-pronunciationcorrection) is combines the LLM (open ai chat API) and good algorithm to achieve accurate and cost effective. Of course it tested with test case.
 
 see [changelog](CHANGELOG.md)
 
