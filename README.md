@@ -106,13 +106,19 @@ Also this package is one time pay. No Subscription. Who likes subscription? I al
 
 - **Interactive Blog**
 
-Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read. you article will be SEO ready because. this package has Server Side Rendering (SSR) capability.
+Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read. you article will be SEO ready because this package has Server Side Rendering (SSR) capability.
 
 - **Web AI Avatar / NPC**
 
 ![viseme](/img/viseme.png)
 
 In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
+
+- **Academic Paper Reader**
+
+![Pronounciation](/img/pronounciation.png)
+
+The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronounciation [see](PROBLEMS.md#1-pronounciation-problem). so we make some pronounciation correction engine utilizing the Open AI API to think what should the term pronounced.
 
 <br>
 <br>
@@ -121,35 +127,29 @@ In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see
 
 - [ ] (Still working on) Trying to add support for react native
 - [ ] Add viseme support for chinese character
-- [ ] Let me know what you want from this package, please write it on issues tab, or send me discord message @albirrkarim
+- [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
 - [x] Accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
-- [x] Rewrite using [Typescript](https://www.typescriptlang.org/)
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
-- [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
+- [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
-- [x] Code Linting using eslint
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add vanilla js support, for those who dont use react, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add highlight capability when play using audio file.
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
 - [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
-
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
-- [x] Automate the testing (Prompt Test, Unit Test)
 - [x] Multi character support for non latin alphabet ( chinese (你好),
       russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )
-- [x] Convert number into word form number with chat gpt. [see](API.md#API.md#1-convertallnumberintoword)
 - [x] Add language detection using chat gpt. [see](API.md#2-getlangforthistext)
 - [x] Add seeking by sentence or paragraph. [see](API.md#2b-interface)
 - [x] Add reading progress by word or sentence. [see](API.md#spokenhl)
 - [x] Adjust config while TTS playing. [see](API.md#controlhl)
 - [x] You can use custom Abbreviation Function. [see](API.md#1-tts-marker-markthewords)
 - [x] Add Read Roman number, And API for that function. [see](API.md#6-romantransform)
-- [x] TTS that can't die.
-- [x] Test on any platform.
+- [x] Realiability: TTS that can't die, Test on any platform, Code Linting using eslint, Using [Typescript](https://www.typescriptlang.org/), [Tested (Prompt Test, Unit Test, Engine Test)](TEST.md)
 - [x] Add demo website. [see](https://react-speech-highlight.vercel.app)
 
 <br>
@@ -195,13 +195,13 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
+Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
 
-  Making the pronounciation engine that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
+Making the pronounciation engine that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-  Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
+Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
 
-  Just try by yourself to make this package. you will be grateful I am selling it cheap.
+Just try by yourself to make this package. you will be grateful I am selling it cheap.
 
 </details>
 
@@ -217,7 +217,6 @@ Yes, if you are student.
 </details>
 
 <br/>
-
 
 <details>
   <summary>Is it well documented and well crafted?</summary>
@@ -241,7 +240,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d32
   
   <br/>
 
-Yes it can, just ask [chat gpt](https://chat.openai.com), and explain your problems. 
+Yes it can, just ask [chat gpt](https://chat.openai.com), and explain your problems.
 
 Example :
 
@@ -250,7 +249,6 @@ Example :
 </details>
 
 <br/>
-
 
 <details>
   <summary>How accurate the viseme generation?</summary>
@@ -268,7 +266,7 @@ I make demo for outputing the viseme into console.log. just open the browser con
   <summary>How accurate the highlight capability?</summary>
   <br/>
   
-  Just see the demo
+  Just see the [demo](https://react-speech-highlight.vercel.app)
 
 </details>
 
@@ -356,19 +354,12 @@ or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO
 <br/>
 
 <details>
-  <summary>How it work?</summary>
-
+  <summary>How it work? Is the Package Architecture Scalable?</summary>
   <br/>
 
-As in the introduction [above](#a-introduction). Here the overview how package work.
+It just work. Simple explanation is in the introduction [above](#a-introduction).
 
-This package use [web speech synthesis](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) API to doing text-to-speech task. But this free web speech synthesis is also comes with [problem](PROBLEM.md).
-
-Then this package provide interface, that add capability, features and importantly try to fix the all problem.
-
-When try to fix some problem this package require help from [open ai chat completion API](https://platform.openai.com/docs/api-reference/chat) that adding understanding capability. like adding function to detect language, solve [this problem](PROBLEMS.md#6-wrong-read-number).
-
-Simpler approach is use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+The architecture scalable, just ask me what feature you want.
 
 </details>
 
@@ -428,7 +419,6 @@ If you are in indonesia (my country) you can easily transfer through bank and e 
 </div>
 
 <br/>
-
 
 ## Keywords
 
