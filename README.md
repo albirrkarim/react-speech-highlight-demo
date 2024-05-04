@@ -365,11 +365,125 @@ The architecture scalable, just ask me what feature you want.
 
 <br/>
 
-## G. Payment
+<details>
+  <summary>How about API cost of using open AI API for the pronounciation engine?</summary>
+  <br/>
+
+I try to optimize the cost while maintaining the accuracy by making new version of engine. v2, v3 etc...
+
+For now, here the test report of the pronoun v2 engines in version `4.9.7` of this library.
+
+```js
+const v2_pronoun_engine_reports = {
+  overallResults: {
+    Name: "v2",
+    Detail: "GPT3",
+    AvgAcc: "90.50%",
+    AvgScore: "92.05%",
+    AvgTime: "81.62s",
+    AvgCost: "869.53",
+    TotalTime: "652.94 s",
+    TotalCost: "Rp. 6956.27", // IDR 6956.27 is about USD $0.42 cost of open AI chat completion API
+    TotalRecords: 87, // 87 sentence that contain equations or term that should be the pronounciation corrected
+    CreatedAt: "29-04-2024 19:07",
+  },
+  testResults: {
+    romanNumberPronounTestCase: {
+      AvgAcc: "100.00%",
+      AvgScore: "95.83%",
+      AvgTime: "5.19s",
+      AvgCost: "53.41",
+      TotalCost: "320.44",
+    },
+    mathEquations: {
+      AvgAcc: "100.00%",
+      AvgScore: "95.62%",
+      AvgTime: "5.87s",
+      AvgCost: "54.80",
+      TotalCost: "273.98",
+    },
+    demoTestCase: {
+      AvgAcc: "95.00%",
+      AvgScore: "95.83%",
+      AvgTime: "4.71s",
+      AvgCost: "32.20",
+      TotalCost: "644.00",
+    },
+    physicalEquations: {
+      AvgAcc: "100.00%",
+      AvgScore: "97.29%",
+      AvgTime: "6.76s",
+      AvgCost: "58.16",
+      TotalCost: "581.62",
+    },
+    computerScienceTestCase: {
+      AvgAcc: "90.00%",
+      AvgScore: "97.58%",
+      AvgTime: "7.73s",
+      AvgCost: "85.52",
+      TotalCost: "855.17",
+    },
+    machineLeaningTestCase: {
+      AvgAcc: "73.68%",
+      AvgScore: "80.13%",
+      AvgTime: "9.99s",
+      AvgCost: "109.85",
+      TotalCost: "2087.12",
+    },
+    biologyTestCase: {
+      AvgAcc: "87.50%",
+      AvgScore: "96.09%",
+      AvgTime: "9.79s",
+      AvgCost: "119.12",
+      TotalCost: "952.95",
+    },
+    chemistryTestCase: {
+      AvgAcc: "77.78%",
+      AvgScore: "78.05%",
+      AvgTime: "9.47s",
+      AvgCost: "137.89",
+      TotalCost: "1240.99",
+    },
+  },
+};
+```
+
+</details>
 
 <br/>
 
+## G. Payment
+
+### The React js or Vanilla js version
+
 The current price is $70 USD an will be $94 on 9 May 2024
+
+**What you got**
+
+After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
+
+- [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
+
+- [The package repo (React Speech Highlight)](https://github.com/Web-XR-AI-lab/react-speech-highlight)
+
+- [The package repo (Vanilla Speech Highlight)](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)
+
+<br/>
+<br/>
+
+### The React Native version (Coming Soon)
+
+The web version is easier to make. but in react native the code and the flow is different. I have to rewrite the entire library so it can be use on react native.
+
+I think the fair price will be $200.
+
+**What you got**
+
+- The Demo App source code (coming soon)
+
+<br/>
+
+### Payment method
 
 I accept various payment method:
 
@@ -384,30 +498,17 @@ Choose One Time Tab, Select the option, and follow the next instruction from git
 <br/>
 <br/>
 
-When you country doesn't have acccess to github sponsors, you can use [wise.com](https://wise.com/invite/dic/albirrkarims). You can adjust the price (USD $70) into your currency then directly send with your currency using [wise](https://wise.com/invite/dic/albirrkarims).
+When you country doesn't have acccess to github sponsors, you can use [wise.com](https://wise.com/invite/dic/albirrkarims). You can adjust the price into your currency then directly send with your currency using [wise](https://wise.com/invite/dic/albirrkarims).
 
 <a href="https://wise.com/pay/me/albirrkarims" title="Wise Payment">
     <img src="https://github.com/albirrkarim/albirrkarim/assets/29292018/7a5fba67-9ec0-4401-b65b-780306128e87" title="@albirrkarims-wisetag" width="200em">
 </a>
 
-<br/>
-
-**What you got**
-
-After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
-
-- [The demo website (this web) (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
-
-- [The package repo (React Speech Highlight)](https://github.com/Web-XR-AI-lab/react-speech-highlight)
-
-- [The package repo (Vanilla Speech Highlight)](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)
-
-<br/>
-<br/>
-
 If you are in indonesia (my country) you can easily transfer through bank and e wallet (gopay, shopee pay, jenius)
 
 <img src="./img/payment.png" width="350em">
+
+<br/>
 
 <br/>
 <br/>

@@ -2,7 +2,7 @@
 
 ## A. Unit Test
 
-Unit Test is making test case for each function. make sure individual function is working as expected.
+Unit Test is making test case for each function. make sure individual function or engines that use LLM is working as expected time over time after many development cycles.
 
 ### Function Test
 
@@ -30,11 +30,11 @@ Now we rewrite the package using [Typescript](https://www.typescriptlang.org/), 
 
 ## C. Compatibility
 
-Now **this package support all devices and browser**, because this package can use both [Audio File](AUDIO_FILE.md) and Web Speech Synthesis API.
+Now **this package support all devices and browser**, because this package can use both [Audio File](AUDIO_FILE.md) and [Web Speech Synthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) API.
 
 ### Audio file mode:
 
-Using the prefer of fallback api. you can set this package to do TTS using purely audio file. see [AUDIO_FILE.md](AUDIO_FILE.md). so this mode will
+Using the prefer of fallback api. you can set this package to do TTS using purely audio file. see [AUDIO_FILE.md](AUDIO_FILE.md). 
 
 ### Web Speech Synthesis API itself:
 
@@ -45,5 +45,3 @@ see the [Web Speech Synthesis API Browser compatibility](https://developer.mozil
 - Macbook air m1
 - Ipad Pro m1
 - Samsung A53
-
-<br/>
