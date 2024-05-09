@@ -454,9 +454,9 @@ const v2_pronoun_engine_reports = {
 
 ## G. Payment
 
-### The React js or Vanilla js version
+### The Web Version (React and Vanilla js)
 
-The current price is $70 USD an will be $94 on 9 May 2024
+The current price is $94 USD (Before is $70)
 
 **What you got**
 
@@ -471,7 +471,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 <br/>
 <br/>
 
-### The React Native version (Coming Soon)
+### The Mobile App Version (React Native) (Coming Soon)
 
 The web version is easier to make. but in react native the code and the flow is different. I have to rewrite the entire library so it can be use on react native.
 
