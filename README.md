@@ -65,13 +65,15 @@ Recently, I want to implement the text-to-speech with highlight the word and sen
 
 Then i do search on the internet. but i can't find the npm package to solve all TTS [problems](PROBLEMS.md)
 
-I just want some powerfull package that work on all platforms and good voice quality.
+I just want some powerfull package that flexible and good voice quality.
 
 ### Here what i got when i search on internet:
 
+Overall the text to speech task comes with problems (See the detail on [PROBLEMS.md](PROBLEMS.md)) whether using web speech synthesis or the audio file.
+
 **Using [Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)**
 
-Comes with problems (See [PROBLEMS.md](PROBLEMS.md)). Robot like sound, Supported Devices Available, etc..
+They have problems Robot like sound, Supported Devices Available, etc..
 
 **Using paid subscription text-to-speech synthesis API**
 
@@ -83,7 +85,7 @@ But they don't provide the npm package to do highlighting.
 
 Then i found [Speechify](https://speechify.com). but i dont find any docs about using some npm package that integrate with their service. (if some one know please tell me). Also this is a paid subscriptions services.
 
-Searching again, Then i found [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) its free if the 10000 character / month and will reset on next month. **Cool right?** So i decide to use this as speech synthesis API in my project. But this platform also doesn't provide the react npm package to highlight their audio.
+Searching again, Then i found [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) its free if the 10000 character / month and will reset on next month. **Cool right?** So i decide to use this as speech synthesis API in my project. This platform also doesn't provide the react npm package to highlight their audio, but they provide [streaming output audio](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio) that can be use to produce "when the words is spoken in some audio" (transcript timestamp) like [someone make about this thing](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396). The elevenlabs have produce good quality voice and many features, but when comes for production they more expensive compares with Open AI TTS, In production the cost is important matter.
 
 ### Solutions
 
@@ -95,9 +97,9 @@ My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org
 
 When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). how you can automatically get the audio file of some text ? you can use [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
 
-When this package just take input text and audio file, how this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence.
+This package just take input text and audio file, how this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence. **All is done in client side**, look at the overview above.
 
-Also this package is one time pay. No Subscription. Who likes subscription? I also don't.
+This package is one time pay. No Subscription. Who likes subscription? I also don't.
 
 ![Feature Overview](./img/features.png)
 
