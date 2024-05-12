@@ -4,10 +4,12 @@ The api is a function that you can use to integrate this package into your apps.
 
 This package is written with typescript, You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
+
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 ```jsx
-// v4.9.7 API
+// v4.9.8 API
 import {
   // Main
   markTheWords,
@@ -19,7 +21,6 @@ import {
   getTheVoices,
   noAbbreviation,
   speak,
-  romanTransform,
   convertTextIntoClearTranscriptText,
 
   // Package Data and Cache Integration
@@ -50,6 +51,7 @@ import type {
   markTheWordsFuncType,
   ConfigTTS,
   getAudioType,
+  getAudioReturnType,
   VisemeMap,
   SentenceInfo,
 } from "react-speech-highlight";
@@ -103,6 +105,8 @@ const initialConfig = {
   // Prefer or fallback to audio file
   preferAudio: null,
   fallbackAudio: null,
+
+  batchSize: 200
 };
 
 const { controlHL, statusHL, prepareHL, spokenHL } =
@@ -215,10 +219,13 @@ controlHL.play(textEl.current, callback, actionConfig);
 - `batchSize`
 
   The batch size for the audio file.
-  example: 200
+
+  When you set the batch is null so they send all the text. then you set for 200 package will chunk the text into 200 character.
+
+  Example: 200
   so package will batched send 200 characters per request to TTS API
 
-  [Readmore about batch system in this package](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
+  [Readmore about batch system in this package](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 
 </details>
 
@@ -492,17 +499,7 @@ speak(
 );
 ```
 
-## 6. romanTransform()
-
-Convert roman number (I. II.) into arabic number (1, 2)
-Since version 4.6.8. The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce.
-
-```js
-var a = romanTransform("I.");
-// 1
-```
-
-## 7. convertTextIntoClearTranscriptText()
+## 6. convertTextIntoClearTranscriptText()
 
 Function to convert your input string (just text or html string) into [Speech Synthesis Markup Language (SSML)](https://cloud.google.com/text-to-speech/docs/ssml) clear format that this package **can understand** when making transcript timestamp.
 
@@ -546,14 +543,13 @@ import {
 
 Usage example:
 
-## Set Preferred Voice
-
-You can set Preferred Voice
+## Set custom constant value for this package
 
 ```jsx
 import {
   PREFERRED_VOICE,
   OPENAI_CHAT_COMPLETION_API_ENDPOINT,
+  REQUEST_HEADERS,
 } from "react-speech-highlight";
 
 // set global preferred voice
@@ -582,5 +578,14 @@ useEffect(() => {
     OPENAI_CHAT_COMPLETION_API_ENDPOINT,
     "http://localhost:8000/api/v1/public/text-to-speech-elevenlabs"
   );
+
+
+  // You can set the headers for the fetch API request with this key in sessionStorage
+  const headers = {
+    "Authorization": `Bearer xxx_YOUR_PLATFORM_AUTH_TOKEN_HERE_xxx`,
+  }
+
+  // Tips: Hover your mouse over the REQUEST_HEADERS variable to see the example and docs
+  sessionStorage.setItem(REQUEST_HEADERS, JSON.stringify(headers))  
 }, []);
 ```

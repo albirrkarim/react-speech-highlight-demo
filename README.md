@@ -35,18 +35,17 @@ Do you want other implementation? just ask me via discord: albirrkarim
 - Precise Highlight
 - Human like sound (you can use your audio file)
 - Generate viseme for current spoken TTS.
-- Better pronunciation. Read roman number, document id, date range, custom abbreviation function, etc.
+- Accurate terms or equations pronunciation using LLM, [see](PROBLEMS.md#1-pronounciation-problem)
 - Highlight animation without react rerender so the performance is fast
-- Support unlimited string length
-- Auto find the best voices for specific language.
-- Work on all environment [see test.md](TEST.md)
-- Solve the Speech Synthesis problems [see problem.md](PROBLEMS.md)
+- Work on all environment
+- Solve the [Text To Speech Problems](PROBLEMS.md)
+- Well Crafted: Written in Typescript, Test with Jest, Code linting with Eslint, Well documented with JS Doc, and tested in production devices.
 
-This is the Documentation for private repo [React Speech Highlight package](https://github.com/albirrkarim/react-speech-highlight) and [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight)
+This is the Documentation for [web version](#the-web-version-react-and-vanilla-js)
 
 <br/>
 
-# Docs for v4.9.7
+# Docs for v4.9.8
 
 **Table Of Contents**
 
