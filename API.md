@@ -9,7 +9,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d32
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 ```jsx
-// v4.9.8 API
+// v4.9.9 API
 import {
   // Main
   markTheWords,

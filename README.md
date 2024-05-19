@@ -45,7 +45,7 @@ This is the Documentation for [web version](#the-web-version-react-and-vanilla-j
 
 <br/>
 
-# Docs for v4.9.8
+# Docs for v4.9.9
 
 **Table Of Contents**
 
