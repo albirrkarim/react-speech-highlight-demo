@@ -1,5 +1,11 @@
 # CHANGELOG
 
+# 4.9.9
+
+- Fix bug
+- Change params controlHL.play() to controlHL.activateGesture() for more clear API
+- Refactor
+
 # 4.9.8
 
 - Fix bug

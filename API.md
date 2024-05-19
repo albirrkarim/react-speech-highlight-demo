@@ -106,7 +106,7 @@ const initialConfig = {
   preferAudio: null,
   fallbackAudio: null,
 
-  batchSize: 200
+  batchSize: 200,
 };
 
 const { controlHL, statusHL, prepareHL, spokenHL } =
@@ -138,7 +138,13 @@ const actionConfig = {
   batchSize: null, // or 200
 };
 
-controlHL.play(textEl.current, callback, actionConfig);
+void controlHL.play({
+  textEl: textEl.current,
+  onEnded: () => {
+    console.log("Callback when tts done");
+  },
+  actionConfig,
+});
 ```
 
 <details>
@@ -279,18 +285,23 @@ Example:
 ```jsx
 useEffect(() => {
   if (textEl.current) {
-    controlHL.activateGesture(
-      textEl.current,
-      () => {
-        // callback (optional)
-        // Will be called after user doing double click
-      },
-      {
-        lang: lang,
-      }
-    );
+     controlHL.activateGesture({
+        textEl: textRef.current,
+        onAfterDoubleClick: async ()=>{
+          // Some function that maybe you want to do after double click
+          // and the package will wait until the function is done
+          // maybe you want to do pronounciation correction
+          // await pronunciationCorrection(textEl.current,(progress)=>{
+          //   console.log(progress);
+          // });
+        },
+        onEnded:()=>{
+          // Some function that maybe you want to do after TTS done
+        }
+        actionConfig: currentConfig // Config for the TTS
+      })
   }
-}, []);
+}, [textEl.current]);
 ```
 
 #### statusHL
@@ -357,7 +368,9 @@ const textEl = useRef();
 
 const pronounciation = async (): Promise<void> => {
   if (textEl.current) {
-    void pronunciationCorrection(textEl.current);
+    await pronunciationCorrection(textEl.current,(progress)=>{
+      console.log(progress);
+    });
   }
 };
 
@@ -579,13 +592,12 @@ useEffect(() => {
     "http://localhost:8000/api/v1/public/text-to-speech-elevenlabs"
   );
 
-
   // You can set the headers for the fetch API request with this key in sessionStorage
   const headers = {
-    "Authorization": `Bearer xxx_YOUR_PLATFORM_AUTH_TOKEN_HERE_xxx`,
-  }
+    Authorization: `Bearer xxx_YOUR_PLATFORM_AUTH_TOKEN_HERE_xxx`,
+  };
 
   // Tips: Hover your mouse over the REQUEST_HEADERS variable to see the example and docs
-  sessionStorage.setItem(REQUEST_HEADERS, JSON.stringify(headers))  
+  sessionStorage.setItem(REQUEST_HEADERS, JSON.stringify(headers));
 }, []);
 ```
