@@ -480,7 +480,9 @@ I think the fair price will be $200.
 
 **What you got**
 
-- The Demo App source code (coming soon)
+- [The Demo App source code based on Expo](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-expo-version) (coming soon)
+
+- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (coming soon)
 
 <br/>
 

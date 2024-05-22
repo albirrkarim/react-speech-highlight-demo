@@ -5,6 +5,8 @@
 - Fix bug
 - Change params controlHL.play() to controlHL.activateGesture() for more clear API
 - Refactor
+- Add more js docs
+- Preparing more testing
 
 # 4.9.8
 
