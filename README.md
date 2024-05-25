@@ -14,7 +14,9 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
 
 ### Vanilla JS (Native Javascript)
 
-<img src="./img/vanilla.png" width="400" alt="Vanilla Speech Highlight" >
+<a href="https://vanilla-speech-highlight.vercel.app" target="_blank">
+  <img src="./img/vanilla.png" width="400" alt="Vanilla Speech Highlight" >
+</a>
 
 We support implementation using vanilla js. this package has bundle size of 86 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
 
@@ -198,7 +200,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
 
-  Making the pronounciation engine that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
+  Making the [pronounciation engine](PROBLEMS.md#1-pronounciation-problem) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
   Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
 
@@ -341,7 +343,7 @@ Yes, [see](API.md#5-speak)
 
   - For React Speech Highlight: See the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
 
-  - For Vanilla Speech Highlight: No dependency, just use the vanilla js file. 
+  - For [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app): No dependency, just use the vanilla js file. 
 
   **AI dependencies:**
 
