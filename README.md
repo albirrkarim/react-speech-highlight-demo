@@ -196,13 +196,13 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
+  Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
 
-Making the pronounciation engine that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
+  Making the pronounciation engine that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
+  Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
 
-Just try by yourself to make this package. you will be grateful I am selling it cheap.
+  Just try by yourself to make this package. you will be grateful I am selling it cheap.
 
 </details>
 
@@ -213,7 +213,9 @@ Just try by yourself to make this package. you will be grateful I am selling it 
   
   <br/>
 
-Yes, if you are student.
+  Yes, if you are student or teacher, you can get 50% discount. Just show me your student card or teacher card.
+
+  Yes, if you help me vote this package on [product hunt](https://www.producthunt.com/products/react-vanilla-speech-highlight)
 
 </details>
 
@@ -224,13 +226,13 @@ Yes, if you are student.
   
   <br/>
 
-You can see the docs in this repo, and this package is written with typescript, and tested using jest to make sure the quality.
+  You can see the docs in this repo, and this package is written with typescript, and tested using jest to make sure the quality.
 
-You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com/) will show some popup (simple tutorial) what is the function about, examples, params, etc...
+  You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com/) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
-Just use the source code from demo website, you can literally just understand the package.
+  Just use the source code from demo website, you can literally just understand the package.
 
-https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
+  https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
 
 </details>
 
@@ -322,8 +324,10 @@ Yes, [see](API.md#5-speak)
   <summary>Can i use without openai API?</summary>
 
   <br/>
-    
-  Yes, but you will got this [problem](PROBLEMS.md#6-wrong-read-number)
+  
+  This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
+
+  But if you don't want to use open ai API, it can still work. see the FAQ about ***What dependency this package use?***
 
 </details>
 <br/>
@@ -332,10 +336,18 @@ Yes, [see](API.md#5-speak)
   <summary>What dependency this package use?</summary>
 
   <br/>
-      
-  see the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
 
-This package required open ai API for better doing text-to-speech task (solve the [problem](PROBLEMS.md#6-wrong-read-number)).
+  **NPM dependencies:**
+
+  - For React Speech Highlight: See the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
+
+  - For Vanilla Speech Highlight: No dependency, just use the vanilla js file. 
+
+  **AI dependencies:**
+
+  - This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
+
+  - Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
 
 </details>
 
@@ -346,9 +358,9 @@ This package required open ai API for better doing text-to-speech task (solve th
 
   <br/>
 
-Yes, See the detail on [TEST.md](TEST.md)
+  Yes, See the detail on [TEST.md](TEST.md)
 
-or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+  or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -358,9 +370,9 @@ or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO
   <summary>How it work? Is the Package Architecture Scalable?</summary>
   <br/>
 
-It just work. Simple explanation is in the introduction [above](#a-introduction).
+  It just work. Simple explanation is in the introduction [above](#a-introduction).
 
-The architecture scalable, just ask me what feature you want.
+  The architecture scalable, just ask me what feature you want.
 
 </details>
 
