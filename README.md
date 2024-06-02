@@ -28,11 +28,11 @@ Watch [Youtube Video](https://youtu.be/vDc7L5W7HhU) about implementation vanilla
 
 ### React Native Speech Highlight
 
-<a href="https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/15eTOlyG09lWiKu2blTFQGa-tfUZkRPk-/view?usp=sharing" target="_blank">
   <img src="./img/RNSH.png" width="500" alt="React Native Speech Highlight" >
 </a>
 
-Built with react native cli. [Try the demo app](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing)
+Built with react native cli. [Try the demo app](https://drive.google.com/file/d/15eTOlyG09lWiKu2blTFQGa-tfUZkRPk-/view?usp=sharing)
 
 Do you want other implementation? just ask me via discord: albirrkarim
 
@@ -145,7 +145,7 @@ The problem when we do TTS on academic text. it contains math equations, formula
 
 <br/>
 
-- [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing)
+- [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)
 - [x] Accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
