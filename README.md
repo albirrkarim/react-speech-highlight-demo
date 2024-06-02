@@ -26,11 +26,11 @@ Read the [API_VANILLA.md](API_VANILLA.md) to see the different.
 
 Watch [Youtube Video](https://youtu.be/vDc7L5W7HhU) about implementation vanilla speech highlight for javascript text to speech task.
 
-Do you want other implementation? just ask me via discord: albirrkarim
+### React Native Speech Highlight
 
-<a href="https://discordapp.com/channels/@me/884043164908929034" title="Message me with discord">
-    <img src="./img/discord.png" width="200em">
-</a>
+Built with react native cli. [Try the demo app](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing)
+
+Do you want other implementation? just ask me via discord: albirrkarim
 
 ## Features:
 
@@ -136,12 +136,12 @@ The problem when we do TTS on academic text. it contains math equations, formula
 
 ## B. TODO
 
-- [ ] (Still working on) Trying to add support for react native
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
+- [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing)
 - [x] Accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
@@ -502,9 +502,7 @@ I think the fair price will be $200.
 
 **What you got**
 
-- [The Demo App source code based on Expo](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-expo-version) (coming soon)
-
-- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (coming soon)
+- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([here the demo apk](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing))
 
 <br/>
 
