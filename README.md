@@ -28,6 +28,10 @@ Watch [Youtube Video](https://youtu.be/vDc7L5W7HhU) about implementation vanilla
 
 ### React Native Speech Highlight
 
+<a href="https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing" target="_blank">
+  <img src="./img/RNSH.png" width="500" alt="React Native Speech Highlight" >
+</a>
+
 Built with react native cli. [Try the demo app](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing)
 
 Do you want other implementation? just ask me via discord: albirrkarim
@@ -502,7 +506,7 @@ I think the fair price will be $200.
 
 **What you got**
 
-- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([here the demo apk](https://drive.google.com/file/d/1aqcfEr9jyg_1jq1VsqkpHUOllRvlAFxJ/view?usp=sharing))
+- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([see](#react-native-speech-highlight))
 
 <br/>
 
