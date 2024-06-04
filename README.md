@@ -496,7 +496,6 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 - [The package repo (Vanilla Speech Highlight)](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)
 
 <br/>
-<br/>
 
 ### The Mobile App Version (React Native)
 
@@ -506,7 +505,7 @@ I think the fair price will be $200.
 
 **What you got**
 
-- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([see](#react-native-speech-highlight))
+- [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([Try demo app](#react-native-speech-highlight))
 
 <br/>
 
