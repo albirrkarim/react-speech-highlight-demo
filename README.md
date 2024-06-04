@@ -516,7 +516,7 @@ I think the fair price will be $200.
 **What you got**
 
 - [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-gpt-web-guide)
-- All the private repo [React Speech Highlight](#the-web-version-react-and-vanilla-js)
+- All the private repo web version of [React Speech Highlight](#the-web-version-react-and-vanilla-js)
 
 <br/>
 
