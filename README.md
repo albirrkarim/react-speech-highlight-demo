@@ -483,7 +483,7 @@ const v2_pronoun_engine_reports = {
 
 ### The Web Version (React and Vanilla js)
 
-The current price is $94 USD (Before is $70)
+The current price is $94 USD
 
 **What you got**
 
@@ -498,7 +498,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 <br/>
 <br/>
 
-### The Mobile App Version (React Native) (Coming Soon)
+### The Mobile App Version (React Native)
 
 The web version is easier to make. but in react native the code and the flow is different. I have to rewrite the entire library so it can be use on react native.
 
@@ -507,6 +507,17 @@ I think the fair price will be $200.
 **What you got**
 
 - [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([see](#react-native-speech-highlight))
+
+<br/>
+
+### The Web Version bundled with React GPT Web Guide
+
+[React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) ($100) + React Speech Highlight(~~$94~~)($40) = $140
+
+**What you got**
+
+- [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-gpt-web-guide)
+- All the private repo [React Speech Highlight](#the-web-version-react-and-vanilla-js)
 
 <br/>
 
