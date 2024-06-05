@@ -511,6 +511,8 @@ I think the fair price will be $200.
 
 ### The Web Version bundled with React GPT Web Guide
 
+[![React GPT Web Guide Banner](https://raw.githubusercontent.com/albirrkarim/react-gpt-web-guide-docs/main/img/banner.png)](https://github.com/albirrkarim/react-gpt-web-guide-docs)
+
 [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) ($100) + React Speech Highlight(~~$94~~)($40) = $140
 
 **What you got**
