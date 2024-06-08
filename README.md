@@ -140,6 +140,7 @@ The problem when we do TTS on academic text. it contains math equations, formula
 
 ## B. TODO
 
+- [ ] Add Custom virtual DOM for handling unstructured HTML content (working on it)
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
@@ -558,14 +559,13 @@ If you are in indonesia (my country) you can easily transfer through bank and e 
 
 So this package is the answer for you who looking for:
 
-- Best Text to Speech Software
+- Best Text to Speech Library
 - text to speech with viseme lipsync javascript
 - javascript text to speech highlight words
 - How to text to speech with highlight the sentence and words like speechify
 - How to text to speech with highlight the sentence and words using elevenlabs
 - How to text to speech with highlight the sentence and words using open ai
 - How to text to speech with highlight the sentence and words using google speech synthesis
-- Text to speech react js
 - Text to speech javascript
 - Typescript text to speech
 - Highlighted Text to Speech
@@ -586,7 +586,6 @@ So this package is the answer for you who looking for:
 - React Text-to-Speech
 - TTS in React JS
 - React JS Speech Synthesis
-- Text to Speech JavaScript
 - JavaScript TTS
 - Text-to-Speech in JS
 - JS Speech Synthesis
