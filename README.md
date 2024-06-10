@@ -211,14 +211,17 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  Well, i need money to funding the research, you know that making package is cost a lot of time and of course money.
+  Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money.
 
   Making the [pronounciation engine](PROBLEMS.md#1-pronounciation-problem) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
   Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
 
-  Just try by yourself to make this package. you will be grateful I am selling it cheap.
+  Just try by yourself to make this package. you will be grateful I am selling it cheap.  
 
+  And you can also have realtime support from me with discord. (of course when its day time on Indonesia timezone). 
+
+  Just buy it. remove the headache. and you can focus on your project.
 </details>
 
 <br/>
