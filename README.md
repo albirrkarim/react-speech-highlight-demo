@@ -227,7 +227,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   <br/>
   
-  I have skills on various program logic, architecures, computer science, machine learning, and more. I can help you to solve your problem. Just ask me!
+  I have skill and experience on various program logic, system architectures, computer science, machine learning, and more. I can show you `the way` . Just ask me!
   
   I provide realtime support from me with discord. (of course when its day time on Indonesia timezone). 
 
