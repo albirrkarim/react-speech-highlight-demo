@@ -217,11 +217,22 @@ I love feedback from my customers. You can write on the issue tab so when i have
 
   Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
 
-  Just try by yourself to make this package. you will be grateful I am selling it cheap.  
+  Just try by yourself to make this package. you will be grateful I am selling it cheap. 
+</details>
 
-  And you can also have realtime support from me with discord. (of course when its day time on Indonesia timezone). 
+<br/>
+
+<details>
+  <summary>How about support?</summary>
+
+  <br/>
+  
+  I have skills on various program logic, architecures, computer science, machine learning, and more. I can help you to solve your problem. Just ask me!
+  
+  I provide realtime support from me with discord. (of course when its day time on Indonesia timezone). 
 
   Just buy it. remove the headache. and you can focus on your project.
+
 </details>
 
 <br/>
@@ -231,7 +242,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  Yes, if you are student or teacher, you can get 50% discount. Just show me your student card or teacher card.
+  Yes, if you are student or teacher, you can get discount. Just show me your student card or teacher card.
 
   Yes, if you help me vote this package on [product hunt](https://www.producthunt.com/products/react-vanilla-speech-highlight)
 
@@ -277,7 +288,7 @@ Example :
   
   Goto the [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
-I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
+  I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
 
 </details>
 
@@ -298,30 +309,30 @@ I make demo for outputing the viseme into console.log. just open the browser con
 
   <br/>
 
-Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+  Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
-or
+  or
 
-Try to setting the speech synthesis or language in your device.
+  Try to setting the speech synthesis or language in your device.
 
-If you use smartphone (Android):
+  If you use smartphone (Android):
 
-1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google.android.tts)
+  1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google. android.tts)
 
-2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
+  2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute  (your device will automatically download the voice), then restart your smartphone.
 
 </details>
 
 <br/>
 
 <details>
-  <summary>Why speech doesn't work for first played voice?</summary>
+  <summary>Why speech doesn't work for first played voice? (web speech synthesis)</summary>
 
   <br/>
 
-Your device will download that voice first. then your device will have that voice locally.
+  Your device will download that voice first. then your device will have that voice locally.
 
-Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+  Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -332,7 +343,7 @@ Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
   <br/>
 
-Yes, [see](API.md#5-speak)
+  Yes, [see](API.md#5-speak)
 
 </details>
 
