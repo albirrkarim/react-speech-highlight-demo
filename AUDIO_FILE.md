@@ -173,7 +173,9 @@ File `TTSController.php` this will return audio as base64
 
 [OpenAI](https://platform.openai.com/docs/guides/text-to-speech) is also providing tts service, for now it come with minimal feature, but its fast latency.
 
-![OpenAI TTS](./img/open_tts.png)
+<a href="https://openai.com/api/pricing" target="_blank">
+  <img src="./img/open_tts.png" width="500" alt="Open AI TTS Pricing" >
+</a>
 
 <details>
   <summary>Example OpenAI TTS Backend with Laravel</summary>
@@ -309,7 +311,10 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 
 See Amazon Polly [pricing](https://aws.amazon.com/polly/pricing/)
 
-![Amazon Polly Pricing](./img/amazon.png)
+<a href="https://aws.amazon.com/polly/pricing" target="_blank">
+  <img src="./img/amazon.png" width="500" alt="Amazon Polly Pricing" >
+</a>
+
 
 For 1 million character:
 Standard: $4.00
