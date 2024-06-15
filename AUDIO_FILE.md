@@ -14,9 +14,32 @@ Table of Contents:
 ## A. Efficient Cost Strategy
 
 - Considering based on your needs
+- When your needs is multi language you can make controller that using mixed of TTS API provider.
 - Using cache for the audio file
 
 ![Cache Strategy of Audio File](./img/cache.png)
+
+Usually i use laravel as a backend. its a good php framework, and its easy to use. But of course you can use any backend you want and do the same strategy.
+
+When you implement flow like that can only generate audio file once, and when the audio file is exist, it will not generate again.
+
+In english:
+
+Let say 1 blog post = 1,200 words
+
+Words Only: 1,200 words × 5 characters per word = 6,000 characters.
+
+Including Spaces and Punctuation: Spaces (approximately 20% of 6,000) = 6,000 × 0.2 = 1,200 characters.
+
+Total estimated characters = 6,000 (words) + 1,200 (spaces) = 7,200 characters.
+
+When you use open ai tts. 1 million / $15 (tts-1)
+
+So you can generate audio of 133 post with cost $15.
+
+But its `when all` your post is accessed. When not all post is accessed, you can save more money. even when the user is not fully reading your article.
+
+My lib also use [batch request system](PROBLEMS.md#b-when-using-audio-file). they only ask the backend to get/make audio for only section that user is currently reading/listening.
 
 <br>
 
