@@ -1,14 +1,14 @@
-# How to get Text To Speech Audio File Automatically
+# How to get the Audio File Automatically
 
 When we talk about generating audio file we need do research considering the price, quality, and api support so you can generate audio programmatically.
 
 Here i provide you with the best options:
 
-## Eleven Labs
+## PAID TTS API
 
-[Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) is very cheap and perfect option for generating perfect voice for your text. They have API service also.
+### A. Eleven Labs
 
-![Eleven Labs Pricing](img/elevenlabs.png)
+[Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) is a text-to-speech API that allows you to convert text into high-quality audio files. It supports multiple languages and voices, and provides a range of customization options to help you create the perfect audio for your needs.
 
 [https://elevenlabs.io](https://elevenlabs.io/?from=partnermurray4444)
 
@@ -169,7 +169,7 @@ Here the code how you can integrate elevenlabs or other speech synthesis service
   ```
 </details>
 
-## Open AI TTS
+### B. Open AI TTS
 
 [OpenAI](https://platform.openai.com/docs/guides/text-to-speech) is also providing tts service, for now it come with minimal feature, but its fast latency.
 

@@ -1,16 +1,12 @@
-# How to build this package with open ai api integration
+# How To Set Up Backend For This Package
 
-This package is integrate with open ai API completions API (optional) to solve [issue](PROBLEMS.md#6-wrong-read-number).
+## A. LLM (Large Language Model) API
 
-So we must have backend server that provide proxy api call to the open ai.
+Optionally we need LLM API to solve many [issue](PROBLEMS.md). the LLM api i use is open ai chat completion api. So we must have backend server that provide proxy api call to the open ai.
 
 ![Open AI API](/img/chat_gpt_api.png)
 
-## 1. Set open ai chat completion api endpoint
-
-Goto [API Docs about this](API.md#package-data-and-cache-integration) 
-
-## 2. Make Backend for open ai chat completion API
+### 1. Make Backend for open ai chat completion API
 
 ### API URL Endpoint
 
@@ -18,7 +14,7 @@ Goto [API Docs about this](API.md#package-data-and-cache-integration)
 OPENAI_CHAT_COMPLETION_API_ENDPOINT = "https://example.com/api/v1/public/chat";
 ```
 
-with that url then the package will send request like this
+with that url then the `package` will send body request like this
 
 ```json
 {
@@ -55,16 +51,22 @@ and your backend will respose like this.
 }
 ```
 
+### 2. Set open ai chat completion api endpoint for the package
+
+Goto [API Docs about this](API.md#package-data-and-cache-integration)
+
+<br/>
+
 ### Example Implementation
 
 If you are using different backend, please look by yourself how to implement it. the important is the same respond (like [this](#example-response-that-this-package-want)) so the `react-speech-highlight` package can understand.
 
-Actually you can customize the logic, like add authentication method.
+Actually you can customize the logic, like add [authentication header](API.md#set-custom-constant-value-for-this-package).
 
 <details>
   <summary>Show example using Laravel as Backend</summary>
 
-<br/>
+  <br/>
 
 ### Router
 
@@ -157,11 +159,8 @@ class OpenAIController extends Controller
 
 </details>
 
+<br/>
 
-## 3. Build
+## B. Text To Speech API
 
-run 
-
-```bash
-npm run build
-```
+When you decide to use audio source is from TTS API. you can see the [AUDIO_FILE.md](AUDIO_FILE.md) for more detail.
