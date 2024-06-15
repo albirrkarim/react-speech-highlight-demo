@@ -174,7 +174,7 @@ File `TTSController.php` this will return audio as base64
 [OpenAI](https://platform.openai.com/docs/guides/text-to-speech) is also providing tts service, for now it come with minimal feature, but its fast latency.
 
 <a href="https://openai.com/api/pricing" target="_blank">
-  <img src="./img/open_tts.png" width="500" alt="Open AI TTS Pricing" >
+  <img src="./img/open_tts.png" width="600" alt="Open AI TTS Pricing" >
 </a>
 
 <details>
@@ -312,7 +312,7 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 See Amazon Polly [pricing](https://aws.amazon.com/polly/pricing/)
 
 <a href="https://aws.amazon.com/polly/pricing" target="_blank">
-  <img src="./img/amazon.png" width="500" alt="Amazon Polly Pricing" >
+  <img src="./img/amazon.png" width="600" alt="Amazon Polly Pricing" >
 </a>
 
 
