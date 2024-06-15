@@ -48,44 +48,54 @@ It will causing bad experience to the user.
 <details>
   <summary>Read more</summary>
 
-It will causing bad experience to the user. even in device like ipad and iphon they have rules that the delay between user interaction and the audio played must not exceed 4seconds or it will be fail.
+  It will causing bad experience to the user. even in device like ipad and iphon they have rules that the delay between user interaction and the audio played must not exceed 4seconds or it will be fail.
 
-They will give error like this
+  They will give error like this
 
-```
-Unhandled Promise Rejection: NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
-```
+  ```
+  Unhandled Promise Rejection: NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+  ```
 
-So what the solution for this?
+  So what the solution for this?
 
-I set this package to make batch request for API call.
+  I set this package to make batch request for API call.
+</details>
 
-**How it work?**
+### 2. Long text request to TTS API (Capabilty of TTS API handling long text)
 
-Let says you have 10000 character long of text, and let says your tts api service will be done making the audio file in 60 seconds. (so your user will waiting to play 60 second after they want ? it so bad)
+All tts api has limitation of character that can be sent to them.
 
-So, My package will chunk it into close to the 200 character each.
+### The solution is using Batch Request System
 
-10000/200 = 50 request.
+<details>
+  <summary>Read more</summary>
 
-60/10000\*200 = 1.2 seconds
+  **How it work?**
 
-my package will send the first chunk, and the tts api will give the audio file in just 1,2 then the audio is played.
+  Let says you have 10000 character long of text, and let says your tts api service will be done making the audio file in 60 seconds. (so your user will waiting to play 60 second after they want ? it so bad)
 
-So the delay between user click button play and the tts start to play will be just 1,2 seconds. what about other chunks. i manage to send other chunk in the background while tts is played. and enchance efficiency of character used in tts api. you pay the tts api service based on the character right?.
+  So, My package will chunk it into close to the 200 character each.
 
-lets say we have
+  10000/200 = 50 request.
 
-```
-chunk0 <- user still playing this
-chunk1
-chunk2 <- my package will try to prepare until this
-chunk3
-...
-chunk49
-```
+  60/10000\*200 = 1.2 seconds
 
-This method will, solve other problem like maximal character that your tts api can handle. for example on elvenlabs they only can do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation.
+  my package will send the first chunk, and the tts api will give the audio file in just 1,2 then the audio is played.
+
+  So the delay between user click button play and the tts start to play will be just 1,2 seconds. what about other chunks. i manage to send other chunk in the background while tts is played. and enchance efficiency of character used in tts api. you pay the tts api service based on the character right?.
+
+  lets say we have
+
+  ```
+  chunk0 <- user still playing this
+  chunk1
+  chunk2 <- my package will try to prepare until this
+  chunk3
+  ...
+  chunk49
+  ```
+
+  This method will, solve other problem like maximal character that your tts api can handle. for example on elvenlabs they only can do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation.
 
 </details>
 
