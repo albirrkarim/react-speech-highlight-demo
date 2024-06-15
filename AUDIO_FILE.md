@@ -2,9 +2,26 @@
 
 When we talk about generating audio file we need do research considering the price, quality, and api support so you can generate audio programmatically.
 
-Here i provide you with the best options:
+Table of Contents:
 
-## A. Paid TTS API
+- [A. Efficient Cost Strategy](#a-efficient-cost-strategy)
+- [B. Paid TTS API](#b-paid-tts-api)
+- [C. Local AI TTS](#c-local-ai-tts)
+
+<br>
+<br>
+
+## A. Efficient Cost Strategy
+
+- Considering based on your needs
+- Using cache for the audio file
+
+![Cache Strategy of Audio File](./img/cache.png)
+
+<br>
+
+
+## B. Paid TTS API
 
 ### - ElevenLabs
 
@@ -315,7 +332,6 @@ See Amazon Polly [pricing](https://aws.amazon.com/polly/pricing/)
   <img src="./img/amazon.png" width="600" alt="Amazon Polly Pricing" >
 </a>
 
-
 For 1 million character:
 Standard: $4.00
 Neural: $16.00
@@ -327,7 +343,7 @@ Simplified, Neural voices are more natural-sounding (better) than standard voice
 <br>
 <br>
 
-## B. Local AI TTS
+## C. Local AI TTS
 
 You can also use the local AI system, to do speech synthesis. You can use local PC or Google Colab.
 
