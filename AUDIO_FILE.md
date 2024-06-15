@@ -4,174 +4,176 @@ When we talk about generating audio file we need do research considering the pri
 
 Here i provide you with the best options:
 
-## PAID TTS API
+## A. Paid TTS API
 
-### A. Eleven Labs
+### - ElevenLabs
 
 [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) is a text-to-speech API that allows you to convert text into high-quality audio files. It supports multiple languages and voices, and provides a range of customization options to help you create the perfect audio for your needs.
 
-[https://elevenlabs.io](https://elevenlabs.io/?from=partnermurray4444)
-
-Here the code how you can integrate elevenlabs or other speech synthesis services with this package.
+![ElevanLabs TTS Pricing](./img/elevenlabs_pricing.png)
 
 <details>
   <summary>Example Client Side Code (Frontend)</summary>
 
-  ```js
-  function convertBase64ToBlobURL(base64Audio) {
-    // Remove the prefix from the data URL if present
-    const base64Data = base64Audio.replace(/^data:audio\/mpeg;base64,/, "");
-    // Convert base64 to raw binary data held in a string
-    const byteString = atob(base64Data);
-    // Create an ArrayBuffer with the binary length of the base64 string
-    const arrayBuffer = new ArrayBuffer(byteString.length);
-    // Create a uint8 view on the ArrayBuffer
-    const uint8Array = new Uint8Array(arrayBuffer);
-    for (let i = 0; i < byteString.length; i++) {
-      uint8Array[i] = byteString.charCodeAt(i);
-    }
-    // Create a blob from the uint8Array
-    const blob = new Blob([uint8Array], { type: "audio/mpeg" });
-    // Generate a URL for the blob
-    const blobURL = URL.createObjectURL(blob);
-
-    return blobURL;
+```js
+function convertBase64ToBlobURL(base64Audio) {
+  // Remove the prefix from the data URL if present
+  const base64Data = base64Audio.replace(/^data:audio\/mpeg;base64,/, "");
+  // Convert base64 to raw binary data held in a string
+  const byteString = atob(base64Data);
+  // Create an ArrayBuffer with the binary length of the base64 string
+  const arrayBuffer = new ArrayBuffer(byteString.length);
+  // Create a uint8 view on the ArrayBuffer
+  const uint8Array = new Uint8Array(arrayBuffer);
+  for (let i = 0; i < byteString.length; i++) {
+    uint8Array[i] = byteString.charCodeAt(i);
   }
+  // Create a blob from the uint8Array
+  const blob = new Blob([uint8Array], { type: "audio/mpeg" });
+  // Generate a URL for the blob
+  const blobURL = URL.createObjectURL(blob);
 
-  export const ttsUsingElevenLabs = async (inputText) => {
-    // see https://elevenlabs.io/docs/api-reference/text-to-speech
-    // https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/AUDIO_FILE.md#eleven-labs
+  return blobURL;
+}
 
-    // Set the ID of the voice to be used.
-    const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+export const ttsUsingElevenLabs = async (inputText) => {
+  // see https://elevenlabs.io/docs/api-reference/text-to-speech
+  // https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/AUDIO_FILE.md#eleven-labs
 
-    const blobUrl = await fetch(
-      process.env.NEXT_PUBLIC_ELEVEN_LABS_API_ENDPOINT,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+  // Set the ID of the voice to be used.
+  const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+
+  const blobUrl = await fetch(
+    process.env.NEXT_PUBLIC_ELEVEN_LABS_API_ENDPOINT,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: inputText,
+        voice_id: VOICE_ID,
+        model_id: "eleven_multilingual_v2",
+        voice_settings: {
+          stability: 0.75, // The stability for the converted speech
+          similarity_boost: 0.5, // The similarity boost for the converted speech
+          style: 1, // The style exaggeration for the converted speech
+          speaker_boost: true, // The speaker boost for the converted speech
         },
-        body: JSON.stringify({
-          text: inputText,
-          voice_id: VOICE_ID,
-          model_id: "eleven_multilingual_v2",
-          voice_settings: {
-            stability: 0.75, // The stability for the converted speech
-            similarity_boost: 0.5, // The similarity boost for the converted speech
-            style: 1, // The style exaggeration for the converted speech
-            speaker_boost: true, // The speaker boost for the converted speech
-          },
-        }),
+      }),
+    }
+  )
+    .then((response) => {
+      if (!response.ok) {
+        alert("Network fail");
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-    )
-      .then((response) => {
-        if (!response.ok) {
-          alert("Network fail");
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // Assuming the API response contains a property 'audio' with the base64-encoded audio
-        const base64Audio = data.audio;
+      return response.json();
+    })
+    .then((data) => {
+      // Assuming the API response contains a property 'audio' with the base64-encoded audio
+      const base64Audio = data.audio;
 
-        // Create a Blob URL
-        const blobUrl = convertBase64ToBlobURL(base64Audio);
+      // Create a Blob URL
+      const blobUrl = convertBase64ToBlobURL(base64Audio);
 
-        return blobUrl;
-      });
+      return blobUrl;
+    });
 
-    return blobUrl;
-  };
+  return blobUrl;
+};
 
-  import { convertTextIntoClearTranscriptText } from "react-speech-highlight";
+import { convertTextIntoClearTranscriptText } from "react-speech-highlight";
 
-  var clear_transcript = convertTextIntoClearTranscriptText(
-    "This is example text you can set"
-  );
+var clear_transcript = convertTextIntoClearTranscriptText(
+  "This is example text you can set"
+);
 
-  const audioURL = await ttsUsingElevenLabs(clear_transcript);
+const audioURL = await ttsUsingElevenLabs(clear_transcript);
 
-  const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
-    lang: "en",
-    preferAudio: audioURL,
-    //or
-    //   fallbackAudio: audioURL,
-  });
-  ```
+const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+  lang: "en",
+  preferAudio: audioURL,
+  //or
+  //   fallbackAudio: audioURL,
+});
+```
 
 </details>
 
 <details>
   <summary>Example Integration Node js Backend with ElevenLabs TTS API</summary>
 
-  Go to the [backend folder in this repo](https://github.com/albirrkarim/react-speech-highlight-demo/tree/main/backend/nodejs), you can see the example
+Go to the [backend folder in this repo](https://github.com/albirrkarim/react-speech-highlight-demo/tree/main/backend/nodejs), you can see the example
+
 </details>
 
 <details>
   <summary>Example Integration Laravel Backend with ElevenLabs TTS API</summary>
 
-  Router
+Router
 
-  ```php
-  Route::post('text-to-speech-elevenlabs', 'textToSpeechElevenLabs')->name('text_to_speech_elevenlabs');
-  ```
+```php
+Route::post('text-to-speech-elevenlabs', 'textToSpeechElevenLabs')->name('text_to_speech_elevenlabs');
+```
 
-  File `TTSController.php` this will return audio as base64
+File `TTSController.php` this will return audio as base64
 
-  ```php
-    public function textToSpeech(Request $request)
-    {
-      $api_key = config('elevenlabs.api_key');
-        $voice_id = isset($request['voice_id']) ? $request['voice_id'] : '21m00Tcm4TlvDq8ikWAM'; // Set the ID of the voice to be used
+```php
+  public function textToSpeech(Request $request)
+  {
+    $api_key = config('elevenlabs.api_key');
+      $voice_id = isset($request['voice_id']) ? $request['voice_id'] : '21m00Tcm4TlvDq8ikWAM'; // Set the ID of the voice to be used
 
-        $client = new Client([
-            'headers' => [
-                'Accept' => 'audio/mpeg',
-                'Content-Type' => 'application/json',
-                'xi-api-key' => $api_key,
-            ],
-        ]);
+      $client = new Client([
+          'headers' => [
+              'Accept' => 'audio/mpeg',
+              'Content-Type' => 'application/json',
+              'xi-api-key' => $api_key,
+          ],
+      ]);
 
-        try {
-            $response = $client->post("https://api.elevenlabs.io/v1/text-to-speech/$voice_id", [
-                'json' => $request->all(),
-            ]);
+      try {
+          $response = $client->post("https://api.elevenlabs.io/v1/text-to-speech/$voice_id", [
+              'json' => $request->all(),
+          ]);
 
-            // Check if the request was successful
-            if ($response->getStatusCode() === 200) {
-                // Get the audio content as a base64-encoded string
-                $base64Audio = base64_encode($response->getBody());
+          // Check if the request was successful
+          if ($response->getStatusCode() === 200) {
+              // Get the audio content as a base64-encoded string
+              $base64Audio = base64_encode($response->getBody());
 
-                // Return the base64-encoded audio
-                return response()->json([
-                    'status' => true,
-                    'audio' => $base64Audio,
-                ]);
-            } else {
-                // Handle unsuccessful response
-                return response()->json([
-                    'status' => false,
-                    'message' => 'Text-to-speech API request failed.',
-                ], $response->getStatusCode());
-            }
-        } catch (\Exception $e) {
-            // Handle Guzzle or other exceptions
-            return response()->json([
-                'status' => false,
-                'message' => 'Error during text-to-speech API request.',
-                'error' => $e->getMessage(),
-            ], 500);
-        }
-    }
+              // Return the base64-encoded audio
+              return response()->json([
+                  'status' => true,
+                  'audio' => $base64Audio,
+              ]);
+          } else {
+              // Handle unsuccessful response
+              return response()->json([
+                  'status' => false,
+                  'message' => 'Text-to-speech API request failed.',
+              ], $response->getStatusCode());
+          }
+      } catch (\Exception $e) {
+          // Handle Guzzle or other exceptions
+          return response()->json([
+              'status' => false,
+              'message' => 'Error during text-to-speech API request.',
+              'error' => $e->getMessage(),
+          ], 500);
+      }
+  }
 
-  ```
+```
+
 </details>
 
-### B. Open AI TTS
+### - Open AI TTS
 
 [OpenAI](https://platform.openai.com/docs/guides/text-to-speech) is also providing tts service, for now it come with minimal feature, but its fast latency.
+
+![OpenAI TTS](./img/open_tts.png)
 
 <details>
   <summary>Example OpenAI TTS Backend with Laravel</summary>
@@ -295,7 +297,32 @@ const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
 
 <br>
 
-## Local AI TTS
+### - Google TTS API
+
+[Google tts](https://cloud.google.com/text-to-speech) support SSML see the [pricing](https://cloud.google.com/text-to-speech/pricing)
+
+![Google TTS](./img/google_tts.png)
+
+<br>
+
+### - Amazon Polly
+
+See Amazon Polly [pricing](https://aws.amazon.com/polly/pricing/)
+
+![Amazon Polly Pricing](./img/amazon.png)
+
+For 1 million character:
+Standard: $4.00
+Neural: $16.00
+
+What different between standard and neural ? [see](https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html#:~:text=Amazon%20Polly%20has%20a%20Neural,very%20natural%2Dsounding%20synthesized%20speech.)
+
+Simplified, Neural voices are more natural-sounding (better) than standard voices.
+
+<br>
+<br>
+
+## B. Local AI TTS
 
 You can also use the local AI system, to do speech synthesis. You can use local PC or Google Colab.
 

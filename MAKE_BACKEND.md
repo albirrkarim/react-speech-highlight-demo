@@ -8,13 +8,13 @@ Optionally we need LLM API to solve many [issue](PROBLEMS.md). the LLM api i use
 
 ### 1. Make Backend for open ai chat completion API
 
-### API URL Endpoint
+**API URL Endpoint**
 
 ```js
 OPENAI_CHAT_COMPLETION_API_ENDPOINT = "https://example.com/api/v1/public/chat";
 ```
 
-with that url then the `package` will send body request like this
+with that url then the `package` will send **body request** like this
 
 ```json
 {
@@ -27,9 +27,9 @@ with that url then the `package` will send body request like this
 }
 ```
 
-and your backend will respose like this.
+and your backend will **response** like this.
 
-### Example response that this package want
+**Example response that this package want**
 
 ```json
 {
@@ -59,9 +59,7 @@ Goto [API Docs about this](API.md#package-data-and-cache-integration)
 
 ### Example Implementation
 
-If you are using different backend, please look by yourself how to implement it. the important is the same respond (like [this](#example-response-that-this-package-want)) so the `react-speech-highlight` package can understand.
-
-Actually you can customize the logic, like add [authentication header](API.md#set-custom-constant-value-for-this-package).
+If you are using different backend, please look by yourself how to implement it. the important is the same respond (like [this](#example-response-that-this-package-want)) so the `react-speech-highlight` package can understand Actually you can customize the logic, like add [authentication header](API.md#set-custom-constant-value-for-this-package).
 
 <details>
   <summary>Show example using Laravel as Backend</summary>
