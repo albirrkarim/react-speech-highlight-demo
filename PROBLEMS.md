@@ -67,8 +67,14 @@ All tts api has limitation of character that can be sent to them.
 
 ### The solution is using Batch Request System
 
+Batch strategy will solve that problems above. You can define the batch size in the [config](API.md#2a-config)
+
+<br/>
+
 <details>
   <summary>Read more</summary>
+
+  <br/>
 
   **How it work?**
 

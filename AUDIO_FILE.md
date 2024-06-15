@@ -39,7 +39,7 @@ So you can generate audio of 133 post with cost $15.
 
 But its `when all` your post is accessed. When not all post is accessed, you can save more money. even when the user is not fully reading your article.
 
-My lib also use [batch request system](PROBLEMS.md#b-when-using-audio-file). they only ask the backend to get/make audio for only section that user is currently reading/listening.
+My lib also use [batch request system](PROBLEMS.md#the-solution-is-using-batch-request-system). they only ask the backend to get/make audio for only section that user is currently reading/listening.
 
 <br>
 
