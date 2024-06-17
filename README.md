@@ -516,7 +516,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 The web version is easier to make. but in react native the code, and the flow is different. I have to rewrite the entire library and also define the different testing approach.
 
-I think the fair price will be $200.
+The price is $150.
 
 **What you got**
 
