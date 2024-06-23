@@ -147,7 +147,7 @@ The problem when we do TTS on academic text. it contains math equations, formula
 <br/>
 
 - [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)
-- [x] Accurate and cost effective pronounciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
+- [x] Accurate and cost effective [pronounciation correction](PROBLEMS.md#a-common-problem-in-text-to-speech-both-audio-file-and-web-speech-synthesis) Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
@@ -163,8 +163,7 @@ The problem when we do TTS on academic text. it contains math equations, formula
 - [x] Add seeking by sentence or paragraph. [see](API.md#2b-interface)
 - [x] Add reading progress by word or sentence. [see](API.md#spokenhl)
 - [x] Adjust config while TTS playing. [see](API.md#controlhl)
-- [x] You can use custom Abbreviation Function. [see](API.md#1-tts-marker-markthewords)
-- [x] Add Read Roman number, And API for that function. [see](API.md#6-romantransform)
+- [x] Custom Abbreviation Function. [see](API.md#1-tts-marker-markthewords)
 - [x] Realiability: TTS that can't die, Test on any platform, Code Linting using eslint, Using [Typescript](https://www.typescriptlang.org/), [Tested (Prompt Test, Unit Test, Engine Test)](TEST.md)
 - [x] Add demo website. [see](https://react-speech-highlight.vercel.app)
 
@@ -226,8 +225,7 @@ I love feedback from my customers. You can write on the issue tab so when i have
   <summary>How about support?</summary>
 
   <br/>
-  
-  I have skill and experience on various program logic, system architectures, computer science, machine learning, and more. I can show you `the way` . Just ask me!
+  Tell your problems or difficulties to me, i will show you the way to solve that.
   
   I provide realtime support from me with discord. (of course when its day time on Indonesia timezone). 
 
