@@ -18,7 +18,7 @@ React / Vanilla js text-to-speech with highlighting the words and sentences that
   <img src="./img/vanilla.png" width="400" alt="Vanilla Speech Highlight" >
 </a>
 
-We support implementation using vanilla js. this package has bundle size of 86 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
+We support implementation using vanilla js. this package has bundle size of 45 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
 
 Read the [API_VANILLA.md](API_VANILLA.md) to see the different.
 
