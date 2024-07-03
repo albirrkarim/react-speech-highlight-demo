@@ -28,13 +28,13 @@ Watch [Youtube Video](https://youtu.be/vDc7L5W7HhU) about implementation vanilla
 
 ### React Native Speech Highlight
 
-<a href="https://drive.google.com/file/d/15eTOlyG09lWiKu2blTFQGa-tfUZkRPk-/view?usp=sharing" target="_blank">
+<a href="https://bit.ly/RNSHL-4-9-9" target="_blank">
   <img src="./img/RNSH.png" width="500" alt="React Native Speech Highlight" >
 </a>
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/abb9cb6c-4c55-448b-a9a5-d1856896b455
 
-Built with react native cli. [Try the demo android app](https://drive.google.com/file/d/15eTOlyG09lWiKu2blTFQGa-tfUZkRPk-/view?usp=sharing)
+Built with react native cli. [Try the demo android app](https://bit.ly/RNSHL-4-9-9)
 
 Do you want other implementation? just ask me via discord: albirrkarim
 
