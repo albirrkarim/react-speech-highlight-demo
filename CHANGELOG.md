@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.0.0
+
+Stable version release, before i add API for plugin TTS on PDF
+
 # 4.9.9
 
 - Fix bug
@@ -13,8 +17,7 @@
 - Fix bug
 - remove `romanTransform()` because we now prefer using LLM for pronounciation correction
 - Add more js docs
-- Add Add way to set custom headers (Your platform API Auth) when communicating with OPEN AI API on Your Backend. [see](
-  API.md#package-data-and-cache-integration)
+- Add Add way to set custom headers (Your platform API Auth) when communicating with OPEN AI API on Your Backend. [see](API.md#package-data-and-cache-integration)
 - Minor Refactor
 
 # 4.9.7
