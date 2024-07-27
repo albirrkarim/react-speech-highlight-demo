@@ -53,7 +53,7 @@ This is the Documentation for [web version](#the-web-version-react-and-vanilla-j
 
 <br/>
 
-# Docs for v5.0.0
+# Docs for v5.0.1
 
 **Table Of Contents**
 
@@ -107,7 +107,7 @@ So, I decide to making this npm package that combines various methods above to a
 
 My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
 
-When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). 
+When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
 
 How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
 
@@ -142,12 +142,14 @@ The problem when we do TTS on academic text. it contains math equations, formula
 
 ## B. TODO
 
-- [ ] Add Custom virtual DOM for handling unstructured HTML content (working on it)
+
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
+- [x] Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
+- [x] Add Custom virtual DOM for handling unstructured HTML content
 - [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)
 - [x] Accurate and cost effective [pronounciation correction](PROBLEMS.md#a-common-problem-in-text-to-speech-both-audio-file-and-web-speech-synthesis) Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
@@ -212,13 +214,14 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money.
+Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money.
 
-  Making the [pronounciation engine](PROBLEMS.md#1-pronounciation-problem) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
+Making the [pronounciation engine](PROBLEMS.md#1-pronounciation-problem) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-  Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
+Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
 
-  Just try by yourself to make this package. you will be grateful I am selling it cheap. 
+Just try by yourself to make this package. you will be grateful I am selling it cheap.
+
 </details>
 
 <br/>
@@ -229,9 +232,9 @@ I love feedback from my customers. You can write on the issue tab so when i have
   <br/>
   Tell your problems or difficulties to me, i will show you the way to solve that.
   
-  I provide realtime support from me with discord. (of course when its day time on Indonesia timezone). 
+  I provide realtime support from me with discord. (of course when its day time on Indonesia timezone).
 
-  Just buy it. remove the headache. and you can focus on your project.
+Just buy it. remove the headache. and you can focus on your project.
 
 </details>
 
@@ -242,9 +245,9 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  Yes, if you are student or teacher, you can get discount. Just show me your student card or teacher card.
+Yes, if you are student or teacher, you can get discount. Just show me your student card or teacher card.
 
-  Yes, if you help me vote this package on [product hunt](https://www.producthunt.com/products/react-vanilla-speech-highlight)
+Yes, if you help me vote this package on [product hunt](https://www.producthunt.com/products/react-vanilla-speech-highlight)
 
 </details>
 
@@ -255,13 +258,13 @@ I love feedback from my customers. You can write on the issue tab so when i have
   
   <br/>
 
-  You can see the docs in this repo, and this package is written with typescript, and tested using jest to make sure the quality.
+You can see the docs in this repo, and this package is written with typescript, and tested using jest to make sure the quality.
 
-  You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com/) will show some popup (simple tutorial) what is the function about, examples, params, etc...
+You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com/) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
-  Just use the source code from demo website, you can literally just understand the package.
+Just use the source code from demo website, you can literally just understand the package.
 
-  https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
 
 </details>
 
@@ -288,7 +291,7 @@ Example :
   
   Goto the [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
-  I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
+I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
 
 </details>
 
@@ -309,17 +312,17 @@ Example :
 
   <br/>
 
-  Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
-  or
+or
 
-  Try to setting the speech synthesis or language in your device.
+Try to setting the speech synthesis or language in your device.
 
-  If you use smartphone (Android):
+If you use smartphone (Android):
 
-  1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google. android.tts)
+1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google. android.tts)
 
-  2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute  (your device will automatically download the voice), then restart your smartphone.
+2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
 
 </details>
 
@@ -330,9 +333,9 @@ Example :
 
   <br/>
 
-  Your device will download that voice first. then your device will have that voice locally.
+Your device will download that voice first. then your device will have that voice locally.
 
-  Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -343,7 +346,7 @@ Example :
 
   <br/>
 
-  Yes, [see](API.md#5-speak)
+Yes, [see](API.md#5-speak)
 
 </details>
 
@@ -356,7 +359,7 @@ Example :
   
   This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
 
-  But if you don't want to use open ai API, it can still work. see the FAQ about ***What dependency this package use?***
+But if you don't want to use open ai API, it can still work. see the FAQ about **_What dependency this package use?_**
 
 </details>
 <br/>
@@ -366,17 +369,17 @@ Example :
 
   <br/>
 
-  **NPM dependencies:**
+**NPM dependencies:**
 
-  - For React Speech Highlight: See the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
+- For React Speech Highlight: See the [package.json](package.json) in this repo. see the `peerDependencies` once you build this package you will need only npm package that is in that `peerDependencies`. Only react.
 
-  - For [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app): No dependency, just use the vanilla js file. 
+- For [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app): No dependency, just use the vanilla js file.
 
-  **AI dependencies:**
+**AI dependencies:**
 
-  - This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
+- This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
 
-  - Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
+- Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
 
 </details>
 
@@ -387,9 +390,9 @@ Example :
 
   <br/>
 
-  Yes, See the detail on [TEST.md](TEST.md)
+Yes, See the detail on [TEST.md](TEST.md)
 
-  or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
+or you can Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
 </details>
 
@@ -399,9 +402,9 @@ Example :
   <summary>How it work? Is the Package Architecture Scalable?</summary>
   <br/>
 
-  It just work. Simple explanation is in the introduction [above](#a-introduction).
+It just work. Simple explanation is in the introduction [above](#a-introduction).
 
-  The architecture scalable, just ask me what feature you want.
+The architecture scalable, just ask me what feature you want.
 
 </details>
 
@@ -524,6 +527,32 @@ The price is $150.
 
 <br/>
 
+### Python Server for doing Youtube transcript highlight
+
+The Python server is used as a helper for the package.
+
+Price is $20
+
+**What you got**
+
+- [Python server](https://github.com/Web-XR-AI-lab/rshl_python_helper)
+
+<br/>
+
+### PDF Reader Plugin
+
+PDF plugin is used for highlighting the text in the PDF file.
+
+They can read many PDF structure, and determine the sequential reading from left to right. (what should i read next)
+
+Price is $1000
+
+**What you got**
+
+- Demo website that include the plugin and the example use. (Coming soon)
+
+<br/>
+
 ### The Web Version bundled with React GPT Web Guide
 
 [![React GPT Web Guide Banner](https://raw.githubusercontent.com/albirrkarim/react-gpt-web-guide-docs/main/img/banner.png)](https://github.com/albirrkarim/react-gpt-web-guide-docs)
@@ -534,6 +563,8 @@ The price is $150.
 
 - [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-gpt-web-guide)
 - All the private repo web version of [React Speech Highlight](#the-web-version-react-and-vanilla-js)
+
+<br/>
 
 <br/>
 
@@ -604,3 +635,7 @@ So this package is the answer for you who looking for:
 - Text-to-Speech in JS
 - JS Speech Synthesis
 - Highlighted TTS JavaScript
+- Youtube Transcript Highlight
+- Word Highlight in Youtube Transcript
+- How to Highlight Words in Youtube Transcript
+- Youtube Transcript Word Timing
