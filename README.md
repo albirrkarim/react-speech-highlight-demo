@@ -499,7 +499,7 @@ const v2_pronoun_engine_reports = {
 
 ## G. Payment
 
-### The Web Version (React and Vanilla js)
+### - The Web Version (React and Vanilla js)
 
 The current price is $94 USD
 
@@ -515,7 +515,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 <br/>
 
-### The Mobile App Version (React Native)
+### - The Mobile App Version (React Native)
 
 The web version is easier to make. but in react native the code, and the flow is different. I have to rewrite the entire library and also define the different testing approach.
 
@@ -527,7 +527,7 @@ The price is $150.
 
 <br/>
 
-### Python Server for doing Youtube transcript highlight
+### - Python Server for Doing YouTube Transcript Highlight
 
 The Python server is used as a helper for the package.
 
@@ -539,13 +539,15 @@ Price is $20
 
 <br/>
 
-### PDF Reader Plugin
+### - PDF Reader Plugin
 
 PDF plugin is used for highlighting the text in the PDF file.
 
-They can read many PDF structure, and determine the sequential reading from left to right. (what should i read next)
+They can read many PDF structure, and determine the sequential reading from left to right. mimic user reading.
 
-Price is $1000
+They can also read the image (highlight the image with some box) in the PDF file and determine the text in the image using LLM.
+
+Price is $2000
 
 **What you got**
 
@@ -553,7 +555,7 @@ Price is $1000
 
 <br/>
 
-### The Web Version bundled with React GPT Web Guide
+### - The Web Version bundled with React GPT Web Guide
 
 [![React GPT Web Guide Banner](https://raw.githubusercontent.com/albirrkarim/react-gpt-web-guide-docs/main/img/banner.png)](https://github.com/albirrkarim/react-gpt-web-guide-docs)
 
