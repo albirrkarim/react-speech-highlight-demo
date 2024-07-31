@@ -142,7 +142,6 @@ The problem when we do TTS on academic text. it contains math equations, formula
 
 ## B. TODO
 
-
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
@@ -411,101 +410,23 @@ The architecture scalable, just ask me what feature you want.
 <br/>
 
 <details>
-  <summary>How about API cost of using open AI API for the pronounciation engine?</summary>
+  <summary>How about API cost of using open AI API for your package use?</summary>
   <br/>
 
-I try to optimize the cost while maintaining the accuracy by making new version of engine. v2, v3 etc...
-
-For now, here the test report of the pronoun v2 engines in version `4.9.7` of this library.
-
-```js
-const v2_pronoun_engine_reports = {
-  overallResults: {
-    Name: "v2",
-    Detail: "GPT3",
-    AvgAcc: "90.50%",
-    AvgScore: "92.05%",
-    AvgTime: "81.62s",
-    AvgCost: "869.53",
-    TotalTime: "652.94 s",
-    TotalCost: "Rp. 6956.27", // IDR 6956.27 is about USD $0.42 cost of open AI chat completion API
-    TotalRecords: 87, // 87 sentence that contain equations or term that should be the pronounciation corrected
-    CreatedAt: "29-04-2024 19:07",
-  },
-  testResults: {
-    romanNumberPronounTestCase: {
-      AvgAcc: "100.00%",
-      AvgScore: "95.83%",
-      AvgTime: "5.19s",
-      AvgCost: "53.41",
-      TotalCost: "320.44",
-    },
-    mathEquations: {
-      AvgAcc: "100.00%",
-      AvgScore: "95.62%",
-      AvgTime: "5.87s",
-      AvgCost: "54.80",
-      TotalCost: "273.98",
-    },
-    demoTestCase: {
-      AvgAcc: "95.00%",
-      AvgScore: "95.83%",
-      AvgTime: "4.71s",
-      AvgCost: "32.20",
-      TotalCost: "644.00",
-    },
-    physicalEquations: {
-      AvgAcc: "100.00%",
-      AvgScore: "97.29%",
-      AvgTime: "6.76s",
-      AvgCost: "58.16",
-      TotalCost: "581.62",
-    },
-    computerScienceTestCase: {
-      AvgAcc: "90.00%",
-      AvgScore: "97.58%",
-      AvgTime: "7.73s",
-      AvgCost: "85.52",
-      TotalCost: "855.17",
-    },
-    machineLeaningTestCase: {
-      AvgAcc: "73.68%",
-      AvgScore: "80.13%",
-      AvgTime: "9.99s",
-      AvgCost: "109.85",
-      TotalCost: "2087.12",
-    },
-    biologyTestCase: {
-      AvgAcc: "87.50%",
-      AvgScore: "96.09%",
-      AvgTime: "9.79s",
-      AvgCost: "119.12",
-      TotalCost: "952.95",
-    },
-    chemistryTestCase: {
-      AvgAcc: "77.78%",
-      AvgScore: "78.05%",
-      AvgTime: "9.47s",
-      AvgCost: "137.89",
-      TotalCost: "1240.99",
-    },
-  },
-};
-```
-
+  See [LLM_ENGINE.md](LLM_ENGINE.md)
 </details>
 
 <br/>
 
 ## G. Payment
 
+After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
+
 ### - The Web Version (React and Vanilla js)
 
 The current price is $94 USD
 
 **What you got**
-
-After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
 
 - [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
 
