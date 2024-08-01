@@ -18,7 +18,7 @@ see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 <br/>
 
-**Theres a lot** of function, llm engine and constant that you can import from this package. Here's just few of them. When you have buy the package you can just go to the `index.ts` file and see all the function and constant.
+Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant that you can import from this package. Here's just few of them. When you have buy the package you can just go to the `index.ts` file and see all the function and constant. the package have a lot of features, ofcourse it have a lot of APIs.
 
 <details>
   <summary>Show How to import something from the package</summary>
@@ -83,7 +83,13 @@ import type {
 
 The `markTheWords()` function is to process the string text and give some marker to every word and sentences that system will read.
 
-Also this using react `useMemo()` to avoid unecessary react rerender. i mean it will only execute when the `text` is changing. it's similiar with `useEffect()`.
+<details>
+  <summary>Show Code</summary>
+  <br/>
+
+Important, This example using react `useMemo()` to avoid unecessary react rerender. i mean it will only execute when the `text` is changing. it's similiar with `useEffect()`.
+
+<br/>
 
 ```jsx
 function abbreviationFunction(str) {
@@ -98,11 +104,19 @@ function abbreviationFunction(str) {
 const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
 ```
 
+</details>
+
+<br/>
+
 ## 2. TTS React Hook `useTextToSpeech()`
 
 ### 2.A. CONFIG
 
 There are two config placement, initialConfig and actionConfig.
+
+<details>
+  <summary>Show Code</summary>
+  <br/>
 
 ```jsx
 const initialConfig = {
@@ -166,6 +180,8 @@ void controlHL.play({
   actionConfig,
 });
 ```
+
+</details>
 
 <details>
   <summary>Show details config</summary>
@@ -274,11 +290,7 @@ controlHL.activateGesture();
 
 #### statusHL
 
-Some state that give the status of the program
-
-The value it can be `idle|play|calibration|pause|getVoicesLoading`
-
-you can fixed the value with accessing from `PKG_STATUS_OPT`
+Some react state that give the status of the program. The value it can be `idle|play|calibration|pause|getVoicesLoading`. You can fixed the value with accessing from `PKG_STATUS_OPT` constant.
 
 | Name               | Description                                                                                                                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
