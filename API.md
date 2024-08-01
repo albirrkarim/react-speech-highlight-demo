@@ -259,69 +259,17 @@ void controlHL.play({
 
 #### controlHL
 
-**Basic**
-
-| Name                              | Description           | Parameter                                         |
-| --------------------------------- | --------------------- | ------------------------------------------------- |
-| controlHL.play()                  | Play TTS              | controlHL.play(HTML_ELEMENT,VoiceURI,callbackEnd) |
-| controlHL.pause()                 | Pause TTS             | Just call                                         |
-| controlHL.resume()                | Resume TTS            | Resume TTS                                        |
-| controlHL.stop()                  | Stop TTS              | Stop TTS                                          |
-| controlHL.seekSentenceBackward()  | seekSentenceBackward  | -                                                 |
-| controlHL.seekSentenceForward()   | seekSentenceForward   | -                                                 |
-| controlHL.seekParagraphBackward() | seekParagraphBackward | -                                                 |
-| controlHL.seekParagraphForward()  | seekParagraphForward  | -                                                 |
-
-**New**
-
-`controlHL.changeConfig()`
-
-Change config while playing / realtime.
-
-```jsx
-controlHL.changeConfig({
-  volume: 1, // 0-1
-});
-```
-
-```jsx
-controlHL.changeConfig({
-  rate: 0.9, // 0.1 - 2
-});
-```
-
-```jsx
-controlHL.changeConfig({
-  pitch: 1, // 0.1 - 2
-});
-```
-
-`controlHL.activateGesture()`
-
-Activate double click event
-
-Example:
-
-```jsx
-useEffect(() => {
-  if (textEl.current) {
-     controlHL.activateGesture({
-        textEl: textRef.current,
-        onAfterDoubleClick: async ()=>{
-          // Some function that maybe you want to do after double click
-          // and the package will wait until the function is done
-          // maybe you want to do pronounciation correction
-          // await pronunciationCorrection(textEl.current,(progress)=>{
-          //   console.log(progress);
-          // });
-        },
-        onEnded:()=>{
-          // Some function that maybe you want to do after TTS done
-        }
-        actionConfig: currentConfig // Config for the TTS
-      })
-  }
-}, [textEl.current]);
+```js
+controlHL.play();
+controlHL.pause();
+controlHL.resume();
+controlHL.stop();
+controlHL.seekSentenceBackward();
+controlHL.seekSentenceForward();
+controlHL.seekParagraphBackward();
+controlHL.seekParagraphForward();
+controlHL.changeConfig();
+controlHL.activateGesture();
 ```
 
 #### statusHL
@@ -372,6 +320,10 @@ The common problem is the text display to user is different with their spoken fo
 
 [How to build this package with open ai api integration](MAKE_BACKEND.md)
 
+<details>
+  <summary>Show Code</summary>
+  <br/>
+
 ```jsx
 const inputText = `
 <ul>
@@ -415,11 +367,17 @@ return (
 );
 ```
 
+</details>
+
 ## 2. getLangForThisText()
 
 For example you want to implement this package into blog website with multi language, it's hard to know the exact language for each post / article.
 
 Then i use chat gpt api to detect what language from some text. see [How to build this package with open ai api integration](MAKE_BACKEND.md)
+
+<details>
+  <summary>Show Code</summary>
+  <br/>
 
 ```jsx
 var timeout = null;
@@ -453,6 +411,8 @@ useEffect(() => {
   }
 }, [inputText]);
 ```
+
+</details>
 
 ## 3. convertTextIntoClearTranscriptText()
 
