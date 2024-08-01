@@ -424,6 +424,8 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 ### - The Web Version (React and Vanilla js)
 
+![The Web Version (React and Vanilla js)](./img/web_version.png)
+
 The current price is $94 USD
 
 **What you got**
@@ -438,6 +440,8 @@ The current price is $94 USD
 
 ### - The Mobile App Version (React Native)
 
+![The Mobile App Version (React Native)](./img/mobile_version.png)
+
 The web version is easier to make. but in react native the code, and the flow is different. I have to rewrite the entire library and also define the different testing approach.
 
 The price is $150.
@@ -449,6 +453,8 @@ The price is $150.
 <br/>
 
 ### - Python Server for Doing YouTube Transcript Highlight
+
+![Python Server](./img/python.png)
 
 The Python server is used as a helper for the package.
 
@@ -462,13 +468,15 @@ Price is $20
 
 ### - PDF Reader Plugin
 
+![PDF Reader Plugin](./img/pdf_reader_plugin.png)
+
 PDF plugin is used for highlighting the text in the PDF file.
 
 They can read many PDF structure, and determine the sequential reading from left to right. mimic user reading.
 
 They can also read the image (highlight the image with some box) in the PDF file and determine the text in the image using LLM.
 
-Price is $2000
+Price is $3000
 
 **What you got**
 
