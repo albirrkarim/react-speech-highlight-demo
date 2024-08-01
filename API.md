@@ -4,9 +4,25 @@ The api is a function that you can use to integrate this package into your apps.
 
 This package is written with typescript, You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
 
+<details>
+  <summary>Show Video</summary>
+  <br/>
+
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d325f9-469c-47e9-97d3-10053628e18c
 
+</details>
+
+<br/>
+
 see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
+
+<br/>
+
+**Theres a lot** of function, llm engine and constant that you can import from this package. Here's just few of them. When you have buy the package you can just go to the `index.ts` file and see all the function and constant.
+
+<details>
+  <summary>Show How to import something from the package</summary>
+  <br/>
 
 ```jsx
 // v5.0.1 API
@@ -56,6 +72,10 @@ import type {
   SentenceInfo,
 } from "react-speech-highlight";
 ```
+
+</details>
+
+<br/>
 
 # Main
 
@@ -368,7 +388,7 @@ const textEl = useRef();
 
 const pronounciation = async (): Promise<void> => {
   if (textEl.current) {
-    await pronunciationCorrection(textEl.current,(progress)=>{
+    await pronunciationCorrection(textEl.current, (progress) => {
       console.log(progress);
     });
   }
