@@ -424,6 +424,18 @@ The architecture scalable, just ask me what feature you want.
 
 <br/>
 
+<details>
+  <summary>Our Company have already make a lot of audio file, can i just use it for highlighting with your package?</summary>
+  <br/>
+
+  No, Because my package handle all the [batching system](PROBLEMS.md#2-long-text-request-to-tts-api-capabilty-of-tts-api-handling-long-text), [pronounciation system](PROBLEMS.md#1-pronounciation-problem), and [providing text](API.md#3-converttextintocleartranscripttext) so the TTS API can produce the audio file that can be used for highlighting.
+
+  You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to cache the request response. for both open ai API and TTS API for audio file.
+</details>
+
+<br/>
+
+
 ## G. Payment
 
 After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
