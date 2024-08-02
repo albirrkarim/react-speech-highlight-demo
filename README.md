@@ -49,7 +49,7 @@ Do you want other implementation? just ask me via discord: albirrkarim
 - Solve the [Text To Speech Problems](PROBLEMS.md)
 - Well Crafted: Written in Typescript, Test with Jest, Code linting with Eslint, Well documented with JS Doc, and tested in production devices.
 
-This is the Documentation for [web version](#the-web-version-react-and-vanilla-js)
+This is the Documentation for [web version](#--the-web-version-react-and-vanilla-js)
 
 <br/>
 
@@ -131,11 +131,17 @@ Imagine that you have long article and have TTS button then played the text to s
 
 In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
 
-<!-- - **Academic Paper Reader**
+- **Language Learning App With Real Human Voice**
+
+![Use case Language Learning App](./img/hanacaraka.png)
+
+Look at the example 6 on the [demo](https://react-speech-highlight.vercel.app). its a example of use real human voice for text to speech. Maybe your local language is not supported by the TTS API. you can use this package to use the real human voice. The real human voice is recorded by the real human. The real human voice is more natural than the TTS API.
+
+- **Academic Text Reader**
 
 ![Pronounciation](/img/pronounciation.png)
 
-The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronounciation [see](PROBLEMS.md#1-pronounciation-problem). so we make some pronounciation correction engine utilizing the Open AI API to think what should the term pronounced. -->
+The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronounciation [see](PROBLEMS.md#1-pronounciation-problem). so we make some pronounciation correction engine utilizing the Open AI API to think what should the term pronounced.
 
 <br>
 <br>
@@ -466,7 +472,7 @@ Price is $20
 
 <br/>
 
-### - PDF Reader Plugin
+<!-- ### - PDF Reader Plugin
 
 ![PDF Reader Plugin](./img/pdf_reader_plugin.png)
 
@@ -476,7 +482,7 @@ They can read many PDF structure, and determine the sequential reading from left
 
 They can also read the image (highlight the image with some box) in the PDF file and determine the text in the image using LLM.
 
-Price is $3000
+Price is $3000 -->
 
 **What you got**
 
