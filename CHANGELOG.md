@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 5.0.2 - 5.0.6
+
+- Fix bug
+- Improve Translate To some language engine, with chunking system it can handle more a lot of text
+
 # 5.0.1
 - Introduction virtual nodes, Sentence Node and Word Node. for flexible text to speech. Used in PDF TTS Highlight and Relation Highlight Features.
 - Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the  words in youtube transcript, and their relations to other word like their translation form.

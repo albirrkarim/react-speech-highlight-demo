@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.0.1
+# Docs for v5.0.6
 
 **Table Of Contents**
 
@@ -157,6 +157,8 @@ Relation Highlight feature - When you hover into some word, the related word wil
 
 ## B. TODO
 
+- [ ] Add discord chat bot using LLM for explaining the API, and just explain what you want to make, and they will give you the code.
+- [ ] Automation End to End Testing, test all APIs, runtime, sequential action, etc...
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
