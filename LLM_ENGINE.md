@@ -10,6 +10,26 @@ Here the list of the engine:
 
 This engine is used to correct the pronunciation of the term that contain equations or term that should be the pronounciation corrected.
 
+```js
+import {
+  pronunciationCorrection,
+  getSentencesNode,
+} from "react-speech-highlight";
+
+const textEl = useRef < HTMLDivElement > null;
+// the textEl is the element that contains the text and have been marked with markTheWords function
+
+await pronunciationCorrection(textEl.current, (progress) => {
+  console.log("progress", progress);
+});
+
+const sentencesNode = getSentencesNode(textEl.current);
+
+await pronunciationCorrection(sentencesNode, (progress) => {
+  console.log("progress", progress);
+});
+```
+
 Current version V2 available in version `4.9.7`
 
 <details>
@@ -97,16 +117,68 @@ const v2_pronoun_engine_reports = {
 
 </details>
 
-## 2. Translate Engine
+## 2. Get Language from text
 
-Evaluation report will available soon.
+This function determines the language of the provided text.
 
-## 3. Relation Finder 
+```jsx
+import { getLangForThisText } from "react-speech-highlight";
+
+const text = "Hello, world!";
+const lang = await getLangForThisText(text);
+console.log(lang); // e.g., 'en'
+```
+
+PKG version v5.0.7 - getLangForThisText Version v1 - 18 August 2024
+
+Test Report:
+
+```bash
+Total Time: 1.90 s
+Average Time / Record: 0.01 s @ 136 records
+Total Records: 136
+Accuracy (correct/total): 100.00 %
+Total COST IDR: 43.019
+Total COST / Record: 0.316
+Text Sample 
+- Min 1 words, mean 36.97 words, max 154 words
+- Min 2 characters, mean 249.48 characters, max 1055 characters
+```
+
+## 3. Translate to some language
+
+Translate text into another language
+
+```js
+import { translateTo } from "react-speech-highlight";
+
+const hashContent = md5("Hello"); // hashContent is optional
+
+translateTo("Hello", "id", hashContent);
+```
+
+PKG version v5.0.7 - translateTo Version v1 - 18 August 2024
+
+Test Report:
+
+```bash
+Total Time: 1.10 s
+Average Time / Record: 0.02 s @ 44 records
+Total Records: 44
+Accuracy (correct/total): 100.00 %
+Total COST IDR: 60.361
+Total COST / Record: 1.372
+Text Sample 
+- Min 1 words, mean 12.73 words, max 51 words
+- Min 2 characters, mean 77.64 characters, max 290 characters
+```
+
+
+## 4. Relation Finder
 
 Used in youtube translate highlight.
 
 Currently V3 - available in version `5.0.1`
-
 
 ```bash
 Evaluation:
