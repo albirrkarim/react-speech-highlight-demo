@@ -117,9 +117,9 @@ class OpenAIController extends Controller
         }
 
         $api_key = $allowed_domain[$origin];
-        $bodyData = $request->all();
+        $data = $request->all();
 
-        if (!isset($bodyData['messages'])) {
+        if (!isset($data['messages'])) {
             return response()->json([
                 "status" => false,
                 "message" => "please post 'messages' as body request"
