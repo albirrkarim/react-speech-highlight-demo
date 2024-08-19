@@ -18,6 +18,8 @@ with that url then the `package` will send **body request** like this
 
 ```json
 {
+  "temperature": 0,
+  "model": "gpt-3.5-turbo",
   "messages": [
     {
       "role": "user",
@@ -124,29 +126,30 @@ class OpenAIController extends Controller
             ], 400);
         }
 
-        // This package is have problem don't use it -> https://github.com/openai-php/laravel
+        // the [https://github.com/openai-php/laravel] package is have problem don't use it
         // https://github.com/openai-php/laravel/issues/51#issuecomment-1651224516
+
+        $body = [
+            'model' => isset($data["model"]) ? $data["model"] : 'gpt-3.5-turbo',
+            'messages' => $data["messages"],
+            'temperature' => isset($data["temperature"]) ? $data["temperature"] : 0.6,
+
+            // 'functions' => [
+            //     [
+            //         'name' => $function, 'parameters' => config('schema.'.$function),
+            //     ],
+            // ],
+            // 'function_call' => [
+            //     'name' => $function,
+            // ],
+            // 'temperature' => 0.6,
+            // 'top_p' => 1,
+        ];
 
         // Use approach like this instead
         $result = Http::withToken($api_key)
             ->retry(5, 500)
-            ->post(
-                'https://api.openai.com/v1/chat/completions',
-                [
-                    'model' => 'gpt-3.5-turbo',
-                    'messages' => $bodyData["messages"],
-                    // 'functions' => [
-                    //     [
-                    //         'name' => $function, 'parameters' => config('schema.'.$function),
-                    //     ],
-                    // ],
-                    // 'function_call' => [
-                    //     'name' => $function,
-                    // ],
-                    // 'temperature' => 0.6,
-                    // 'top_p' => 1,
-                ]
-            )
+            ->post('https://api.openai.com/v1/chat/completions', $body)
             ->throw()
             ->json();
 
