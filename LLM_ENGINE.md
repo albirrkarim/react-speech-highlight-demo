@@ -2,7 +2,7 @@
 
 What's that ? I make a new engine that use LLM (open ai chat API) and good algorithm to achieve accurate and cost effective. Of course it tested with test case, here the report.
 
-The cost defined in IDR (Indonesian Rupiah) when you currency is USD so just divide by 16.200. For example, IDR 16.200 is about USD $1.
+The cost defined in IDR (Indonesian Rupiah) when you currency is USD so just divide by 16.000. For example, IDR 16.000 is about USD $1.
 
 Here the list of the engine:
 
@@ -129,7 +129,7 @@ const lang = await getLangForThisText(text);
 console.log(lang); // e.g., 'en'
 ```
 
-PKG version v5.0.7 - getLangForThisText Version v1 - 18 August 2024
+PKG version 5.0.7 - getLangForThisText Version v1 - 18 August 2024
 
 Test Report:
 
@@ -157,7 +157,7 @@ const hashContent = md5("Hello"); // hashContent is optional
 translateTo("Hello", "id", hashContent);
 ```
 
-PKG version v5.0.7 - translateTo Version v1 - 18 August 2024
+PKG version 5.0.7 - translateTo Version v1 - 18 August 2024
 
 Test Report:
 
@@ -178,15 +178,16 @@ Text Sample
 
 Used in youtube translate highlight.
 
-Currently V3 - available in version `5.0.1`
+Currently V4 - available in version `5.0.9` - 3 Sept 2024
 
-```bash
+```
 Evaluation:
-Total Time: 61.26 s
-Average Time / Sentence: 6.13 s @ 10 sentences
-Total Sentence: 10
-Acc Each Test: 85.00%, 100.00%, 28.57%, 44.44%, 100.00%, 70.00%, 90.91%, 100.00%, 100.00%, 50.00
-Mean Accuracy: 76.892 %
-Total COST IDR: 80
-Total COST / Sentence: 8
+Data Variation (higher better): 10 unique sentences
+Total Iteration: 10 iteration | 100 sentences
+Mean Time (lower better): 68.07 s  / 6.81 s each sentence
+Mean Accuracy Each Iteration (higher better): 100.00%, 100.00%, 100.00%, 100.00%, 100.00%, 100.00%, 100.00%, 100.00%, 100.00%, 100.00
+Mean Accuracy (higher better): 100.00 %
+Changes Level (lower better): max: 0.00 % | mean: 0.00 % | min: 0.00 %
+Mean LLM Digest Fail (lower better): 0.000 %
+Total COST IDR (lower better): 839.06 @ 8.39 each sentence
 ```

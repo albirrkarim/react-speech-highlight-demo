@@ -1,5 +1,12 @@
 # CHANGELOG
 
+# 5.0.9
+
+Relation Finder v4 see the evaluation on [LLM_ENGINE](LLM_ENGINE.md)
+
+# 5.0.7 - 5.0.8
+- Fix bug
+
 # 5.0.2 - 5.0.6
 
 - Fix bug

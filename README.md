@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.0.6
+# Docs for v5.0.9
 
 **Table Of Contents**
 
@@ -456,6 +456,8 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 ![The Web Version (React and Vanilla js)](./img/web_version.png)
 
 The current price is $94 USD
+
+# PRICE ALERT: The price will be increase from $94 to $350 USD on 3 Sept 2024
 
 **What you got**
 
