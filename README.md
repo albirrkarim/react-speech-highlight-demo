@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.0.9
+# Docs for v5.1.0
 
 **Table Of Contents**
 
@@ -120,6 +120,8 @@ This package is one time pay. No Subscription. Who likes subscription? I also do
 ![Feature Overview](./img/features.png)
 
 ### Use Cases
+
+When you are entrepreneur im sure you have some crazy uses case for this package.
 
 - **Interactive Blog**
 
@@ -455,9 +457,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 ![The Web Version (React and Vanilla js)](./img/web_version.png)
 
-The current price is $94 USD
-
-# PRICE ALERT: The price will be increase from $94 to $350 USD on 3 Sept 2024
+The current price is $350 USD
 
 **What you got**
 
@@ -466,6 +466,18 @@ The current price is $94 USD
 - [The package repo (React Speech Highlight)](https://github.com/Web-XR-AI-lab/react-speech-highlight)
 
 - [The package repo (Vanilla Speech Highlight)](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)
+
+<br/>
+
+### - The Enterprise Web Version
+
+Get the web version with the enterprise license. The price is $700.
+
+**What you got**
+- Web version this package.
+- Architecture support, i can make some drawing about the architecture of implementation.
+- Implementation code review, i can review your code do best practice implementation.
+- 3 years inside private repo and support.
 
 <br/>
 
