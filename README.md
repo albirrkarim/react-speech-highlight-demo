@@ -481,7 +481,7 @@ The price is $700.
 
 **What you got**
 
-- Web version this package.
+- [Web version](#--the-web-version-react-and-vanilla-js) this package.
 - Architecture support, i can make some drawing about the architecture of implementation.
 - Implementation code review, i can review your code do best practice implementation.
 - 3 years inside private repo and support.
