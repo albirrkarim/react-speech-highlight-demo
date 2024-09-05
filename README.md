@@ -153,7 +153,6 @@ See the [example 7](https://react-speech-highlight.vercel.app). It has youtube i
 
 Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md#3-relation-finder). Limitation: it can only be use when the video has no background sound (for now).
 
-
 <br>
 <br>
 
@@ -432,7 +431,8 @@ The architecture scalable, just ask me what feature you want.
   <summary>How about API cost of using open AI API for your package use?</summary>
   <br/>
 
-  See [LLM_ENGINE.md](LLM_ENGINE.md)
+See [LLM_ENGINE.md](LLM_ENGINE.md)
+
 </details>
 
 <br/>
@@ -441,13 +441,13 @@ The architecture scalable, just ask me what feature you want.
   <summary>Our Company have already make a lot of audio file, can i just use it for highlighting with your package?</summary>
   <br/>
 
-  No, Because my package handle all the [batching system](PROBLEMS.md#2-long-text-request-to-tts-api-capabilty-of-tts-api-handling-long-text), [pronounciation system](PROBLEMS.md#1-pronounciation-problem), and [providing text](API.md#3-converttextintocleartranscripttext) so the TTS API can produce the audio file that can be used for highlighting.
+No, Because my package handle all the [batching system](PROBLEMS.md#2-long-text-request-to-tts-api-capabilty-of-tts-api-handling-long-text), [pronounciation system](PROBLEMS.md#1-pronounciation-problem), and [providing text](API.md#3-converttextintocleartranscripttext) so the TTS API can produce the audio file that can be used for highlighting.
 
-  You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to cache the request response. for both open ai API and TTS API for audio file.
+You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to cache the request response. for both open ai API and TTS API for audio file.
+
 </details>
 
 <br/>
-
 
 ## G. Payment
 
@@ -456,6 +456,8 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 ### - The Web Version (React and Vanilla js)
 
 ![The Web Version (React and Vanilla js)](./img/web_version.png)
+
+For individual developer, freelancer, or small business.
 
 The current price is $350 USD
 
@@ -471,9 +473,14 @@ The current price is $350 USD
 
 ### - The Enterprise Web Version
 
-Get the web version with the enterprise license. The price is $700.
+![Enterprise Web Version](./img/enterprise_web_version.png)
+
+For you that already have business and want solid package that can be used for long term.
+
+The price is $700. 
 
 **What you got**
+
 - Web version this package.
 - Architecture support, i can make some drawing about the architecture of implementation.
 - Implementation code review, i can review your code do best practice implementation.
