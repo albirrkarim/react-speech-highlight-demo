@@ -459,7 +459,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 For individual developer, freelancer, or small business.
 
-The current price is $350 USD
+The current price is $200 USD
 
 **What you got**
 
@@ -484,15 +484,13 @@ The price is $700.
 - [Web version](#--the-web-version-react-and-vanilla-js) this package.
 - Architecture support, i can make some drawing about the architecture of implementation.
 - Implementation code review, i can review your code do best practice implementation.
-- 3 years inside private repo and support.
+- 4 years inside private repo and support.
 
 <br/>
 
 ### - The Mobile App Version (React Native)
 
 ![The Mobile App Version (React Native)](./img/mobile_version.png)
-
-The web version is easier to make. but in react native the code, and the flow is different. I have to rewrite the entire library and also define the different testing approach.
 
 The price is $150.
 

@@ -2,7 +2,22 @@
 
 What's that ? I make a new engine that use LLM (open ai chat API) and good algorithm to achieve accurate and cost effective. Of course it tested with test case, here the report.
 
-The cost defined in IDR (Indonesian Rupiah) when you currency is USD so just divide by 16.000. For example, IDR 16.000 is about USD $1.
+The cost defined in IDR (Indonesian Rupiah) when you currency is USD so just divide by 15.000. For example, IDR 15.000 is about USD $1.
+
+## Evaluation
+
+Changes level: 
+- max: 0.00 %
+- mean: 0.00 %
+- min: 0.00 %
+
+
+Data Variation: How many unique sentences in the test case
+
+Fail Digest: The precentage of Rule based engine that fail to digest the LLM result
+
+
+## Available Engine
 
 Here the list of the engine:
 
