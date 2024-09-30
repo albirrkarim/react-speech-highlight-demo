@@ -159,8 +159,9 @@ Relation Highlight feature - When you hover into some word, the related word wil
 ## B. TODO
 
 - [ ] Add discord chat bot using LLM for explaining the API, and just explain what you want to make, and they will give you the code.
-- [ ] Automation End to End Testing, test all APIs, runtime, sequential action, etc...
+- [ ] Automation Brute Force End to End Testing, test all APIs, runtime, sequential action, etc...
 - [ ] Add viseme support for chinese character
+- [ ] Making Hybrid engine timestamp detection
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
@@ -173,20 +174,17 @@ Relation Highlight feature - When you hover into some word, the related word wil
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
-- [x] Add vanilla js support, for those who dont use react, [see](https://vanilla-speech-highlight.vercel.app)
+- [x] Add vanilla js support, for those who don't use react, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add highlight capability when play using audio file.
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
 - [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
 - [x] Multi character support for non latin alphabet ( chinese (你好),
       russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )
-- [x] Add language detection using chat gpt. [see](API.md#2-getlangforthistext)
-- [x] Add seeking by sentence or paragraph. [see](API.md#2b-interface)
-- [x] Add reading progress by word or sentence. [see](API.md#spokenhl)
-- [x] Adjust config while TTS playing. [see](API.md#controlhl)
-- [x] Custom Abbreviation Function. [see](API.md#1-tts-marker-markthewords)
+- [x] Add [language detection using LLM api](API.md#2-getlangforthistext)
+- [x] Add [seeking by sentence or paragraph](API.md#2b-interface), [reading progress by word or sentence](API.md#spokenhl), [Adjust config while TTS playing.](API.md#controlhl), [Custom Abbreviation Function](API.md#1-tts-marker-markthewords)
 - [x] Realiability: TTS that can't die, Test on any platform, Code Linting using eslint, Using [Typescript](https://www.typescriptlang.org/), [Tested (Prompt Test, Unit Test, Engine Test)](TEST.md)
-- [x] Add demo website. [see](https://react-speech-highlight.vercel.app)
+- [x] Add [demo website](https://react-speech-highlight.vercel.app)
 
 <br>
 <br>
@@ -500,17 +498,16 @@ The price is $150.
 
 <br/>
 
-### - Python Server for Doing YouTube Transcript Highlight
+### - Python as Helper
 
 ![Python Server](./img/python.png)
 
 The Python server is used as a helper for the package.
 
-Price is $20
+**Many Functionality:**
 
-**What you got**
-
-- [Python server](https://github.com/Web-XR-AI-lab/rshl_python_helper)
+- [Python server for youtube relation transcript highlight ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
+<!-- - [Python server for video auto transcript ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper) -->
 
 <br/>
 
@@ -524,11 +521,13 @@ They can read many PDF structure, and determine the sequential reading from left
 
 They can also read the image (highlight the image with some box) in the PDF file and determine the text in the image using LLM.
 
-Price is $3000 -->
+Price is $3000
 
 **What you got**
 
 - Demo website that include the plugin and the example use. (Coming soon)
+
+ -->
 
 <br/>
 
