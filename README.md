@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.1.0
+# Docs for v5.1.2
 
 **Table Of Contents**
 
@@ -233,9 +233,9 @@ Well, i need money to funding the research, you know that making complex package
 
 Making the [LLM engines](LLM_ENGINE.md) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-Making the transcript time detection engine is also cost in making the audio file TTS API (elevenlabs).
-
 Just try by yourself to make this package. you will be grateful I am selling it cheap.
+
+This package is a `base` package that can be used for various use cases. I made a lot of money with package. The limit is your entrepreunership skill.
 
 </details>
 

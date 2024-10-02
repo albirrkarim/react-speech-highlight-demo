@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 5.1.0 - 5.1.2
+
+- Development of hybrid transcript timestamp engine
+- Fix bug
+
 # 5.0.9
 
 Relation Finder v4 see the evaluation on [LLM_ENGINE](LLM_ENGINE.md)
