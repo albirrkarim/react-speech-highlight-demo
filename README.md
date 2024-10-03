@@ -153,6 +153,16 @@ See the [example 7](https://react-speech-highlight.vercel.app). It has youtube i
 
 Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md#3-relation-finder). Limitation: it can only be use when the video has no background sound (for now).
 
+- **Video player with auto generate subtitle**
+
+![Video Player with auto generate subtitle](/img/auto_transcribe.png)
+
+Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played.
+
+- **Your use case here**
+
+Just ask me what you want to make, the package architecture is scalable to make various feature.
+
 <br>
 <br>
 
