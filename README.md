@@ -459,6 +459,10 @@ For individual developer, freelancer, or small business.
 
 The current price is $200 USD
 
+# MY BIRTHDAY DISCOUNT 50% for October, Only $100 USD this month!
+
+Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100.
+
 **What you got**
 
 - [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
