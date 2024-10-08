@@ -103,7 +103,9 @@ The elevenlabs have produce good quality voice and many features, but when comes
 
 ![Overview How React Speech Highlight Works](./img/overview.png)
 
-So, I decide to making this npm package that combines various methods above to achives all the good things and throw the bad things. **All is done in client side**, look at the overview above. No need to use advanced backend hosting.
+![AI inside](./img/ai_inside.png)
+
+So, I decide to making this npm package that combines various methods above to achives all the good things and throw the bad things. All logic is done in client side, look at the overview above. No need to use advanced backend hosting.
 
 My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
 
