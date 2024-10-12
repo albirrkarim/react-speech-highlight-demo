@@ -518,12 +518,12 @@ The price is $150.
 
 ![Python Server](./img/python.png)
 
-The Python server is used as a helper for the package.
+The Python server is used as a helper for the package. Doing proxy, video / audio manipulation, and many advanced function.
 
 **Many Functionality:**
 
 - [Python server for youtube relation transcript highlight ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
-<!-- - [Python server for video auto transcript ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper) -->
+- [Python server for video auto generate transcript ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
 
 <br/>
 
