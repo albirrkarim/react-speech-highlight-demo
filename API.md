@@ -25,7 +25,7 @@ Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant
   <br/>
 
 ```jsx
-// v5.1.2 API
+// v5.1.6 API
 import {
   // Main
   markTheWords,
@@ -141,6 +141,8 @@ const initialConfig = {
   fallbackAudio: null,
 
   batchSize: 200,
+
+  timestampDetectionMode: 'auto'
 };
 
 const { controlHL, statusHL, prepareHL, spokenHL } =
@@ -170,6 +172,8 @@ const actionConfig = {
   fallbackAudio: "example.com/some_file.mp3",
 
   batchSize: null, // or 200
+
+  timestampDetectionMode: 'auto' // or rule, ml
 };
 
 void controlHL.play({
@@ -243,8 +247,8 @@ void controlHL.play({
   When the built in web speech synthesis error or user doesn't have any voice. the fallback audio file will be used.
 
   ```jsx
-  async function getAudioForThisText(){
-   var res = await getAudioFromTTSAPI("elevenlabs/api....",text);
+  async function getAudioForThisText(text){
+   var res = await getAudioFromTTSAPI("https://yourbackend.com/api/elevenlabs....",text);
    // convert to audio file, convert again to audio url
 
    return res;
@@ -268,6 +272,10 @@ void controlHL.play({
   so package will batched send 200 characters per request to TTS API
 
   [Readmore about batch system in this package](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
+
+- `timestampDetectionMode`
+
+  Detection mode for timestamp engine. [see private docs](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight/tree/main/docs)
 
 </details>
 
@@ -473,11 +481,7 @@ Usage example:
 ## Set custom constant value for this package
 
 ```jsx
-import {
-  PREFERRED_VOICE,
-  OPENAI_CHAT_COMPLETION_API_ENDPOINT,
-  REQUEST_HEADERS,
-} from "react-speech-highlight";
+import { setupKey, storage } from "@/app/react-speech-highlight";
 
 // set global preferred voice
 useEffect(() => {
@@ -485,17 +489,19 @@ useEffect(() => {
     // important! Define language code (en-us) with lowercase letter
     "de-de": ["Helena", "Anna"],
   };
-  sessionStorage.setItem(
-    PREFERRED_VOICE,
-    JSON.stringify(your_defined_preferred_voice)
+
+  storage.setStorage(
+    "global",
+    setupKey.PREFERRED_VOICE,
+    yourDefinedPreferredVoice
   );
 
   // Set open ai chat completion api
   // example in demo website (next js using environment variable) src/Components/ClientProvider.tsx
   if (process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT) {
-    // Setting up the OpenAI chat completion API endpoint before the app starts
-    sessionStorage.setItem(
-      OPENAI_CHAT_COMPLETION_API_ENDPOINT,
+    storage.setStorage(
+      "global",
+      setupKey.OPENAI_CHAT_COMPLETION_API_ENDPOINT,
       process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT
     );
   }
@@ -503,7 +509,7 @@ useEffect(() => {
   // or
   sessionStorage.setItem(
     OPENAI_CHAT_COMPLETION_API_ENDPOINT,
-    "http://localhost:8000/api/v1/public/text-to-speech-elevenlabs"
+    "http://localhost:8000/api/v1/public/chat"
   );
 
   // You can set the headers for the fetch API request with this key in sessionStorage
@@ -512,6 +518,15 @@ useEffect(() => {
   };
 
   // Tips: Hover your mouse over the REQUEST_HEADERS variable to see the example and docs
-  sessionStorage.setItem(REQUEST_HEADERS, JSON.stringify(headers));
+  storage.setStorage("global", setupKey.REQUEST_HEADERS, headers);
+
+  // Speech to Text API endpoint
+  if (process.env.NEXT_PUBLIC_OPENAI_STT_API_ENDPOINT) {
+    storage.setStorage(
+      "global",
+      setupKey.OPENAI_SPEECH_TO_TEXT_API_ENDPOINT,
+      process.env.NEXT_PUBLIC_OPENAI_STT_API_ENDPOINT
+    );
+  }
 }, []);
 ```

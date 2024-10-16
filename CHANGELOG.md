@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# 5.1.3 - 5.1.6
+ - Fix bug
+ - Renaming API
+ - Virtual Storage (to mimic sessionStorage)
+ - Local state tts [see demo example page](https://react-speech-highlight.vercel.app/example)
+ - Streaming support
+ - Add better error event
+
 # 5.1.0 - 5.1.2
 
 - Development of hybrid transcript timestamp engine

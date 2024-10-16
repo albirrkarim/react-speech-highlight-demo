@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.1.2
+# Docs for v5.1.6
 
 **Table Of Contents**
 
@@ -469,7 +469,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 For individual developer, freelancer, or small business.
 
-The current price is $200 USD
+The price is $200 USD
 
 # MY BIRTHDAY DISCOUNT 50% for October, Only $100 USD this month!
 
