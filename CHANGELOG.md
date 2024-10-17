@@ -1,6 +1,11 @@
 # CHANGELOG
 
+# 5.1.7
+
+- Rename storage API
+
 # 5.1.3 - 5.1.6
+
  - Fix bug
  - Renaming API
  - Virtual Storage (to mimic sessionStorage)
@@ -18,6 +23,7 @@
 Relation Finder v4 see the evaluation on [LLM_ENGINE](LLM_ENGINE.md)
 
 # 5.0.7 - 5.0.8
+
 - Fix bug
 
 # 5.0.2 - 5.0.6

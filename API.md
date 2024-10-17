@@ -25,7 +25,7 @@ Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant
   <br/>
 
 ```jsx
-// v5.1.6 API
+// v5.1.7 API
 import {
   // Main
   markTheWords,
@@ -142,7 +142,7 @@ const initialConfig = {
 
   batchSize: 200,
 
-  timestampDetectionMode: 'auto'
+  timestampDetectionMode: "auto",
 };
 
 const { controlHL, statusHL, prepareHL, spokenHL } =
@@ -173,7 +173,7 @@ const actionConfig = {
 
   batchSize: null, // or 200
 
-  timestampDetectionMode: 'auto' // or rule, ml
+  timestampDetectionMode: "auto", // or rule, ml
 };
 
 void controlHL.play({
@@ -490,7 +490,7 @@ useEffect(() => {
     "de-de": ["Helena", "Anna"],
   };
 
-  storage.setStorage(
+  storage.setItem(
     "global",
     setupKey.PREFERRED_VOICE,
     yourDefinedPreferredVoice
@@ -499,7 +499,7 @@ useEffect(() => {
   // Set open ai chat completion api
   // example in demo website (next js using environment variable) src/Components/ClientProvider.tsx
   if (process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT) {
-    storage.setStorage(
+    storage.setItem(
       "global",
       setupKey.OPENAI_CHAT_COMPLETION_API_ENDPOINT,
       process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT
@@ -507,7 +507,8 @@ useEffect(() => {
   }
 
   // or
-  sessionStorage.setItem(
+  storage.setItem(
+    "global",
     OPENAI_CHAT_COMPLETION_API_ENDPOINT,
     "http://localhost:8000/api/v1/public/chat"
   );
@@ -518,11 +519,11 @@ useEffect(() => {
   };
 
   // Tips: Hover your mouse over the REQUEST_HEADERS variable to see the example and docs
-  storage.setStorage("global", setupKey.REQUEST_HEADERS, headers);
+  storage.setItem("global", setupKey.REQUEST_HEADERS, headers);
 
   // Speech to Text API endpoint
   if (process.env.NEXT_PUBLIC_OPENAI_STT_API_ENDPOINT) {
-    storage.setStorage(
+    storage.setItem(
       "global",
       setupKey.OPENAI_SPEECH_TO_TEXT_API_ENDPOINT,
       process.env.NEXT_PUBLIC_OPENAI_STT_API_ENDPOINT
