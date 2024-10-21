@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.1.7
+# Docs for v5.1.9
 
 **Table Of Contents**
 
@@ -173,11 +173,12 @@ Just ask me what you want to make, the package architecture is scalable to make 
 - [ ] Add discord chat bot using LLM for explaining the API, and just explain what you want to make, and they will give you the code.
 - [ ] Automation Brute Force End to End Testing, test all APIs, runtime, sequential action, etc...
 - [ ] Add viseme support for chinese character
-- [ ] Making Hybrid engine timestamp detection
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
 
 <br/>
 
+- [x] Re-Architecture the package into plugins system, and add optional backend-nify the LLM Engine, so it faster, secure and more reliable.
+- [x] Making Hybrid engine timestamp detection
 - [x] Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
 - [x] Add Custom virtual DOM for handling unstructured HTML content
 - [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# 5.1.9
+
+- Begin the plugin architecture
+- Backend-nify the LLM engine using node js server (optional)
+
+# 5.1.8
+
+- Fix bug
+
 # 5.1.7
 
 - Rename storage API
