@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.2.0
+
+- Add example of generating SRT with `onEnded` event [see](https://react-speech-highlight.vercel.app/example)
+
 # 5.1.9
 
 - Begin the plugin architecture
