@@ -256,13 +256,14 @@ This package is a `base` package that can be used for various use cases. I made 
 
 <details>
   <summary>How about support?</summary>
-
+  
   <br/>
+
   Tell your problems or difficulties to me, i will show you the way to solve that.
   
   I provide realtime support from me with discord. (of course when its day time on Indonesia timezone).
 
-Just buy it. remove the headache. and you can focus on your project.
+  Just buy it. remove the headache. and you can focus on your project.
 
 </details>
 
@@ -515,16 +516,18 @@ The price is $150.
 
 <br/>
 
-### - Python as Helper
+### Backend Server for Advanced Features
 
-![Python Server](./img/python.png)
+![Backend Server](./img/backend.png)
 
-The Python server is used as a helper for the package. Doing proxy, video / audio manipulation, and many advanced function.
+- [Python server ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
+  
+Contains: YouTube relation transcript highlight, Video auto-generate transcript, Streaming TTS
 
-**Many Functionality:**
+- [Node js server ($20)](https://github.com/Web-XR-AI-lab/rshl_node)
 
-- [Python server for youtube relation transcript highlight ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
-- [Python server for video auto generate transcript ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
+Contains: Backenify LLM engines
+
 
 <br/>
 
@@ -600,8 +603,8 @@ If you are in indonesia (my country) you can easily transfer through bank and e 
 So this package is the answer for you who looking for:
 
 - Best Text to Speech Library
-- text to speech with viseme lipsync javascript
-- javascript text to speech highlight words
+- Text to speech with viseme lipsync javascript
+- Javascript text to speech highlight words
 - How to text to speech with highlight the sentence and words like speechify
 - How to text to speech with highlight the sentence and words using elevenlabs
 - How to text to speech with highlight the sentence and words using open ai
@@ -634,3 +637,4 @@ So this package is the answer for you who looking for:
 - Word Highlight in Youtube Transcript
 - How to Highlight Words in Youtube Transcript
 - Youtube Transcript Word Timing
+- Streaming TTS with highlight
