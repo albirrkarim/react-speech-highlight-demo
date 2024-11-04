@@ -177,7 +177,7 @@ Just ask me what you want to make, the package architecture is scalable to make 
 
 <br/>
 
-- [x] Re-Architecture the package into plugins system, and add optional backend-nify the LLM Engine, so it faster, secure and more reliable.
+- [x] Re-[Architecture](#solutions) the package into plugins system, and add optional backend-nify the LLM Engine, so it faster, secure and more reliable.
 - [x] Making Hybrid engine timestamp detection
 - [x] Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
 - [x] Add Custom virtual DOM for handling unstructured HTML content
@@ -472,8 +472,6 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 For individual developer, freelancer, or small business.
 
 The price is $200 USD
-
-# MY BIRTHDAY DISCOUNT 50% for October, Only $100 USD this month!
 
 Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100.
 
