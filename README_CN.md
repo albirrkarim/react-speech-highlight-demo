@@ -57,7 +57,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/abb9c
 
 <br/>
 
-# v5.2.0 文档
+# v5.2.2 文档
 
 **目录**
 

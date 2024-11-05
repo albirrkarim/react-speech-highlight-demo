@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 5.2.1 - 5.2.2
+
+- Adding more jsdocs
+- Some little refactor
+
 # 5.2.0
 
 - Add example of generating SRT with `onEnded` event [see](https://react-speech-highlight.vercel.app/example)

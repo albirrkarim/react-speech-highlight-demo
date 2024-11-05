@@ -25,7 +25,7 @@ Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant
   <br/>
 
 ```jsx
-// v5.2.0 API
+// v5.2.2 API
 import {
   // Main
   markTheWords,
@@ -451,7 +451,7 @@ var clear_transcript = convertTextIntoClearTranscriptText(
 
 # Package Data and Cache Integration
 
-The data or cache (sessionStorage / localStorage) that this package use can be accessed outside. The one that used by [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs).
+The data or cache (storage) that this package use can be accessed outside. The one that used by [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs).
 
 <details>
   <summary>Show</summary>

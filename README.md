@@ -53,7 +53,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.2.0
+# Docs for v5.2.2
 
 **Table Of Contents**
 
@@ -177,18 +177,18 @@ Just ask me what you want to make, the package architecture is scalable to make 
 
 <br/>
 
+- [x] Add example of [streaming TTS with highlight](https://react-speech-highlight.vercel.app/example). it play tts with highlight while even the text is still streamed.
 - [x] Re-[Architecture](#solutions) the package into plugins system, and add optional backend-nify the LLM Engine, so it faster, secure and more reliable.
 - [x] Making Hybrid engine timestamp detection
 - [x] Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
-- [x] Add Custom virtual DOM for handling unstructured HTML content
+- [x] Add Virtual Node for flexible highlighting
 - [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)
 - [x] Accurate and cost effective [pronounciation correction](PROBLEMS.md#a-common-problem-in-text-to-speech-both-audio-file-and-web-speech-synthesis) Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
-- [x] Add vanilla js support, for those who don't use react, [see](https://vanilla-speech-highlight.vercel.app)
-- [x] Add highlight capability when play using audio file.
+- [x] Add vanilla js support, for those who don't use react, [see vanilla demo](https://vanilla-speech-highlight.vercel.app)
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
 - [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
@@ -248,7 +248,7 @@ Making the [LLM engines](LLM_ENGINE.md) that combines prompt engineering and eff
 
 Just try by yourself to make this package. you will be grateful I am selling it cheap.
 
-This package is a `base` package that can be used for various use cases. I made a lot of money with package. The limit is your entrepreunership skill.
+This package is a `base` package that can be used for various use cases. I made a lot of money with package. The limit is your entrepreneurship skill.
 
 </details>
 
@@ -473,7 +473,7 @@ For individual developer, freelancer, or small business.
 
 The price is $200 USD
 
-Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100.
+<!-- Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100. -->
 
 **What you got**
 
