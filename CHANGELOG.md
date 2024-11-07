@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 5.2.3
+
+- Update `toJSON` method in virtual node
+- Better LLM ENGINE
+
 # 5.2.1 - 5.2.2
 
 - Adding more jsdocs
