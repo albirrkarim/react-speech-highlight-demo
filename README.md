@@ -127,43 +127,57 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Interactive Blog**
 
-Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read. you article will be SEO ready because this package has Server Side Rendering (SSR) capability.
+  Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read. you article will be SEO ready because this package has Server Side Rendering (SSR) capability.
 
 - **Web AI Avatar / NPC**
 
-![viseme](/img/viseme.png)
+  ![viseme](/img/viseme.png)
 
-In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
+  In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
 
 - **Language Learning App With Real Human Voice**
 
-![Use case Language Learning App](./img/hanacaraka.png)
+  ![Use case Language Learning App](./img/hanacaraka.png)
 
-Look at the example 6 on the [demo](https://react-speech-highlight.vercel.app). its a example of use real human voice for text to speech. Maybe your local language is not supported by the TTS API. you can use this package to use the real human voice. The real human voice is recorded by the real human. The real human voice is more natural than the TTS API.
+  Look at the example 6 on the [demo](https://react-speech-highlight.vercel.app). its a example of use real human voice for text to speech. Maybe your local language is not supported by the TTS API. you can use this package to use the real human voice. The real human voice is recorded by the real human. The real human voice is more natural than the TTS API.
 
 - **Academic Text Reader**
 
-![Pronounciation](/img/pronounciation.png)
+  ![Pronounciation](/img/pronounciation.png)
 
-The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronounciation [see](PROBLEMS.md#1-pronounciation-problem). so we make some pronounciation correction engine utilizing the Open AI API to think what should the term pronounced.
+  The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronounciation [see](PROBLEMS.md#1-pronounciation-problem). so we make some pronounciation correction engine utilizing the Open AI API to think what should the term pronounced.
 
 - **Relation Highlight and word level highlighting of youtube transcript**
 
-![Youtube transcript word highlighting](/img/relation.png)
+  ![Youtube transcript word highlighting](/img/relation.png)
 
-See the [example 7](https://react-speech-highlight.vercel.app). It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
+  See the [example 7](https://react-speech-highlight. vercel.app). It has youtube iframe, and the youtube  transcript on the right, when you play the youtube   video, the transcript will be highlighted. The  highlighting is based on the current time of the   played video. this package are **follow** the time.
 
-Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md#3-relation-finder). Limitation: it can only be use when the video has no background sound (for now).
+  Relation Highlight feature - When you hover into  some word, the related word will be highlighted too.   Example when you hover into chinese word, the pinyin  and english word will be highlighted too and vice  versa. How it can? [see](LLM_ENGINE. md#3-relation-finder). Limitation: it can only be  use when the video has no background sound (for now).
+
 
 - **Video player with auto generate subtitle**
 
-![Video Player with auto generate subtitle](/img/auto_transcribe.png)
+  <div align="center">
 
-Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played.
+
+  <a href="https://react-speech-highlight.vercel.app/video" title="Video Player with auto generate subtitle">
+      <img src="./img/auto_transcribe.png" width="350em">
+  </a>
+
+  </div>
+
+  Case: You just have audio or video file without text  transcript. Our package can generate the transcript  from the audio file. or even transtlate the  transcript to other language. The subtitle can be  highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
+
+  On that screenshot the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning. 
+
+  Italian word `notte` have meaning in english `night`
+
+  Go to [this video demo page](https://react-speech-highlight.vercel.app/video).
 
 - **Your use case here**
 
-Just ask me what you want to make, the package architecture is scalable to make various feature.
+  Just ask me what you want to make, the package  architecture is scalable to make various feature.
 
 <br>
 <br>
