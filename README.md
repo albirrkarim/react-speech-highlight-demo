@@ -162,7 +162,7 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 
   <a href="https://react-speech-highlight.vercel.app/video" title="Video Player with auto generate subtitle">
-      <img src="./img/auto_transcribe.png" width="350em">
+      <img src="./img/auto_transcribe.png" width="500em">
   </a>
 
   </div>
