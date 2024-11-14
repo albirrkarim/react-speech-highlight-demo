@@ -25,7 +25,7 @@ Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant
   <br/>
 
 ```jsx
-// v5.2.3 API
+// v5.2.4 API
 import {
   // Main
   markTheWords,
