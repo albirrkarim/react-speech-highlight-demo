@@ -485,7 +485,7 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 
 For individual developer, freelancer, or small business.
 
-The price is $200 USD
+The price is $200. Too expensive? See the [demo website](https://react-speech-highlight.vercel.app) maybe theres a discount for you.
 
 <!-- Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100. -->
 
