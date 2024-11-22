@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.2.4 - 5.2.6
+
+- Add non latin support like chinese, japanese, korean, greek, etc...
+
 # 5.2.3
 
 - Update `toJSON` method in virtual node
