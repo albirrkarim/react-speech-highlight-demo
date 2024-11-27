@@ -246,6 +246,10 @@ There's no refund.
 
 I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
 
+Still worry? see the [reviews on producthunt](https://www.producthunt.com/products/react-vanilla-speech-highlight)
+
+<a href="https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-react&#0045;vanilla&#0045;speech&#0045;highlight" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=574592&theme=light" alt="React&#0032;&#0047;&#0032;Vanilla&#0032;Speech&#0032;Highlight - Highlight&#0032;Anything | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 <br>
 <br>
 
@@ -260,9 +264,9 @@ Well, i need money to funding the research, you know that making complex package
 
 Making the [LLM engines](LLM_ENGINE.md) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-Just try by yourself to make this package. you will be grateful I am selling it cheap.
+This package is a `base` package that can be used for various [use cases](#use-cases). I made a lot of money with package. The limit is your entrepreneurship skill.
 
-This package is a `base` package that can be used for various use cases. I made a lot of money with package. The limit is your entrepreneurship skill.
+Just try by yourself to make this package. you will be grateful I am selling it cheap.
 
 </details>
 
