@@ -103,8 +103,6 @@ The elevenlabs have produce good quality voice and many features, but when comes
 
 ![Overview How React Speech Highlight Works](./img/overview.png)
 
-![AI inside](./img/ai_inside.png)
-
 So, I decide to making this npm package that combines various methods above to achives all the good things and throw the bad things. All logic is done in client side, look at the overview above. No need to use advanced backend hosting.
 
 My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
@@ -117,7 +115,11 @@ This package just take input text and audio file, so you can flexible to use any
 
 How this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence.
 
-This package is one time pay. No Subscription. Who likes subscription? I also don't.
+This package is one time pay. No Subscription. Who likes subscription? I also don't. see the how to [purchase bellow](#g-payment).
+
+![Positioning](./img/position.png)
+
+![AI inside](./img/ai_inside.png)
 
 ![Feature Overview](./img/features.png)
 
@@ -151,15 +153,13 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
   ![Youtube transcript word highlighting](/img/relation.png)
 
-  See the [example 7](https://react-speech-highlight.vercel.app). It has youtube iframe, and the youtube  transcript on the right, when you play the youtube   video, the transcript will be highlighted. The  highlighting is based on the current time of the   played video. this package are **follow** the time.
+  See the [example 7](https://react-speech-highlight.vercel.app). It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
 
-  Relation Highlight feature - When you hover into  some word, the related word will be highlighted too.   Example when you hover into chinese word, the pinyin  and english word will be highlighted too and vice  versa. How it can? [see](LLM_ENGINE.md#3-relation-finder). Limitation: it can only be  use when the video has no background sound (for now).
-
+  Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md#3-relation-finder). Limitation: it can only be use when the video has no background sound (for now).
 
 - **Video player with auto generate subtitle**
 
   <div align="center">
-
 
   <a href="https://react-speech-highlight.vercel.app/video" title="Video Player with auto generate subtitle">
       <img src="./img/auto_transcribe.png" width="500em">
@@ -167,9 +167,9 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
   </div>
 
-  Case: You just have audio or video file without text  transcript. Our package can generate the transcript  from the audio file. or even transtlate the  transcript to other language. The subtitle can be  highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
+  Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
 
-  On that screenshot the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning. 
+  On that screenshot the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning.
 
   Italian word `notte` have meaning in english `night`
 
@@ -177,7 +177,7 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Your use case here**
 
-  Just ask me what you want to make, the package  architecture is scalable to make various feature.
+  Just ask me what you want to make, the package architecture is scalable to make various feature.
 
 <br>
 <br>
@@ -273,11 +273,11 @@ This package is a `base` package that can be used for various use cases. I made 
   
   <br/>
 
-  Tell your problems or difficulties to me, i will show you the way to solve that.
-  
-  I provide realtime support from me with discord. (of course when its day time on Indonesia timezone).
+Tell your problems or difficulties to me, i will show you the way to solve that.
 
-  Just buy it. remove the headache. and you can focus on your project.
+I provide realtime support from me with discord. (of course when its day time on Indonesia timezone).
+
+Just buy it. remove the headache. and you can focus on your project.
 
 </details>
 
@@ -489,7 +489,6 @@ The price is $200. Too expensive? See the [demo website](https://react-speech-hi
 
 <!-- Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100. -->
 
-
 **What you got**
 
 - [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight)
@@ -506,7 +505,7 @@ The price is $200. Too expensive? See the [demo website](https://react-speech-hi
 
 For you that already have business and want solid package that can be used for long term.
 
-The price is $700. 
+The price is $700.
 
 **What you got**
 
@@ -534,13 +533,12 @@ The price is $150.
 ![Backend Server](./img/backend.png)
 
 - [Python server ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
-  
+
 Contains: YouTube relation transcript highlight, Video auto-generate transcript, Streaming TTS
 
 - [Node js server ($20)](https://github.com/Web-XR-AI-lab/rshl_node)
 
 Contains: Backenify LLM engines
-
 
 <br/>
 
