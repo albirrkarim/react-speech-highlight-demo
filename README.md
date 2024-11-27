@@ -38,17 +38,6 @@ Built with react native cli. [Try the demo android app](https://bit.ly/RNSHL-4-9
 
 Do you want other implementation? just ask me via discord: albirrkarim
 
-## Features:
-
-- Precise Highlight
-- Human like sound (you can use your audio file)
-- Generate viseme for current spoken TTS.
-- Accurate terms or equations pronunciation using LLM, [see](PROBLEMS.md#1-pronounciation-problem)
-- Highlight animation without react rerender so the performance is fast
-- Work on all environment
-- Solve the [Text To Speech Problems](PROBLEMS.md)
-- Well Crafted: Written in Typescript, Test with Jest, Code linting with Eslint, Well documented with JS Doc, and tested in production devices.
-
 This is the Documentation for [web version](#--the-web-version-react-and-vanilla-js)
 
 <br/>
@@ -187,7 +176,7 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 - [ ] Add discord chat bot using LLM for explaining the API, and just explain what you want to make, and they will give you the code.
 - [ ] Automation Brute Force End to End Testing, test all APIs, runtime, sequential action, etc...
 - [ ] Add viseme support for chinese character
-- [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or send me discord message @albirrkarim
+- [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or contact me via discord (username: albirrkarim)
 
 <br/>
 
@@ -246,9 +235,9 @@ There's no refund.
 
 I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
 
-Still worry? see the [reviews on producthunt](https://www.producthunt.com/products/react-vanilla-speech-highlight)
+Still worry? see the [reviews on producthunt](https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews)
 
-<a href="https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-react&#0045;vanilla&#0045;speech&#0045;highlight" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=574592&theme=light" alt="React&#0032;&#0047;&#0032;Vanilla&#0032;Speech&#0032;Highlight - Highlight&#0032;Anything | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=574592&theme=light" alt="React&#0032;&#0047;&#0032;Vanilla&#0032;Speech&#0032;Highlight - Highlight&#0032;Anything | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 <br>
 <br>
@@ -263,6 +252,8 @@ Still worry? see the [reviews on producthunt](https://www.producthunt.com/produc
 Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money.
 
 Making the [LLM engines](LLM_ENGINE.md) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
+
+Also i provide support via live private chat to me through discord (username: albirrkarim), is there any services out there doing that?
 
 This package is a `base` package that can be used for various [use cases](#use-cases). I made a lot of money with package. The limit is your entrepreneurship skill.
 
