@@ -257,7 +257,7 @@ Also i provide support via live private chat to me through discord (username: al
 
 This package is a `base` package that can be used for various [use cases](#use-cases). I made a lot of money with package. The limit is your entrepreneurship skill.
 
-Just try by yourself to make this package. you will be grateful I am selling it cheap.
+With the higher price i maintain the [scarcity](https://www.google.com/search?q=scarcity) of the functionality.
 
 </details>
 
