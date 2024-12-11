@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# 5.2.9
+
+- Enhancing timestamp engine capability v4
+
+# 5.2.7 - 5.2.8
+
+- Fix bug
+
 # 5.2.4 - 5.2.6
 
 - Add non latin support like chinese, japanese, korean, greek, etc...

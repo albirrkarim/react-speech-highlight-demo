@@ -1,6 +1,6 @@
 {
   "name": "react-speech-highlight",
-  "version": "5.2.6",
+  "version": "5.2.9",
   "description": "React components that use web speech synthesis API to text-to-speech tasks and also highlight the word and sentences that are being spoken",
   "main": "./build/index.js",
   "scripts": {
