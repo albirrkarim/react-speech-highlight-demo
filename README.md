@@ -76,13 +76,13 @@ They have problems Robot like sound, Supported Devices Available, etc..
 
 When we talk about good sound / human like voices AI models inference should get involved. So it doesn't make sense if doing that on client side.
 
-Then the speech synthesis API provider like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) play their roles.
+Then the speech synthesis API provider like [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) play their roles.
 
 But they don't provide the npm package to do highlighting.
 
 Then i found [Speechify](https://speechify.com). but i don't find any docs about using some npm package that integrate with their service. Also this is a paid subscriptions services.
 
-Searching again, Then i found [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444) its free if the 10000 character / month and will reset on next month. **Cool right?** So i decide to use this as speech synthesis API in my project. This platform also doesn't provide the react npm package to highlight their audio, but they provide [streaming output audio](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio) that can be use to produce "when the words is spoken in some audio" (transcript timestamp) like [someone make about this thing](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396).
+Searching again, Then i found [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1) its free if the 10000 character / month and will reset on next month. **Cool right?** So i decide to use this as speech synthesis API in my project. This platform also doesn't provide the react npm package to highlight their audio, but they provide [streaming output audio](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio) that can be use to produce "when the words is spoken in some audio" (transcript timestamp) like [someone make about this thing](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396).
 
 **In production you must do cost calculation**, which TTS Service API provider you should choose. The services that have capability streaming audio is promising highlight word. but also comes with high price. **The cheap TTS service API usually don't have much features.**
 
@@ -98,7 +98,7 @@ My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org
 
 When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
 
-How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
+How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
 
 This package just take input text and audio file, so you can flexible to use any TTS API that can produce audio file, The expensive one or even cheap one when you consider the cost.
 
@@ -193,7 +193,7 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add vanilla js support, for those who don't use react, [see vanilla demo](https://vanilla-speech-highlight.vercel.app)
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
-- [x] Docs integration text-to-speech with [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API [see the demo web](https://react-speech-highlight.vercel.app)
+- [x] Docs integration text-to-speech with [Eleven Labs](https://try.elevenlabs.io/29se7bx2zgw1) API [see the demo web](https://react-speech-highlight.vercel.app)
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
 - [x] Multi character support for non latin alphabet ( chinese (你好),
       russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )
@@ -417,7 +417,7 @@ But if you don't want to use open ai API, it can still work. see the FAQ about *
 
 - This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
 
-- Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
+- Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
 
 </details>
 

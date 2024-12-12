@@ -48,7 +48,7 @@ My lib also use [batch request system](PROBLEMS.md#the-solution-is-using-batch-r
 
 ### - ElevenLabs
 
-[Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) is a text-to-speech API that allows you to convert text into high-quality audio files. It supports multiple languages and voices, and provides a range of customization options to help you create the perfect audio for your needs.
+[Eleven Labs](https://try.elevenlabs.io/29se7bx2zgw1) is a text-to-speech API that allows you to convert text into high-quality audio files. It supports multiple languages and voices, and provides a range of customization options to help you create the perfect audio for your needs.
 
 ![ElevanLabs TTS Pricing](./img/elevenlabs_pricing.png)
 

@@ -91,13 +91,13 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/abb9c
 
 当我们谈到良好的声音/类人声音时，AI 模型推理应该参与进来。因此，在客户端进行这种操作是没有意义的。
 
-于是，语音合成 API 提供商如 [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444)、[Google Cloud](https://cloud.google.com/text-to-speech)、[Amazon Polly](https://aws.amazon.com/id/polly/) 和 [Open AI](https://platform.openai.com/docs/guides/text-to-speech) 发挥了他们的作用。
+于是，语音合成 API 提供商如 [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1)、[Google Cloud](https://cloud.google.com/text-to-speech)、[Amazon Polly](https://aws.amazon.com/id/polly/) 和 [Open AI](https://platform.openai.com/docs/guides/text-to-speech) 发挥了他们的作用。
 
 但他们没有提供用于高亮显示的 npm 包。
 
 然后我找到了 [Speechify](https://speechify.com)，但没有找到任何有关使用他们服务的 npm 包的文档。此外，这是一个付费订阅服务，并且他们无法高亮显示中文单词[参见](https://speechify.com/text-to-speech-online/chinese)。
 
-继续搜索后，我发现了 [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444)，它在每月 10000 个字符的额度内是免费的，并且会在下个月重置。**很酷吧？** 所以我决定在我的项目中使用这个作为语音合成 API。该平台也没有提供用于高亮显示其音频的 React npm 包，但他们提供了可以用于生成“音频中单词发音时刻”（转录时间戳）的[流输出音频](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio)，就像[有人做的那样](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396)。
+继续搜索后，我发现了 [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1)，它在每月 10000 个字符的额度内是免费的，并且会在下个月重置。**很酷吧？** 所以我决定在我的项目中使用这个作为语音合成 API。该平台也没有提供用于高亮显示其音频的 React npm 包，但他们提供了可以用于生成“音频中单词发音时刻”（转录时间戳）的[流输出音频](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio)，就像[有人做的那样](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396)。
 
 **在生产环境中，您必须进行成本计算**，选择哪个 TTS 服务 API 提供商。具有流音频功能的服务在高亮显示单词方面有很大的潜力，但也伴随着高昂的价格。**廉价的 TTS 服务 API 通常没有太多功能。**
 
@@ -113,7 +113,7 @@ ElevenLabs 提供了高质量的语音和许多功能，但在生产环境中，
 
 当优先使用/回退到音频文件时，您可以获得高质量的声音，并消除所有来自 [内置的 Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) 的兼容性问题。
 
-如何自动获取某些文本的音频文件？您可以使用 [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444)、[Google Cloud](https://cloud.google.com/text-to-speech)、[Amazon Polly](https://aws.amazon.com/id/polly/) 和 [Open AI](https://platform.openai.com/docs/guides/text-to-speech) 或任何其他 TTS API，只要它们可以生成音频文件（mp3、mp4、wav 等）。详情见 [AUDIO_FILE.md](AUDIO_FILE.md)。在 [演示网站](https://react-speech-highlight.vercel.app/) 中，我提供了使用 ElevenLabs 的示例，您甚至可以在该演示网站上试用自己的音频文件。
+如何自动获取某些文本的音频文件？您可以使用 [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1)、[Google Cloud](https://cloud.google.com/text-to-speech)、[Amazon Polly](https://aws.amazon.com/id/polly/) 和 [Open AI](https://platform.openai.com/docs/guides/text-to-speech) 或任何其他 TTS API，只要它们可以生成音频文件（mp3、mp4、wav 等）。详情见 [AUDIO_FILE.md](AUDIO_FILE.md)。在 [演示网站](https://react-speech-highlight.vercel.app/) 中，我提供了使用 ElevenLabs 的示例，您甚至可以在该演示网站上试用自己的音频文件。
 
 这个包仅接收输入文本和音频文件，因此您可以灵活地使用任何可以生成音频文件的 TTS API，无论是昂贵的还是便宜的，取决于您的成本考虑。
 
@@ -177,7 +177,7 @@ ElevenLabs 提供了高质量的语音和许多功能，但在生产环境中，
 - [x] 添加对 vanilla js 的支持，适用于不使用 react 的用户，[参见](https://vanilla-speech-highlight.vercel.app)
 - [x] 添加使用音频文件播放时的高亮功能。
 - [x] 当用户设备没有内置语音合成功能时，添加回退/优先使用音频文件（.mp3 等）的功能。或者可能更喜欢使用音频文件，因为声音比机器人声音更好。[参见](AUDIO_FILE.md)
-- [x] 文档集成与 [Eleven Labs](https://elevenlabs.io/?from=partnermurray4444) API 的文字转语音功能 [参见演示网页](https://react-speech-highlight.vercel.app)
+- [x] 文档集成与 [Eleven Labs](https://try.elevenlabs.io/29se7bx2zgw1) API 的文字转语音功能 [参见演示网页](https://react-speech-highlight.vercel.app)
 - [x] 与 [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) 包集成。
 - [x] 对非拉丁字母（中文 (你好)、俄文 (Привет)、日文 (こんにちは)、韩文 (안녕하세요) 等）支持多字符
 - [x] 添加使用 chat gpt 的语言检测功能。[参见](API.md#2-getlangforthistext)
@@ -396,7 +396,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d32
 
 - 这个包是可选使用 OpenAI API 以更好地完成文本到语音任务（解决 [PROBLEMS.md](PROBLEMS.md) 中的许多问题）。
 
-- 可选使用任何能生成音频文件的 TTS API，以获得更好的音质。比如 [ElevenLabs](https://elevenlabs.io/?from=partnermurray4444)、[Google Cloud](https://cloud.google.com/text-to-speech)、[Amazon Polly](https://aws.amazon.com/id/polly/) 和 [Open AI](https://platform.openai.com/docs/guides/text-to-speech)，或者任何能生成音频文件（mp3、mp4、wav 等）的 TTS API，详细信息参见 [AUDIO_FILE.md](AUDIO_FILE.md)。
+- 可选使用任何能生成音频文件的 TTS API，以获得更好的音质。比如 [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1)、[Google Cloud](https://cloud.google.com/text-to-speech)、[Amazon Polly](https://aws.amazon.com/id/polly/) 和 [Open AI](https://platform.openai.com/docs/guides/text-to-speech)，或者任何能生成音频文件（mp3、mp4、wav 等）的 TTS API，详细信息参见 [AUDIO_FILE.md](AUDIO_FILE.md)。
 
 </details>
 
