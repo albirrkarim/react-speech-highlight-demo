@@ -472,7 +472,7 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 ## G. Payment
 
-After you pay you will be invited inside my private repo and stay inside for 1 year to receive any updates.
+
 
 ### - The Web Version (React and Vanilla js)
 
@@ -481,6 +481,10 @@ After you pay you will be invited inside my private repo and stay inside for 1 y
 For individual developer, freelancer, or small business.
 
 The price is $200. Too expensive? See the [demo website](https://react-speech-highlight.vercel.app) maybe theres a discount for you.
+
+After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time.
+
+For continued access in subsequent years, you can pay $50 annually to remain in the private repository.
 
 <!-- Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100. -->
 
@@ -512,7 +516,7 @@ The price is subscription $5 / month. (Coming soon)
 
 For you that already have business and want solid package that can be used for long term.
 
-The price is $700.
+The price is $400.
 
 **What you got**
 
