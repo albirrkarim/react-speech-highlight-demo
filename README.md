@@ -140,9 +140,9 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Relation Highlight and word level highlighting of youtube transcript**
 
-  ![Youtube transcript word highlighting](/img/relation.png)
+  [![Youtube transcript word highlighting](/img/relation.png)](https://react-speech-highlight.vercel.app/video)
 
-  See the [example 7](https://react-speech-highlight.vercel.app). It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
+  It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
 
   Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md#3-relation-finder).
 
