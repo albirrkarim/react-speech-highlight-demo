@@ -8,6 +8,8 @@
 
 [🌟 Try the Demo: React Speech Highlight](https://react-speech-highlight.vercel.app)
 
+https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/06e7b0a2-8c19-4ffc-826e-1470a275dfcb
+
 ## Other Version
 
 ### Vanilla JS (Native Javascript)
