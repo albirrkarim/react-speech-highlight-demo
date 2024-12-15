@@ -4,7 +4,7 @@
 
 [![React / Vanilla Speech Highlight](./img/banner.png)](https://react-speech-highlight.vercel.app)
 
-**React / Vanilla Speech Highlight** is a powerful library for integrating **text-to-speech** and **real-time word/sentence highlighting** into your web applications. It supports audio files, the **Text-to-Speech API**, and the **Web Speech Synthesis API**, making it ideal for creating interactive, accessible, and dynamic user experiences.
+**React / Vanilla Speech Highlight** is a powerful library for integrating **text-to-speech** and **real-time word/sentence highlighting** into your web applications. It supports **audio files**, the **Text-to-Speech API**, and the **Web Speech Synthesis API**, making it ideal for creating interactive, accessible, and dynamic user experiences.
 
 [🌟 Try the Demo: React Speech Highlight](https://react-speech-highlight.vercel.app)
 
