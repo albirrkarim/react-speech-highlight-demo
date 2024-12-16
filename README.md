@@ -158,7 +158,7 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
   </div> -->
 
-  https://github.com/user-attachments/assets/31b7b786-34c6-46e6-a71c-c31e4a7d4b3d
+  https://github.com/user-attachments/assets/f0d8d157-1c1e-43e1-8eba-ebe7dfe3865e
 
   Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
 
