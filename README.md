@@ -140,8 +140,6 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Relation Highlight and word level highlighting of youtube transcript**
 
-  <!-- [![Youtube transcript word highlighting](/img/relation.png)](https://react-speech-highlight.vercel.app/video) -->
-
   https://github.com/user-attachments/assets/799bae21-a43e-44c4-a4c7-ede7ac2d5b51
 
   It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
@@ -150,21 +148,13 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Video player with auto generate subtitle**
 
-  <!-- <div align="center">
-
-  <a href="https://react-speech-highlight.vercel.app/video" title="Video Player with auto generate subtitle">
-      <img src="./img/auto_transcribe.png" width="500em">
-  </a>
-
-  </div> -->
-
   https://github.com/user-attachments/assets/f0d8d157-1c1e-43e1-8eba-ebe7dfe3865e
 
   Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
 
-  On that screenshot the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning.
+  On that preview video above the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning.
 
-  Italian word `notte` have meaning in english `night`
+  Italian word `bella` have meaning in english `beautiful`
 
   Go to [this video demo page](https://react-speech-highlight.vercel.app/video).
 
