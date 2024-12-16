@@ -140,7 +140,9 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Relation Highlight and word level highlighting of youtube transcript**
 
-  [![Youtube transcript word highlighting](/img/relation.png)](https://react-speech-highlight.vercel.app/video)
+  <!-- [![Youtube transcript word highlighting](/img/relation.png)](https://react-speech-highlight.vercel.app/video) -->
+
+  https://github.com/user-attachments/assets/e2be6cb6-3247-4ac8-9bb2-3670872b877a
 
   It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
 
@@ -148,13 +150,15 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
 - **Video player with auto generate subtitle**
 
-  <div align="center">
+  <!-- <div align="center">
 
   <a href="https://react-speech-highlight.vercel.app/video" title="Video Player with auto generate subtitle">
       <img src="./img/auto_transcribe.png" width="500em">
   </a>
 
-  </div>
+  </div> -->
+
+  https://github.com/user-attachments/assets/e063af44-c9fd-4d4b-a36f-c6f4b61661f0
 
   Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
 
