@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 5.3.0
+
+- Better timestamp engine
+- Better API design ( Breaking changes! )
+
 # 5.2.9
 
 - Enhancing timestamp engine capability v4

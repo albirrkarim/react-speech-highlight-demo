@@ -42,7 +42,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.2.9
+# Docs for v5.3.0
 
 **Table Of Contents**
 
@@ -465,8 +465,6 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 <br/>
 
 ## G. Payment
-
-
 
 ### - The Web Version (React and Vanilla js)
 
