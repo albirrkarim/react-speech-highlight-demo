@@ -307,7 +307,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/05d32
   
   <br/>
 
-Yes it can, just ask [chat gpt](https://chat.openai.com), and explain your problems.
+Yes it can, just ask [chat gpt](https://chatgpt.com), and explain your problems.
 
 Example :
 
