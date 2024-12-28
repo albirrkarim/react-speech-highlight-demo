@@ -359,7 +359,7 @@ For 1 million character:
 Standard: $4.00
 Neural: $16.00
 
-What different between standard and neural ? [see](https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html#:~:text=Amazon%20Polly%20has%20a%20Neural,very%20natural%2Dsounding%20synthesized%20speech.)
+What different between standard and neural ? [see](https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html)
 
 Simplified, Neural voices are more natural-sounding (better) than standard voices.
 

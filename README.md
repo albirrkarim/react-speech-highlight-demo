@@ -1,6 +1,6 @@
 # React / Vanilla Speech Highlight - Text-to-Speech with Word Highlighting
 
-[English](README.md) | [简体中文](README_CN.md)
+<!-- [English](README.md) | [简体中文](README_CN.md) -->
 
 [![React / Vanilla Speech Highlight](./img/banner.png)](https://react-speech-highlight.vercel.app)
 
@@ -144,7 +144,7 @@ When you are entrepreneur im sure you have some crazy uses case for this package
 
   It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
 
-  Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md#3-relation-finder).
+  Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md).
 
 - **Video player with auto generate subtitle**
 
@@ -352,7 +352,7 @@ Try to setting the speech synthesis or language in your device.
 
 If you use smartphone (Android):
 
-1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google. android.tts)
+1. Make sure you install [Speech Recognition & Synthesis](https://play.google.com/store/apps/details?id=com.google.android.tts)
 
 2. If step 1 doesn't work. Try to download google keyboard. then setting the Dictation language. wait a few minute (your device will automatically download the voice), then restart your smartphone.
 
@@ -378,7 +378,7 @@ Try to use Prefer or Fallback to Audio File see [AUDIO_FILE.md](AUDIO_FILE.md)
 
   <br/>
 
-Yes, [see](API.md#5-speak)
+Yes, [see](API.md)
 
 </details>
 

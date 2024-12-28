@@ -454,7 +454,6 @@ useEffect(() => {
 - Fix bugs: Date range misspelled
 - The `romanTransform()` is not convert all into arabic number. because it will cause ambiguity.
   The `romanTransform()` now is change string (maybe roman number exist) to a form that makes sense to pronounce.
-- add `setUntilTranslationForLang("sampai","id-ID")` function to cache the english word "until" into some language. [see](API.md#7-setuntiltranslationforlang)
 - The `spokenHL.sentenceSpoken` and `spokenHL.wordSpoken` is now showing the text that user see, not that exactly spoken by system.
 - Better pronunciation preparing text for the system to read.
   <details>

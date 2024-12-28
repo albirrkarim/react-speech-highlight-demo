@@ -298,7 +298,7 @@ controlHL.activateGesture();
 
 #### statusHL
 
-Some react state that give the status of the program. The value it can be `idle|play|calibration|pause|getVoicesLoading`. You can fixed the value with accessing from `PKG_STATUS_OPT` constant.
+Some react state that give the status of the program. The value it can be `idle|play|calibration|pause|loading`. You can fixed the value with accessing from `PKG_STATUS_OPT` constant.
 
 | Name               | Description                                                                                                                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -306,7 +306,7 @@ Some react state that give the status of the program. The value it can be `idle|
 | `calibration`      | system still process the text, so when TTS is playing it will performs accurate and better                                                                                            |
 | `play`             | The system still playing TTS                                                                                                                                                          |
 | `pause`            | Resume TTS                                                                                                                                                                            |
-| `getVoicesLoading` | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](#5-bad-performance-or-voice-too-fast) |
+| `loading` | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
 
 #### prepareHL
 
