@@ -314,7 +314,7 @@ Contain state and function to preparing the TTS. From all available voices that 
 
 | Name                      | Description                                                                                      |
 | ------------------------- | ------------------------------------------------------------------------------------------------ |
-| prepareHL.getVoices()     | Function to tell this package to get the best voice. [see](#5-bad-performance-or-voice-too-fast) |
+| prepareHL.getVoices()     | Function to tell this package to get the best voice. [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
 | prepareHL.voices          | React state store the result from `prepareHL.getVoices()`                                        |
 | prepareHL.loadingProgress | React state for knowing voice testing progress                                                   |
 
