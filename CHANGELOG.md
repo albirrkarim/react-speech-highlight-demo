@@ -500,7 +500,7 @@ Unit test using jest in demo website source code folder `__test__`.
     <details>
     <summary>Show the different</summary>
 
-  Different way to passing voice / selecting voice, see [the demo website repo](https://github.com/albirrkarim/demo-website-react-speech-highlight) for the implementation.
+  Different way to passing voice / selecting voice, see [the demo website repo](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight) for the implementation.
 
   see the component `src/Demo/ButtonSelectVoice.js` the component will save voice Info into `sessionStorage` and the package will use that voice info as the voice for playing tts.
 

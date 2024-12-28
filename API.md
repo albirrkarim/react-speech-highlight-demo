@@ -232,7 +232,7 @@ void controlHL.play({
 
 - `visemeMap`
 
-  The data for this parameter i provide in the [demo website source code](https://github.com/albirrkarim/demo-website-react-speech-highlight).
+  The data for this parameter i provide in the [demo website source code](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight).
 
 - `preferAudio`
 
