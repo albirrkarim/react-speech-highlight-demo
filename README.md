@@ -108,7 +108,7 @@ This package is one time pay. No Subscription. Who likes subscription? I also do
 
 ![Positioning](./img/position.png)
 
-![AI inside](./img/ai_inside.png)
+<!-- ![AI inside](./img/ai_inside.png) -->
 
 ![Feature Overview](./img/features.png)
 
