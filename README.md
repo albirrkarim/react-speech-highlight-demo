@@ -42,7 +42,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.3.0
+# Docs for v5.3.1
 
 **Table Of Contents**
 
@@ -102,7 +102,7 @@ How you can automatically get the audio file of some text ? you can use [ElevenL
 
 This package just take input text and audio file, so you can flexible to use any TTS API that can produce audio file, The expensive one or even cheap one when you consider the cost.
 
-How this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence.
+How this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence in client side.
 
 This package is one time pay. No Subscription. Who likes subscription? I also don't. see the how to [purchase bellow](#g-payment).
 
