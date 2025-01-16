@@ -86,7 +86,7 @@ Searching again, Then i found [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw
 
 **In production you must do cost calculation**, which TTS Service API provider you should choose. The services that have capability streaming audio is promising highlight word. but also comes with high price. **The cheap TTS service API usually don't have much features.**
 
-The elevenlabs have produce good quality voice and many features, but when comes for production they more expensive compares with Open AI TTS, In production the cost is important matter.
+The [elevenlabs]((https://try.elevenlabs.io/29se7bx2zgw1)) have produce good quality voice and many features, but when comes for production they more expensive compares with Open AI TTS, In production the cost is important matter.
 
 ### Solutions
 
@@ -508,7 +508,7 @@ The price is subscription $5 / month. (Coming soon)
 
 For you that already have business and want solid package that can be used for long term.
 
-The price is USD $400.
+The price is USD $700.
 
 **What you got**
 
