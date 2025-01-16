@@ -76,7 +76,7 @@ They have problems Robot like sound, Supported Devices Available, etc..
 
 When we talk about good sound / human like voices AI models inference should get involved. So it doesn't make sense if doing that on client side.
 
-Then the speech synthesis API provider like [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) play their roles.
+Then the speech synthesis API provider like [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) play their roles.
 
 But they don't provide the npm package to do highlighting.
 
@@ -86,7 +86,7 @@ Searching again, Then i found [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw
 
 **In production you must do cost calculation**, which TTS Service API provider you should choose. The services that have capability streaming audio is promising highlight word. but also comes with high price. **The cheap TTS service API usually don't have much features.**
 
-The [elevenlabs]((https://try.elevenlabs.io/29se7bx2zgw1)) have produce good quality voice and many features, but when comes for production they more expensive compares with Open AI TTS, In production the cost is important matter.
+The [elevenlabs](<(https://try.elevenlabs.io/29se7bx2zgw1)>) have produce good quality voice and many features, but when comes for production they more expensive compares with Open AI TTS, In production the cost is important matter.
 
 ### Solutions
 
@@ -98,7 +98,7 @@ My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org
 
 When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
 
-How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
+How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1),[Murf AI](https://get.murf.ai/0big1kdars4f),[Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
 
 This package just take input text and audio file, so you can flexible to use any TTS API that can produce audio file, The expensive one or even cheap one when you consider the cost.
 
@@ -411,7 +411,7 @@ But if you don't want to use open ai API, it can still work. see the FAQ about *
 
 - This package optionally required open ai API for better doing text-to-speech task (solve many problem that i wrote in [PROBLEMS.md](PROBLEMS.md)).
 
-- Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Google Cloud](https://cloud.google.com/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Open AI](https://platform.openai.com/docs/guides/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
+- Optionally using any TTS API that can produce audio file for better sound quality. Like [ElevenLabs](https://try.elevenlabs.io/29se7bx2zgw1), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md).
 
 </details>
 
@@ -494,7 +494,7 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 I know this package is complex, some features requiring architecture & advanced programing skill to use it.
 
-So i make some full screencast tutorial about how to use this kind of advanced weapon. 
+So i make some full screencast tutorial about how to use this kind of advanced weapon.
 
 From the installation to examples of advanced implementation and more.
 
