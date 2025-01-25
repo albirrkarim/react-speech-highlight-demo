@@ -264,7 +264,7 @@ With the higher price i maintain the [scarcity](https://www.google.com/search?q=
 
 Tell your problems or difficulties to me, i will show you the way to solve that.
 
-I provide realtime support from me with discord. (of course when its day time on Indonesia timezone).
+I provide realtime support from me with discord.
 
 Just buy it. remove the headache. and you can focus on your project.
 
@@ -591,15 +591,6 @@ Choose One Time Tab, Select the option, and follow the next instruction from git
 <a href="https://github.com/sponsors/albirrkarim" title="Github Sponsors">
     <img src="https://github.com/albirrkarim/laravel-react-starter-kit-pro/assets/29292018/00e008ed-8d31-4b4c-a54d-a53ac62d9f91" width="350em">
 </a>
-
-<br/>
-<br/>
-
-If you are in indonesia (my country) you can easily transfer through bank and e wallet (gopay, shopee pay, jenius)
-
-<img src="./img/payment.png" width="350em">
-
-<br/>
 
 <br/>
 <br/>
