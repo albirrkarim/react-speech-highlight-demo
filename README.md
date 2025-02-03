@@ -472,13 +472,11 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 For individual developer, freelancer, or small business.
 
-The price is USD $200. Too expensive? See the [demo website](https://react-speech-highlight.vercel.app) maybe theres a discount for you.
+The price is USD $200. Too expensive? See the [demo website](https://react-speech-highlight.vercel.app) maybe theres a discount for you or fill [this form](https://forms.gle/LUkRTQwqw25mHk5P7) you you get notified when theres an offers.
 
 After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time.
 
 For continued access in subsequent years, you can pay USD $50 annually to remain in the private repository.
-
-<!-- Go to my [github sponsors](https://github.com/sponsors/albirrkarim) page to buy, select one time pay and fill custom pay with $100. -->
 
 **What you got**
 
