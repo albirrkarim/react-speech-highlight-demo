@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# 5.3.6
+
+- Fixing marking `sps` and `spw`
+- Tag `spkn` now deprecated
+
+# 5.3.1 - 5.3.5
+
+- Fixing bug
+
 # 5.3.0
 
 - Better timestamp engine
