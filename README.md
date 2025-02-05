@@ -6,8 +6,6 @@
 
 **React / Vanilla Speech Highlight** is a powerful library for integrating **text-to-speech** and **real-time word/sentence highlighting** into your web applications. It supports **audio files**, the **Text-to-Speech API**, and the **Web Speech Synthesis API**, making it ideal for creating interactive, accessible, and dynamic user experiences.
 
-<img src="https://linguvo.io/node/api/v1/analytics/track?category=rshl" />
-
 [🌟 Try the Demo: React Speech Highlight](https://react-speech-highlight.vercel.app)
 
 https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/06e7b0a2-8c19-4ffc-826e-1470a275dfcb
