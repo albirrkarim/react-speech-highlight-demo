@@ -32,6 +32,8 @@ Watch [Youtube Video](https://youtu.be/vDc7L5W7HhU) about implementation vanilla
   <img src="./img/RNSH.png" width="500" alt="React Native Speech Highlight" >
 </a>
 
+<br/>
+
 <details>
   <summary>Show video demo</summary>
   <br/>
