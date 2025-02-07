@@ -543,7 +543,7 @@ The price is USD $150.
 
 - [Python server ($20)](https://github.com/Web-XR-AI-lab/rshl_python_helper)
 
-Contains: YouTube relation transcript highlight, Video auto-generate transcript, Streaming TTS
+Contains: YouTube relation transcript highlight, Video auto-generate transcript
 
 - [Node js server ($20)](https://github.com/Web-XR-AI-lab/rshl_node)
 
@@ -648,4 +648,3 @@ So this package is the answer for you who looking for:
 - Word Highlight in Youtube Transcript
 - How to Highlight Words in Youtube Transcript
 - Youtube Transcript Word Timing
-- Streaming TTS with highlight
