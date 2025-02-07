@@ -8,7 +8,9 @@
 
 [🌟 Try the Demo: React Speech Highlight](https://react-speech-highlight.vercel.app)
 
-https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/06e7b0a2-8c19-4ffc-826e-1470a275dfcb
+https://github.com/user-attachments/assets/79c6d4f6-f3e2-4c38-9bec-dbb6834d87f8
+
+<!-- https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/06e7b0a2-8c19-4ffc-826e-1470a275dfcb -->
 
 ## Other Version
 
