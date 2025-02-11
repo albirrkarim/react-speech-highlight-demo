@@ -482,7 +482,7 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 For individual developer, freelancer, or small business.
 
-The price is USD $200. Too expensive? See the [demo website](https://react-speech-highlight.vercel.app) maybe theres a discount for you or fill [this form](https://forms.gle/LUkRTQwqw25mHk5P7) you you get notified when theres an offers.
+The price is USD $120. Too expensive? Fill [this form](https://forms.gle/LUkRTQwqw25mHk5P7) you you get notified when theres an offers.
 
 After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time.
 
@@ -510,7 +510,7 @@ The price is subscription $5 / month. (Coming soon)
 
 <br/>
 
-### - The Enterprise Web Version
+<!-- ### - The Enterprise Web Version
 
 ![Enterprise Web Version](./img/enterprise_web_version.png)
 
@@ -523,9 +523,10 @@ The price is USD $700.
 - [Web version](#--the-web-version-react-and-vanilla-js) this package.
 - Architecture support, i can make some drawing about the architecture of implementation.
 - Implementation code review, i can review your code do best practice implementation.
-- 4 years inside private repo and support.
+- 4 years inside private repo and support. 
 
 <br/>
+-->
 
 ### - The Mobile App Version (React Native)
 
