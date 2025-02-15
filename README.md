@@ -593,8 +593,6 @@ Price is $3000
 
 ### Payment method
 
-I accept various payment method:
-
 **Github Sponsors**
 
 Choose One Time Tab, Select the option, and follow the next instruction from github.
@@ -604,14 +602,6 @@ Choose One Time Tab, Select the option, and follow the next instruction from git
 </a>
 
 <br/>
-<br/>
-
-<div align="center">
-
-<a href="https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-react&#0045;vanilla&#0045;speech&#0045;highlight" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=574592&theme=light" alt="React&#0032;&#0047;&#0032;Vanilla&#0032;Speech&#0032;Highlight - Highlight&#0032;Anything | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-</div>
-
 <br/>
 
 ## Keywords
