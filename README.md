@@ -170,6 +170,8 @@ Go to [this video demo page](https://react-speech-highlight.vercel.app/video).
 
 #### Your use case here
 
+![Adaptable](./img/adapt.png)
+
 Just ask me what you want to make, the package architecture is scalable to make various feature.
 
 <br>
