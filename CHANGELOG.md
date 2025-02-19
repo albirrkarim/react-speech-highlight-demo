@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.3.7
+
+- Realtime Text to Speech With Highlight - This package can intergrate with [open ai realtime api](https://platform.openai.com/docs/guides/realtime), Imagine you have a phone call with AI the web are displaying the transcript with highlight the current spoken.
+
 # 5.3.6
 
 - Fixing marking `sps` and `spw`

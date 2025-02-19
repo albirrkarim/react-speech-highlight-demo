@@ -52,7 +52,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.3.6
+# Docs for v5.3.7
 
 **Table Of Contents**
 
@@ -186,6 +186,7 @@ Just ask me what you want to make, the package architecture is scalable to make 
 
 <br/>
 
+- [x] Realtime Text to Speech With Highlight - This package can intergrate with [open ai realtime api](https://platform.openai.com/docs/guides/realtime), Imagine you have a phone call with AI the web are displaying the transcript with highlight the current spoken.
 - [x] Add example of [streaming TTS with highlight](https://react-speech-highlight.vercel.app/example). it play tts with highlight while even the text is still streamed.
 - [x] Re-[Architecture](#solutions) the package into plugins system, and add optional backend-nify the LLM Engine, so it faster, secure and more reliable.
 - [x] Making Hybrid engine timestamp detection
