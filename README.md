@@ -168,6 +168,14 @@ Italian word `bella` have meaning in english `beautiful`
 
 Go to [this video demo page](https://react-speech-highlight.vercel.app/video).
 
+#### Realtime Communication With Highlighted Text
+
+Task that the audio is feed to client side in real time like you are on a phone call, theres no audio file behind it. 
+
+Recently open ai made [realtime api](https://platform.openai.com/docs/guides/realtime) it use [Web RTC (Web Real-Time Communication)](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) so you can like have a phone call with AI.
+
+Goto [realtime communication demo](https://react-speech-highlight.vercel.app/#example-realtime).
+
 #### Your use case here
 
 ![Covers Everyone’s Needs](./img/adaptable.png)
@@ -203,7 +211,7 @@ Just ask me what you want to make, the package architecture is scalable to make 
 - [x] Docs integration text-to-speech with [Eleven Labs](https://try.elevenlabs.io/29se7bx2zgw1) API [see the demo web](https://react-speech-highlight.vercel.app)
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
 - [x] Multi character support for non latin alphabet ( chinese (你好),
-      russian (Привет), japanese (こんにちは), korean (안녕하세요), etc )
+      russian (Привет), japanese (こんにちは), korean (안녕하세요), etc ). [see](https://react-speech-highlight.vercel.app/#non-latin)
 - [x] Add [language detection using LLM api](API.md#2-getlangforthistext)
 - [x] Add [seeking by sentence or paragraph](API.md#2b-interface), [reading progress by word or sentence](API.md#spokenhl), [Adjust config while TTS playing.](API.md#controlhl), [Custom Abbreviation Function](API.md#1-tts-marker-markthewords)
 - [x] Realiability: TTS that can't die, Test on any platform, Code Linting using eslint, Using [Typescript](https://www.typescriptlang.org/), [Tested (Prompt Test, Unit Test, Engine Test)](TEST.md)
