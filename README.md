@@ -52,7 +52,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.3.7
+# Docs for v5.3.8
 
 **Table Of Contents**
 
@@ -652,3 +652,5 @@ So this package is the answer for you who looking for:
 - Word Highlight in Youtube Transcript
 - How to Highlight Words in Youtube Transcript
 - Youtube Transcript Word Timing
+- Realtime tts with highlight
+- Realtime tts streamed audio & text 
