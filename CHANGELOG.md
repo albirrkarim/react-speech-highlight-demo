@@ -243,7 +243,7 @@ Fix bug
 
 - Add viseme for current spoken.
 - Introduction react state `spokenHL.viseme` as a state for current viseme. [see](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl)
-- For now only support language that use the Latin alphabet like Indonesian, English, German, Italian, and French, also the russian.
+- For now only support language that use the Latin alphabet like English, German, Italian, and French, also the russian.
 
 # 4.8.1
 

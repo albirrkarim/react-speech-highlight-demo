@@ -22,12 +22,6 @@ What we do ? we make some engine that can do accurate and cost effective pronoun
 
   in english abbreviation like `FOMO`, `ETA`, etc.
 
-  in indonesian
-
-  `dgn` = `dengan`
-
-  `yg` = `yang`
-
   This package also have built-in abbreviation function, or you can write your own rules.
 
   ```
