@@ -52,7 +52,7 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.3.8
+# Docs for v5.4.1
 
 **Table Of Contents**
 

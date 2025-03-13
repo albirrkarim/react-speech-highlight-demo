@@ -1,5 +1,36 @@
 # CHANGELOG
 
+# 5.3.9 - 5.4.1
+
+- Add api to overide STT (Speech to text) function
+
+```jsx
+import { openaiSpeechToTextSimple, useTextToSpeech, type ConfigTTS } from "@lib/react-speech-highlight";
+
+const config: Partial<ConfigTTS> = {
+      preferAudio: getPublicAccessibleAudioURL,
+      batchSize: 200,
+      timestampEngineProps: {
+          mode: "ml",
+          sttFunction: async (input) => {
+              console.log("Optionally Using custom STT function")
+              // Maybe you want do overide the api request.
+              // since you know the INPUT and the OUTPUT here, so you can create the PROCESS
+              // INPUT -> PROCESS -> OUTPUT
+              console.log("STT: input", input)
+              const output = await openaiSpeechToTextSimple(input)
+              console.log("STT: output", output)
+              return output
+          },
+          onProgress(progress, timeLeftEstimation) {
+              console.log("Timestamp Engine Progress", progress)
+              setProgress(progress)
+              // setMessage("On progress Timestamp Engine (speech to text) ...  -> " + moment.duration(timeLeftEstimation, "seconds").humanize())
+          },
+      }
+  }
+```
+
 # 5.3.8
 
 - Better marking sps (sentence) & spw (word) tag with over 69 test case from various wierd data.
