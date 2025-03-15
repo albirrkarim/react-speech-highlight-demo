@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.4.2
+
+- Enhance marking test to 75 test case
+
 # 5.3.9 - 5.4.1
 
 - Add api to overide STT (Speech to text) function
