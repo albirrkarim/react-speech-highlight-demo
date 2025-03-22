@@ -491,7 +491,9 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 For individual developer, freelancer, or small business.
 
-The price is USD $160. Too expensive? Fill [this form](https://forms.gle/LUkRTQwqw25mHk5P7) you you get notified when theres an offers.
+Due to the high demand for this library, access is granted through a bidding process. To secure your spot, please submit your bid within the designated timeframe. The highest bidders will be given priority access.
+
+[Fill bid form](https://forms.gle/T7ob1k7w1oywCYHP9)
 
 After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time.
 
