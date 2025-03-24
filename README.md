@@ -509,6 +509,8 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 <br/>
 
+<!-- 
+
 ### - Screencast Tutorial
 
 I know this package is complex, some features requiring architecture & advanced programing skill to use it.
@@ -537,7 +539,7 @@ The price is USD $700.
 - 4 years inside private repo and support. 
 
 <br/>
--->
+
 
 ### - The Mobile App Version (React Native)
 
@@ -550,6 +552,8 @@ The price is USD $150.
 - [The Demo App source code based on React Native CLI](https://github.com/Web-XR-AI-lab/react-native-speech-highlight-cli-version) (Ready) ([Try demo android app](#react-native-speech-highlight))
 
 <br/>
+
+-->
 
 ### Backend Server for Advanced Features
 
@@ -585,7 +589,7 @@ Price is $3000
 
 <br/>
 
-### - The Web Version bundled with React GPT Web Guide
+<!-- ### - The Web Version bundled with React GPT Web Guide
 
 [![React GPT Web Guide Banner](https://raw.githubusercontent.com/albirrkarim/react-gpt-web-guide-docs/main/img/banner.png)](https://github.com/albirrkarim/react-gpt-web-guide-docs)
 
@@ -596,7 +600,7 @@ Price is $3000
 - [The demo website (Next js based)](https://github.com/Web-XR-AI-lab/demo-website-gpt-web-guide)
 - All the private repo web version of [React Speech Highlight](#the-web-version-react-and-vanilla-js)
 
-<br/>
+<br/> -->
 
 <br/>
 
