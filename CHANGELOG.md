@@ -1,5 +1,22 @@
 # CHANGELOG
 
+# 5.4.6
+
+- Increase capability swallowing Speech To Text result. with 722 Sample. For all the TTS languages that open ai support.
+
+<details>
+  <summary>Report</summary>
+  <br/>
+
+avgErrWordsMiddle: 0.15255255255255257
+Unit: sNodesSTTAlign() is done |
+Avg Accuracy Sentence Time 99.97 % of 722 sample |
+Avg Accuracy Word Time 98.15 % of 666 sample |
+Avg Accuracy Word Middle 99.85 % of 666 sample |
+Avg Exec Time: 0.37 ms
+
+</details>
+
 # 5.4.5
 
 - Increase capability swallowing Speech To Text result. with 106 Sample. For all the TTS languages that open ai support.
@@ -8,16 +25,16 @@
   <summary>Report</summary>
   <br/>
 
- avgErrWordsMiddle: 1.2860759493670888
-Unit: ruleTimestampEngine() is done | 
-Avg Accuracy Sentence Time 99.81 % of 106 sample | 
-Avg Accuracy Word Time 84.44 % of 79 sample | 
-Avg Accuracy Word Middle 98.71 % of 79 sample | 
+avgErrWordsMiddle: 1.2860759493670888
+Unit: ruleTimestampEngine() is done |
+Avg Accuracy Sentence Time 99.81 % of 106 sample |
+Avg Accuracy Word Time 84.44 % of 79 sample |
+Avg Accuracy Word Middle 98.71 % of 79 sample |
 Avg Exec Time: 1.59 ms
 
 </details>
 
-# 5.4.3 -  5.4.4
+# 5.4.3 - 5.4.4
 
 - Fix double click gesture
 - Fix seeking paragraph
@@ -31,30 +48,34 @@ Avg Exec Time: 1.59 ms
 - Add api to overide STT (Speech to text) function
 
 ```jsx
-import { openaiSpeechToTextSimple, useTextToSpeech, type ConfigTTS } from "@lib/react-speech-highlight";
+import {
+  openaiSpeechToTextSimple,
+  useTextToSpeech,
+  type ConfigTTS,
+} from "@lib/react-speech-highlight";
 
 const config: Partial<ConfigTTS> = {
-      preferAudio: getPublicAccessibleAudioURL,
-      batchSize: 200,
-      timestampEngineProps: {
-          mode: "ml",
-          sttFunction: async (input) => {
-              console.log("Optionally Using custom STT function")
-              // Maybe you want do overide the api request.
-              // since you know the INPUT and the OUTPUT here, so you can create the PROCESS
-              // INPUT -> PROCESS -> OUTPUT
-              console.log("STT: input", input)
-              const output = await openaiSpeechToTextSimple(input)
-              console.log("STT: output", output)
-              return output
-          },
-          onProgress(progress, timeLeftEstimation) {
-              console.log("Timestamp Engine Progress", progress)
-              setProgress(progress)
-              // setMessage("On progress Timestamp Engine (speech to text) ...  -> " + moment.duration(timeLeftEstimation, "seconds").humanize())
-          },
-      }
-  }
+  preferAudio: getPublicAccessibleAudioURL,
+  batchSize: 200,
+  timestampEngineProps: {
+    mode: "ml",
+    sttFunction: async (input) => {
+      console.log("Optionally Using custom STT function");
+      // Maybe you want do overide the api request.
+      // since you know the INPUT and the OUTPUT here, so you can create the PROCESS
+      // INPUT -> PROCESS -> OUTPUT
+      console.log("STT: input", input);
+      const output = await openaiSpeechToTextSimple(input);
+      console.log("STT: output", output);
+      return output;
+    },
+    onProgress(progress, timeLeftEstimation) {
+      console.log("Timestamp Engine Progress", progress);
+      setProgress(progress);
+      // setMessage("On progress Timestamp Engine (speech to text) ...  -> " + moment.duration(timeLeftEstimation, "seconds").humanize())
+    },
+  },
+};
 ```
 
 # 5.3.8
@@ -120,11 +141,11 @@ const config: Partial<ConfigTTS> = {
 
 # 5.1.3 - 5.1.6
 
- - Fix bug
- - Renaming API
- - Virtual Storage (to mimic sessionStorage)
- - Local state tts [see demo example page](https://react-speech-highlight.vercel.app/example)
- - Add better error event
+- Fix bug
+- Renaming API
+- Virtual Storage (to mimic sessionStorage)
+- Local state tts [see demo example page](https://react-speech-highlight.vercel.app/example)
+- Add better error event
 
 # 5.1.0 - 5.1.2
 
@@ -145,8 +166,9 @@ Relation Finder v4 see the evaluation on [LLM_ENGINE](LLM_ENGINE.md)
 - Improve Translate To some language engine, with chunking system it can handle more a lot of text
 
 # 5.0.1
+
 - Introduction virtual nodes, Sentence Node and Word Node. for flexible text to speech. Used in PDF TTS Highlight and Relation Highlight Features.
-- Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the  words in youtube transcript, and their relations to other word like their translation form.
+- Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
 - Rename config.classSentences into config.classSentence
 - Add `ControlHL.followTime()` for following the time of played youtube video in iframe.
 
