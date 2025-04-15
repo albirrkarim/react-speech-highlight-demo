@@ -8,12 +8,14 @@
   <summary>Report</summary>
   <br/>
 
+```
 avgErrWordsMiddle: 0.15255255255255257
 Unit: sNodesSTTAlign() is done |
 Avg Accuracy Sentence Time 99.97 % of 722 sample |
 Avg Accuracy Word Time 98.15 % of 666 sample |
 Avg Accuracy Word Middle 99.85 % of 666 sample |
 Avg Exec Time: 0.37 ms
+```
 
 </details>
 
@@ -25,12 +27,14 @@ Avg Exec Time: 0.37 ms
   <summary>Report</summary>
   <br/>
 
+```
 avgErrWordsMiddle: 1.2860759493670888
 Unit: ruleTimestampEngine() is done |
 Avg Accuracy Sentence Time 99.81 % of 106 sample |
 Avg Accuracy Word Time 84.44 % of 79 sample |
 Avg Accuracy Word Middle 98.71 % of 79 sample |
 Avg Exec Time: 1.59 ms
+```
 
 </details>
 
