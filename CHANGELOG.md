@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 5.4.7
+
+- Increase stability, fixing marking for farsi
+- Update all deps for demo website, eslint 9, next js 15, material ui 7 etc...
+
 # 5.4.6
 
 - Increase capability swallowing Speech To Text result. with 722 Sample. For all the TTS languages that open ai support.
