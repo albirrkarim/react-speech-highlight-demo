@@ -262,15 +262,17 @@ Still worry? see the [reviews on producthunt](https://www.producthunt.com/produc
   
   <br/>
 
-Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money.
+Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money, and high engineering skills.
+
+Making marking the sentence and word for all languages with different writing system is really hard. I have do research about that language, then making a lot of test case that make the marking solid and reliable for all languages.
 
 Making the [LLM engines](LLM_ENGINE.md) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-Also i provide support via live private chat to me through discord (username: albirrkarim), is there any services out there doing that?
+Also i provide support via live private chat to me through discord (username: albirrkarim).
+
+**When you try to make this package by yourself, you will need to spend a lot of time and money to make something like this package.**
 
 This package is a `base` package that can be used for various [use cases](#use-cases). I made a lot of money with package. The limit is your entrepreneurship skill.
-
-With the higher price i maintain the [scarcity](https://www.google.com/search?q=scarcity) of the functionality.
 
 </details>
 
