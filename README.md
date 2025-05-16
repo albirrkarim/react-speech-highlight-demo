@@ -493,7 +493,11 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 For individual developer, freelancer, or small business.
 
-Due to the high demand for this library, access is granted through a bidding process. To secure your spot, please submit your bid within the designated timeframe. The highest bidders will be given priority access.
+Due to the high demand for this library, access is granted through a bidding process.
+
+Submit your bid within the designated timeframe (every month we choose the winner).
+
+Highest bidders get priority access.
 
 [Fill bid form](https://forms.gle/T7ob1k7w1oywCYHP9)
 
