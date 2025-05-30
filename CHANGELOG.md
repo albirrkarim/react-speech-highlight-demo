@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# v5.4.8
+
+- High standard Linting Eslint & Type checking typescript
+
 # 5.4.7
 
 - Increase stability, fixing marking for farsi
