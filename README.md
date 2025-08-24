@@ -504,8 +504,9 @@ Submit your bid within the designated timeframe (every month we choose the winne
 Highest bidders get priority access.
 
 [Fill bid form](https://forms.gle/T7ob1k7w1oywCYHP9)
+ -->
 
-After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time. -->
+After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time.
 
 For continued access in subsequent years, you can pay USD $50 annually to remain in the private repository.
 
