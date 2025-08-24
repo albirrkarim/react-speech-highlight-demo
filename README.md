@@ -168,7 +168,7 @@ Go to [this video demo page](https://react-speech-highlight.vercel.app/video).
 
 #### Realtime Communication With Highlighted Text
 
-Task that the audio is feed to client side in real time like you are on a phone call, theres no audio file behind it. 
+Task that the audio is feed to client side in real time like you are on a phone call, theres no audio file behind it.
 
 Recently open ai made [realtime api](https://platform.openai.com/docs/guides/realtime) it use [Web RTC (Web Real-Time Communication)](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) so you can like have a phone call with AI.
 
@@ -493,7 +493,11 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 For individual developer, freelancer, or small business.
 
-Due to the high demand for this library, access is granted through a bidding process.
+The price is $100
+
+You can go to [github sponsors](https://github.com/sponsors/albirrkarim) > One time tab > Fill custom amount with $100
+
+<!-- Due to the high demand for this library, access is granted through a bidding process.
 
 Submit your bid within the designated timeframe (every month we choose the winner).
 
@@ -501,7 +505,7 @@ Highest bidders get priority access.
 
 [Fill bid form](https://forms.gle/T7ob1k7w1oywCYHP9)
 
-After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time.
+After payment, you’ll be invited to my private repository, where you’ll have access for one year, including all updates during that time. -->
 
 For continued access in subsequent years, you can pay USD $50 annually to remain in the private repository.
 
@@ -515,7 +519,7 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 <br/>
 
-<!-- 
+<!--
 
 ### - Screencast Tutorial
 
@@ -542,7 +546,7 @@ The price is USD $700.
 - [Web version](#--the-web-version-react-and-vanilla-js) this package.
 - Architecture support, i can make some drawing about the architecture of implementation.
 - Implementation code review, i can review your code do best practice implementation.
-- 4 years inside private repo and support. 
+- 4 years inside private repo and support.
 
 <br/>
 
@@ -663,4 +667,4 @@ So this package is the answer for you who looking for:
 - How to Highlight Words in Youtube Transcript
 - Youtube Transcript Word Timing
 - Realtime tts with highlight
-- Realtime tts streamed audio & text 
+- Realtime tts streamed audio & text
