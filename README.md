@@ -493,9 +493,9 @@ You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to c
 
 For individual developer, freelancer, or small business.
 
-The price is $100
+The price is $500
 
-You can go to [github sponsors](https://github.com/sponsors/albirrkarim) > One time tab > Fill custom amount with $100
+You can go to [github sponsors](https://github.com/sponsors/albirrkarim) > One time tab > Fill custom amount with $500
 
 <!-- Due to the high demand for this library, access is granted through a bidding process.
 
