@@ -1,5 +1,11 @@
 # CHANGELOG
 
+# 5.5.2 - 5.5.3
+
+- Perfection
+- Next js 16, Remove unused dependency for demo website
+- Safe .trim() execution
+
 # 5.5.1
 
 - Support html that rendered by React virtual DOM, with Adding fallback to svg highlighting, when the html is detach form DOM. (pay attention to the function `markTheWords`)

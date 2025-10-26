@@ -25,7 +25,7 @@ Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant
   <br/>
 
 ```jsx
-// v5.5.1 API
+// v5.5.3 API
 import {
   // Main
   markTheWords,
@@ -300,23 +300,23 @@ controlHL.activateGesture();
 
 Some react state that give the status of the program. The value it can be `idle|play|calibration|pause|loading`. You can fixed the value with accessing from `PKG_STATUS_OPT` constant.
 
-| Name               | Description                                                                                                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `idle`             | it's initial state                                                                                                                                                                    |
-| `calibration`      | system still process the text, so when TTS is playing it will performs accurate and better                                                                                            |
-| `play`             | The system still playing TTS                                                                                                                                                          |
-| `pause`            | Resume TTS                                                                                                                                                                            |
-| `loading` | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
+| Name          | Description                                                                                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `idle`        | it's initial state                                                                                                                                                                               |
+| `calibration` | system still process the text, so when TTS is playing it will performs accurate and better                                                                                                       |
+| `play`        | The system still playing TTS                                                                                                                                                                     |
+| `pause`       | Resume TTS                                                                                                                                                                                       |
+| `loading`     | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
 
 #### prepareHL
 
 Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before.
 
-| Name                      | Description                                                                                      |
-| ------------------------- | ------------------------------------------------------------------------------------------------ |
+| Name                      | Description                                                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | prepareHL.getVoices()     | Function to tell this package to get the best voice. [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
-| prepareHL.voices          | React state store the result from `prepareHL.getVoices()`                                        |
-| prepareHL.loadingProgress | React state for knowing voice testing progress                                                   |
+| prepareHL.voices          | React state store the result from `prepareHL.getVoices()`                                                   |
+| prepareHL.loadingProgress | React state for knowing voice testing progress                                                              |
 
 #### spokenHL
 
