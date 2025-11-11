@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.5.4
+
+- Improve Code safe
+
 # 5.5.2 - 5.5.3
 
 - Perfection
