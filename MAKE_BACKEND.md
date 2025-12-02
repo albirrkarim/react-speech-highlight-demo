@@ -126,7 +126,7 @@ class OpenAIController extends Controller
             ], 400);
         }
 
-        // the [https://github.com/openai-php/laravel] package is have problem don't use it
+        // the [https://github.com/openai-php/laravel] package has problems don't use it
         // https://github.com/openai-php/laravel/issues/51#issuecomment-1651224516
 
         $body = [

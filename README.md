@@ -262,13 +262,13 @@ Still worry? see the [reviews on producthunt](https://www.producthunt.com/produc
   
   <br/>
 
-Well, i need money to funding the research, you know that making complex package is cost a lot of time and of course money, and high engineering skills.
+Well, I need money to fund the research. You know that making a complex package costs a lot of time and of course money, and requires high engineering skills.
 
-Making marking the sentence and word for all languages with different writing system is really hard. I have do research about that language, then making a lot of test case that make the marking solid and reliable for all languages.
+Making marking the sentence and word for all languages with different writing systems is really hard. I have done research about those languages, then made a lot of test cases to make the marking solid and reliable for all languages.
 
 Making the [LLM engines](LLM_ENGINE.md) that combines prompt engineering and efficient algorithm to saving Open AI API cost. Need to be tested and the test is repeatly that cost the API call.
 
-Also i provide support via live private chat to me through discord (username: albirrkarim).
+Also, I provide support via live private chat to me through discord (username: albirrkarim).
 
 **When you try to make this package by yourself, you will need to spend a lot of time and money to make something like this package.**
 
@@ -283,7 +283,7 @@ This package is a `base` package that can be used for various [use cases](#use-c
   
   <br/>
 
-Tell your problems or difficulties to me, i will show you the way to solve that.
+Tell your problems or difficulties to me, I will show you the way to solve that.
 
 I provide realtime support from me with discord.
 
@@ -332,7 +332,7 @@ Yes it can, just ask [chat gpt](https://chatgpt.com), and explain your problems.
 
 Example :
 
-"My project is using webpack, code is using jsx, i want to use tsx code along side the jsx, how can i?"
+"My project is using webpack, code is using jsx, I want to use tsx code along side the jsx, how can I?"
 
 </details>
 
@@ -344,7 +344,7 @@ Example :
   
   Goto the [Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
-I make demo for outputing the viseme into console.log. just open the browser console and play the prefer audio example (english). and you will see the word and viseme in the current timing of played tts.
+I made a demo for outputting the viseme into console.log. Just open the browser console and play the preferred audio example (english), and you will see the word and viseme in the current timing of played TTS.
 
 </details>
 
@@ -524,9 +524,9 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 ### - Screencast Tutorial
 
-I know this package is complex, some features requiring architecture & advanced programing skill to use it.
+I know this package is complex, some features requiring architecture & advanced programming skill to use it.
 
-So i make some full screencast tutorial about how to use this kind of advanced weapon.
+So I made some full screencast tutorial about how to use this kind of advanced weapon.
 
 From the installation to examples of advanced implementation and more.
 
@@ -545,8 +545,8 @@ The price is USD $700.
 **What you got**
 
 - [Web version](#--the-web-version-react-and-vanilla-js) this package.
-- Architecture support, i can make some drawing about the architecture of implementation.
-- Implementation code review, i can review your code do best practice implementation.
+- Architecture support, I can make some drawing about the architecture of implementation.
+- Implementation code review, I can review your code to implement best practices.
 - 4 years inside private repo and support.
 
 <br/>

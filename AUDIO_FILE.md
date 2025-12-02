@@ -1,6 +1,6 @@
 # How to get the Audio File Automatically
 
-When we talk about generating audio file we need do research considering the price, quality, and api support so you can generate audio programmatically.
+When we talk about generating audio files, we need to do research considering the price, quality, and API support so you can generate audio programmatically.
 
 Table of Contents:
 
@@ -14,18 +14,18 @@ Table of Contents:
 ## A. Efficient Cost Strategy
 
 - Considering based on your needs
-- When your needs is multi language you can make controller that using mixed of TTS API provider.
+- When your need is multi-language, you can make a controller that uses a mix of TTS API providers.
 - Using cache for the audio file
 
 ![Cache Strategy of Audio File](./img/cache.png)
 
-Usually i use laravel as a backend. its a good php framework, and its easy to use. But of course you can use any backend you want and do the same strategy.
+Usually I use Laravel as a backend. It's a good PHP framework, and it's easy to use. But of course, you can use any backend you want and do the same strategy.
 
 When you implement flow like that can only generate audio file once, and when the audio file is exist, it will not generate again.
 
 In english:
 
-Let say 1 blog post = 1,200 words
+Let's say 1 blog post = 1,200 words
 
 Words Only: 1,200 words × 5 characters per word = 6,000 characters.
 
@@ -371,10 +371,10 @@ You can also use the local AI system, to do speech synthesis. You can use local 
 
 Then synchronize (text <-> audio) it with your server.
 
-Of course its not easy it will face many problems like:
+Of course it's not easy; it will face many problems like:
 
-- Is you have knowledge about python and AI ?
-- How you get the models for your language ?
-  When its english you can easily got the models.
+- Do you have knowledge about Python and AI?
+- How do you get the models for your language?
+  When it's English you can easily get the models.
 
-When i have time i will make tutorial about how to doing local speech synthesis.
+When I have time I will make tutorial about how to do local speech synthesis.

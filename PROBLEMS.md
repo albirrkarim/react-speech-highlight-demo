@@ -14,7 +14,7 @@ What do we do? We make an engine that can do accurate and cost-effective pronunc
 
 **Auto Pronunciation Correction**
 
-This package needs chat gpt api to do that. [see how to use integrate this package with open ai api](MAKE_BACKEND.md)
+This package needs ChatGPT API to do that. [See how to integrate this package with OpenAI API](MAKE_BACKEND.md)
 
   <br/>
 
@@ -45,7 +45,7 @@ This will cause a bad experience for the user.
 
 This will cause a bad experience for the user. Even on devices like iPad and iPhone, they have rules that the delay between user interaction and the audio being played must not exceed 4 seconds, or it will fail.
 
-They will give error like this
+It will give an error like this
 
 ```
 Unhandled Promise Rejection: NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
@@ -53,7 +53,9 @@ Unhandled Promise Rejection: NotAllowedError: The request is not allowed by the 
 
 So what's the solution for this?
 
-I set this package to make batch requests for API calls.</details>
+I set this package to make batch requests for API calls.
+
+</details>
 
 ### 2. Long text request to TTS API (Capability of TTS API handling long text)
 
@@ -70,7 +72,7 @@ Batch strategy will solve those problems above. You can define the batch size in
 
   <br/>
 
-**How it work?**
+**How does it work?**
 
 Let's say you have 10,000 characters of text, and let's say your TTS API service will be done making the audio file in 60 seconds. (So your user will be waiting 60 seconds after they want to play? That's bad!)
 
@@ -84,7 +86,7 @@ My package will send the first chunk, and the TTS API will give the audio file i
 
 So the delay between user clicking the play button and the TTS starting to play will be just 1.2 seconds. What about other chunks? I manage to send other chunks in the background while TTS is being played, and enhance efficiency of character usage in the TTS API. You pay the TTS API service based on characters, right?
 
-lets say we have
+Let's say we have
 
 ```
 chunk0 <- user still playing this
@@ -92,10 +94,12 @@ chunk1
 chunk2 <- my package will try to prepare until this
 chunk3
 ...
-  chunk49
+chunk49
 ```
 
-This method will solve other problems like the maximum character limit that your TTS API can handle. For example, on ElevenLabs, they can only do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) characters for audio generation.</details>
+This method will solve other problems like the maximum character limit that your TTS API can handle. For example, on ElevenLabs, they can only do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) characters for audio generation.
+
+</details>
 
 <br/>
 <br/>

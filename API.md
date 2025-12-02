@@ -96,7 +96,7 @@ function abbreviationFunction(str) {
   // You can write your custom abbreviation function here
   // example:
   // Input(string) : LMK
-  // Ouput(string) : Let me know
+  // Output(string) : Let me know
 
   return str;
 }
@@ -232,7 +232,7 @@ void controlHL.play({
 
 - `visemeMap`
 
-  The data for this parameter i provide in the [demo website source code](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight).
+  The data for this parameter I provide in the [demo website source code](https://github.com/Web-XR-AI-lab/demo-website-react-speech-highlight).
 
 - `preferAudio`
 
@@ -255,8 +255,8 @@ void controlHL.play({
   }
 
   const config = {
-    preferAudio: getAudioForThisText // will only call if needed (if user want to play) so you can save cost
-    fallbackAudio: getAudioForThisText // will only call if needed (if web speech synthesis fail)  so you can save cost
+    preferAudio: getAudioForThisText // will only call if needed (if user wants to play) so you can save cost
+    fallbackAudio: getAudioForThisText // will only call if needed (if web speech synthesis fails)  so you can save cost
   }
 
   const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config)
@@ -271,7 +271,7 @@ void controlHL.play({
   Example: 200
   The package will send 200 characters per request to the TTS API in batches.
 
-  [Readmore about batch system in this package](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
+  [Read more about batch system in this package](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 
 - `timestampDetectionMode`
 
@@ -304,8 +304,8 @@ A React state that gives the status of the program. The value can be `idle|play|
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `idle`        | It's the initial state                                                                                                                                                                           |
 | `calibration` | System is still processing the text, so when TTS is playing, it will perform accurately and better                                                                                               |
-| `play`        | The system still playing TTS                                                                                                                                                                     |
-| `pause`       | Resume TTS                                                                                                                                                                                       |
+| `play`        | The system is still playing TTS                                                                                                                                                                  |
+| `pause`       | Paused TTS (use resume to continue)                                                                                                                                                              |
 | `loading`     | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
 
 #### prepareHL
@@ -315,7 +315,7 @@ Contains state and functions for preparing the TTS. From all available voices th
 | Name                      | Description                                                                                                 |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | prepareHL.getVoices()     | Function to tell this package to get the best voice. [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
-| prepareHL.voices          | React state store the result from `prepareHL.getVoices()`                                                   |
+| prepareHL.voices          | React state stores the result from `prepareHL.getVoices()`                                                  |
 | prepareHL.loadingProgress | React state for knowing voice testing progress                                                              |
 
 #### spokenHL
@@ -338,7 +338,7 @@ Utilities function for precision and add more capabilities
 
 The common problem is that the text displayed to the user is different from their spoken form, like math symbols, equations, terms, etc. [Read more about pronunciation problems](PROBLEMS.md)
 
-[How to build this package with open ai api integration](MAKE_BACKEND.md)
+[How to build this package with OpenAI API integration](MAKE_BACKEND.md)
 
 <details>
   <summary>Show Code</summary>
@@ -465,7 +465,7 @@ import {
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key
-  OPENAI_CHAT_COMPLETION_API_ENDPOINT, // Key to set open ai chat completion api
+  OPENAI_CHAT_COMPLETION_API_ENDPOINT, // Key to set OpenAI chat completion API
   getVoiceBasedOnVoiceURI,
   getCachedVoiceInfo,
   getCachedVoiceURI,
@@ -496,7 +496,7 @@ useEffect(() => {
     yourDefinedPreferredVoice
   );
 
-  // Set open ai chat completion api
+  // Set OpenAI chat completion API
   // example in demo website (next js using environment variable) src/Components/ClientProvider.tsx
   if (process.env.NEXT_PUBLIC_OPENAI_CHAT_COMPLETION_API_ENDPOINT) {
     storage.setItem(
