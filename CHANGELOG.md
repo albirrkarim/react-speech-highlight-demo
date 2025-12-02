@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.5.5
+
+- Fix bug: Unwanted state change to pause, while playing the audio
+
 # 5.5.4
 
 - Improve Code safe
