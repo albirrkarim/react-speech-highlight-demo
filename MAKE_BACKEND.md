@@ -2,7 +2,7 @@
 
 ## A. LLM (Large Language Model) API
 
-Optionally we need LLM API to solve many [issue](PROBLEMS.md). the LLM api i use is open ai chat completion api. So we must have backend server that provide proxy api call to the open ai.
+Optionally, we need an LLM API to solve many [issues](PROBLEMS.md). The LLM API I use is the OpenAI chat completion API. So we must have a backend server that provides a proxy API call to OpenAI.
 
 ![Open AI API](/img/chat_gpt_api.png)
 
@@ -14,7 +14,7 @@ Optionally we need LLM API to solve many [issue](PROBLEMS.md). the LLM api i use
 OPENAI_CHAT_COMPLETION_API_ENDPOINT = "https://example.com/api/v1/public/chat";
 ```
 
-with that url then the `package` will send **body request** like this
+With that URL, the `package` will send a **body request** like this
 
 ```json
 {
@@ -25,13 +25,13 @@ with that url then the `package` will send **body request** like this
       "role": "user",
       "content": "convert this semicolon separated number \"1000;4090;1000000;1,2;9001;30,1\" into word form number with language \"en-US\" return the result as array. don't explain"
     }
-  ]
+  }
 }
 ```
 
-and your backend will **response** like this.
+And your backend will **respond** like this.
 
-#### Example response that this package want
+#### Example response that this package wants
 
 ```json
 {
@@ -61,7 +61,7 @@ Goto [API Docs about this](API.md#package-data-and-cache-integration)
 
 ### Example Implementation
 
-If you are using different backend, please look by yourself how to implement it. the important is the same respond (like [this](#example-response-that-this-package-want)) so the `react-speech-highlight` package can understand Actually you can customize the logic, like add [authentication header](API.md#set-custom-constant-value-for-this-package).
+If you are using a different backend, please look for yourself on how to implement it. The important thing is to have the same response (like [this](#example-response-that-this-package-wants)) so the `react-speech-highlight` package can understand it. Actually, you can customize the logic, like adding an [authentication header](API.md#set-custom-constant-value-for-this-package).
 
 <details>
   <summary>Show example using Laravel as Backend</summary>

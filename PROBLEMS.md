@@ -4,9 +4,9 @@
 
 ### 1. Pronunciation Problem
 
-We want text user see is different with what system should speak.
+We want the text users see to be different from what the system should speak.
 
-What we do ? we make some engine that can do accurate and cost effective pronunciation correction Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
+What do we do? We make an engine that can do accurate and cost-effective pronunciation correction using LLM OpenAI Chat Completions for any terms or equations from academic papers, math, physics, computer science, machine learning, and more...
 
 <details>
   <summary>Show details</summary>
@@ -20,9 +20,9 @@ This package needs chat gpt api to do that. [see how to use integrate this packa
 
 **Manual Pronunciation Correction**
 
-in english abbreviation like `FOMO`, `ETA`, etc.
+In English, abbreviations like `FOMO`, `ETA`, etc.
 
-This package also have built-in abbreviation function, or you can write your own rules.
+This package also has a built-in abbreviation function, or you can write your own rules.
 
 ```
 input:string -> abbreviation function -> output:string.
@@ -36,14 +36,14 @@ input:string -> abbreviation function -> output:string.
 
 ### 1. The delay of audio played and user gesture to trigger play must be close.
 
-When user click play button the system will preparing the audio file with send request to TTS API like eleven labs, what if the api request is so long (because the text you send is long)? what if your TTS API has limitation
+When a user clicks the play button, the system will be preparing the audio file by sending a request to a TTS API like ElevenLabs. What if the API request takes too long (because the text you send is long)? What if your TTS API has limitations?
 
-It will causing bad experience to the user.
+This will cause a bad experience for the user.
 
 <details>
   <summary>Read more</summary>
 
-It will causing bad experience to the user. even in device like ipad and iphone they have rules that the delay between user interaction and the audio played must not exceed 4seconds or it will be fail.
+This will cause a bad experience for the user. Even on devices like iPad and iPhone, they have rules that the delay between user interaction and the audio being played must not exceed 4 seconds, or it will fail.
 
 They will give error like this
 
@@ -51,19 +51,17 @@ They will give error like this
 Unhandled Promise Rejection: NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
 ```
 
-So what the solution for this?
+So what's the solution for this?
 
-I set this package to make batch request for API call.
-
-</details>
+I set this package to make batch requests for API calls.</details>
 
 ### 2. Long text request to TTS API (Capability of TTS API handling long text)
 
-All tts api has limitation of character that can be sent to them.
+All TTS APIs have limitations on the number of characters that can be sent to them.
 
 ### The solution is using Batch Request System
 
-Batch strategy will solve that problems above. You can define the batch size in the [config](API.md#2a-config)
+Batch strategy will solve those problems above. You can define the batch size in the [config](API.md#2a-config)
 
 <br/>
 
@@ -74,17 +72,17 @@ Batch strategy will solve that problems above. You can define the batch size in 
 
 **How it work?**
 
-Let says you have 10000 character long of text, and let says your tts api service will be done making the audio file in 60 seconds. (so your user will waiting to play 60 second after they want ? it so bad)
+Let's say you have 10,000 characters of text, and let's say your TTS API service will be done making the audio file in 60 seconds. (So your user will be waiting 60 seconds after they want to play? That's bad!)
 
-So, My package will chunk it into close to the 200 character each.
+So, my package will chunk it into close to 200 characters each.
 
-10000/200 = 50 request.
+10000/200 = 50 requests.
 
 60/10000\*200 = 1.2 seconds
 
-my package will send the first chunk, and the tts api will give the audio file in just 1,2 then the audio is played.
+My package will send the first chunk, and the TTS API will give the audio file in just 1.2 seconds, then the audio is played.
 
-So the delay between user click button play and the tts start to play will be just 1,2 seconds. what about other chunks. i manage to send other chunk in the background while tts is played. and enhance efficiency of character used in tts api. you pay the tts api service based on the character right?.
+So the delay between user clicking the play button and the TTS starting to play will be just 1.2 seconds. What about other chunks? I manage to send other chunks in the background while TTS is being played, and enhance efficiency of character usage in the TTS API. You pay the TTS API service based on characters, right?
 
 lets say we have
 
@@ -94,25 +92,23 @@ chunk1
 chunk2 <- my package will try to prepare until this
 chunk3
 ...
-chunk49
+  chunk49
 ```
 
-This method will, solve other problem like maximal character that your tts api can handle. for example on elvenlabs they only can do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) character for audio generation.
-
-</details>
+This method will solve other problems like the maximum character limit that your TTS API can handle. For example, on ElevenLabs, they can only do [5000](https://help.elevenlabs.io/hc/en-us/articles/13298164480913-What-s-the-maximum-amount-of-characters-and-text-I-can-generate) characters for audio generation.</details>
 
 <br/>
 <br/>
 
 ## C. When Using Web Speech Synthesis
 
-The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). Comes with problems:
+The [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) comes with problems:
 
 ### 1. Unlimited String Length Capability
 
-Some available voice doesn't support long text / string.
+Some available voices don't support long text / strings.
 
-How about this package? it can read unlimited string (can't die when playing).
+How about this package? It can read unlimited strings (can't die when playing).
 
 <!-- But when marking the word (more than `2400 sentences, 45700 words, 260500 character`) it getting slow when react ui render (lag). after rendered it will normal again and can play tts. -->
 
@@ -120,24 +116,24 @@ How about this package? it can read unlimited string (can't die when playing).
 
 ### 2. Cross Platform Problem
 
-I'm sure that you have the same experience, developing web for cross platform, android, Iphone or Ipad always resulting problem.
+I'm sure you have the same experience: developing web applications for cross-platform (Android, iPhone, or iPad) always results in problems.
 
-- Speech synthesis in IOS or Ipad OS sometimes die unexpected.
-- Sometimes `speechsynthesis` doesn't fire the `onpause`, `onresume` event on android, ipad,
+- Speech synthesis in iOS or iPadOS sometimes dies unexpectedly.
+- Sometimes `speechsynthesis` doesn't fire the `onpause`, `onresume` events on Android or iPad.
 
 <br/>
 
 ### 3. Unpredictable Onboundary
 
-- First, Not all voices have `onboundary` event
-- On ipad the `onboundary` event only work with about 30% of the full sentence.
-- Also the on boundary event doesn't fire function accurately. for example the text is `2022` the `onboundary` will fire twice `20` and `22`.
+- First, not all voices have the `onboundary` event
+- On iPad, the `onboundary` event only works with about 30% of the full sentence.
+- Also, the onboundary event doesn't fire functions accurately. For example, if the text is `2022`, the `onboundary` will fire twice: `20` and `22`.
 
 <br/>
 
 ### 4. Bad performance or voice too fast
 
-in API `prepareHL.getVoices()` i implement this flow:
+In API `prepareHL.getVoices()`, I implement this flow:
 
 <details>
   <summary>Show flow</summary>
@@ -151,14 +147,14 @@ in API `prepareHL.getVoices()` i implement this flow:
 
 ### 5. The voice is not good enough
 
-With `window.speechSynthesis` the voice is like a robot, doesn't have parameter like:
+With `window.speechSynthesis`, the voice is like a robot and doesn't have parameters like:
 
 - Emotions
 - Characteristic
 
-It can be achieved by using deep learning (with python) or other paid TTS API.
+It can be achieved by using deep learning (with Python) or other paid TTS APIs.
 
-In this package i just want to make cheap solution for TTS so i just the `window.speechSynthesis`.
+In this package, I just wanted to make a cheap solution for TTS, so I used the `window.speechSynthesis`.
 
 Now this package has Prefer / Fallback to Audio file.
 

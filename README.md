@@ -20,9 +20,9 @@ https://github.com/user-attachments/assets/79c6d4f6-f3e2-4c38-9bec-dbb6834d87f8
   <img src="./img/vanilla.png" width="400" alt="Vanilla Speech Highlight" >
 </a>
 
-We support implementation using vanilla js. this package has bundle size of 45 KB. You can easily combine this library with your website, maybe your website using [jquery](https://jquery.com)
+We support implementation using vanilla js. This package has a bundle size of 45 KB. You can easily combine this library with your website, maybe your website is using [jquery](https://jquery.com).
 
-Read the [API_VANILLA.md](API_VANILLA.md) to see the different.
+Read the [API_VANILLA.md](API_VANILLA.md) to see the difference.
 
 [Try the demo Vanilla Speech Highlight](https://vanilla-speech-highlight.vercel.app)
 
@@ -46,7 +46,7 @@ https://github.com/albirrkarim/react-speech-highlight-demo/assets/29292018/abb9c
 
 Built with react native cli. [Try the demo android app](https://bit.ly/RNSHL-4-9-9)
 
-Do you want other implementation? just ask me via discord: albirrkarim
+Do you want other implementations? Just ask me via discord: albirrkarim
 
 This is the Documentation for [web version](#--the-web-version-react-and-vanilla-js)
 
@@ -66,55 +66,55 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 ## A. Introduction
 
-### What i want?
+### What I wanted
 
-Recently, I want to implement the text-to-speech with highlight the word and sentence that are being spoken on my website.
+Recently, I wanted to implement text-to-speech with highlighting the words and sentences that are being spoken on my website.te.
 
-Then i do search on the internet. but i can't find the npm package to solve all TTS [problems](PROBLEMS.md)
+Then I searched on the internet, but I couldn't find the npm package to solve all TTS [problems](PROBLEMS.md).
 
-I just want some powerful package that flexible and good voice quality.
+I just wanted a powerful package that is flexible and has good voice quality.
 
-### Here what i got when i search on internet:
+### Here's what I found when I searched on the internet:
 
-Overall the text to speech task comes with problems (See the detail on [PROBLEMS.md](PROBLEMS.md)) whether using web speech synthesis or the audio file.
+Overall, the text-to-speech task comes with problems (See the details in [PROBLEMS.md](PROBLEMS.md)) whether using web speech synthesis or audio files.
 
 **Using [Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)**
 
-They have problems Robot like sound, Supported Devices Available, etc..
+They have problems like robot-like sound, limited device support, etc.
 
 **Using paid subscription text-to-speech synthesis API**
 
-When we talk about good sound / human like voices AI models inference should get involved. So it doesn't make sense if doing that on client side.
+When we talk about good sound / human-like voices, AI model inference should be involved. So it doesn't make sense to do that on the client side.
 
 Then the speech synthesis API provider like [ElevenLabs](https://try.elevenlabs.io/speech-highlight), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) play their roles.
 
-But they don't provide the npm package to do highlighting.
+But they don't provide an npm package to do highlighting.
 
-Then i found [Speechify](https://speechify.com). but i don't find any docs about using some npm package that integrate with their service. Also this is a paid subscriptions services.
+Then I found [Speechify](https://speechify.com), but I couldn't find any docs about using an npm package that integrates with their service. Also, this is a paid subscription service.
 
-Searching again, Then i found [ElevenLabs](https://try.elevenlabs.io/speech-highlight) its free if the 10000 character / month and will reset on next month. **Cool right?** So i decide to use this as speech synthesis API in my project. This platform also doesn't provide the react npm package to highlight their audio, but they provide [streaming output audio](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio) that can be use to produce "when the words is spoken in some audio" (transcript timestamp) like [someone make about this thing](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396).
+Searching again, I found [ElevenLabs](https://try.elevenlabs.io/speech-highlight). It's free for 10,000 characters per month and will reset on the next month. **Cool right?** So I decided to use this as the speech synthesis API in my project. This platform also doesn't provide a React npm package to highlight their audio, but they provide [streaming output audio](https://elevenlabs.io/docs/api-reference/websockets#streaming-output-audio) that can be used to produce "when the words are spoken in audio" (transcript timestamp) like [someone made about this](https://medium.com/@brandon.demeria/synchronized-text-highlighting-with-elevenlabs-speech-in-laravel-php-e387c2797396).
 
-**In production you must do cost calculation**, which TTS Service API provider you should choose. The services that have capability streaming audio is promising highlight word. but also comes with high price. **The cheap TTS service API usually don't have much features.**
+**In production, you must do cost calculations** to decide which TTS Service API provider you should choose. The services that have streaming audio capability are promising for word highlighting, but also come with a high price. **Cheap TTS service APIs usually don't have many features.**
 
-The [elevenlabs](<(https://try.elevenlabs.io/speech-highlight)>) have produce good quality voice and many features, but when comes for production they more expensive compares with Open AI TTS, In production the cost is important matter.
+The [elevenlabs](<(https://try.elevenlabs.io/speech-highlight)>) produces good quality voices and many features, but when it comes to production, they are more expensive compared with Open AI TTS. In production, the cost is an important matter.
 
 ### Solutions
 
 ![Overview How React Speech Highlight Works](./img/overview.png)
 
-So, I decide to making this npm package that combines various methods above to achieve all the good things and throw the bad things. All logic is done in client side, look at the overview above. No need to use advanced backend hosting.
+So, I decided to make this npm package that combines various methods above to achieve all the good things and discard the bad things. All logic is done on the client side. Look at the overview above. No need to use advanced backend hosting.
 
 My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
 
-When using prefer/fallback to audio file you can achieve high quality sound and remove all compatibility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
+When using prefer/fallback to audio file, you can achieve high-quality sound and remove all compatibility problems from [Built-in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
 
-How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://try.elevenlabs.io/speech-highlight),[Murf AI](https://get.murf.ai/0big1kdars4f),[Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
+How can you automatically get the audio file for some text? you can use [ElevenLabs](https://try.elevenlabs.io/speech-highlight), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio files (mp3, mp4, wav, etc...). For details see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/), I provide you with examples using ElevenLabs, and you can even try your own audio file on that demo web.
 
-This package just take input text and audio file, so you can flexible to use any TTS API that can produce audio file, The expensive one or even cheap one when you consider the cost.
+This package just takes input text and audio files, so you can be flexible in using any TTS API that can produce audio files—the expensive ones or even cheap ones when you consider the cost.
 
-How this package know the timing spoken word or sentence of played audio? This package can detect the spoken word and sentence in client side.
+How does this package know the timing of spoken words or sentences in played audio? This package can detect the spoken words and sentences on the client side.
 
-This package is one time pay. No Subscription. Who likes subscription? I also don't. see the how to [purchase bellow](#g-payment).
+This package is a one-time payment. No subscription. Who likes subscriptions? I don't either. See how to [purchase below](#g-payment).
 
 ![Positioning](./img/position.png)
 
@@ -122,63 +122,63 @@ This package is one time pay. No Subscription. Who likes subscription? I also do
 
 ### Use Cases
 
-When you are entrepreneur im sure you have some crazy uses case for this package.
+When you are an entrepreneur, I'm sure you have some crazy use cases for this package.
 
 #### Interactive Blog
 
-Imagine that you have long article and have TTS button then played the text to speech and users can see how far the article has been read. you article will be SEO ready because this package has Server Side Rendering (SSR) capability.
+Imagine that you have a long article with a TTS button that plays the text-to-speech, and users can see how far the article has been read. Your article will be SEO-ready because this package has Server-Side Rendering (SSR) capability.
 
 #### Web AI Avatar / NPC
 
 ![viseme](/img/viseme.png)
 
-In the [demo](https://react-speech-highlight.vercel.app/) i provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) can alive playing the `idle` animation and their mouth can synchronize with the highlighted text to speech, it because this package has react state that represent [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). the viseme list that i use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
+In the [demo](https://react-speech-highlight.vercel.app/) I provide, you can see the 3D avatar from [readyplayer.me](https://readyplayer.me/) come alive, playing the `idle` animation, and their mouth can synchronize with the highlighted text-to-speech. This is because this package has a React state that represents the [current spoken viseme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/API.md#spokenhl). The viseme list that I use in the demo is [Oculus OVR LipSync](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync).
 
 #### Language Learning App With Real Human Voice
 
 ![Use case Language Learning App](./img/hanacaraka.png)
 
-Look at the example 6 on the [demo](https://react-speech-highlight.vercel.app). its a example of use real human voice for text to speech. Maybe your local language is not supported by the TTS API. you can use this package to use the real human voice. The real human voice is recorded by the real human. The real human voice is more natural than the TTS API.
+Look at example 6 on the [demo](https://react-speech-highlight.vercel.app). It's an example of using a real human voice for text-to-speech. Maybe your local language is not supported by the TTS API. You can use this package with a real human voice. The real human voice is recorded by an actual human. The real human voice is more natural than the TTS API.
 
 #### Academic Text Reader
 
 ![Pronunciation](/img/pronounciation.png)
 
-The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronunciation [see](PROBLEMS.md#1-pronunciation-problem). so we make some pronunciation correction engine utilizing the Open AI API to think what should the term pronounced.
+The problem when we do TTS on academic text is that it contains math equations, formulas, and symbols where the displayed term is different from their pronunciation [see](PROBLEMS.md#1-pronunciation-problem). So we made a pronunciation correction engine utilizing the OpenAI API to determine what the terms should be pronounced as.
 
 #### Relation Highlight and Word Level Highlighting of Youtube Transcript
 
 https://github.com/user-attachments/assets/799bae21-a43e-44c4-a4c7-ede7ac2d5b51
 
-It has youtube iframe, and the youtube transcript on the right, when you play the youtube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. this package are **follow** the time.
+It has a YouTube iframe and the YouTube transcript on the right. When you play the YouTube video, the transcript will be highlighted. The highlighting is based on the current time of the played video. This package **follows** the time.
 
-Relation Highlight feature - When you hover into some word, the related word will be highlighted too. Example when you hover into chinese word, the pinyin and english word will be highlighted too and vice versa. How it can? [see](LLM_ENGINE.md).
+Relation Highlight feature - When you hover over a word, the related words will be highlighted too. For example, when you hover over a Chinese word, the pinyin and English word will be highlighted too, and vice versa. How can it do this? [See](LLM_ENGINE.md).
 
 #### Video Player With Auto Generate Subtitle
 
 https://github.com/user-attachments/assets/f0d8d157-1c1e-43e1-8eba-ebe7dfe3865e
 
-Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even translate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
+Case: You just have an audio or video file without a text transcript. Our package can generate the transcript from the audio file or even translate the transcript to another language. The subtitle can be highlighted when the video is played, and it can show two different language subtitles at once, highlighting both based on the meaning of the words.
 
-On that preview video above the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning.
+In that preview video above, the video's original language is Italian, and I also show the translation in English. The system highlights both based on the meaning.
 
-Italian word `bella` have meaning in english `beautiful`
+The Italian word `bella` has the meaning `beautiful` in English.
 
 Go to [this video demo page](https://react-speech-highlight.vercel.app/video).
 
 #### Realtime Communication With Highlighted Text
 
-Task that the audio is feed to client side in real time like you are on a phone call, theres no audio file behind it.
+Task where the audio is fed to the client side in real-time, like you are on a phone call—there's no audio file behind it.
 
-Recently open ai made [realtime api](https://platform.openai.com/docs/guides/realtime) it use [Web RTC (Web Real-Time Communication)](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) so you can like have a phone call with AI.
+Recently, OpenAI made a [realtime api](https://platform.openai.com/docs/guides/realtime). It uses [Web RTC (Web Real-Time Communication)](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API), so you can have a phone call with AI.
 
-Goto [realtime communication demo](https://react-speech-highlight.vercel.app/#example-realtime).
+Go to [realtime communication demo](https://react-speech-highlight.vercel.app/#example-realtime).
 
 #### Your use case here
 
 ![Covers Everyone’s Needs](./img/adaptable.png)
 
-Just ask me what you want to make, the package architecture is scalable to make various feature.
+Just ask me what you want to make. The package architecture is scalable to create various features.
 
 <br>
 <br>
@@ -192,16 +192,16 @@ Just ask me what you want to make, the package architecture is scalable to make 
 
 <br/>
 
-- [x] Realtime Text to Speech With Highlight - This package can intergrate with [open ai realtime api](https://platform.openai.com/docs/guides/realtime), Imagine you have a phone call with AI the web are displaying the transcript with highlight the current spoken.
-- [x] Add example of [streaming TTS with highlight](https://react-speech-highlight.vercel.app/example). it play tts with highlight while even the text is still streamed.
-- [x] Re-[Architecture](#solutions) the package into plugins system, and add optional backend-nify the LLM Engine, so it faster, secure and more reliable.
-- [x] Making Hybrid engine timestamp detection
+- [x] Realtime Text to Speech With Highlight - This package can integrate with [open ai realtime api](https://platform.openai.com/docs/guides/realtime). Imagine you have a phone call with AI and the web is displaying the transcript with highlighted current spoken words.
+- [x] Add example of [streaming TTS with highlight](https://react-speech-highlight.vercel.app/example). It plays TTS with highlighting while the text is still being streamed.
+- [x] Re-[Architecture](#solutions) the package into a plugin system, and add optional backend-nify for the LLM Engine, so it's faster, more secure, and more reliable.
+- [x] Make Hybrid engine timestamp detection
 - [x] Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
 - [x] Add Virtual Node for flexible highlighting
 - [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)
 - [x] Accurate and cost effective [pronunciation correction](PROBLEMS.md#a-common-problem-in-text-to-speech-both-audio-file-and-web-speech-synthesis) Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
-- [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
+- [x] Batch API request for making the audio file for long article content. This improves efficiency and user experience. [It solves: The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add vanilla js support, for those who don't use react, [see vanilla demo](https://vanilla-speech-highlight.vercel.app)
@@ -224,7 +224,7 @@ See [API.md](API.md) and [EXAMPLE_CODE.md](EXAMPLE_CODE.md) that contain simple 
 
 The full example code and implementation example is using source code from [demo website](https://react-speech-highlight.vercel.app). the source code of demo website is included when you buy this package.
 
-This package is written with typescript, You don't have to read all the docs in here, because this package now support [js doc](https://jsdoc.app) and [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
+This package is written in TypeScript. You don't have to read all the docs here because this package now supports [js doc](https://jsdoc.app) and [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense). What is that? Simply put, when you hover your mouse over a variable or function in [VS Code](https://code.visualstudio.com), it will show a popup (simple tutorial) explaining what the function does, examples, params, etc.
 
 Just use the source code from demo website, you can literally just understand the package.
 
@@ -246,7 +246,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 There's no refund.
 
-I love feedback from my customers. You can write on the issue tab so when i have time i can try to solve that and deliver for the next update.
+I love feedback from my customers. You can write on the issue tab, so when I have time, I can try to solve that and deliver it in the next update.
 
 Still worry? see the [reviews on producthunt](https://www.producthunt.com/products/react-vanilla-speech-highlight/reviews)
 

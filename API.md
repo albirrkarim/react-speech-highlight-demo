@@ -1,8 +1,8 @@
 # API
 
-The api is a function that you can use to integrate this package into your apps. When read this api docs you can toggle `Outline` (see top right) menu in github so you can navigate easily.
+The API is a set of functions that you can use to integrate this package into your apps. When reading this API documentation, you can toggle the `Outline` (see top right) menu in GitHub so you can navigate easily.
 
-This package is written with typescript, You don't have to read all the docs in here, because this package now support [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) what is that? simply its when you hover your mouse into some variable or function [VS Code](https://code.visualstudio.com) will show some popup (simple tutorial) what is the function about, examples, params, etc...
+This package is written in TypeScript. You don't have to read all the docs here because this package now supports [VS Code IntelliSense](https://code.visualstudio.com/docs/editor/intellisense). What is that? Simply put, when you hover your mouse over a variable or function in [VS Code](https://code.visualstudio.com), it will show a popup (simple tutorial) explaining what the function does, examples, params, etc.
 
 <details>
   <summary>Show Video</summary>
@@ -18,7 +18,7 @@ see [API_VANILLA.md](API_VANILLA.md) for vanilla js version.
 
 <br/>
 
-Actually, **Theres a lot** of function, [llm engine](LLM_ENGINE.md) and constant that you can import from this package. Here's just few of them. When you have buy the package you can just go to the `index.ts` file and see all the function and constant. the package have a lot of features, ofcourse it have a lot of APIs.
+Actually, **there are a lot** of functions, [llm engine](LLM_ENGINE.md), and constants that you can import from this package. Here are just a few of them. When you have bought the package, you can just go to the `index.ts` file and see all the functions and constants. The package has a lot of features, of course it has a lot of APIs.
 
 <details>
   <summary>Show How to import something from the package</summary>
@@ -81,13 +81,13 @@ import type {
 
 ## 1. TTS Marker `markTheWords()`
 
-The `markTheWords()` function is to process the string text and give some marker to every word and sentences that system will read.
+The `markTheWords()` function processes the string text and gives markers to every word and sentence that the system will read.
 
 <details>
   <summary>Show Code</summary>
   <br/>
 
-Important, This example using react `useMemo()` to avoid unnecessary react rerender. i mean it will only execute when the `text` is changing. it's similar with `useEffect()`.
+Important: This example uses React's `useMemo()` to avoid unnecessary React rerenders. I mean it will only execute when the `text` is changing. It's similar to `useEffect()`.
 
 <br/>
 
@@ -192,7 +192,7 @@ void controlHL.play({
 
 - `autoHL`
 
-  If the voice is not support the onboundary event, then this package prefer to disable word highlight. instead of trying to mimic onboundary event
+  If the voice does not support the onboundary event, then this package prefers to disable word highlighting instead of trying to mimic the onboundary event.
 
 - `disableSentenceHL`
 
@@ -204,11 +204,11 @@ void controlHL.play({
 
 - `classSentences`
 
-  You can styling the highlighted sentence with css to some class name
+  You can style the highlighted sentence with CSS using this class name
 
 - `classWord`
 
-  You can styling the highlighted word with css to some class name
+  You can style the highlighted word with CSS using this class name
 
 - `lang`
 
@@ -224,11 +224,11 @@ void controlHL.play({
 
 - `autoScroll`
 
-  Beautiful auto scroll, so the user can always see the highlighted sentences
+  Beautiful auto-scroll, so the user can always see the highlighted sentences
 
 - `clear`
 
-  if `true` overide previous played TTS with some new TTS that user want, if `false` user want to execute play new TTS but there's still exist played TTS. so it will just entering queue behind it
+  If `true`, override the previously playing TTS with the new TTS that the user wants. If `false`, when the user wants to execute a new TTS but there's still an existing playing TTS, it will just enter the queue behind it.
 
 - `visemeMap`
 
@@ -236,15 +236,15 @@ void controlHL.play({
 
 - `preferAudio`
 
-  Some API to pass `string` or `async function` that return audio url like this `example.com/some_file.mp3` as preferred audio.
+  An API to pass a `string` or `async function` that returns an audio URL like `example.com/some_file.mp3` as preferred audio.
 
-  So the package will use this audio instead of the built in web speech synthesis.
+  So the package will use this audio instead of the built-in web speech synthesis.
 
 - `fallbackAudio`
 
-  Some API to pass `string` or `async function` that return audio url like this`example.com/some_file.mp3` as fallback audio.
+  An API to pass a `string` or `async function` that returns an audio URL like `example.com/some_file.mp3` as fallback audio.
 
-  When the built in web speech synthesis error or user doesn't have any voice. the fallback audio file will be used.
+  When the built-in web speech synthesis errors or the user doesn't have any voice, the fallback audio file will be used.
 
   ```jsx
   async function getAudioForThisText(text){
@@ -266,10 +266,10 @@ void controlHL.play({
 
   The batch size for the audio file.
 
-  When you set the batch is null so they send all the text. then you set for 200 package will chunk the text into 200 character.
+  When you set the batch to null, they send all the text. When you set it to 200, the package will chunk the text into 200-character segments.
 
   Example: 200
-  so package will batched send 200 characters per request to TTS API
+  The package will send 200 characters per request to the TTS API in batches.
 
   [Readmore about batch system in this package](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 
@@ -298,19 +298,19 @@ controlHL.activateGesture();
 
 #### statusHL
 
-Some react state that give the status of the program. The value it can be `idle|play|calibration|pause|loading`. You can fixed the value with accessing from `PKG_STATUS_OPT` constant.
+A React state that gives the status of the program. The value can be `idle|play|calibration|pause|loading`. You can get the fixed value by accessing the `PKG_STATUS_OPT` constant.
 
 | Name          | Description                                                                                                                                                                                      |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `idle`        | it's initial state                                                                                                                                                                               |
-| `calibration` | system still process the text, so when TTS is playing it will performs accurate and better                                                                                                       |
+| `idle`        | It's the initial state                                                                                                                                                                           |
+| `calibration` | System is still processing the text, so when TTS is playing, it will perform accurately and better                                                                                               |
 | `play`        | The system still playing TTS                                                                                                                                                                     |
 | `pause`       | Resume TTS                                                                                                                                                                                       |
 | `loading`     | it mean the the system still processing to get best voices available. status will change to this value if we call `prepareHL.getVoices()` [see](PROBLEMS.md#4-bad-performance-or-voice-too-fast) |
 
 #### prepareHL
 
-Contain state and function to preparing the TTS. From all available voices that we can get from the SpeechSynthesis.getVoices() this package will test the voice and give 5 only best voice with language specified before.
+Contains state and functions for preparing the TTS. From all available voices that we can get from SpeechSynthesis.getVoices(), this package will test the voices and give only the 5 best voices with the specified language.
 
 | Name                      | Description                                                                                                 |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -320,13 +320,13 @@ Contain state and function to preparing the TTS. From all available voices that 
 
 #### spokenHL
 
-Contain react state for reporting while TTS playing.
+Contains React states for reporting while TTS is playing.
 
 | Name                        | Description                                      |
 | --------------------------- | ------------------------------------------------ |
-| spokenHL.sentence           | Some react state, Get the sentence that read     |
-| spokenHL.word               | Some react state, Get the word that read         |
-| spokenHL.viseme             | Some react state, Get the current viseme         |
+| spokenHL.sentence           | React state: Get the sentence being read         |
+| spokenHL.word               | React state: Get the word being read             |
+| spokenHL.viseme             | React state: Get the current viseme              |
 | spokenHL.percentageWord     | Read percentage between 0-100 based on words     |
 | spokenHL.percentageSentence | Read percentage between 0-100 based on sentences |
 
@@ -336,7 +336,7 @@ Utilities function for precision and add more capabilities
 
 ## 1. pronunciationCorrection()
 
-The common problem is the text display to user is different with their spoken form. like math symbol, equations, terms, etc.. [readmore about pronunciation problem](PROBLEMS.md)
+The common problem is that the text displayed to the user is different from their spoken form, like math symbols, equations, terms, etc. [Read more about pronunciation problems](PROBLEMS.md)
 
 [How to build this package with open ai api integration](MAKE_BACKEND.md)
 
@@ -391,9 +391,9 @@ return (
 
 ## 2. getLangForThisText()
 
-For example you want to implement this package into blog website with multi language, it's hard to know the exact language for each post / article.
+For example, if you want to implement this package into a blog website with multiple languages, it's hard to know the exact language for each post/article.
 
-Then i use chat gpt api to detect what language from some text. see [How to build this package with open ai api integration](MAKE_BACKEND.md)
+Then I use the ChatGPT API to detect the language from the text. See [How to build this package with OpenAI API integration](MAKE_BACKEND.md)
 
 <details>
   <summary>Show Code</summary>
@@ -436,7 +436,7 @@ useEffect(() => {
 
 ## 3. convertTextIntoClearTranscriptText()
 
-Function to convert your input string (just text or html string) into [Speech Synthesis Markup Language (SSML)](https://cloud.google.com/text-to-speech/docs/ssml) clear format that this package **can understand** when making transcript timestamp.
+Function to convert your input string (just text or HTML string) into [Speech Synthesis Markup Language (SSML)](https://cloud.google.com/text-to-speech/docs/ssml) clear format that this package **can understand** when making transcript timestamps.
 
 **You must use this function when making the audio file**
 
@@ -451,7 +451,7 @@ var clear_transcript = convertTextIntoClearTranscriptText(
 
 # Package Data and Cache Integration
 
-The data or cache (storage) that this package use can be accessed outside. The one that used by [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs).
+The data or cache (storage) that this package uses can be accessed externally. This is used by [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs).
 
 <details>
   <summary>Show</summary>
