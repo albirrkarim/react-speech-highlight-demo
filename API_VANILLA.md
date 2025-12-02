@@ -10,11 +10,11 @@ var statusHL = document.getElementById("statusHL");
 var spokenHL_viseme = document.getElementById("spokenHL_viseme");
 var spokenHL_word = document.getElementById("spokenHL_word");
 var spokenHL_sentence = document.getElementById("spokenHL_sentence");
-var spokenHL_precentageWord = document.getElementById(
-  "spokenHL_precentageWord"
+var spokenHL_percentageWord = document.getElementById(
+  "spokenHL_percentageWord"
 );
-var spokenHL_precentageSentence = document.getElementById(
-  "spokenHL_precentageSentence"
+var spokenHL_percentageSentence = document.getElementById(
+  "spokenHL_percentageSentence"
 );
 
 const setStatusHLState = (status) => {
@@ -49,25 +49,25 @@ const setSentenceSpoken = (sentence) => {
   }
 };
 
-const setPrecentageSentence = (precentageSentence) => {
+const setPercentageSentence = (percentageSentence) => {
   console.log(
-    "Default setPrecentageSentence function, precentageSentence = ",
-    precentageSentence
+    "Default setPercentageSentence function, percentageSentence = ",
+    percentageSentence
   );
 
-  if (spokenHL_precentageWord) {
-    spokenHL_precentageWord.innerHTML = precentageSentence + "%";
+  if (spokenHL_percentageWord) {
+    spokenHL_percentageWord.innerHTML = percentageSentence + "%";
   }
 };
 
-const setPrecentageWord = (precentageWord) => {
+const setPercentageWord = (percentageWord) => {
   console.log(
-    "Default setPrecentageWord function, precentageWord = ",
-    precentageWord
+    "Default setPercentageWord function, percentageWord = ",
+    percentageWord
   );
 
-  if (spokenHL_precentageSentence) {
-    spokenHL_precentageSentence.innerHTML = precentageWord + "%";
+  if (spokenHL_percentageSentence) {
+    spokenHL_percentageSentence.innerHTML = percentageWord + "%";
   }
 };
 
@@ -85,8 +85,8 @@ var defaultParams = {
   setVisemeSpoken,
   setWordSpoken,
   setSentenceSpoken,
-  setPrecentageSentence,
-  setPrecentageWord,
+  setPercentageSentence,
+  setPercentageWord,
 };
 
 // Global control HL

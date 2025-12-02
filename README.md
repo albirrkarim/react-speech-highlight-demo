@@ -72,7 +72,7 @@ Recently, I want to implement the text-to-speech with highlight the word and sen
 
 Then i do search on the internet. but i can't find the npm package to solve all TTS [problems](PROBLEMS.md)
 
-I just want some powerfull package that flexible and good voice quality.
+I just want some powerful package that flexible and good voice quality.
 
 ### Here what i got when i search on internet:
 
@@ -102,11 +102,11 @@ The [elevenlabs](<(https://try.elevenlabs.io/speech-highlight)>) have produce go
 
 ![Overview How React Speech Highlight Works](./img/overview.png)
 
-So, I decide to making this npm package that combines various methods above to achives all the good things and throw the bad things. All logic is done in client side, look at the overview above. No need to use advanced backend hosting.
+So, I decide to making this npm package that combines various methods above to achieve all the good things and throw the bad things. All logic is done in client side, look at the overview above. No need to use advanced backend hosting.
 
 My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) and Audio File (optional) to run.
 
-When using prefer/fallback to audio file you can achive high quality sound and remove all compactbility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
+When using prefer/fallback to audio file you can achieve high quality sound and remove all compatibility problem from [Built in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
 
 How you can automatically get the audio file of some text ? you can use [ElevenLabs](https://try.elevenlabs.io/speech-highlight),[Murf AI](https://get.murf.ai/0big1kdars4f),[Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio file (mp3, mp4, wav, etc...) for the detail see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/) i provide you example using ElevenLabs and even you can try your own audio file on that demo web.
 
@@ -142,9 +142,9 @@ Look at the example 6 on the [demo](https://react-speech-highlight.vercel.app). 
 
 #### Academic Text Reader
 
-![Pronounciation](/img/pronounciation.png)
+![Pronunciation](/img/pronounciation.png)
 
-The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronounciation [see](PROBLEMS.md#1-pronounciation-problem). so we make some pronounciation correction engine utilizing the Open AI API to think what should the term pronounced.
+The problem when we do TTS on academic text. it contains math equations, formula, symbol that the shown term is different with their pronunciation [see](PROBLEMS.md#1-pronunciation-problem). so we make some pronunciation correction engine utilizing the Open AI API to think what should the term pronounced.
 
 #### Relation Highlight and Word Level Highlighting of Youtube Transcript
 
@@ -158,7 +158,7 @@ Relation Highlight feature - When you hover into some word, the related word wil
 
 https://github.com/user-attachments/assets/f0d8d157-1c1e-43e1-8eba-ebe7dfe3865e
 
-Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even transtlate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
+Case: You just have audio or video file without text transcript. Our package can generate the transcript from the audio file. or even translate the transcript to other language. The subtitle can be highlighted when the video is played, and maybe it want to show two different language subtitle at once. and also highlight the both based on the meaning of the words.
 
 On that preview video above the video original language is in italian, and i also show the translate in english. and the system is highlight both based on the meaning.
 
@@ -199,7 +199,7 @@ Just ask me what you want to make, the package architecture is scalable to make 
 - [x] Relation Highlight Feature - Used in Youtube Transcript Highlight. Highlight the words in youtube transcript, and their relations to other word like their translation form.
 - [x] Add Virtual Node for flexible highlighting
 - [x] React Native Speech Highlight - Now we add support for mobile app version using [React Native](https://reactnative.dev/), [try the demo app](#react-native-speech-highlight)
-- [x] Accurate and cost effective [pronounciation correction](PROBLEMS.md#a-common-problem-in-text-to-speech-both-audio-file-and-web-speech-synthesis) Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
+- [x] Accurate and cost effective [pronunciation correction](PROBLEMS.md#a-common-problem-in-text-to-speech-both-audio-file-and-web-speech-synthesis) Using LLM Open AI Chat Completions for any terms or equations from academic paper, math, physics, computer science, machine learning, and more...
 - [x] Server Side Rendering Capability, see our demo is using [next js](https://nextjs.org/)
 - [x] Batch API request for making the audio file for long article content. it will improve efficiency and user experience. [it for solve The delay of audio played and user gesture to trigger play must be close.](PROBLEMS.md#1-the-delay-of-audio-played-and-user-gesture-to-trigger-play-must-be-close)
 - [x] Add example text to speech with viseme lipsync on 3D avatar generated from [readyplayer.me](https://readyplayer.me). [see](https://vanilla-speech-highlight.vercel.app)
@@ -212,7 +212,7 @@ Just ask me what you want to make, the package architecture is scalable to make 
       russian (Привет), japanese (こんにちは), korean (안녕하세요), etc ). [see](https://react-speech-highlight.vercel.app/#non-latin)
 - [x] Add [language detection using LLM api](API.md#2-getlangforthistext)
 - [x] Add [seeking by sentence or paragraph](API.md#2b-interface), [reading progress by word or sentence](API.md#spokenhl), [Adjust config while TTS playing.](API.md#controlhl), [Custom Abbreviation Function](API.md#1-tts-marker-markthewords)
-- [x] Realiability: TTS that can't die, Test on any platform, Code Linting using eslint, Using [Typescript](https://www.typescriptlang.org/), [Tested (Prompt Test, Unit Test, Engine Test)](TEST.md)
+- [x] Reliability: TTS that can't die, Test on any platform, Code Linting using eslint, Using [Typescript](https://www.typescriptlang.org/), [Tested (Prompt Test, Unit Test, Engine Test)](TEST.md)
 - [x] Add [demo website](https://react-speech-highlight.vercel.app)
 
 <br>
@@ -477,7 +477,7 @@ See [LLM_ENGINE.md](LLM_ENGINE.md)
   <summary>Our Company have already make a lot of audio file, can i just use it for highlighting with your package?</summary>
   <br/>
 
-No, Because my package handle all the [batching system](PROBLEMS.md#2-long-text-request-to-tts-api-capabilty-of-tts-api-handling-long-text), [pronounciation system](PROBLEMS.md#1-pronounciation-problem), and [providing text](API.md#3-converttextintocleartranscripttext) so the TTS API can produce the audio file that can be used for highlighting.
+No, Because my package handle all the [batching system](PROBLEMS.md#2-long-text-request-to-tts-api-capability-of-tts-api-handling-long-text), [pronunciation system](PROBLEMS.md#1-pronunciation-problem), and [providing text](API.md#3-converttextintocleartranscripttext) so the TTS API can produce the audio file that can be used for highlighting.
 
 You can just do [caching strategy](AUDIO_FILE.md#a-efficient-cost-strategy) to cache the request response. for both open ai API and TTS API for audio file.
 

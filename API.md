@@ -42,7 +42,7 @@ import {
   // Package Data and Cache Integration
   // Your app can read the data used by this package, like:
   PKG,
-  PREFERRED_VOICE, // Set global config for the preffered voice
+  PREFERRED_VOICE, // Set global config for the preferred voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key
@@ -87,7 +87,7 @@ The `markTheWords()` function is to process the string text and give some marker
   <summary>Show Code</summary>
   <br/>
 
-Important, This example using react `useMemo()` to avoid unecessary react rerender. i mean it will only execute when the `text` is changing. it's similiar with `useEffect()`.
+Important, This example using react `useMemo()` to avoid unnecessary react rerender. i mean it will only execute when the `text` is changing. it's similar with `useEffect()`.
 
 <br/>
 
@@ -224,7 +224,7 @@ void controlHL.play({
 
 - `autoScroll`
 
-  Beautifull auto scroll, so the user can always see the highlighted sentences
+  Beautiful auto scroll, so the user can always see the highlighted sentences
 
 - `clear`
 
@@ -327,8 +327,8 @@ Contain react state for reporting while TTS playing.
 | spokenHL.sentence           | Some react state, Get the sentence that read     |
 | spokenHL.word               | Some react state, Get the word that read         |
 | spokenHL.viseme             | Some react state, Get the current viseme         |
-| spokenHL.precentageWord     | Read precentage between 0-100 based on words     |
-| spokenHL.precentageSentence | Read precentage between 0-100 based on sentences |
+| spokenHL.percentageWord     | Read percentage between 0-100 based on words     |
+| spokenHL.percentageSentence | Read percentage between 0-100 based on sentences |
 
 # Utilities
 
@@ -336,7 +336,7 @@ Utilities function for precision and add more capabilities
 
 ## 1. pronunciationCorrection()
 
-The common problem is the text display to user is different with their spoken form. like math symbol, equations, terms, etc.. [readmore about pronounciation problem](PROBLEMS.md)
+The common problem is the text display to user is different with their spoken form. like math symbol, equations, terms, etc.. [readmore about pronunciation problem](PROBLEMS.md)
 
 [How to build this package with open ai api integration](MAKE_BACKEND.md)
 
@@ -358,7 +358,7 @@ const inputText = `
 
 const textEl = useRef();
 
-const pronounciation = async (): Promise<void> => {
+const pronunciation = async (): Promise<void> => {
   if (textEl.current) {
     await pronunciationCorrection(textEl.current, (progress) => {
       console.log(progress);
@@ -368,8 +368,8 @@ const pronounciation = async (): Promise<void> => {
 
 useEffect(() => {
   if (textEl.current) {
-    console.log("pronounciation");
-    void pronounciation();
+    console.log("pronunciation");
+    void pronunciation();
   }
   // eslint-disable-next-line
 }, []);
@@ -461,7 +461,7 @@ import {
   // ...other API
 
   // Your app can read the data / cache used by this package, like:
-  PREFERRED_VOICE, // Set global config for the preffered voice
+  PREFERRED_VOICE, // Set global config for the preferred voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
   LANG_CACHE_KEY, // Package lang sessionStorage key

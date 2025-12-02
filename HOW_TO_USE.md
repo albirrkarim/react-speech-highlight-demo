@@ -6,5 +6,4 @@ The detail of how to use this package is in the `README.md` of each private repo
 
 [Package Repo of React Speech Highlight](https://github.com/Web-XR-AI-lab/react-speech-highlight)
 
-
-[Demo Website & Pacakage of Vanilla Speech Highlight](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)
+[Demo Website & Package of Vanilla Speech Highlight](https://github.com/Web-XR-AI-lab/vanilla-speech-highlight)

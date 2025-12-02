@@ -16,7 +16,7 @@ see [changelog](CHANGELOG.md)
 
 ### Engine Test
 
-The [pronounciation correction engine](API.md#1-pronunciationcorrection) is combines the LLM (open ai chat API) and good algorithm to achieve accurate and cost effective. Of course it tested with test case.
+The [pronunciation correction engine](API.md#1-pronunciationcorrection) is combines the LLM (open ai chat API) and good algorithm to achieve accurate and cost effective. Of course it tested with test case.
 
 see [changelog](CHANGELOG.md)
 
@@ -34,7 +34,7 @@ Now **this package support all devices and browser**, because this package can u
 
 ### Audio file mode:
 
-Using the prefer of fallback api. you can set this package to do TTS using purely audio file. see [AUDIO_FILE.md](AUDIO_FILE.md). 
+Using the prefer of fallback api. you can set this package to do TTS using purely audio file. see [AUDIO_FILE.md](AUDIO_FILE.md).
 
 ### Web Speech Synthesis API itself:
 
