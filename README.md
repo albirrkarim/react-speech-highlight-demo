@@ -185,7 +185,6 @@ Just ask me what you want to make. The package architecture is scalable to creat
 
 ## B. TODO
 
-- [ ] Add discord chat bot using LLM for explaining the API, and just explain what you want to make, and they will give you the code.
 - [ ] Automation Brute Force End to End Testing, test all APIs, runtime, sequential action, etc...
 - [ ] Add viseme support for chinese character
 - [ ] Let me know what you want from this package, the package architecture is scalable to make various feature, please write it on issues tab, or contact me via discord (username: albirrkarim)
@@ -286,6 +285,8 @@ This package is a `base` package that can be used for various [use cases](#use-c
 Tell your problems or difficulties to me, I will show you the way to solve that.
 
 I provide realtime support from me with discord.
+
+Also now you can use Vibe coding tool like cursor or github copilot to explain the code base and how to use it.
 
 Just buy it. remove the headache. and you can focus on your project.
 
