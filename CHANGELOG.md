@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.5.6 - 5.5.7
+
+- Fix more marking problem
+
 # 5.5.5
 
 - Fix bug: Unwanted state change to pause, while playing the audio
