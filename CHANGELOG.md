@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 5.6.1
+
+- Fix: improve error logging with detailed context and format multi-line object literals for better readability
+
 # 5.5.6 - 5.5.7
 
 - Fix more marking problem
