@@ -75,29 +75,33 @@ function convertBase64ToBlobURL(base64Audio) {
   return blobURL;
 }
 
-export const ttsUsingElevenLabs = async (inputText) => {
-  // see https://elevenlabs.io/docs/api-reference/text-to-speech
-  // https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/AUDIO_FILE.md#eleven-labs
+// Unified helper: works for BOTH ElevenLabs and 60db.
+// The backend (see backend/nodejs) picks the engine from `provider` and always
+// returns { audio: "data:audio/...;base64,..." }, so this function never changes.
+export const tts = async (inputText, provider = "elevenlabs") => {
+  // see backend/nodejs/readme.md for the request contract
+  // ElevenLabs: https://elevenlabs.io/docs/api-reference/text-to-speech
+  // 60db:       https://docs.60db.ai/api-reference/tts/text-to-speech
 
-  // Set the ID of the voice to be used.
+  // Set the ID of the voice to be used (ElevenLabs default shown here).
   const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
 
   const blobUrl = await fetch(
-    process.env.NEXT_PUBLIC_ELEVEN_LABS_API_ENDPOINT,
+    process.env.NEXT_PUBLIC_TTS_API_ENDPOINT, // -> /api/v1/public/tts
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        provider, // "elevenlabs" | "60db"
         text: inputText,
         voice_id: VOICE_ID,
-        model_id: "eleven_multilingual_v2",
+        model: "eleven_multilingual_v2", // ElevenLabs only, ignored by 60db
+        // Always 0..1 — the backend rescales to 0..100 for 60db automatically.
         voice_settings: {
           stability: 0.75, // The stability for the converted speech
-          similarity_boost: 0.5, // The similarity boost for the converted speech
-          style: 1, // The style exaggeration for the converted speech
-          speaker_boost: true, // The speaker boost for the converted speech
+          similarity_boost: 0.5, // The similarity / voice-match for the converted speech
         },
       }),
     }
@@ -110,7 +114,7 @@ export const ttsUsingElevenLabs = async (inputText) => {
       return response.json();
     })
     .then((data) => {
-      // Assuming the API response contains a property 'audio' with the base64-encoded audio
+      // The API response contains a property 'audio' with the base64-encoded audio
       const base64Audio = data.audio;
 
       // Create a Blob URL
@@ -128,7 +132,9 @@ var clear_transcript = convertTextIntoClearTranscriptText(
   "This is example text you can set"
 );
 
-const audioURL = await ttsUsingElevenLabs(clear_transcript);
+// Swap the provider with the second argument — nothing else changes.
+const audioURL = await tts(clear_transcript, "elevenlabs");
+// const audioURL = await tts(clear_transcript, "60db");
 
 const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
   lang: "en",
