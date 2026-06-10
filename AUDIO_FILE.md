@@ -214,6 +214,41 @@ File `TTSController.php` this will return audio as base64
 
 </details>
 
+### - 60db
+
+[60db](https://docs.60db.ai) is a text-to-speech API that, like ElevenLabs, returns high-quality audio you can use for highlighting. It is wired into the **same Node.js backend** in this repo, so switching between ElevenLabs and 60db is just a `provider` flag — the frontend code and the `{ audio: "data:...;base64,..." }` response are identical.
+
+Key differences handled by the backend for you:
+
+- Auth header is `Authorization: Bearer <key>` (ElevenLabs uses `xi-api-key`).
+- Voice settings stay on the normalized **0..1** scale; the backend rescales `stability`/`similarity_boost` to 60db's **0..100** scale automatically.
+- 60db's sync endpoint already returns base64 (`audio_base64`), which the backend wraps into the same data URI.
+
+<details>
+  <summary>Example Client Side Code (Frontend)</summary>
+
+The unified `tts(inputText, provider)` helper shown above works as-is — just pass `"60db"`:
+
+```js
+const audioURL = await tts(clear_transcript, "60db");
+
+const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech({
+  lang: "en",
+  preferAudio: audioURL,
+  //or
+  //   fallbackAudio: audioURL,
+});
+```
+
+</details>
+
+<details>
+  <summary>Example Integration Node js Backend with 60db TTS API</summary>
+
+Go to the [backend folder in this repo](https://github.com/albirrkarim/react-speech-highlight-demo/tree/main/backend/nodejs) — the same `app.js` serves both providers. Set `SIXTYDB_API_KEY` in your `.env` and call the unified endpoint with `{ "provider": "60db", ... }`, or use the `text-to-speech-60db` alias. See [the backend readme](https://github.com/albirrkarim/react-speech-highlight-demo/blob/main/backend/nodejs/readme.md) for the full request contract.
+
+</details>
+
 ### - Open AI TTS
 
 [OpenAI](https://platform.openai.com/docs/guides/text-to-speech) is also providing tts service, for now it come with minimal feature, but its fast latency.
