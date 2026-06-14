@@ -521,15 +521,15 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 <br/>
 
-### Ready make NPM package / JS library
+### Ready-made NPM package / JS library
 
-You dont wanna deep dive into technical things? You just wanna simple connect and listen to your website?
+Don’t want to deep dive into the technical setup? Just want a simple way to add text-to-speech to your website?
 
-We recommend using this [npm package](https://reinventwp.com/text-to-speech/npm) or [js library](https://reinventwp.com/text-to-speech/js) or [WordPress Plugin](https://wordpress.org/plugins/natural-text-to-speech) from reinvent wp.
+We recommend using the [NPM package](https://reinventwp.com/text-to-speech/npm?utm_source=github&utm_medium=referral&utm_campaign=react_speech_highlight_demo&utm_content=readme_npm_package), [JavaScript library](https://reinventwp.com/text-to-speech/js?utm_source=github&utm_medium=referral&utm_campaign=react_speech_highlight_demo&utm_content=readme_js_library), or [WordPress plugin](https://wordpress.org/plugins/natural-text-to-speech?utm_source=github&utm_medium=referral&utm_campaign=react_speech_highlight_demo&utm_content=readme_wordpress_plugin) from ReinventWP.
 
-It can be used in react based, next js, wordpress, and any website that using js.
+It works with React, Next.js, WordPress, and any website that supports JavaScript.
 
-Its really good and simple. No expert coding skill required. Just plug and play!
+It’s simple to use and does not require advanced coding skills. Just plug it in and start listening.
 
 <br/>
 
