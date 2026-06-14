@@ -525,11 +525,13 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 You dont wanna deep dive into technical things? You just wanna simple connect and listen to your website?
 
-We recommend using this [npm package](https://reinventwp.com/text-to-speech/npm) or [js library](https://reinventwp.com/text-to-speech/js) from reinventwp.com
+We recommend using this [npm package](https://reinventwp.com/text-to-speech/npm) or [js library](https://reinventwp.com/text-to-speech/js) or [WordPress Plugin](https://wordpress.org/plugins/natural-text-to-speech) from reinvent wp.
 
-It can be used in react based, next js, and any website that using js.
+It can be used in react based, next js, wordpress, and any website that using js.
 
 Its really good and simple. No expert coding skill required. Just plug and play!
+
+<br/>
 
 <!--
 
