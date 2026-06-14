@@ -521,6 +521,16 @@ For continued access in subsequent years, you can pay USD $50 annually to remain
 
 <br/>
 
+### Ready make NPM package / JS library
+
+You dont wanna deep dive into technical things? You just wanna simple connect and listen to your website?
+
+We recommend using this [npm package](https://reinventwp.com/text-to-speech/npm) or [js library](https://reinventwp.com/text-to-speech/js) from reinventwp.com
+
+It can be used in react based, next js, and any website that using js.
+
+Its really good and simple. No expert coding skill required. Just plug and play!
+
 <!--
 
 ### - Screencast Tutorial
