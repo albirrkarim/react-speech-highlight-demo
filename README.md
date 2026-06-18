@@ -86,7 +86,7 @@ They have problems like robot-like sound, limited device support, etc.
 
 When we talk about good sound / human-like voices, AI model inference should be involved. So it doesn't make sense to do that on the client side.
 
-Then the speech synthesis API provider like [ElevenLabs](https://try.elevenlabs.io/speech-highlight), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) play their roles.
+Then the speech synthesis API provider like [ElevenLabs](https://try.elevenlabs.io/speech-highlight), [60db](https://docs.60db.ai), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) play their roles.
 
 But they don't provide an npm package to do highlighting.
 
@@ -108,7 +108,7 @@ My package combines [Built in Web SpeechSynthesis](https://developer.mozilla.org
 
 When using prefer/fallback to audio file, you can achieve high-quality sound and remove all compatibility problems from [Built-in Web SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis).
 
-How can you automatically get the audio file for some text? you can use [ElevenLabs](https://try.elevenlabs.io/speech-highlight), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio files (mp3, mp4, wav, etc...). For details see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/), I provide you with examples using ElevenLabs, and you can even try your own audio file on that demo web.
+How can you automatically get the audio file for some text? you can use [ElevenLabs](https://try.elevenlabs.io/speech-highlight), [60db](https://docs.60db.ai), [Murf AI](https://get.murf.ai/0big1kdars4f), [Open AI](https://platform.openai.com/docs/guides/text-to-speech), [Amazon Polly](https://aws.amazon.com/id/polly/), and [Google Cloud](https://cloud.google.com/text-to-speech) or any other TTS API as long as they can produce audio files (mp3, mp4, wav, etc...). For details see the [AUDIO_FILE.md](AUDIO_FILE.md). In the [demo website](https://react-speech-highlight.vercel.app/), I provide you with examples using ElevenLabs and 60db, and you can even try your own audio file on that demo web.
 
 This package just takes input text and audio files, so you can be flexible in using any TTS API that can produce audio files—the expensive ones or even cheap ones when you consider the cost.
 
@@ -205,7 +205,7 @@ Just ask me what you want to make. The package architecture is scalable to creat
 - [x] Add viseme API for current spoken TTS, [see](https://vanilla-speech-highlight.vercel.app)
 - [x] Add vanilla js support, for those who don't use react, [see vanilla demo](https://vanilla-speech-highlight.vercel.app)
 - [x] Add fallback/prefer to audio file (.mp3/etc) when user doesn't have built in speech synthesis in their devices. or maybe prefer using audio file because the sound is better than robot like sound. [see](AUDIO_FILE.md)
-- [x] Docs integration text-to-speech with [Eleven Labs](https://try.elevenlabs.io/speech-highlight) API [see the demo web](https://react-speech-highlight.vercel.app)
+- [x] Docs integration text-to-speech with [Eleven Labs](https://try.elevenlabs.io/speech-highlight) and [60db](https://docs.60db.ai) API (one unified backend, swap with a `provider` flag) [see the demo web](https://react-speech-highlight.vercel.app)
 - [x] Integration with [React GPT Web Guide](https://github.com/albirrkarim/react-gpt-web-guide-docs) Package.
 - [x] Multi character support for non latin alphabet ( chinese (你好),
       russian (Привет), japanese (こんにちは), korean (안녕하세요), etc ). [see](https://react-speech-highlight.vercel.app/#non-latin)
