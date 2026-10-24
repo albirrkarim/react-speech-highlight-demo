@@ -18,8 +18,7 @@ With that URL, the `package` will send a **body request** like this
 
 ```json
 {
-  "temperature": 0,
-  "model": "gpt-3.5-turbo",
+  "model": "gpt-6-luna",
   "messages": [
     {
       "role": "user",
@@ -28,6 +27,8 @@ With that URL, the `package` will send a **body request** like this
   }
 }
 ```
+
+For harder tasks it sends `"model": "gpt-6.1-sol"` with `"reasoning_effort": "medium"`. Pass `reasoning_effort` on to OpenAI too.
 
 And your backend will **respond** like this.
 
@@ -38,7 +39,7 @@ And your backend will **respond** like this.
   "id": "chatcmpl-7s8i7oHA1BkcLD5U0FFkoYEn2b2QF",
   "object": "chat.completion",
   "created": 1693137551,
-  "model": "gpt-3.5-turbo-0613",
+  "model": "gpt-6-luna",
   "choices": [
     {
       "index": 0,
@@ -130,9 +131,11 @@ class OpenAIController extends Controller
         // https://github.com/openai-php/laravel/issues/51#issuecomment-1651224516
 
         $body = [
-            'model' => isset($data["model"]) ? $data["model"] : 'gpt-3.5-turbo',
+            'model' => isset($data["model"]) ? $data["model"] : 'gpt-6-luna',
             'messages' => $data["messages"],
-            'temperature' => isset($data["temperature"]) ? $data["temperature"] : 0.6,
+            // gpt-6.1-sol requests also send "reasoning_effort": "medium"; pass it on.
+            // Don't add "temperature": the gpt-6 models reject it.
+            ...(isset($data["reasoning_effort"]) ? ['reasoning_effort' => $data["reasoning_effort"]] : []),
 
             // 'functions' => [
             //     [
