@@ -1,5 +1,26 @@
 # CHANGELOG
 
+# 6.0.0
+
+**Breaking: the package never changes your page's HTML.** It no longer writes `<sps>`/`<spw>` tags into your article. It marks a hidden copy and paints the highlight over your text, so React, Vue and other frameworks keep their own DOM, and the page's styles and layout stay as they are.
+
+- Highlight painted over the text: a layer of boxes that follow the text when the page or an inner box scrolls and when the window resizes. The boxes keep the `highlight-spoken` and `highlight-sentence` classes, so your CSS background colors still apply. CSS that changes the text itself (`color`, `font-weight`) no longer affects it.
+- Dark pages: the highlight colors switch when the text is lighter than the background behind it.
+- The article is marked once and cached: play, double click and hover share one marking, and it is marked again only when the article or the marking settings change.
+- Double click finds the sentence and word from the page's live layout (works after scrolling and on iPad), and shows the tapped sentence at once.
+- Double click on an excluded element (your player's buttons, a share bar) leaves the reading alone.
+- Hover: `activateGesture` turns on hovering for its element: the sentence under the pointer is highlighted with a "double click to play" tooltip. Option `hover` (default `true`; a string sets the tooltip text; `false` turns it off). `activateHoverHelper(textEl)` does the same on its own.
+- New default skip list (`DEFAULT_EXCLUDE_ELEMENTS`, added to `MARKING_EXCEPTIONS`): tables of contents, related posts, author boxes, ratings, share bars, newsletter and comment forms, other audio players, view counters, breadcrumbs and tags.
+- Faster replays: audio, its decoding and its timestamps are kept, so a double click, seek or resume doesn't download or analyse the same audio again; one shared AudioContext.
+- A stopped or replaced play can no longer end or fail the newer one.
+- Same marking engine as 5.7.0 (same sentences and words).
+
+**Migration**
+
+- `sNode.el()` / `wNode.el()` now return the element in the hidden marked copy, not an element of your page. Use the node's text and positions instead of DOM lookups.
+- Pages you mark yourself keep the 5.x behaviour: if your element already contains `<sps>` (you called `markTheWords(el)` or appended `sNodesToMarkedTag(...)`), the package uses your tags as they are. `el()` is your element, the highlight is a class on it, and `sps:hover` CSS works. `isMarkedByApp(el)` tells which mode an element is in.
+- `getSentenceEl(el)` no longer marks your page: on an unmarked page it returns the sentences of the hidden copy.
+
 # 5.6.1
 
 - Fix: improve error logging with detailed context and format multi-line object literals for better readability
