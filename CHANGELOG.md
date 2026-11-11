@@ -14,6 +14,7 @@
 - Faster replays: audio, its decoding and its timestamps are kept, so a double click, seek or resume doesn't download or analyse the same audio again; one shared AudioContext.
 - A stopped or replaced play can no longer end or fail the newer one.
 - Same marking engine as 5.7.0 (same sentences and words).
+- TypeScript: the npm package now ships all its types. `ControlHLType`, `ActivateGestureProps`, `ConfigTTS`, `SentenceNodeJSON` and the rest were missing from the published build (a TypeScript app got 63 errors importing them); `SentenceNodeJSON.sideHL` is now typed as one list per side highlight, as the data is.
 
 **Migration**
 
