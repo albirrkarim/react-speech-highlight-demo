@@ -92,9 +92,16 @@ var defaultParams = {
 // Global control HL
 const { controlHL } = useTextToSpeech(defaultParams);
 
-// play the tts
-controlHL.play();
+const textEl = document.getElementById("article");
+
+// play the tts (6.0: no marking step; your page's HTML is never changed)
+controlHL.play({ textEl });
+
+// double click a sentence to read from there; hovering shows a "double click to play" tooltip (hover: false turns it off)
+controlHL.activateGesture({ textEl, hover: true });
 ```
+
+Since 6.0 the vanilla version works like the React version: the package marks a hidden copy of your text and paints the highlight over it. See [API.md](API.md#1-marking-automatic-since-60) and the [CHANGELOG](CHANGELOG.md#600).
 
 This is the API of `useTextToSpeech()` is like this. minus the react state (i comment it)
 

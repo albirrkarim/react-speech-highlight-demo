@@ -52,7 +52,9 @@ This is the Documentation for [web version](#--the-web-version-react-and-vanilla
 
 <br/>
 
-# Docs for v5.6.6
+# Docs for v6.0.0
+
+**New in 6.0:** the package never changes your page's HTML. It marks a hidden copy of your text and paints the highlight over it, so React, Vue and other frameworks keep their own DOM. Hovering a sentence highlights it with a "double click to play" tooltip. See the [CHANGELOG](CHANGELOG.md#600) for the migration notes.
 
 **Table Of Contents**
 

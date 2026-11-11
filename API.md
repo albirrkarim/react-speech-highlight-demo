@@ -25,15 +25,16 @@ Actually, **there are a lot** of functions, [llm engine](LLM_ENGINE.md), and con
   <br/>
 
 ```jsx
-// v5.5.3 API
+// v6.0.0 API
 import {
   // Main
-  markTheWords,
   useTextToSpeech,
+  markTheWords, // optional since 6.0: put the <sps>/<spw> tags into your page yourself (5.x style)
+  isMarkedByApp, // does this element already hold your own <sps> tags?
+  activateHoverHelper, // hover a sentence: highlight + "double click to play" tooltip
+  DEFAULT_EXCLUDE_ELEMENTS, // page parts never read by default (tables of contents, share bars...)
 
   // Utilities function for precision and add more capabilities
-  pronunciationCorrection,
-  getLangForThisText,
   getTheVoices,
   noAbbreviation,
   speak,
@@ -45,7 +46,6 @@ import {
   PREFERRED_VOICE, // Set global config for the preferred voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
-  LANG_CACHE_KEY, // Package lang sessionStorage key
   OPENAI_CHAT_COMPLETION_API_ENDPOINT,
   getVoiceBasedOnVoiceURI,
   getCachedVoiceInfo,
@@ -64,13 +64,17 @@ import type {
   ActivateGestureProps,
   GetVoicesProps,
   VoiceInfo,
-  markTheWordsFuncType,
+  MarkTheWordsType,
   ConfigTTS,
-  getAudioType,
-  getAudioReturnType,
+  GetAudioType,
+  GetAudioReturnType,
   VisemeMap,
   SentenceInfo,
 } from "react-speech-highlight";
+
+// Pronunciation correction and language detection are in the demo website's language plugin
+// (src/app/lib/plugins/language), not in the package itself.
+import { pronunciationCorrection, getLangForThisText } from "@/app/lib/plugins/language";
 ```
 
 </details>
@@ -79,32 +83,46 @@ import type {
 
 # Main
 
-## 1. TTS Marker `markTheWords()`
+## 1. Marking: automatic since 6.0
 
-The `markTheWords()` function processes the string text and gives markers to every word and sentence that the system will read.
+You don't mark your text any more. Render it as it is and pass its element to `controlHL.play()` or `controlHL.activateGesture()`. The package marks a **hidden copy** of it (sentences and words), keeps that marking cached until your text changes, and **paints the highlight over your text**. Your page's HTML is never changed, so React and other frameworks keep their own DOM.
 
 <details>
   <summary>Show Code</summary>
   <br/>
 
-Important: This example uses React's `useMemo()` to avoid unnecessary React rerenders. I mean it will only execute when the `text` is changing. It's similar to `useEffect()`.
-
-<br/>
-
 ```jsx
-function abbreviationFunction(str) {
-  // You can write your custom abbreviation function here
-  // example:
-  // Input(string) : LMK
-  // Output(string) : Let me know
+const textEl = useRef(null);
 
-  return str;
-}
+// Your text, rendered as usual: no marking step
+<div ref={textEl} dangerouslySetInnerHTML={{ __html: text }} />
 
-const textHL = useMemo(() => markTheWords(text, abbreviationFunction), [text]);
+controlHL.play({ textEl: textEl.current });
 ```
 
 </details>
+
+**Marking the page yourself (5.x style).** `markTheWords(el, abbreviationFunction?)` still puts `<sps>` (sentence) and `<spw>` (word) tags into your element. When an element already holds `<sps>` tags (`isMarkedByApp(el)` is `true`), the package uses your tags as they are: `sentenceNode.el()` is your element, the highlight is a class on it, and CSS like `sps:hover` works. Use this only when you need the tags themselves.
+
+<details>
+  <summary>Show Code</summary>
+  <br/>
+
+```jsx
+function abbreviationFunction(str) {
+  // Input(string) : LMK
+  // Output(string) : Let me know
+  return str;
+}
+
+useEffect(() => {
+  if (textEl.current) markTheWords(textEl.current, abbreviationFunction);
+}, [text]);
+```
+
+</details>
+
+**Page parts that are never read.** Code, buttons and `MARKING_EXCEPTIONS` are skipped, plus, since 6.0, `DEFAULT_EXCLUDE_ELEMENTS`: tables of contents, related posts, author boxes, ratings, share bars, newsletter and comment forms, other audio players, view counters, breadcrumbs and tags.
 
 <br/>
 
@@ -210,6 +228,8 @@ void controlHL.play({
 
   You can style the highlighted word with CSS using this class name
 
+  Since 6.0 the highlight is a box painted over your text, and these classes are on the boxes: set `background-color`, `border-radius` and the like. CSS that changes the text itself (`color`, `font-weight`) doesn't apply any more. A page you marked yourself (`markTheWords`) keeps the 5.x behaviour: the class goes on your `<sps>`/`<spw>` elements.
+
 - `lang`
 
   The one used for `SpeechSynthesisUtterance.lang`. [see](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/lang)
@@ -296,6 +316,22 @@ controlHL.changeConfig();
 controlHL.activateGesture();
 ```
 
+#### Double click and hover: `controlHL.activateGesture()`
+
+Double click a sentence to read from there. Since 6.0 hovering a sentence also highlights it with a "double click to play" tooltip.
+
+```jsx
+useEffect(() => {
+  controlHL.activateGesture({
+    textEl: textEl.current,
+    hover: true, // default; a string is the tooltip text ("Double click to read"); false turns hover off
+    onAfterDoubleClick: (clickReport) => true, // return false to stop the play
+  });
+}, []);
+```
+
+A double click on an excluded element (your player's buttons, a share bar) leaves the current reading alone.
+
 #### statusHL
 
 A React state that gives the status of the program. The value can be `idle|play|calibration|pause|loading`. You can get the fixed value by accessing the `PKG_STATUS_OPT` constant.
@@ -374,13 +410,11 @@ useEffect(() => {
   // eslint-disable-next-line
 }, []);
 
-const textHL = useMemo(() => markTheWords(inputText), [inputText]);
-
 return (
   <div ref={textEl}>
     <p
       dangerouslySetInnerHTML={{
-        __html: textHL,
+        __html: inputText,
       }}
     ></p>
   </div>
@@ -464,7 +498,6 @@ import {
   PREFERRED_VOICE, // Set global config for the preferred voice
   PKG_STATUS_OPT, // Package status option
   PKG_DEFAULT_LANG, // Package default lang
-  LANG_CACHE_KEY, // Package lang sessionStorage key
   OPENAI_CHAT_COMPLETION_API_ENDPOINT, // Key to set OpenAI chat completion API
   getVoiceBasedOnVoiceURI,
   getCachedVoiceInfo,

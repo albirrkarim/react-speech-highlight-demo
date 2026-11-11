@@ -7,14 +7,13 @@ This is the simple example code. Want more? see the [HOW_TO_USE.md](HOW_TO_USE.m
 File `App.css`
 
 ```css
+/* Since 6.0 these classes are on the boxes painted over your text: style their background, not the text color. */
 .highlight-spoken {
-  color: black !important;
   background-color: #ff6f00 !important;
   border-radius: 5px;
 }
 
 .highlight-sentence {
-  color: #000000 !important;
   background-color: #ffe082 !important;
   border-radius: 5px;
 }
@@ -26,8 +25,8 @@ File `App.js`
 
 ```jsx
 import "./App.css";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { markTheWords, useTextToSpeech } from "react-speech-highlight";
+import { useEffect, useRef } from "react";
+import { useTextToSpeech } from "react-speech-highlight";
 
 export default function App() {
   const text = "Some Input String";
@@ -43,14 +42,17 @@ export default function App() {
 
   const { controlHL, statusHL, prepareHL, spokenHL } = useTextToSpeech(config);
 
-  const textHL = useMemo(() => markTheWords(text), [text]);
+  // 6.0: no marking step. Double click a sentence to read from there; hovering shows a "double click to play" tooltip.
+  useEffect(() => {
+    controlHL.activateGesture({ textEl: textEl.current });
+  }, []);
 
   return (
     <>
       <div ref={textEl}>
         <div
           dangerouslySetInnerHTML={{
-            __html: textHL,
+            __html: text,
           }}
         ></div>
       </div>
@@ -59,11 +61,9 @@ export default function App() {
         isPlay={statusHL == "play" || statusHL == "calibration"}
         play={() => {
           if (statusHL == "pause") {
-            controlHL.resume(config);
+            controlHL.resume();
           } else {
-            controlHL.play(
-              textEl.current
-            );
+            controlHL.play({ textEl: textEl.current });
           }
         }}
         pause={controlHL.pause}
